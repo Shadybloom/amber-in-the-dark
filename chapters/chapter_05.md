@@ -2,7 +2,7 @@
 
 ## Карта
 
-![Карта Лайфстрима](images/maps/ch05_map_lifestream.png)
+![Карта Лайфстрима](/images/maps/ch05_map_lifestream.png)
 
 ## POV Динки
 
