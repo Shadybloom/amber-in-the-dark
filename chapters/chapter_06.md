@@ -278,6 +278,7 @@
 
 <span align="center">
 <em>
+
 <strong>
 «Врагу не сдаётся подгорный народ!»
 </strong>
