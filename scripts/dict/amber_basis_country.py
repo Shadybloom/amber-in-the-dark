@@ -15,9 +15,9 @@ metadict_army['Тестовое хозяйство'] = {
 # Географические регионы:
 
 metadict_army['Эквестрия'] = {
+        # https://ru.wikipedia.org/wiki/Классификация_климатов_Кёппена
         # https://vignette.wikia.nocookie.net/mlp/images/c/cb/Map_of_Equestria_April_2013.jpg
-        # Исправить
-            # Железные дороги нужно куда-то перенести.
+        # https://upload.wikimedia.org/wikipedia/commons/b/bc/Illustrated_map_of_European_Russia_(1903).jpeg
         'Балтимэрский регион':1,
         'Кантерлотский регион':1,
         'Мэйнхеттенский регион':1,
