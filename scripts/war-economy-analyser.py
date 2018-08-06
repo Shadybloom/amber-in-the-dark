@@ -2709,13 +2709,16 @@ for meta_key in sorted(metadict.keys(), reverse=True):
 # Подведение итогов:
 print('Ожидаемая численность:', POPULATION)
 population_alive = 0
+generations_all = 0
 army_soldiers= 0
 army_reservists = 0
 for meta_key in sorted(metadict.keys()):
     population_alive = population_alive + metadict[meta_key]['generation_alive']
+    generations_all = generations_all + metadict[meta_key]['generation_size']
     army_soldiers = army_soldiers + metadict[meta_key][prof_name_apprentice]
     army_reservists = army_reservists + metadict[meta_key][prof_name_expert]
 print('Численность популяции:', population_alive)
+print('Численность поколений:', generations_all)
 print(prof_name_apprentice, 'и', prof_name_expert, 'по видам войск:')
 for troop_key in sorted(dict_troops_types.keys()):
     print('    ', troop_key, ' (', round(dict_troops_types[troop_key] * 100), '%) ',
