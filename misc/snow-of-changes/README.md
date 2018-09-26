@@ -1,6 +1,6 @@
-# Янтарь в темноте
+# Снег перемен
 
-![Сноу-чейнджлинг](/images/snowdrop-changeling-background.png)
+![Сноу-чейнджлинг](/misc/snow-of-changes/images/snowdrop-changeling-background.png)
 
 ## Аннотация
 Это порнография с Кризалис и Сноудроп.
