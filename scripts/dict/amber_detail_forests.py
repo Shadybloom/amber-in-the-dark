@@ -51,9 +51,10 @@ metadict_detail['Лиственные леса северного района (
 
 metadict_detail['Берёзовые леса центрального района (гектар)'] = {
         'Берёза жёлтая (Betula lutea) (гектар)':0.6,
-        'Черёмуха поздняя (Padus serotina) (гектар)':0.2,
+        'Черёмуха поздняя (Prúnus serotina) (гектар)':0.16,
         'Ильм эквианский (Ulmus equesriana) (гектар)':0.15,
         'Хмелеграб обыкновенный (Ostrya carpinifolia) (гектар)':0.05,
+        'Рябина Эквестрийская (Sorbus Equestriana) (гектар)':0.04,
         }
 
 metadict_detail['Дубовые леса центрального района (гектар)'] = {
@@ -65,8 +66,8 @@ metadict_detail['Дубовые леса центрального района (
         }
 
 metadict_detail['Широколиственные леса центрального района (гектар)'] = {
-        'Клён серебристый (Ácer sacchárinum) (гектар)':0.5,
-        'Бук крупнолистный (Fagus grandifolia) (гектар)':0.2,
+        'Клён серебристый (Ácer sacchárinum) (гектар)':0.48,
+        'Бук крупнолистный (Fagus grandifolia) (гектар)':0.18,
         'Белая акация (Robonia pseudoacacia) (гектар)':0.11,
         'Клён ясенелистый (Ácer negundo) (гектар)':0.08,
         'Кария гладкая (Carya glabra) (гектар)':0.07,
@@ -197,8 +198,12 @@ metadict_detail['Хмелеграб обыкновенный (Ostrya carpinifoli
         '|-Хмелеграб обыкновенный (Ostrya carpinifolia)':250,
         }
 
-metadict_detail['Черёмуха поздняя (Padus serotina) (гектар)'] = {
-        '|-Черёмуха поздняя (Padus serotina)':250,
+metadict_detail['Черёмуха поздняя (Prúnus serotina) (гектар)'] = {
+        '|-Черёмуха поздняя (Prúnus serotina)':250,
+        }
+
+metadict_detail['Рябина Эквестрийская (Sorbus Equestriana) (гектар)'] = {
+        '|-Рябина Эквестрийская (Sorbus Equestriana)':250,
         }
 
 #----
@@ -214,11 +219,6 @@ metadict_detail['|-Берёза жёлтая (Betula lutea)'] = {
 
 metadict_detail['|-Бук крупнолистный (Fagus grandifolia)'] = {
         '|--Дровяные деревья':1 / 10,
-        }
-
-metadict_detail['|-Виноград культурный (Vítis vinífera)'] = {
-        # Молодых деревьев примерно 10% от общего числа.
-        '|--Плодовые деревья':1 / 1.1,
         }
 
 metadict_detail['|-Дуб бархатистый (Quércus velutina)'] = {
@@ -322,7 +322,9 @@ metadict_detail['|-Хмелеграб обыкновенный (Ostrya carpinifo
         '|--Дровяные деревья':1 / 10,
         }
 
-metadict_detail['|-Черёмуха поздняя (Padus serotina)'] = {
+metadict_detail['|-Черёмуха поздняя (Prúnus serotina)'] = {
+        # Испраивить
+            # Плодовое дерево, дикорос
         '|--Дровяные деревья':1 / 10,
         }
 
@@ -331,5 +333,51 @@ metadict_detail['|-Яблоня карликовая (Malus pumila)'] = {
         }
 
 metadict_detail['|-Кофе робуста (Coffea robusta)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Фисташка (Pistácia)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Виноград культурный (Vítis vinífera)'] = {
+        # Молодых деревьев примерно 10% от общего числа.
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Рябина Эквестрийская (Sorbus Equestriana)'] = {
+        # Плодоносит 75% сада.
+        '|--Плодовые деревья':1 / 1.25,
+        }
+
+metadict_detail['|-Груша обыкновенная (Pýrus commúnis)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Олива Эквестрийская (Olea Equestriana)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Лимон (Cítrus límon)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Вишня обыкновенная (Prúnus cérasus)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Абрикос Эквестрийский (Prúnus Equestriana)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Персик Эквестрийский (Prúnus Equestriana)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Слива домашняя (Prúnus doméstica)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Фиговое дерево (Fícus cárica)'] = {
         '|--Плодовые деревья':1 / 1.1,
         }

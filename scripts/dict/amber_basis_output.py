@@ -49,6 +49,9 @@ metadict_detail['-Уксусная кислота (грамм)'] = {
 metadict_detail['|-Пчелиная семья (Ápis melliféra)'] = {
         }
 
+metadict_detail['-Масло растительное (килограмм)'] = {
+        }
+
 metadict_detail['--Питательные вещества (грамм)'] = {
         }
 
@@ -684,7 +687,7 @@ metadict_detail['|Трамбовка простая'] = {
 metadict_detail['|Тёрка деревянная'] = {
         }
 
-metadict_detail['|Тёрка для овщей'] = {
+metadict_detail['|Тёрка для овощей'] = {
         }
 
 metadict_detail['|Тёрка поролоновая'] = {
@@ -966,6 +969,12 @@ metadict_detail['||Нож кухонный'] = {
 metadict_detail['||Нож-овощечистка'] = {
         }
 
+metadict_detail['||Тёрка для овощей'] = {
+        }
+
+metadict_detail['||Сито для крупы'] = {
+        }
+
 metadict_detail['||Основной локомотив (400 кВт)'] = {
         }
 
@@ -988,6 +997,9 @@ metadict_detail['||Форма для выпечки кексов (50 грамм)
         }
 
 metadict_detail['||Сковорода (2 литра)'] = {
+        }
+
+metadict_detail['||Сотейник (2 литра)'] = {
         }
 
 metadict_detail['||Сковорода (5 литров)'] = {
