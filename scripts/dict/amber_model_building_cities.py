@@ -178,6 +178,9 @@ metadict_model['Сельский двор (строительство)'] = {
 # Сельские дворы (северные):
 
 metadict_model['Сельский двор (северный) (смета)'] = {
+        # Типы доворовых усадеб и связей жилых и хозяйственных построек (19 век)
+            # https://www.gumer.info/bibliotek_Buks/History/milov/01_9_clip_image006_0000.gif
+            # https://www.gumer.info/bibliotek_Buks/History/milov/01_9_clip_image009.gif
         'Брусчатый дом (смета)':1,
         'Дощатая уборная (смета)':1,
         'Брусчатая баня (смета)':1 / 4,

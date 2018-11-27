@@ -84,6 +84,8 @@ metadict_model['Отделка одноэтажного дома'] = {
     # http://les.novosibdom.ru/wood_construction
 # Александр Михайлович Шепелев "Как построить сельский дом"
     # http://bibliotekar.ru/spravochnik-8/index.htm
+# Милов Л. Великорусский пахарь и особенности российского исторического процесса (глава 9)
+    # https://www.gumer.info/bibliotek_Buks/History/milov/01_9.php
 
 metadict_model['Брусчатый дом (смета)'] = {
         # Одноэтажная изба-пятистенка, уровень небогатой семьи начала 20 века.
