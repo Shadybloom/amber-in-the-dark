@@ -12,14 +12,11 @@ import os
 import re
 
 # Автоматизацией не пренебрегай:
-# army-structure-analyser.py -sm вооружённые силы | grep Оператор | xclip -i ; xclip -o
-#Оператор гусеничного бульдозера
-#Оператор гусеничного самоходного парома
-#Оператор гусеничного экскаватора
-#Оператор колёсного бульдозера
-#Оператор колёсного трелёвщика
-#Оператор колёсного экскаватора
-# xclip -o | sed "s@\(.*\)@metadict_detail\['&'\] = {\n        'Рядовой':1,\n        'Пистолет-пулемёт':1,\n        '_-Работа & (часов/смену)':8,\n        }\n@"
+# _-Смешивание лапши в миске (килограмм)..... | 19
+# _-Смешивание риса в миске (килограмм)...... | 45
+# _-Смешивание салата в миске (килограмм).... | 51
+# Преобразуем вывод в новые элементы словаря:
+# xclip -o | sed "s@# @@" | sed "s@\.* | .*@@gi" | sed "s@^@metadict_detail['@" | sed "s@\$@'] = {@" | sed "s@\$@\n        }\n@"
 
 #-------------------------------------------------------------------------
 # Опции:
@@ -228,7 +225,7 @@ dict_crew = {}
 if depth == 0:
     for key,value in sorted(metadict_army[squad].items()):
         key = key * obj_number
-        print(key,round(value))
+        dict_crew[key] = value
 else:
     cycles = depth - 1
     # Формируется временный словарь
@@ -253,13 +250,17 @@ else:
         cycles -= 1
         depth -= 1
 
+
+# Ищем самый длинный ключ в словаре:
+longest_key=max(map(len, dict_crew))
+
 # Вывод данных:
 if namespace.exc:
     value = dict_crew.pop(squad_except, 0)
     #print(squad_except, round(value))
-    print ('{0:60} | {1:0}'.format(squad_except, round(value)))
+    print ('{0:.<{width}} | {1:0,}'.format(squad_except, round(value), width=longest_key))
 else:
     for key,value in sorted(dict_crew.items()):
-        print ('{0:60} | {1:0}'.format(key, round(value)))
+        print ('{0:.<{width}} | {1:0,}'.format(key, round(value), width=longest_key))
         #print(key, round(value))
         #print(key)
