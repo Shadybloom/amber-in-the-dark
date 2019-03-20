@@ -7,32 +7,17 @@
 # Год начала отсчёта, принимаются любые целые числа:
 YEAR_START = 1300
 # До какого возраста исследовать популяцию:
-AGE_END = 1000
+AGE_END = 100
 
 # Переменные геометрической прогрессии роста населения:
 # Численность населения в год начала отсчёта:
-POPULATION = 400000
+POPULATION = 1000000
 # Уровень рождаемости (например: 0.03 значит 3%
 # или 30 новорожденных на 1000 населения в год):
 # http://vln.by/node/214
 FERTILITY_RATE = 0.040
 # Уровень смертности, аналогично:
 MORTALITY_RATE = 0.034
-
-# Переменные для расчёта военной экономики:
-# ВВП на душу населения:
-# https://ru.wikipedia.org/wiki/Список_стран_по_ВВП_(ППС)_на_душу_населения
-GDP_RATE = 50000
-# Годовой рост ВВП (без инфляции):
-# Для примера, данные по росту ВВП США 1970-2013 годы:
-# http://www.be5.biz/makroekonomika/gdp/gdp_usa.html
-# За период в 43 года средний рост ВВП был равен:
-# 1075.9*x^(43-1)=3580 x=1.029 (2.9%)
-GDP_GROWTH = 0.03
-# Доля военного бюджета в ВВП страны. В США, например 3.5%,
-# Во время Второй мировой войны бюджеты армий доходили до 50-100% ВВП:
-# http://aillarionov.livejournal.com/811219.html
-GDP_ARMY = 0.2
 
 # Далее идут переменные для распределения Гомпертца-Мейкхама:
 # http://dic.academic.ru/dic.nsf/ruwiki/923652
@@ -88,8 +73,65 @@ prof_age_expert = 40
 # Возраст отставки:
 prof_age_retiree = AGE_OLDER
 prof_name_apprentice = 'Военные'
-prof_name_expert = 'Резервисты'
+prof_name_expert = 'Ветераны'
 prof_name_retiree = 'Отставники'
+
+#-------------------------------------------------------------------------
+# Невольники
+
+YEAR_START = 1300
+AGE_END = 100
+
+POPULATION = 1000000
+FERTILITY_RATE = 0.040
+MORTALITY_RATE = 0.053
+
+
+COMPONENT_A = 0.02
+COEFFICIENT_B = 0.000051
+COEFFICIENT_C = 1.16
+
+A_INFANT_MORTALITY_CORRECTION=0.35
+
+AGE_TEENAGER=6
+AGE_ADULT=15
+AGE_OLDER=50
+AGE_FERTILE_MIN=15
+AGE_FERTILE_MAX=40
+
+MALE_NAME = 'Мужчины'
+MALE_PERCENT = 0.4
+FEMALE_NAME = 'Женщины'
+FEMALE_PERCENT = 0.5
+
+#-------------------------------------------------------------------------
+# Карлы
+
+YEAR_START = 1300
+AGE_END = 100
+
+POPULATION = 30000
+FERTILITY_RATE = 0.15
+MORTALITY_RATE = 0.149
+
+
+COMPONENT_A = 0.025
+COEFFICIENT_B = 0.000051
+COEFFICIENT_C = 1.17
+
+A_INFANT_MORTALITY_CORRECTION=0.72
+
+AGE_TEENAGER=6
+AGE_ADULT=15
+AGE_OLDER=50
+AGE_FERTILE_MIN=15
+AGE_FERTILE_MAX=40
+
+MALE_NAME = 'Самцы'
+MALE_PERCENT = 0.9
+FEMALE_NAME = 'Самки'
+FEMALE_PERCENT = 0.1
+
 
 #-------------------------------------------------------------------------
 # Список видов войск. Используется базой данных военной техники,
@@ -105,18 +147,6 @@ dict_troops_types = {
         'Пехота':0.4,
         'Кавалерия':0.3,
         'Флот':0.1,
-        # Военно-промышленный комплекс (боеприпасы):
-        #'ВПК':1,
-        ## Сухопутные войска:
-        #'СВ':0.5,
-        ## Ракетные войска и дальняя ПВО:
-        #'РВ':0.1,
-        ## Военно-воздушные войска:
-        #'ВВС':0.15,
-        ## Военно-морской флот:
-        #'ВМФ':0.1,
-        ## Инженерные войска:
-        #'ИВ':0.15,
         }
 
 
@@ -378,7 +408,7 @@ while (progression_year <= AGE_END):
             'population_size':population_size(year),
             'generation_size':generation_size(year, fert),
             'generation_alive':generation_alive(generation_size(year, fert), a, b, c, age_real),
-            'GDP_size':GDP_size(year)
+            #'GDP_size':GDP_size(year)
             }
 
     # Определяем численность призывников:
@@ -420,41 +450,41 @@ while (progression_year <= AGE_END):
 #-------------------------------------------------------------------------
 # Модуль. Вычисляет производство и количество оружия в войсках.
 
-# Произведённое оружие:
-metadict_equipment_create = {}
-# Уцелевшее оружие:
-metadict_equipment_alive = {}
-
-# Исследование объединённого словаря. Создание баз данных оружия.
-# Перебираем вложенные словари начиная с последнего:
-for meta_key in sorted(metadict.keys(), reverse=True):
-    # Временный словарь вооружений (за один год):
-    dict_equipment_create = {}
-    dict_equipment_alive = {}
-    # Перебираем опции из базы данных вооружений:
-    for wpn_key in sorted(metadict_wpn.keys()):
-        # Количество созданных машин, это бюджет на них, делённый на стоимость.
-        wpn_create = round(metadict[meta_key]['GDP_size'] * GDP_ARMY * \
-                metadict_wpn[wpn_key]['wpn_budget'] / metadict_wpn[wpn_key]['wpn_cost'])
-        wpn_alive = generation_alive(wpn_create,
-                metadict_wpn[wpn_key]['wpn_a'],
-                metadict_wpn[wpn_key]['wpn_b'],
-                metadict_wpn[wpn_key]['wpn_c'],
-                metadict[meta_key]['age_real'])
-        # Создаём временный словарь:
-        dict_equipment_create[metadict_wpn[wpn_key]['wpn_name']] = wpn_create
-        dict_equipment_alive[metadict_wpn[wpn_key]['wpn_name']] = wpn_alive
-    # Объединяем временные словари в базу данных:
-    metadict_equipment_create[meta_key] = dict_equipment_create
-    metadict_equipment_alive[meta_key] = dict_equipment_alive
-
-# Далее, вычисляем общее число вооружений на складах:
-dict_equipment_all = {}
-for wpn_key in sorted(metadict_wpn.keys()):
-    equipment_all = 0
-    for meta_key in sorted(metadict_equipment_alive.keys()):
-        equipment_all = equipment_all + metadict_equipment_alive[meta_key][metadict_wpn[wpn_key]['wpn_name']]
-    dict_equipment_all[metadict_wpn[wpn_key]['wpn_name']] = equipment_all
+## Произведённое оружие:
+#metadict_equipment_create = {}
+## Уцелевшее оружие:
+#metadict_equipment_alive = {}
+#
+## Исследование объединённого словаря. Создание баз данных оружия.
+## Перебираем вложенные словари начиная с последнего:
+#for meta_key in sorted(metadict.keys(), reverse=True):
+#    # Временный словарь вооружений (за один год):
+#    dict_equipment_create = {}
+#    dict_equipment_alive = {}
+#    # Перебираем опции из базы данных вооружений:
+#    for wpn_key in sorted(metadict_wpn.keys()):
+#        # Количество созданных машин, это бюджет на них, делённый на стоимость.
+#        wpn_create = round(metadict[meta_key]['GDP_size'] * GDP_ARMY * \
+#                metadict_wpn[wpn_key]['wpn_budget'] / metadict_wpn[wpn_key]['wpn_cost'])
+#        wpn_alive = generation_alive(wpn_create,
+#                metadict_wpn[wpn_key]['wpn_a'],
+#                metadict_wpn[wpn_key]['wpn_b'],
+#                metadict_wpn[wpn_key]['wpn_c'],
+#                metadict[meta_key]['age_real'])
+#        # Создаём временный словарь:
+#        dict_equipment_create[metadict_wpn[wpn_key]['wpn_name']] = wpn_create
+#        dict_equipment_alive[metadict_wpn[wpn_key]['wpn_name']] = wpn_alive
+#    # Объединяем временные словари в базу данных:
+#    metadict_equipment_create[meta_key] = dict_equipment_create
+#    metadict_equipment_alive[meta_key] = dict_equipment_alive
+#
+## Далее, вычисляем общее число вооружений на складах:
+#dict_equipment_all = {}
+#for wpn_key in sorted(metadict_wpn.keys()):
+#    equipment_all = 0
+#    for meta_key in sorted(metadict_equipment_alive.keys()):
+#        equipment_all = equipment_all + metadict_equipment_alive[meta_key][metadict_wpn[wpn_key]['wpn_name']]
+#    dict_equipment_all[metadict_wpn[wpn_key]['wpn_name']] = equipment_all
 
 #----
 # Распределение по возрастам:
@@ -556,10 +586,11 @@ human_form_total_fertility_rate = (total_fertility_rate * 2) * FEMALE_PERCENT
 # Вывод по годам:
 for meta_key in sorted(metadict.keys(), reverse=True):
     # Вывод данных о населении:
-    print('Год:', metadict[meta_key]['year_real'],
-            'Возраст:', metadict[meta_key]['age_real'],
-            'Родившиеся:', metadict[meta_key]['generation_size'],
-            'Живые:', metadict[meta_key]['generation_alive'])
+    if metadict[meta_key]['generation_alive'] > 0:
+        print('Год:', metadict[meta_key]['year_real'],
+                'Возраст:', metadict[meta_key]['age_real'],
+                'Родившиеся:', metadict[meta_key]['generation_size'],
+                'Живые:', metadict[meta_key]['generation_alive'])
     #print(MALE_NAME, metadict[meta_key][MALE_NAME],
     #        FEMALE_NAME, metadict[meta_key][FEMALE_NAME])
     # Вывод данных о солдатах:
@@ -609,8 +640,10 @@ for meta_key in sorted(metadict.keys()):
 print('Численность популяции:', population_alive)
 #print('Численность поколений:', generations_all)
 print('Суммарный коэффициент рождаемости: {} ({} детей в семье)'.format(
-    round(human_form_total_fertility_rate, 1),
-    round((human_form_total_fertility_rate * (1 - A_INFANT_MORTALITY_CORRECTION)), 1)
+    round(total_fertility_rate, 1),
+    round((total_fertility_rate * (1 - A_INFANT_MORTALITY_CORRECTION)), 1)
+    #round(human_form_total_fertility_rate, 1),
+    #round((human_form_total_fertility_rate * (1 - A_INFANT_MORTALITY_CORRECTION)), 1)
     ))
 print('------------------------------------------------------------')
 #print(prof_name_apprentice, 'и', prof_name_expert, 'по видам войск:')
