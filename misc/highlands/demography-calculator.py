@@ -36,6 +36,7 @@ COEFFICIENT_C = 1.1
 # Младенческая смертность (записывается как 0.2 -- обозначает 20%). Прибавляется к риску за первый год жизни:
 # https://ru.wikipedia.org/wiki/Список_стран_по_уровню_младенческой_смертности
 # http://vln.by/node/213
+# https://skaramanga-1972.livejournal.com/26904.html
 A_INFANT_MORTALITY_CORRECTION=0.3
 
 # Возрастное распределение, используется для расчётов социальных слоёв:
@@ -132,6 +133,61 @@ MALE_PERCENT = 0.9
 FEMALE_NAME = 'Самки'
 FEMALE_PERCENT = 0.1
 
+#-------------------------------------------------------------------------
+# Овцы
+
+YEAR_START = 1300
+AGE_END = 100
+
+POPULATION = 100
+FERTILITY_RATE = 0.85
+MORTALITY_RATE = 0.849
+
+
+COMPONENT_A = 0.13
+COEFFICIENT_B = 0.000551
+COEFFICIENT_C = 1.87
+
+A_INFANT_MORTALITY_CORRECTION=0.6
+
+AGE_TEENAGER=0
+AGE_ADULT=1
+AGE_OLDER=8
+AGE_FERTILE_MIN=1
+AGE_FERTILE_MAX=8
+
+MALE_NAME = 'Самцы'
+MALE_PERCENT = 0.05
+FEMALE_NAME = 'Самки'
+FEMALE_PERCENT = 0.95
+
+#-------------------------------------------------------------------------
+# Коровы
+
+YEAR_START = 1300
+AGE_END = 100
+
+POPULATION = 100
+FERTILITY_RATE = 0.75
+MORTALITY_RATE = 0.749
+
+
+COMPONENT_A = 0.12
+COEFFICIENT_B = 0.000551
+COEFFICIENT_C = 1.87
+
+A_INFANT_MORTALITY_CORRECTION=0.6
+
+AGE_TEENAGER=0
+AGE_ADULT=1
+AGE_OLDER=8
+AGE_FERTILE_MIN=1
+AGE_FERTILE_MAX=8
+
+MALE_NAME = 'Самцы'
+MALE_PERCENT = 0.05
+FEMALE_NAME = 'Самки'
+FEMALE_PERCENT = 0.95
 
 #-------------------------------------------------------------------------
 # Список видов войск. Используется базой данных военной техники,
