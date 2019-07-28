@@ -2,7 +2,7 @@
 
 ## Карта
 
-![Карта Диколесья с обычной пони](/images/maps/ch02_map_everfree_1.png)
+![Карточка Твайли](/images/maps-new/ch02_1_Twily.png)
 
 ## POV Твайлайт
 
