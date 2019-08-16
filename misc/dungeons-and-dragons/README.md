@@ -1,6 +1,6 @@
 # Подземелья и драконы
 
-![Карточка Динки и Блум](/misc/dingeons-and-dragons/images/dinky-and-bloom-v2.png)
+![Карточка Динки и Блум](/misc/dungeons-and-dragons/images/dinky-and-bloom-v2.png)
 
 ## Аннотация
 Это концентрированная порнография с Эпплблум, Динки и огнедышащим драконом. А ещё кроссовер с Dungeons & Dragons, где две кобылки играли, играли и доигрались.
