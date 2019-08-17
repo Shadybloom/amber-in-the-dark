@@ -42,7 +42,7 @@
 
 — Ну что, приступим? — Динки поднялась.
 
-[Тьма с Востока](http://tem-collection.narod.ru/0-tem-95/0-40-Shirer_song.mp3)  
+<span align=center><h3><a href="http://tem-collection.narod.ru/0-tem-95/0-40-Shirer_song.mp3">Тьма с востока</a></h3></span>
 
 <span align="center"><em>
 Снова наползает Тьма с Востока  
@@ -605,7 +605,7 @@
 
 — Песенка вспомнилась. Дёрпина. О нас всех.
 
-[Дорожная](http://tem-collection.narod.ru/3-Different/8-diff/diff-03-Dorozhnaja.mp3)  
+<span align=center><h3><a href="http://tem-collection.narod.ru/3-Different/8-diff/diff-03-Dorozhnaja.mp3">Дорожная</a></h3></span>
 
 <span align="center"><em>
 Час пришел нам отправляться —  
