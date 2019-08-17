@@ -304,7 +304,7 @@ metadict_model['-= Навык (Скрытность)'] = {
 metadict_model['-= Навык (Тихий шаг)'] = {
         }
 
-metadict_model['-= Навык (Черчение)'] = {
+metadict_model['-= Ремесло (Черчение)'] = {
         }
 
 metadict_model['-= Профессия (Арбитр)'] = {

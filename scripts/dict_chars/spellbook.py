@@ -1,10 +1,10 @@
-# ----
+## ----
 # Заклинания Dungeons & Dragons 3.5-5.0 в стиле понячьего мира:
     # https://dndtools.net/spells/
     # http://www.d20srd.org/indexes/spells.htm
     # https://www.dnd-spells.com/spells
 
-# ----
+## ----
 # Сила рога и заклинания:
     # Вот, например, «ударная волна» в исполнении типичнейшей чародейки 1 lvl:
     # Сфера радиусом — 0.05 метра (с копыто)
@@ -77,7 +77,7 @@
         # Единорожка 4 уровня вкинет уже 21 грамм, единорожка 6 уровня (уровень огнешаров) -- 88 грамм
         # Для сравнения: в гранате РГД-5 -- 110 грамм тротила и осколочная рубашка 200 грамм.
 
-# ----
+## ----
 # Заклинания волшебников и чародеев:
 
 metadict_detail['Заклинания волшебников 0 lvl'] = {
@@ -105,6 +105,7 @@ metadict_detail['Заклинания волшебников 1 lvl'] = {
         # Чародеи и волшебники 1-2 уровней -- сотни тысяч:
         # Материалы. Компонентные заклинания: излучатели, разрядники, лезвия, нити, щиты.
         #'1 lvl Создать композит (1 lvl Summon Component, 5 lvl Major Creation)':1,
+        '1 lvl Живая верёвка (1 lvl Animate Rope)':1,
         '1 lvl Создать палатку (3 lvl Leomund\'s Tiny Hut)':1,
         '1 lvl Доспехи мага (1 lvl Mage Armor, 3 lvl Golden Dragonmail)':1,
         '1 lvl Создать одежду (2 lvl Clothier\'s Closet)':1,
@@ -126,7 +127,7 @@ metadict_detail['Заклинания волшебников 1 lvl'] = {
         '1 lvl Облако сияющих частиц (4 lvl Radiant Fog, 4 lvl Sparkles)':1,
         '1 lvl Пёрышко (1 lvl Feather Fall, 1 lvl Jump, 2 lvl Balancing Lorecall)':1,
         '1 lvl Чревовещание (1 lvl Ventriloquism, 2 lvl Dissonant Chant)':1,
-        '1 lvl Луч наведения (1 lvl Targeting Ray, 4 lvl Spell Enhancer)':1,
+        '1 lvl Луч наведения (1 lvl Targeting Ray)':1,
         '1 lvl Магическая стрела (1 lvl Mage Arrow)':1,
         '1 lvl Магическое лезвие (1 lvl Persistent Blade, 2 lvl Cloud of Knives)':1,
         '1 lvl Молния вблизи (2 lvl Seeking Ray, 2 lvl Witch Bolt)':1,
@@ -142,7 +143,7 @@ metadict_detail['Заклинания волшебников 2 lvl'] = {
         '2 lvl Скопировать пищу или напиток (???)':1,
         '2 lvl Репликация крови (2 lvl Bear\'s Endurance)':1,
         '2 lvl Соединить живые ткани (2 lvl False Life)':1,
-        '2 lvl Защитная сфера-накопитель (2 lvl Resist Energy, 3 lvl Energy Aegis)':1,
+        '2 lvl Защитная сфера-накопитель (2 lvl Resist Energy)':1,
         '2 lvl Магическая татуировка (2 lvl Create Magic Tattoo)':1,
         '2 lvl Восстановить предмет (4 lvl Rebirth of Iron)':1,
         '2 lvl Подавить магию предмета (2 lvl Suppress Magic)':1,
@@ -153,6 +154,7 @@ metadict_detail['Заклинания волшебников 2 lvl'] = {
         '2 lvl Сигнализация (2 lvl Alarm, Greater, 2 lvl Portal Alarm)':1,
         '2 lvl Усиление слуха (2 lvl Listening Lorecall)':1,
         '2 lvl Усиление ценой рога (2 lvl Suffer the Flesh)':1,
+        '2 lvl Отразить переходом (2 lvl Deflect)':1,
         '2 lvl Видеть незримое (2 lvl See Invisibility)':1,
         '2 lvl Поисковая метка (2 lvl Marked Object)':1,
         '2 lvl Найти помеченный объект (2 lvl Locate Object)':1,
@@ -172,6 +174,7 @@ metadict_detail['Заклинания волшебников 2 lvl'] = {
         '2 lvl Рассекающие нити (2 lvl Scourge of Force, 4 lvl Bloodbriars, 5 lvl Streamers)':1,
         '2 lvl Раскалённые нити (4 lvl Bright Worms, 4 lvl Flame Whips)':1,
         '2 lvl Раскалённая стрела (3 lvl Flame Arrow)':1,
+        '2 lvl Направленный взрыв (2 lvl Blast of Force, 5 lvl Channeled Sound Blast)':1,
         '2 lvl Огненная сфера (2 lvl flaming sphere, 4 lvl Channeled Pyroburst)':1,
         '2 lvl Коррозия металла (3 lvl Rust Ray, 4 lvl Ghorus Toth\'s Metal Melt)':1,
         '2 lvl Оглушающая вспышка (3 lvl Great Thunderclap)':1,
@@ -197,9 +200,9 @@ metadict_detail['Заклинания волшебников 3 lvl'] = {
         '3 lvl Ближний переход (2 lvl Dimension Leap, 3 lvl Dimension Step)':1,
         '3 lvl Контрзаклинание (3 lvl Stifle Spell, 4 lvl Spell Snare)':1,
         '3 lvl Развеять магию (3 lvl Dispel Magic, 3 lvl Tenacious Dispelling)':1,
-        '3 lvl Отразить переходом (2 lvl Deflect, 5 lvl Etherealness, Swift)':1,
         '3 lvl Пополнить энергию из щита (3 lvl Siphon)':1,
-        '3 lvl Рассеивание энергии (3 lvl Protection from Energy, 5 lvl Energy Buffer)':1,
+        '3 lvl Защита от энергии (3 lvl Protection from Energy)':1,
+        '3 lvl Мгновенная защита от энергии (3 lvl Energy Aegis)':1,
         '3 lvl Изолирующая мантия (3 lvl Ilyykur\'s Mantle)':1,
         '3 lvl Укрепить предмет (3 lvl Augment Object, 3 lvl Diamondsteel)':1,
         '3 lvl Сфера невидимости (3 lvl Invisibility Sphere)':1,
@@ -212,7 +215,6 @@ metadict_detail['Заклинания волшебников 3 lvl'] = {
         '3 lvl Иллюзия стены (4 lvl Illusory Wall)':1,
         '3 lvl Запутывающая иллюзия (2 lvl Vertigo Field)':1,
         '3 lvl Спрятаться от дракона (3 lvl Hide From Dragons, 7 lvl Hide from Dragons)':1,
-        '3 lvl Направленный взрыв (2 lvl Blast of Force, 5 lvl Channeled Sound Blast)':1,
         '3 lvl Резонансный взрыв (3 lvl Resonating Bolt, 3 lvl Rockburst)':1,
         '3 lvl Разрушить изнутри (4 lvl Finger of Agony)':1,
         '3 lvl Вихрь магических стрел (3 lvl Chain Missile, 3 lvl Stars of Arvandor)':1,
@@ -230,7 +232,6 @@ metadict_detail['Заклинания волшебников 4 lvl'] = {
         '4 lvl Перестановка с иллюзией (4 lvl Halaster\'s Image Swap)':1,
         '4 lvl Летающий диск (4 Floating Disk, Greater)':1,
         '4 lvl Создать ловушку (3 lvl Glyph of Warding, 4 lvl Fire Trap)':1,
-        '4 lvl Создать каменный голем (7 lvl Changestones)':1,
         '4 lvl Магический глаз (4 lvl Arcane Eye, 6 lvl Eye of Stone)':1,
         '4 lvl Метка наблюдения (5 lvl Watchware, 7 lvl Gem Tracer)':1,
         '4 lvl Зеракало связи (4 lvl Mirror Sending)':1,
@@ -249,7 +250,7 @@ metadict_detail['Заклинания волшебников 4 lvl'] = {
         '4 lvl Подавление магии создания (3 lvl Invoke the Cerulean Sign)':1,
         '4 lvl Защитная сфера антимагии (4 lvl Globe of Invulnerability, Lesser)':1,
         '4 lvl Каскад заклинаний (4 lvl Rary\'s Mnemonic Enhancer)':1,
-        '4 lvl Усиленное щитом заклинание (4 lvl Mystic Surge)':1,
+        '4 lvl Усиленное щитом заклинание (4 lvl Mystic Surge, 4 lvl Spell Enhancer)':1,
         '4 lvl Ослабление магической защиты (4 lvl Enervation, 4 lvl Lower Spell Resistance)':1,
         '4 lvl Магнитное кольцо (6 lvl Ghorus Toth\'s Magnetism, 7 lvl Reverse Gravity)':1,
         '4 lvl Невидимость (4 Invisibility, Greater, 4 Improved Invisibility)':1,
@@ -283,6 +284,7 @@ metadict_detail['Заклинания волшебников 5 lvl'] = {
         # Мастера магии 9-10 уровней -- несколько сотен:
         # Контроль. Подавление младших заклинаний, управление магией мира: воздуха, земли, воды.
         '5 lvl Дальний переход (4 lvl Dimension Door, 5 lvl Teleport)':1,
+        '5 lvl Мгновенно переместить другого (5 lvl Etherealness, Swift)':1,
         '5 lvl Мгновенный переход (5 lvl Blink, Improved, 5 lvl Dimension Jumper)':1,
         '5 lvl Изменить портал (4 lvl Scramble Portal, 6 lvl Seal Portal)':1,
         '5 lvl Создать подобие себя (4 lvl Create Fetch)':1,
@@ -290,7 +292,7 @@ metadict_detail['Заклинания волшебников 5 lvl'] = {
         '5 lvl Создать грань огромного щита (5 lvl Wall of Force)':1,
         '5 lvl Сконцентрированное заклинание (5 lvl Aiming At the Target)':1,
         '5 lvl Хранилище заклинаний (5 lvl Simbul\'s Spell Matrix, 7 lvl Simbul\'s Spell Sequencer)':1,
-        '5 lvl Совершенное рассеивание энергии (6 lvl Protection from All Elements)':1,
+        '5 lvl Рассеивание энергии (5 lvl Energy Buffer)':1,
         '5 lvl Маскировка места (4 lvl Mordenkainen\'s Private Sanctum, 8 lvl Screen)':1,
         '5 lvl Масштабная маскировка от заклинаний (5 lvl False Vision, 5 lvl Disguise Ship)':1,
         '5 lvl Множественная иллюзия (4 lvl Mirror Image, Greater, 4 lvl Phantom Battle)':1,
@@ -333,7 +335,7 @@ metadict_detail['Заклинания волшебников 6 lvl'] = {
         '6 lvl Переход для предмета (7 lvl Teleport Object)':1,
         '6 lvl Взгляд за сотни миль (6 lvl Scry Location)':1,
         '6 lvl Взгляд истины (6 lvl True Seeing)':1,
-        '6 lvl Исследовать окружение (6 lvl Analyze Dweomer)':1,
+        '6 lvl Исследовать магию врага (6 lvl Analyze Dweomer)':1,
         '6 lvl Исследовать портал (6 lvl Anticipate Teleportation, Greater)':1,
         '6 lvl Сохранить заклинание в диске (6 lvl Shalantha\'s Delicate Disk)':1,
         '6 lvl Камень в песок (5 lvl Transmute Rock to Sand)':1,
@@ -383,8 +385,9 @@ metadict_detail['Заклинания волшебников 7 lvl'] = {
         '7 lvl Постоянное заклинание (5 lvl Permanency)':1,
         '7 lvl Постоянные волшебные крылья (5 lvl Overland Flight)':1,
         '7 lvl Оживить предмет (3 lvl Animate Weapon, 3 lvl Steeldance, 5 lvl Minor Servitor)':1,
-        '7 lvl Подчинить тело другого (8 lvl Otto\'s Irresistible Dance)':1,
         '7 lvl Призвать оживлённый предмет (7 lvl Drawmij\'s Instant Summons)':1,
+        '7 lvl Создать каменный голем (7 lvl Changestones)':1,
+        '7 lvl Подчинить тело другого (8 lvl Otto\'s Irresistible Dance)':1,
         '7 lvl Касание живого пламени (7 lvl Emerald Flame Fist, 7 lvl Scalding Touch)':1,
         '7 lvl Ищущий огненный шар (7 lvl Delayed Blast Fireball)':1,
         '7 lvl Кольцо молний (8 lvl Lightning Ring)':1,
@@ -419,7 +422,7 @@ metadict_detail['Заклинания волшебников 9 lvl'] = {
         '9 lvl Мгновенный дальний переход (9 lvl Dimension Jumper, Greater)':1,
         '9 lvl Подготовленный мгновенный переход (9 lvl Instant Refuge)':1,
         '9 lvl Познать увиденное заклинание (9 lvl Alamanther\'s Return)':1,
-        '9 lvl Цепь заклинаний (5 lvl Contingency, 9 lvl Chain Contingency)':1,
+        '9 lvl Подготовленное заклинание (5 lvl Contingency, 9 lvl Chain Contingency)':1,
         '9 lvl Поглотители магии (9 lvl Elminster\'s Effulgent Epuration)':1,
         '9 lvl Неизбежное копыто Бигби (9 lvl Bigby\'s Crushing Hand)':1,
         '9 lvl Паутина неснимаемых нитей (9 lvl Binding Chain of Fate)':1,
@@ -428,7 +431,7 @@ metadict_detail['Заклинания волшебников 9 lvl'] = {
         '9 lvl Оживить камень (9 lvl Awaken Construct)':1,
         }
 
-# ----
+## ----
 # Заклинания аликорнов:
 # Старомодные, позабытые, запрещённые.
 
@@ -681,8 +684,8 @@ metadict_detail['Заклинания аликорнов 9 lvl'] = {
         '9 lvl Освободить (9 lvl Freedom)':1,
         }
 
-# ----
-# Заклинания восточных пони, киринов и водных драконов.
+## ----
+# Заклинания эглан, киринов и водных драконов.
 # Магия друидов, клериков, немного некромантии и скорее эффектные, чем эффективные боевые заклинания.
 
 metadict_detail['Заклинания Эглан 0 lvl'] = {
@@ -921,7 +924,7 @@ metadict_detail['Заклинания Эглан 9 lvl'] = {
         '9 lvl Ослабить душу (9 lvl Energy Drain)':1,
         }
 
-# ----
+## ----
 # Правила восстановления заклинаний:
 # Это главное отличие от системы D&D. Там, чтобы восстановить использованное заклинание, волшебник должен отдохнуть положенные несколько часов, а волшебной единорожке нужно всего лишь несколько секунд/минут покоя.
 # Восстановление заклинания (раундов медитации):
@@ -957,7 +960,7 @@ metadict_detail['Восстановление заклинаний (раундо
         '9 lvl (заклинания) (восстановление/раундов)':1,
         }
 
-# ----
+## ----
 # Постоянные заклинания (ослабляют концетрацию):
 # Единорожка может здорово обкастоваться, но толкни такую -- пискнет, и вся защита развалится.
 
@@ -1023,10 +1026,10 @@ metadict_army['-=2 lvl Ускорение нейрометаболизма (2 lv
         '=- Активные заклинания':+1,
         }
 
-metadict_detail['-=2 lvl Защитная сфера-накопитель (2 lvl Resist Energy, 3 lvl Energy Aegis)'] = {
+metadict_detail['-=2 lvl Защитная сфера-накопитель (2 lvl Resist Energy)'] = {
         # https://dndtools.net/spells/players-handbook-v35--6/resist-energy--2357/
         # https://dndtools.net/spells/players-handbook-ii--80/energy-aegis--2910/
-        '=2 lvl Защитная сфера-накопитель (2 lvl Resist Energy, 3 lvl Energy Aegis)':1,
+        '=2 lvl Защитная сфера-накопитель (2 lvl Resist Energy)':1,
         '-= Навык (Концентрация) (Active Spells)':-(1 + 2),
         '---Сопротивляемость огню (Resistance, fire)':+10,
         '---Сопротивляемость холоду (Resistance, cold)':+10,
@@ -1083,9 +1086,10 @@ metadict_army['-=4 lvl Щит антимагии (4 lvl Otiluke\'s Dispelling Sc
         '=- Активные заклинания':+1,
         }
 
-metadict_army['-=5 lvl Совершенное рассеивание энергии (6 lvl Protection from All Elements)'] = {
+metadict_army['-=5 lvl Рассеивание энергии (5 lvl Energy Buffer)'] = {
         # https://dndtools.net/spells/masters-of-the-wild-a-guidebook-to-barbarians-druids-and-rangers--44/protection-from-all-elements--1877/
-        '=5 lvl Совершенное рассеивание энергии (6 lvl Protection from All Elements)':1,
+        # https://dndtools.net/spells/tome-and-blood-a-guidebook-to-wizards-and-sorcerers--51/energy-buffer--3378/
+        '=5 lvl Рассеивание энергии (5 lvl Energy Buffer)':1,
         '-= Навык (Концентрация) (Active Spells)':-(1 + 5),
         '---Сопротивляемость огню (Resistance, fire)':+20,
         '---Сопротивляемость холоду (Resistance, cold)':+20,
