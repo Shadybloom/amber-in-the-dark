@@ -3,10 +3,15 @@
     # https://dndtools.net/spells/
     # http://www.d20srd.org/indexes/spells.htm
     # https://www.dnd-spells.com/spells
+    # https://www.dandwiki.com/wiki/3.5e_Spells
+    # https://www.dandwiki.com/wiki/3.5e_Sorcerer/Wizard_Spells
+    # https://www.dandwiki.com/wiki/5e_Sorcerer_Spells
+    # https://www.dandwiki.com/wiki/SRD:Divine_Abilities
 
 ## ----
 # Сила рога и заклинания:
     # Вот, например, «ударная волна» в исполнении типичнейшей чародейки 1 lvl:
+    # https://www.dandwiki.com/wiki/Sonic_Marble_(3.5e_Spell)
     # Сфера радиусом — 0.05 метра (с копыто)
         # Объём: 4*(3.14159265*0.05^3)/3 = 0.0052 м³,
         # Плотность воздуха — 1.225 кг/кубометр
@@ -84,18 +89,27 @@ metadict_detail['Заклинания волшебников 0 lvl'] = {
         # Простые единороги -- миллионы их:
         # Энергия. Электричество рога, тепловой насос, углеродные мембраны и магнитная левитация.
         #'0 lvl Создать материал из угля (???)':1,
-        '0 lvl Левитация предмета (0 lvl Mage Hand, 5 lvl Telekinesis)':1,
+        '0 lvl Левитация предмета (0 lvl Mage Hand, 0 lvl Rock Throw, 5 lvl Telekinesis)':1,
         '0 lvl Оттолкнуть (2 lvl Bigby\'s Striking Fist)':1,
-        '0 lvl Вспышка (0 lvl Flare)':1,
         '0 lvl Светлячок (0 lvl Dancing Lights)':1,
-        '0 lvl Ударная волна (3 lvl Shockwave, 4 lvl Force Orb)':1,
+        '0 lvl Волшебные галоши (0 lvl Gloves)':1,
+        '0 lvl Вспышка (0 lvl Flare, 0 lvl Apprentice\' Fireball)':1,
+        '0 lvl Ударная волна (0 lvl Sonic Marble, 3 lvl Shockwave, 4 lvl Force Orb)':1,
         '0 lvl Дисковой щит (1 lvl Shield, 3 lvl Repelling Shield)':1,
         '0 lvl Шоковое касание (1 lvl Shocking Grasp, 5 lvl Storm Touch)':1,
+        '0 lvl Электростатическое поле (0 lvl Zap, 0 lvl Static Field, Lesser)':1,
         '0 lvl Поиск магии (0 lvl Detect Magic)':1,
         '0 lvl Прочесть магию (0 lvl Read Magic)':1,
+        '0 lvl Обнаружить пауков (0 lvl Sense Spiders)':1,
+        '0 lvl Обнаружить болезнь (0 lvl Detect Disease)':1,
         '0 lvl Склеить предмет (0 lvl Mending)':1,
+        '0 lvl Тишина (0 lvl Silent Gateway)':1,
+        '0 lvl Изменить голос (0 lvl Sweet Talk)':1,
         '0 lvl Голосовое послание (0 lvl Message)':1,
+        '0 lvl Направленный звук (0 lvl Sonic Beam)':1,
         '0 lvl Магическая надпись (0 lvl Arcane Mark)':1,
+        '0 lvl Невидимые чернила (0 lvl Azore\'s Invisible Ink)':1,
+        '0 lvl Говорящая книга (0 lvl Azore\'s Speaking Tome)':1,
         }
 
 metadict_detail['Заклинания волшебников 1 lvl'] = {
@@ -107,10 +121,13 @@ metadict_detail['Заклинания волшебников 1 lvl'] = {
         #'1 lvl Создать композит (1 lvl Summon Component, 5 lvl Major Creation)':1,
         '1 lvl Живая верёвка (1 lvl Animate Rope)':1,
         '1 lvl Создать палатку (3 lvl Leomund\'s Tiny Hut)':1,
+        '1 lvl Крепкая шкура (1 lvl Force Skin)':1,
         '1 lvl Доспехи мага (1 lvl Mage Armor, 3 lvl Golden Dragonmail)':1,
         '1 lvl Создать одежду (2 lvl Clothier\'s Closet)':1,
+        '1 lvl Быстрая перевязка (1 lvl Snaking Bandage)':1,
         '1 lvl Починить предмет (1 lvl Repair Light Damage)':1,
-        '1 lvl Защитная сфера (2 lvl Resist Energy, 2 lvl Protection from Arrows)':1,
+        '1 lvl Скопировать текст (1 lvl Randal\'s Quick Copy)':1,
+        '1 lvl Защитная сфера (2 lvl Resist Energy, 2 lvl Protection from Arrows, 3 lvl Barrier)':1,
         '1 lvl Удушающая сфера (2 lvl Choke)':1,
         '1 lvl Раскалить сферу (4 lvl Balor Nimbus, 5 lvl Shroud of Flame)':1,
         '1 lvl Зарядить сферу (2 lvl Electric Vengeance)':1,
@@ -121,7 +138,10 @@ metadict_detail['Заклинания волшебников 1 lvl'] = {
         '1 lvl Мост из нитей (2 lvl Dark Way, 2 lvl Force Ladder)':1,
         '1 lvl Запирание нитью (2 lvl Arcane Lock, 1 lvl Hold Portal)':1,
         '1 lvl Отпирание нитью (2 lvl Knock)':1,
+        '1 lvl Тепловидение (1 lvl Detect Heat)':1,
         '1 lvl Сумеречное зрение (1 lvl Low-light Vision)':1,
+        '1 lvl Определить силу (1 lvl Detect Power Level)':1,
+        '1 lvl Определить родство (1 lvl Detect Parentage)':1,
         '1 lvl Ходьба по облакам (4 lvl Air Walk)':1,
         '1 lvl Облако частиц (2 lvl Glitterdust, 2 lvl Luminous Swarm)':1,
         '1 lvl Облако сияющих частиц (4 lvl Radiant Fog, 4 lvl Sparkles)':1,
@@ -130,6 +150,7 @@ metadict_detail['Заклинания волшебников 1 lvl'] = {
         '1 lvl Луч наведения (1 lvl Targeting Ray)':1,
         '1 lvl Магическая стрела (1 lvl Mage Arrow)':1,
         '1 lvl Магическое лезвие (1 lvl Persistent Blade, 2 lvl Cloud of Knives)':1,
+        '1 lvl Пробивающая стрела (1 lvl Eonwe\'s Magic Bunker Buster)':1,
         '1 lvl Молния вблизи (2 lvl Seeking Ray, 2 lvl Witch Bolt)':1,
         }
 
@@ -342,7 +363,7 @@ metadict_detail['Заклинания волшебников 6 lvl'] = {
         '6 lvl Камень в стекло (3 lvl Clearstone, 5 lvl Transmute Rock to Glass)':1,
         '6 lvl Живого в стекло (6 lvl Dhulark\'s Glasstrike, 6 lvl Trobriand\'s Glassee)':1,
         '6 lvl Стена развеивания магии (5 lvl Wall of Dispel Magic, 8 lvl Wall of Greater Dispel Magic)':1,
-        '6 lvl Сфера неуязвимости (6 lvl Globe of Invulnerability, 6 lvl Starmantle)':1,
+        '6 lvl Сфера неуязвимости (6 lvl Globe of Invulnerability, 6 lvl Starmantle, 6 lvl Forcefield)':1,
         '6 lvl Сковывающая защита разума (5 lvl Imprison Possessor)':1,
         '6 lvl Настраиваемая иллюзия (6 lvl Programmed Image)':1,
         '6 lvl Зачаровывающая иллюзия (4 lvl Rainbow Pattern, 4 lvl Trance of the Verdant Domain)':1,
@@ -440,7 +461,7 @@ metadict_detail['Заклинания аликорнов 0 lvl'] = {
 
 metadict_detail['Заклинания аликорнов 1 lvl'] = {
         '1 lvl Опознание (1 lvl Identify)':1,
-        '1 lvl Мгновенное чтение (1 lvl Scholar\'s Touch)':1,
+        '1 lvl Мгновенное чтение (1 lvl Scholar\'s Touch, 1 lvl Student\'s Boon)':1,
         '1 lvl Подавление (1 lvl Whelm, 2 lVl Whelming Blast)':1,
         '1 lvl Шёпот сна (1 lvl Sleep, 7 lvl Hiss of Sleep)':1,
         '1 lvl Управление снами (2 lvl Dream Lock)':1,
@@ -636,7 +657,7 @@ metadict_detail['Заклинания аликорнов 7 lvl'] = {
         '7 lvl Похитить способность (7 lvl Ability Rip)':1,
         '7 lvl Запереть в стазисе (7 lvl Amber Sarcophagus, 8 lvl Temporal Stasis)':1,
         '7 lvl Адамантиновые крылья (7 lvl Adamantine Wings)':1,
-        '7 lvl Невидимость амрии (7 lvl Invisibility, Mass)':1,
+        '7 lvl Невидимость армии (7 lvl Invisibility, Mass)':1,
         '7 lvl Щит архонтов (7 lvl Shield of the Archons)':1,
         '7 lvl Щит поглощения энергии (7 lvl Energy Absorption)':1,
         '7 lvl Исполнить ограниченное желание (7 lvl Limited Wish)':1,
@@ -660,7 +681,7 @@ metadict_detail['Заклинания аликорнов 8 lvl'] = {
         '8 lvl Создать совершенный конструкт (8 lvl Conjure Greater Midnight Construct)':1,
         '8 lvl Превратить в бесформенного (8 lvl Simbul\'s Skeletal Deliquescence)':1,
         '8 lvl Превратить любого в любое (8 lvl Polymorph Any Object)':1,
-        '8 lvl Похитить силу немёртвого (8 lvl Leech Undeath)':1,
+        '8 lvl Похитить силу немёртвого (8 lvl Leech Undead)':1,
         '8 lvl Похитить силу живого (8 lvl Steal Life)':1,
         '8 lvl Иссушить местность (8 lvl Horrid Wilting)':1,
         '8 lvl Путешествие через сны (8 lvl Dream Travel)':1,
@@ -697,33 +718,80 @@ metadict_detail['Заклинания Эглан 0 lvl'] = {
         '0 lvl Очистить пищу или воду (0 lvl Purify Food and Drink)':1,
         '0 lvl Вылечить царапину (0 lvl Cure Minor Wounds)':1,
         '0 lvl Компас (0 lvl Know Direction)':1,
+        '0 lvl Ослабление атак (0 lvl Blade Ward)':1,
         '0 lvl Сопротивляемость (0 lvl Resistance)':1,
         '0 lvl Руководство духа (0 lvl Guidance)':1,
+        '0 lvl Касание усталости (0 lvl Touch of Fatigue)':1,
+        '0 lvl Разрушить немёртвого (0 lvl Disrupt Undead)':1,
         }
 
 metadict_detail['Заклинания Эглан 1 lvl'] = {
+        # https://www.dandwiki.com/wiki/Ell%27s_Handy_Homunculus_(3.5e_Spell)
+        '1 lvl Спаси-котик (1 lvl Safecat Homunculus)':1,
+        '1 lvl Лев-художник (1 lvl Doodle Homunculus)':1,
+        '1 lvl Птичка-певец (1 lvl Songbird Homunculus)':1,
+        '1 lvl Кроль-посланник (1 lvl Speaker Homunculus)':1,
+        '1 lvl Лампа-медуза (1 lvl Spritelight Homunculus)':1,
+        '1 lvl Осьминог-хвататель (1 lvl Grabby Homunculus)':1,
+        '1 lvl Жук-искатель-магии (1 lvl Spellshine Homunculus)':1,
+        '1 lvl Черепашка-кондиционер (1 lvl Humidifier Homunculus)':1,
+        '1 lvl Дракончик-обогреватель (1 lvl Flaredrake Homunculus)':1,
+        '1 lvl Ползун-уборщик (1 lvl Scrubber Homunculus)':1,
+        '1 lvl Обезьянка-писец (1 lvl Kopi Homunculus)':1,
+        '1 lvl Обезьянка-мастеровой (1 lvl Stitcher Homunculus)':1,
+        '1 lvl Пингвин-холодильник (1 lvl Cooler Homunculus)':1,
+        '1 lvl Мышь-сортировщик (1 lvl Collector Homunculus)':1,
+        '1 lvl Электромышка (1 lvl Jolt Homunculus)':1,
+        '1 lvl Крыса-повар (1 lvl Chef Homunculus)':1,
+        '1 lvl Ёжик-ёжик (1 lvl Spiky Homunculus)':1,
+        '1 lvl Деревянный скрытник (1 lvl Beget Bogun)':1,
+        '1 lvl Деревянный прислужник (1 lvl Wood Wose)':1,
+        '1 lvl Оживить деревянный предмет (1 lvl Animate Wood)':1,
+        '1 lvl Оживить огонь (1 lvl Animate Fire)':1,
         '1 lvl Слово боли (1 lvl Power Word Pain)':1,
         '1 lvl Слово утомления (1 lvl Power Word Fatigue)':1,
         '1 lvl Успокоить зверя (1 lvl Calm Animals)':1,
         '1 lvl Очаровать зверя (1 lvl Charm Animal)':1,
+        '1 lvl Убрать запах (1 lvl Remove Scent':1,
         '1 lvl Спрятать от зверей (1 lvl Hide from Animals)':1,
         '1 lvl Говорить со зверем (1 lvl Speak With Animals)':1,
         '1 lvl Вылечить лёгкую рану (1 lvl Cure Light Wounds)':1,
-        '1 lvl Найти зверя или растение (1 lvl Detect Animals Or Plants)':1,
+        '1 lvl Найти воду (1 lvl Locate Water)':1,
+        '1 lvl Найти живого (1 lvl Detect Animals Or Plants, 1 lvl Sense Life)':1,
         '1 lvl Найти ловушку (1 lvl Detect Snares and Pits)':1,
         '1 lvl Защита от непогоды (1 lvl Endure Elements)':1,
+        '1 lvl Защита от пламени (1 lvl Aura Against Flame)':1,
         '1 lvl Опутывающая трава (1 lvl Entangle)':1,
+        '1 lvl Дрожащая земля (1 lvl Impeding Stones)':1,
+        '1 lvl Хрустящий снег (1 lvl Crunchy Snow)':1,
+        '1 lvl Лечебный сон (1 lvl Healthful Rest)':1,
+        '1 lvl Быстрое самолечение (1 lvl Vigor, Lesser)':1,
         '1 lvl Превратить ягоды в лечебные (1 lvl Goodberry)':1,
         '1 lvl Зачаровать клыки (1 lvl Magic Fang, 3 lvl Magic Fang, Greater)':1,
         '1 lvl Зачаровать посох/копьё (1 lvl Shillelagh)':1,
         '1 lvl Зачаровать метательные камни (1 lvl Magic Stone)':1,
+        '1 lvl Камуфляж (1 lvl Camouflage)':1,
+        '1 lvl Острый глаз (1 lvl Eyes of the Avoral, 1 lvl Hawkeye)':1,
+        '1 lvl Копыта скалолаза (1 lvl Climb Walls)':1,
+        '1 lvl Задержать болезнь (1 lvl Delay Disease)':1,
+        '1 lvl Восстановить дыхание (1 lvl Deep Breath)':1,
         '1 lvl Камень-вспышка (5 lvl Emerald Burst)':1,
         '1 lvl Скрывающий туман (1 lvl Obscuring Mist, 2 Fog Cloud)':1,
+        '1 lvl Дымная стена (1 lvl Wall of Smoke)':1,
         '1 lvl Путь без препятсвий (1 lvl Pass Without Trace, 1 lvl Surefooted Stride)':1,
+        '1 lvl Крепкая стойка (1 lvl Foundation of Stone)':1,
         '1 lvl Найти быстрый путь (1 lvl Longstrider)':1,
-        '1 lvl Порыв ветра (2 lvl Gust of Wind, 1 lvl Jump)':1,
-        '1 lvl Метательное пламя (1 lvl Produce Flame)':1,
+        '1 lvl Прохладный ветер (1 lvl Darsson\'s Cooling Breeze)':1,
+        '1 lvl Порыв ветра (1 lvl Updraft, 2 lvl Gust of Wind, 3 lvl Favorable Wind)':1,
         '1 lvl Шёпот сна (1 lvl Sleep, 7 lvl Hiss of Sleep)':1,
+        '1 lvl Сформировать снег (1 lvl Snowdrift)':1,
+        '1 lvl Призвать ледяного (1 lvl Conjure Ice Beast I)':1,
+        '1 lvl Призвать дождевое облачко (1 lvl Cloudburst)':1,
+        '1 lvl Призвать молниевое облачко (1 lvl Thunderhead)':1,
+        '1 lvl Метательное пламя (1 lvl Produce Flame)':1,
+        '1 lvl Ослабляющий холод (1 lvl Winter Chill)':1,
+        '1 lvl Песчанный поток (1 lvl Sandblast)':1,
+        '1 lvl Огненное копыто (1 lvl Handfire)':1,
         }
 
 metadict_detail['Заклинания Эглан 2 lvl'] = {
@@ -754,6 +822,7 @@ metadict_detail['Заклинания Эглан 2 lvl'] = {
         '2 lvl Призвать рой насекомых (2 lvl Summon Swarm)':1,
         '2 lvl Призвать долгое пламя (2 lvl Continual Flame)':1,
         '2 lvl Призвать живой туман (3 lvl Prismatic Mist)':1,
+        '2 lvl Ловушка живых стрел (2 lvl Cordon of Arrows)':1,
         '2 lvl Огненная ловушка (2 lvl Fire Trap)':1,
         }
 
