@@ -11,15 +11,15 @@
 Начались помехи. Квинта включает рацию, готовится передавать, а с той стороны как заорёт:
 
 <span align="center"><em>
-Equestria, the land I love
-A land of harmony
-Our flag does wave from high above
-For ponykind to see
+Equestria, the land I love  
+A land of harmony  
+Our flag does wave from high above  
+For ponykind to see  
 
-Equestria, a land of friends
-Where ponykind do roam
-They say true friendship never ends
-Equestria, my home
+Equestria, a land of friends  
+Where ponykind do roam  
+They say true friendship never ends  
+Equestria, my home  
 </em></span>
 
 Да таким похожим на её собственный голосом, что в первый раз Квинта просто оледенела. Пришлось долго успокаивать, угощать солёной пшеничной соломкой, тыкаться носом в лицо. Не то, чтобы сестрёнка стала такой уж пугливой, просто боялись все.
