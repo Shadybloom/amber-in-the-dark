@@ -2,7 +2,7 @@
 
 ## Карта
 
-![Карточка Кумо](/images/maps/ch03.png)
+![Карточка Кумо](/misc/ponykapi/images/maps/ch03.png)
 
 ### Сцена
 

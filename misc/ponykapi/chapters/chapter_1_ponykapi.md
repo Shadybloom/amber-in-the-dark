@@ -2,7 +2,7 @@
 
 ## Карта
 
-![Карточка Джины](/images/maps/ch01.png)
+![Карточка Джины](/misc/ponykapi/images/maps/ch01.png)
 
 ### Сцена
 
