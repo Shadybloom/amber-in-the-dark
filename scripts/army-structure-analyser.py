@@ -34,10 +34,6 @@ NUMBER = 1
 # Глубина исследования:
 DEPTH = 99
 # Словарь исполняемых в выводе выражений:
-    # Например, таких:
-    #'|----Обжитые земли (квадратный километр)':1,
-    #'|----Обжитые земли (радиус, километров)':'(x / 3.14159265) ** (1/2)',
-    # Сначала вычисляется x, затем в вывод попадает решение уравнения:
 dict_math = {}
 
 #-------------------------------------------------------------------------
@@ -65,6 +61,10 @@ def create_parser():
     parser.add_argument('-e', '--except',
                         action='store', dest='exc', type=str, nargs='*',
                         help='Искать в составе отряда (строка в "кавычках")'
+                        )
+    parser.add_argument('-E', '--except-cut',
+                        action='store', dest='cut', type=str, nargs='*',
+                        help='Отсечь поисковую выборку (строка в "кавычках")'
                         )
     parser.add_argument('-s', '--short',
                         action='store_true', default='False',
@@ -127,6 +127,22 @@ def key_search (search_string, dict):
         squad = search_string
         print('-----------------------------------------------------')
     return squad
+
+def key_search_list (search_string, dict):
+    """Возвращает срез ключей словаря по регулярному выражению."""
+    # Создаётся регистронезависимая поисковая строка:
+    p = re.compile(search_string, re.I)
+    # Создаём словарь совпадений:
+    list_found = []
+    # Поиск в словаре:
+    for line in sorted(dict.keys()):
+        if p.findall(line):
+            list_found.append(line)
+    if not list_found:
+        print('---Совпадений не найдено, нет ключей для --cut', search_string)
+        exit(0)
+    else:
+        return list_found
 
 def bfd(vertex, number, dict_crew, metadict_army):
     """Обработка иерархической базы данных, функция обхода в ширину."""
@@ -283,6 +299,18 @@ if namespace.exc:
         squad_except = key_search(squad_except, metadict_army)
 else:
     squad_except = None
+
+# Исключаем (выделяем) указанный объект из словаря:
+if namespace.cut and not namespace.exc:
+    squad_cut = ' '.join(namespace.cut)
+    # Если название неточное, срабатывает встроенный поисковик:
+    if squad_cut not in metadict_army.keys():
+        squad_cut_list = key_search_list(squad_cut, metadict_army)
+        for key in squad_cut_list:
+            if key in metadict_army:
+                metadict_army.pop(key)
+else:
+    squad_cut_list = None
 
 # Проверка, указана ли глубина исследования:
 if namespace.depth != None:
