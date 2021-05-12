@@ -33,6 +33,12 @@ SQUAD = ''
 NUMBER = 1
 # Глубина исследования:
 DEPTH = 99
+# Словарь исполняемых в выводе выражений:
+    # Например, таких:
+    #'|----Обжитые земли (квадратный километр)':1,
+    #'|----Обжитые земли (радиус, километров)':'(x / 3.14159265) ** (1/2)',
+    # Сначала вычисляется x, затем в вывод попадает решение уравнения:
+dict_math = {}
 
 #-------------------------------------------------------------------------
 # Аргументы командной строки:
@@ -130,7 +136,17 @@ def bfd(vertex, number, dict_crew, metadict_army):
         # Определяется состав объекта:
         for key,value in sorted(metadict_army[vertex].items()):
             #print ('        key:', key, value)
+            if type(value) == str and 'x' in value:
+                dict_math[key] = value
+                value = 1
+            elif type(value) == list:
+                dict_math[key] = value
+                value = 1
+            elif type(value) == str and 'x' not in value:
+                print('Ошибка. type(value) == str', key)
+                continue
             if vertex in dict_crew:
+                #print(value, dict_crew[vertex])
                 value = value * dict_crew[vertex]
             else:
                 value = value * number
@@ -148,6 +164,62 @@ def bfd(vertex, number, dict_crew, metadict_army):
             dict_crew[vertex] = dict_crew[vertex] + number
         else:
             dict_crew[vertex] = number
+
+def value_replace(value, math_value, dict_crew_all):
+    """Вычисления с переменными в выводе данных."""
+    if type(math_value) == str:
+        # Можно записать так:
+        #'|----Обжитые земли (квадратный километр)':1 / 100,
+        #'|----Обжитые земли (радиус, километр)':'(x / 100 / 3.14159265) ** (1/2)',
+        # Тогда будет подмена x из значения
+        math_value = math_value.replace('x', str(value))
+        result = eval(math_value)
+    elif len(math_value) == 2:
+        # Или используя list;
+        #'Обжитые земли (радиус, километр)':[
+        #    '(x / 3.14159265) ** (1/2)',
+        #    'Обжитые земли (квадратный километр)'],
+        x = dict_crew_all.get(math_value[1], 1)
+        math_value = math_value[0]
+        math_value = math_value.replace('x', str(x))
+        # Можно использовать ключевое слово "value":
+        # metadict_detail['--Бедняки'] = {
+        #         # Процент бедняков от численности населения:
+        #         '+++- Бедняки (%)':[
+        #             '(value / x) * 100',
+        #             '++++ Население',
+        #             ],
+        #         }
+        if 'value' in math_value:
+            math_value = math_value.replace('value', str(value))
+        result = eval(math_value)
+    elif len(math_value) == 3:
+        # Две переменные в списке:
+        x = dict_crew_all.get(math_value[1], 1)
+        y = dict_crew_all.get(math_value[2], 1)
+        math_value = math_value[0]
+        if 'x' in math_value:
+            math_value = math_value.replace('x', str(x))
+        if 'y' in math_value:
+            math_value = math_value.replace('y', str(y))
+        result = eval(math_value)
+    elif len(math_value) >= 4:
+        # Три переменные в списке:
+        x = dict_crew_all.get(math_value[1], 1)
+        y = dict_crew_all.get(math_value[2], 1)
+        z = dict_crew_all.get(math_value[3], 1)
+        math_value = math_value[0]
+        if 'x' in math_value:
+            math_value = math_value.replace('x', str(x))
+        if 'y' in math_value:
+            math_value = math_value.replace('y', str(y))
+        if 'z' in math_value:
+            math_value = math_value.replace('z', str(z))
+        result = eval(math_value)
+    else:
+        print('Ошибка в value_replace: ', value, math_value)
+        result = 0
+    return result
 
 #-------------------------------------------------------------------------
 # Обработка аргументов командной строки:
@@ -225,6 +297,9 @@ else:
 # Рабочий словарь:
 dict_crew = {}
 
+# Рабочий словарь с бэкапом наибольших значений:
+dict_crew_all = {}
+
 # Многоуровневый обход в ширину:
 if depth == 0:
     for key,value in sorted(metadict_army[squad].items()):
@@ -249,22 +324,37 @@ else:
                 # Функция извлекает состав объекта:
                 bfd(key, value, dict_crew, metadict_army)
                 # Удаляется обработанный объект из словаря:
-                dict_crew.pop(key)
+                value_backup = dict_crew.pop(key)
+                # Сохраняем наибольшие значения в бэкапе:
+                if key not in dict_crew_all:
+                    dict_crew_all[key] = value_backup
+                elif key in dict_crew_all\
+                        and type(dict_crew_all[key]) == float:
+                    dict_crew_all[key] += value_backup
                 #print ('    dict:', dict_crew)
         cycles -= 1
         depth -= 1
 
 
 # Ищем самый длинный ключ в словаре:
-longest_key=max(map(len, dict_crew))
+if len(dict_crew) > 0:
+    longest_key=max(map(len, dict_crew))
+
+# Пополнение словаря бэкапа данными из вывода:
+for key,value in sorted(dict_crew.items()):
+    dict_crew_all[key] = value
 
 # Вывод данных:
 if namespace.exc:
     value = dict_crew.pop(squad_except, 0)
+    if squad_except in dict_math.keys():
+        value = value_replace(value, dict_math[squad_except], dict_crew_all)
     #print(squad_except, round(value))
     print ('{0:.<{width}} | {1:0,}'.format(squad_except, round(value), width=longest_key))
 else:
     for key,value in sorted(dict_crew.items()):
+        if len(dict_math) > 0:
+            for math_key,math_value in dict_math.items():
+                if math_key == key:
+                    value = value_replace(value, math_value, dict_crew_all)
         print ('{0:.<{width}} | {1:0,}'.format(key, round(value), width=longest_key))
-        #print(key, round(value))
-        #print(key)
