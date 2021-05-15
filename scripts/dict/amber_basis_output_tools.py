@@ -73,6 +73,9 @@ metadict_detail['|Деревянное ведро (10 литров)'] = {
 metadict_detail['|Диван'] = {
         }
 
+metadict_detail['|Лавка'] = {
+        }
+
 metadict_detail['|Долото'] = {
         }
 
@@ -659,6 +662,9 @@ metadict_detail['|Шкаф-гардероб'] = {
 metadict_detail['|Шкаф-стеллаж'] = {
         }
 
+metadict_detail['|Шкаф-стеллаж, книжный'] = {
+        }
+
 metadict_detail['|Шнур причальный (30 метров)'] = {
         }
 
@@ -747,6 +753,9 @@ metadict_detail['|Люк чердачный 1500x800x50 мм'] = {
         }
 
 metadict_detail['|Парта'] = {
+        }
+
+metadict_detail['|Чертёжная доска'] = {
         }
 
 #----
@@ -1225,8 +1234,8 @@ metadict_detail['||Больничное место (койка)'] = {
 metadict_detail['||Больничное место (кабинет)'] = {
         }
 
-metadict_army['||Общежитие (койка)'] = {
+metadict_detail['||Общежитие (койка)'] = {
         }
 
-metadict_army['||Школьное место (парта)'] = {
+metadict_detail['||Школьное место (парта)'] = {
         }
