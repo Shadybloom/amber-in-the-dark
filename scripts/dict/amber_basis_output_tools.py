@@ -226,6 +226,9 @@ metadict_detail['|Коловорот (по металлу)'] = {
 metadict_detail['|Комод'] = {
         }
 
+metadict_detail['|Сундук'] = {
+        }
+
 metadict_detail['|Компрессор винтовой (30 кВт)'] = {
         }
 
@@ -701,7 +704,7 @@ metadict_detail['|Шкаф-гардероб'] = {
 metadict_detail['|Шкаф-стеллаж'] = {
         }
 
-metadict_detail['|Шкаф-стеллаж, книжный'] = {
+metadict_detail['|Шкаф-книжный'] = {
         }
 
 metadict_detail['|Шнур причальный (30 метров)'] = {
