@@ -375,6 +375,8 @@ for key,value in sorted(dict_crew.items()):
 # Вывод данных:
 if namespace.exc:
     value = dict_crew.pop(squad_except, 0)
+    if squad_except in metadict_army[squad]:
+        value = metadict_army[squad][squad_except]
     if squad_except in dict_math.keys():
         value = value_replace(value, dict_math[squad_except], dict_crew_all)
     #print(squad_except, round(value))
