@@ -422,6 +422,14 @@ metadict_detail['|-Груша обыкновенная (Pýrus commúnis)'] = {
         '|--Плодовые деревья':1 / 1.1,
         }
 
+metadict_detail['|-Хурма Эквестрийская (Diospyros Virginiana)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Айва Эквестрийская (Cydōnia Equestriana)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
 metadict_detail['|-Олива Эквестрийская (Olea Equestriana)'] = {
         '|--Плодовые деревья':1 / 1.1,
         }
@@ -431,6 +439,10 @@ metadict_detail['|-Лимон (Cítrus límon)'] = {
         }
 
 metadict_detail['|-Вишня обыкновенная (Prúnus cérasus)'] = {
+        '|--Плодовые деревья':1 / 1.1,
+        }
+
+metadict_detail['|-Черешня (Prúnus ávium)'] = {
         '|--Плодовые деревья':1 / 1.1,
         }
 
