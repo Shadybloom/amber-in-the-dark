@@ -10,6 +10,8 @@ import argparse
 import os
 # Регулярные выражения:
 import re
+# Сортировка вывода:
+from collections import OrderedDict
 
 # Автоматизацией не пренебрегай:
 # _-Смешивание лапши в миске (килограмм)..... | 19
@@ -21,6 +23,8 @@ import re
 # xclip -o | sed "s@# @@" | sed "s@\.* | .*@@gi" | sed "s@\(.*\)@metadict_army['\1'] = {\n        '\1':1,\n        }\n@"
 # Строки из вывод в строки словаря:
 # xclip -o | xclip -o | sed "s@# @@" | sed "s@\.* | .*@@gi" | sed "s@\(.*\)@        '\1':1,@gi"
+# С подстановкой значений:
+# xclip -o | sed "s@# @@" | sed "s@\.* | \(.*\)@:\1,@gi" | sed "s@\(.*\):@        '\1':@gi"
 
 #-------------------------------------------------------------------------
 # Опции:
@@ -73,6 +77,10 @@ def create_parser():
     parser.add_argument('-m', '--model',
                         action='store_true', default='False',
                         help='Моделирование, затраты времени'
+                        )
+    parser.add_argument('-S', '--sort',
+                        action='store_true', default='False',
+                        help='Сортировка вывода по величине'
                         )
     return parser
 
@@ -382,9 +390,17 @@ if namespace.exc:
     #print(squad_except, round(value))
     print ('{0:.<{width}} | {1:0,}'.format(squad_except, round(value), width=longest_key))
 else:
-    for key,value in sorted(dict_crew.items()):
+    if namespace.sort == True:
+        dict_crew = OrderedDict(sorted(dict_crew.items(), key = lambda t: t[1], reverse = True))
+    else:
+        dict_crew = OrderedDict(sorted(dict_crew.items()))
+    for key,value in dict_crew.items():
         if len(dict_math) > 0:
             for math_key,math_value in dict_math.items():
                 if math_key == key:
                     value = value_replace(value, math_value, dict_crew_all)
+        # Пропускаем строки, не относящиеся к срезу через ключ -E
+        # Переводим заглавные буквы в строчные через lower:
+        if namespace.cut and squad_cut.lower() not in key.lower():
+            continue
         print ('{0:.<{width}} | {1:0,}'.format(key, round(value), width=longest_key))
