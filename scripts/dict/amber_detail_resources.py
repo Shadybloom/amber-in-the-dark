@@ -963,6 +963,9 @@ metadict_detail['Кафель (квадратный метр)'] = {
             # https://ru.wikisource.org/wiki/ЭСБЕ/Кафли
             # https://ru.wikisource.org/wiki/ЭСБЕ/Глазурь
             # https://ru.wikisource.org/wiki/ЭСБЕ/Гончарное_производство
+            # http://neufert.totalarch.com:81/ceramic/1
+            # http://neufert.totalarch.com:81/ceramic/2
+            # http://neufert.totalarch.com:81/ceramic/3
         # 45 штук/кв.метр
         '_Производство керамического кафеля (квадратный метр)':1,
         '|=Кафель (тонн)':(45 * 0.36) / 1000,
