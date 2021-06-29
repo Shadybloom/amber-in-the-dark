@@ -70,13 +70,13 @@ def create_parser():
                         action='store', dest='cut', type=str, nargs='*',
                         help='Отсечь поисковую выборку (строка в "кавычках")'
                         )
+    parser.add_argument('-m', '--model',
+                        action='store_true', default='True',
+                        help='Моделирование, затраты времени'
+                        )
     parser.add_argument('-s', '--short',
                         action='store_true', default='False',
                         help='Краткий вывод, обобщение, расчёты'
-                        )
-    parser.add_argument('-m', '--model',
-                        action='store_true', default='False',
-                        help='Моделирование, затраты времени'
                         )
     parser.add_argument('-S', '--sort',
                         action='store_true', default='False',
@@ -276,6 +276,7 @@ if namespace.short is True:
 # Проверка, выбран ли словарь модели (ключ -m --model):
 if namespace.model is True:
     # Объединяем словари
+    metadict_army.update(metadict_detail)
     metadict_army.update(metadict_model)
 
 # Проверка, введено ли название отряда:
@@ -400,7 +401,10 @@ else:
                 if math_key == key:
                     value = value_replace(value, math_value, dict_crew_all)
         # Пропускаем строки, не относящиеся к срезу через ключ -E
-        # Переводим заглавные буквы в строчные через lower:
+        # Для сравнения строк переводим заглавные буквы в строчные через lower:
         if namespace.cut and squad_cut.lower() not in key.lower():
+            continue
+        # Если указан краткий вывод, то отбрасываем нули:
+        if namespace.short is True and value < 1:
             continue
         print ('{0:.<{width}} | {1:0,}'.format(key, round(value), width=longest_key))
