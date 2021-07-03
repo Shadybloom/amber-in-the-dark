@@ -2060,7 +2060,7 @@ metadict_detail['+5 lvl Высшее восстановление (5 lvl Greater
 
 metadict_detail['5 lvl Высшее восстановление (5 lvl Greater_Restoration) (требуется)'] = {
         # 60 минут каста.
-        '-Работа волшебника (2 lvl Lesser_Restoration) (нормо-часов)':60 / 60,
+        '-Работа волшебника (5 lvl Greater_Restoration) (нормо-часов)':60 / 60,
         '-Энергия биосинтеза, заклинания (киловатт-час)':1000 / 60,
         }
 
