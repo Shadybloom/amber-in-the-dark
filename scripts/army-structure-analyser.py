@@ -108,7 +108,8 @@ def find_files (directory):
 
 def key_search (search_string, dict):
     """Поиск нужного объекта в словаре, выбор по списку совпадений."""
-    # Создаётся регистронезависимая поисковая строка:
+    # Создаётся регистронезависимая поисковая строка. Спецсимволы экранируются:
+    search_string = re.escape(search_string)
     p = re.compile(search_string, re.I)
     # Создаём словарь совпадений:
     dict_found = {}
@@ -138,7 +139,8 @@ def key_search (search_string, dict):
 
 def key_search_list (search_string, dict):
     """Возвращает срез ключей словаря по регулярному выражению."""
-    # Создаётся регистронезависимая поисковая строка:
+    # Создаётся регистронезависимая поисковая строка. Спецсимволы экранируются:
+    search_string = re.escape(search_string)
     p = re.compile(search_string, re.I)
     # Создаём словарь совпадений:
     list_found = []
