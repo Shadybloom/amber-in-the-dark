@@ -949,3 +949,24 @@
 Но сегодня, сегодня всё иначе. Переговоры в приграничье — не решение. Селестия ошиблась: не доверилась им, чтобы рассказать; не подготовила страну к возвращению сестры; не собрала свиту, чтобы было кому показать аликорнице изменившийся мир. Не сочла это важным, или не посчитала нужным.
 
 Всё просто: Селестия не нуждалась в почитании. И даже лучшие из нас, бывало, судили всех по себе.
+
+Зато мы — нет. Твайлайт пела с друзьями и улыбалась до ушей.
+
+<span align="center"><h3><a href="/misc/songs/pony_folk_BGM_talknet.flac">Pony Folk</a></h3></span>
+
+<span align="center"><em>
+Oh, the pony folk have a pretty song  
+They sing it while they're marching along.  
+When you come across them coming through,  
+Just give a shout, and they'll hear you!  
+
+And the pony folk got music,  
+And the pony folk got song,  
+And the pony folk got dancing,  
+So come on and dance along!  
+
+Yes the pony folk have goods,  
+And the pony folk have games,  
+Just give them a friendly smile,  
+and you know they'll do the same!  
+</em></span>
