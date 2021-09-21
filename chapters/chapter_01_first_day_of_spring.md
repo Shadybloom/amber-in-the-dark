@@ -952,7 +952,7 @@
 
 Зато мы — нет. Твайлайт пела с друзьями и улыбалась до ушей.
 
-<span align="center"><h3><a href="/misc/songs/pony_folk_BGM_talknet.flac">Pony Folk</a></h3></span>
+<span align="center"><h3><a href="/misc/songs/the_pony_folk_BGM_talknet.flac">The Pony Folk</a></h3></span>
 
 <span align="center"><em>
 Oh, the pony folk have a pretty song  
