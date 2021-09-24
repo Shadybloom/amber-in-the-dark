@@ -392,7 +392,7 @@
 
 Проходили часы, складываясь в сутки. Цикл миновал. Она представляла сестрёнку, которая бы уже давно сорвалась в битву, но сама только водила копытом в илистом потоке, слушая доклады, и напевала любимую колыбельную про себя.
 
-<span align="center"><h3><a href="/misc/songs/complex_numbers_between_the_two_epochs.mp3">Меж двух эпох</a></h3></span>
+<span align="center"><h3><a href="https://raw.githubusercontent.com/Shadybloom/amber-in-the-dark/master/misc/songs/complex_numbers_between_the_two_epochs.mp3">Меж двух эпох</a></h3></span>
 
 <span align="center"><em>
 Пролегла черта, кажется — так близко:  
