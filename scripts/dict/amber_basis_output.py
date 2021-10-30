@@ -118,6 +118,10 @@ metadict_detail['++-- Земнопони'] = {
 # Население (классы):
 
 metadict_detail['--Бедняки'] = {
+        # TODO: сделай вычисление коэффициента Джини (распределения богатства в популяции)
+            # Социум считается нестабильным, если коэффициент Джини больше 0.4 (у нас ~0.43)
+            # https://stackoverflow.com/questions/39512260/calculating-gini-coefficient-in-python-numpy
+            # https://en.wikipedia.org/wiki/Gini_coefficient
         # Процент от численности населения:
         '+++- Бедняки (%)':[
             '(value / x) * 100',
