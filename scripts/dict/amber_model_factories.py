@@ -24,6 +24,7 @@
 
 metadict_detail['_Производство соли (килограмм)'] = {
         # Солеварение:
+            # https://ru.wikipedia.org/wiki/Градирня#История
             # https://ru.wikisource.org/wiki/ЭСБЕ/Соль_поваренная
             # http://historic.ru/books/item/f00/s00/z0000171/st011.shtml
         # Соликамск 1742 года (sic!), "Путешествие в Сибирь" Гмелина:
