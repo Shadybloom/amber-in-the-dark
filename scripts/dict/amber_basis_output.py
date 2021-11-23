@@ -2585,55 +2585,55 @@ metadict_detail['_Работа чернорабочего (нормо-часов
 #----
 # Трудовые ресурсы (заклинания в стиле DnD):
 
-metadict_detail['_++0 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++0 lvl (C) (заговоров/год) (доступно)'] = {
         }
 
-metadict_detail['_++1 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++1 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++2 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++2 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++3 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++3 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++4 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++4 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++5 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++5 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++6 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++6 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++7 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++7 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++8 lvl (заклинаний/год) (доступно)'] = {
+metadict_detail['_++8 lvl (S) (заклинаний/год) (доступно)'] = {
         }
 
-metadict_detail['_++1 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++1 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++2 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++2 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++3 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++3 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++4 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++4 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++5 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++5 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++6 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++6 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++7 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++7 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
-metadict_detail['_++8 lvl (ритуалов/год) (доступно)'] = {
+metadict_detail['_++8 lvl (R) (ритуалов/год) (доступно)'] = {
         }
 
 #----
