@@ -110,6 +110,28 @@ metadict_detail['Заклинания волшебников 0 lvl'] = {
         '0 lvl Магическая надпись (0 lvl Arcane Mark)':1,
         '0 lvl Невидимые чернила (0 lvl Azore\'s Invisible Ink)':1,
         '0 lvl Говорящая книга (0 lvl Azore\'s Speaking Tome)':1,
+
+        # TODO: разгрести заклинания из DnD 5e
+        '0 lvl Лепка земли (0 lvl Mold Earth)':1,
+        '0 lvl Формирование воды (0 lvl Shape Water)':1,
+        '0 lvl Шквал (0 lvl Gust)':1,
+        '0 lvl Сотворение костра (0 lvl Create Bonfire)':1,
+        '0 lvl Власть над огнём (0 lvl Control Flames)':1,
+        '0 lvl Малая иллюзия (0 lvl Minor Illusion)':1,
+        '0 lvl Мистический заряд (0 lvl Eldritch Blast)':1,
+        '0 lvl Огненный снаряд (0 lvl Fire Bolt)':1,
+        '0 lvl Лассо молнии (0 lvl Lightning Lure)':1,
+        '0 lvl Дружба (0 lvl Friends)':1,
+        '0 lvl Вспышка мечей (0 lvl Sword Burst)':1,
+        '0 lvl Электрошок (0 lvl Shocking Grasp)':1,
+
+        '0 lvl Трауматургия (0 lvl Thaumaturgy)':1,
+        '0 lvl Исскуство друидов (0 lvl Druidcraft)':1,
+        '0 lvl Волшебный камень (0 lvl Magic Stone)':1,
+        '0 lvl Терновый кнут (0 lvl Thorn Whip)':1,
+        '0 lvl Священное пламя (0 lvl Sacred Flame)':1,
+        '0 lvl Слово сияния (0 lvl Word of Radiance)':1,
+
         }
 
 metadict_detail['Заклинания волшебников 1 lvl'] = {
@@ -718,7 +740,7 @@ metadict_detail['Заклинания Эглан 0 lvl'] = {
         '0 lvl Очистить пищу или воду (0 lvl Purify Food and Drink)':1,
         '0 lvl Вылечить царапину (0 lvl Cure Minor Wounds)':1,
         '0 lvl Компас (0 lvl Know Direction)':1,
-        '0 lvl Ослабление атак (0 lvl Blade Ward)':1,
+        '0 lvl Отразить клинок (0 lvl Blade Ward)':1,
         '0 lvl Сопротивляемость (0 lvl Resistance)':1,
         '0 lvl Руководство духа (0 lvl Guidance)':1,
         '0 lvl Касание усталости (0 lvl Touch of Fatigue)':1,
@@ -766,7 +788,7 @@ metadict_detail['Заклинания Эглан 1 lvl'] = {
         '1 lvl Хрустящий снег (1 lvl Crunchy Snow)':1,
         '1 lvl Лечебный сон (1 lvl Healthful Rest)':1,
         '1 lvl Быстрое самолечение (1 lvl Vigor, Lesser)':1,
-        '1 lvl Превратить ягоды в лечебные (1 lvl Goodberry)':1,
+        '1 lvl Лечебные ягоды (1 lvl Goodberry)':1,
         '1 lvl Зачаровать клыки (1 lvl Magic Fang, 3 lvl Magic Fang, Greater)':1,
         '1 lvl Зачаровать посох/копьё (1 lvl Shillelagh)':1,
         '1 lvl Зачаровать метательные камни (1 lvl Magic Stone)':1,
