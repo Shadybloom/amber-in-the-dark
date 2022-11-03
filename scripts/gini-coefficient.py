@@ -317,8 +317,11 @@ def get_midpoint(dataset_list, money_sum_percent = 0.5):
             return midpoint
 
 def wealth_coefficient(dataset, wealthy_percent = 0.2, powerty_percent = 0.2):
-    """Квинтильный коэффициент.
+    """Квинтильный коэффициент / децильный коэффициент
     
+    Децильный коэффициент.
+    Показывает во сколько раз минимальная заработная плата в группе 10% наиболее оплачиваемых работников
+    Превышает максимальную заработную плату в группе 10% наименее оплачиваемых работников.
     Квинтильный коэффициент = капитал 20% богатейших / капитал 20% беднейших
     """
     p_rich = round(len(dataset) * (1 - wealthy_percent))
@@ -383,7 +386,7 @@ if YEAR_INCOME is True:
 # Находим средний доход, то есть точку 50% от суммы всех доходов:
 midpoint = get_midpoint(dataset, TAX_PERCENT)
 midpoint_tax = dataset[midpoint]
-print('Средства: {i}/{ia} ({ip}%)'.format(
+print('Доходы (Податных/Всех): {i}/{ia} ({ip}%)'.format(
     i = sum(dataset[:midpoint]),
     ia = sum(dataset),
     ip = round(sum(dataset[:midpoint]) / sum(dataset), 3) * 100,
@@ -404,6 +407,7 @@ tax_all = 0
 dataset_tax = dataset[midpoint:]
 taxation_list = list(sorted(datadict_tax.keys()))
 datadict_tax_collection = {}
+print('Налог_% Доход --> Остаток (Оплатили_%, Собрано)')
 for el, income in enumerate(dataset_tax):
     #tax = calculate_tax(income, taxation_list)
     tax = calculate_tax(income, taxation_list, TAX_MAXIMUM, TAX_MINIMUM, TAX_STEPS)
@@ -463,9 +467,22 @@ print('Доходы {p}% богатых: {m2}/{a2} ({ap2}%) --> {m1}/{a1} ({ap1}
     ap1 = round(wealth_coefficient(dataset_after, WEALTHY_PERCENT)[0] / sum(dataset_after) * 100, 1),
     ap2 = round(wealth_coefficient(dataset, WEALTHY_PERCENT)[0] / sum(dataset) * 100, 1),
     ))
+print('Доходы {p}% богатых: {m2}/{a2} ({ap2}%) --> {m1}/{a1} ({ap1}%)'.format(
+    p = round(0.01 * 100),
+    m1 = round(wealth_coefficient(dataset_after, 0.01)[0], 3),
+    m2 = round(wealth_coefficient(dataset, 0.01)[0], 3),
+    a1 = sum(dataset_after),
+    a2 = sum(dataset),
+    ap1 = round(wealth_coefficient(dataset_after, 0.01)[0] / sum(dataset_after) * 100, 1),
+    ap2 = round(wealth_coefficient(dataset, 0.01)[0] / sum(dataset) * 100, 1),
+    ))
 print('Квинтильный коэффициент: {ka} ({k} до налогов)'.format(
     ka = round(wealth_coefficient(dataset_after, WEALTHY_PERCENT)[2], 3),
     k = round(wealth_coefficient(dataset, WEALTHY_PERCENT)[2], 3),
+    ))
+print('Децильный коэффициент: {ka} ({k} до налогов)'.format(
+    ka = round(wealth_coefficient(dataset_after, 0.1, 0.1)[2], 3),
+    k = round(wealth_coefficient(dataset, 0.1, 0.1)[2], 3),
     ))
 print('Коэффициент Джини: {ga} ({g} до налогов)'.format(
     ga = round(gini_coefficient(dataset_after), 3),
@@ -484,7 +501,7 @@ for n in range(0, homes_slice_number):
     datadict_slices[((homes_slice_start, homes_slice_end), min(data_slice), max(data_slice))] = sum(data_slice)
     homes_slice_start += homes_slice
     homes_slice_end += homes_slice
-print('Диапазоны семей и доходов (после налогов):')
+print('Семьи -- доходы/средние (богатство_%):')
 for key, value in datadict_slices.items():
     print('{s1}-{s2} -- {i_min}-{i_max}/{i_mid} ({i_percent}%)'.format(
         s1 = key[0][0],
