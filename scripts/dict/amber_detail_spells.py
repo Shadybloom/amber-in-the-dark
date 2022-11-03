@@ -1,13 +1,14 @@
 #----
 # Заметки:
+# Обозначения:
     # Выборка по уровням:
-    # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm Эквестрия -E '9+ lvl'
+    # amber -sm Эквестрия -E '9+ lvl'
     # Вывод заклинаний:
-    # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm Эквестрия -E '_++'
+    # amber -sm Эквестрия -E '_++'
     # Кантрипы, ритуалы, заклинания:
-    # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm Эквестрия -E '(C)'
-    # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm Эквестрия -E '(R)'
-    # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm Эквестрия -E '(S)'
+    # amber -sm Эквестрия -E '(C)'
+    # amber -sm Эквестрия -E '(R)'
+    # amber -sm Эквестрия -E '(S)'
 
 #----
 # Распределение стоимости заклинаний
@@ -26,8 +27,7 @@
     # От кастеров ожидается 300 дней/год работы (когда от простых работяг 200 дней)
 
 # Заклинания волшебников:
-    # TODO:
-        # Не мучай тваек. 300 дней работы в год слишком много.
+    # TODO: Заклинания рассчитываются из 300 дней работы. А пони работают 200 дней.
         # С 200 дней/год у нас уже не хватает заклинаний, зато твайкам полегче.
         # Если будешь править, просто пройдись множителем (2/3) по каждому числу.
         # Тогда доход кастера 1 lvl (кантрипы, заклинания, ритуалы): 800 + 750 + 480 = 2030 бит/год
@@ -51,13 +51,13 @@
     # Всего 14.97 млн. заклинаний/год, из них 41.1 тыс. 5+ круга.
     # Заклинатели 5+ круга составляют 0.4% от общего числа кастеров.
     # Заклинание 5 круга в 20 раз дороже 1 круга, при этом реже в 375 раз.
+    # Доход мага 3 круга: 1125 + 1700 + 2500 = 5325 бит/год
     # Доход мага 5 круга: 1125 + 1700 + 2500 + 5800 + 15 000 = 26 125 бит/год
     # Годовой оборот суммарно -- 20.01 млн. бит (0.34-0.68% ВВП страны, от 0.05% населения)
     # Волшебники Эквестрии в 6.8-13.6 раз богаче обычных пони. Надо налогами доить.
 
 # Заклинания колдунов:
-    # TODO:
-        # Дисбаланс доходов волшебников и колдунов. Колдуны богаче в 1.5 раза.
+    # TODO: Дисбаланс доходов волшебников и колдунов. Колдуны богаче в 1.5 раза.
         # Правила столкновений из DMG (стр 84) предполагают 2 коротких отдыха за сутки.
         # You're also expected to have two short rests at about one-third and two-thirds into the day.
         # При 2 передышках/день доходы волшебников и колдунов сравняются. Но пока что 3 передышки/день.
@@ -1222,21 +1222,21 @@ metadict_detail['8 lvl (ритуальные заклинания жреца)'] 
     # Распределение заклинаний по видам (в процентах)
 
 metadict_detail['_+0 lvl (заговоры барда) (заклинаний/год)'] = {
-        # TODO: общее правило
+        # TODO: Одно заклинание не более 50% слотов. Не все умеют, не все могут, не все хотят.
             # 1) Стремимся к тому, чтобы заклинание одной школы не занимало более 50%
-            # Даже если это нужно экономике. Не все умеют, не все могут, не все хотят.
             # 2) Стараемся не ставить одинаковые заклинания разным классам. Метки же.
+            # Даже если это нужно экономике. Не все умеют, не все могут, не все хотят.
         # Магия ленивых Динки. Представления, украшательство городов.
         # 2 кантрипа/сутки × 600 × 0.5 = 600 иллюзий/день (1-2 часа представления)
         '_++0 lvl (C) Малая иллюзия (0 lvl Minor_Illusion)':0.5,
-        '_++0 lvl (C) Магическая краска (0 lvl Arcane_Painting)':0.3,
+        '_++0 lvl (C) Рисование магией (0 lvl Arcane_Painting)':0.3,
         '_++0 lvl (C) Пляшущие огоньки (0 lvl Dancing_Lights)':0.1,
         #'_++0 lvl (C) Волшебная рука (0 lvl Mage_Hand)':0.1,
         #'_++0 lvl (C) Говорящая книга (0 lvl Speaking_Tome)':0.1,
         #'_++0 lvl (C) Пляшущие огоньки (0 lvl Dancing_Lights)':0.1,
         #'_++0 lvl (C) Невидимые чернила (0 lvl Invisible_Ink)':0.1,
         #'_++0 lvl (C) Слово силы «Мяу» (0 lvl Power_Word_Meow)':0.1,
-        #'_++0 lvl (C) Магическая краска (0 lvl Arcane_Painting)':0.1,
+        #'_++0 lvl (C) Рисование магией (0 lvl Arcane_Painting)':0.1,
         #'_++0 lvl (C) Малая иллюзия (0 lvl Minor_Illusion)':0.1,
         #'_++0 lvl (C) Направленный звук (0 lvl Sonic_Beam)':0.1,
         #'_++0 lvl (C) Хитрости барда (0 lvl Bardcraft)':0.1,
@@ -1283,7 +1283,7 @@ metadict_detail['_+0 lvl (заговоры колдуна) (заклинаний
         # 2 кантрипа/сутки × 600 × 0.5 = 600 манипуляций/день (1-2 часа операции)
         '_++0 lvl (C) Волшебная рука (0 lvl Mage_Hand)':0.5,
         '_++0 lvl (C) Формирование воды (0 lvl Shape_Water)':0.2,
-        '_++0 lvl (C) Магическая краска (0 lvl Arcane_Painting)':0.1,
+        '_++0 lvl (C) Рисование магией (0 lvl Arcane_Painting)':0.1,
         '_++0 lvl (C) Указание (0 lvl Guidance)':0.1,
         #'_++0 lvl (C) Мистический заряд (0 lvl Eldritch_Blast)':0.1,
         #'_++0 lvl (C) Сотворение костра (0 lvl Create_Bonfire)':0.1,
@@ -1345,9 +1345,9 @@ metadict_detail['_+1 lvl (заклинания барда) (заклинаний
         '_++1 lvl (S) Безмолвный образ (1 lvl Silent_Image)':0.3,
         '_++1 lvl (S) Очарование личности (1 lvl Charm_Person)':0.1,
         #'_++1 lvl (S) Маскировка себя (1 lvl Disguise_Self)':0.1,
-        #'_++1 lvl Диссонирующий шёпот (1 lvl Dissonant_Whispers)':0.1,
-        #'_++1 lvl Сверкающие брызги (1 lvl Color_Spray)':0.1,
-        #'_++1 lvl Живая верёвка (1 lvl Animate_Rope)':0.1,
+        #'_++1 lvl (S) Диссонирующий шёпот (1 lvl Dissonant_Whispers)':0.1,
+        #'_++1 lvl (S) Сверкающие брызги (1 lvl Color_Spray)':0.1,
+        #'_++1 lvl (S) Живая верёвка (1 lvl Animate_Rope)':0.1,
         '_++1 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1365,11 +1365,11 @@ metadict_detail['_+1 lvl (заклинания волшебника) (закли
         #'_++1 lvl (S) Очарование личности (1 lvl Charm_Person)':0.1,
         #'_++1 lvl (S) Поглощение стихий (1 lvl Absorb_Elements)':0.1,
         #'_++1 lvl (S) Мембранный барьер (1 lvl Barrier_Membrane)':0.1,
-        #'_++1 lvl Магическое лезвие (1 lvl Persistent_Blade)':0.1,
-        #'_++1 lvl Магическая стрела (1 lvl Mage Arrow)':0.1,
-        #'_++1 lvl Огонь фей (1 lvl Faerie_Fire)':0.1,
-        #'_++1 lvl Скольжение (1 lvl Grease)':0.1,
-        #'_++1 lvl Усыпление (1 lvl Sleep)':0.1,
+        #'_++1 lvl (S) Магическое лезвие (1 lvl Persistent_Blade)':0.1,
+        #'_++1 lvl (S) Магическая стрела (1 lvl Mage Arrow)':0.1,
+        #'_++1 lvl (S) Огонь фей (1 lvl Faerie_Fire)':0.1,
+        #'_++1 lvl (S) Скольжение (1 lvl Grease)':0.1,
+        #'_++1 lvl (S) Усыпление (1 lvl Sleep)':0.1,
         '_++1 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1401,34 +1401,34 @@ metadict_detail['_+1 lvl (заклинания друида) (заклинани
         # Биосинтез лекарств для нужд больницы, воспитание лесных зверей.
         '_++1 lvl (S) Добряника (1 lvl Goodberry)':0.7,
         '_++1 lvl (S) Очарование зверя (1 lvl Charm_Animal)':0.2,
-        #'_++1 lvl Опутывание (1 lvl Entangle)':0.1,
-        #'_++1 lvl Деревянный прислужник (1 lvl Wood_Wose)':0.1,
-        #'_++1 lvl Оживить деревянный предмет (1 lvl Animate_Wood)':0.1,
-        #'_++1 lvl Найти живого (1 lvl Detect_Animals_Or_Plants)':0.1,
+        #'_++1 lvl (S) Опутывание (1 lvl Entangle)':0.1,
+        #'_++1 lvl (S) Деревянный прислужник (1 lvl Wood_Wose)':0.1,
+        #'_++1 lvl (S) Оживить деревянный предмет (1 lvl Animate_Wood)':0.1,
+        #'_++1 lvl (S) Найти живого (1 lvl Detect_Animals_Or_Plants)':0.1,
         #'_++1 lvl (S) Очарование зверя (1 lvl Charm_Animal)':0.1,
-        #'_++1 lvl Успокоить зверя (1 lvl Calm_Animals)':0.1,
+        #'_++1 lvl (S) Успокоить зверя (1 lvl Calm_Animals)':0.1,
         '_++1 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
 metadict_detail['_+1 lvl (заклинания жреца) (заклинаний/год)'] = {
         # Жрецы 1-2 lvl -- пегасы-погодники, выпускники Клаудсдэйлской погодной службы.
         # В кантонах не водятся, живут в городах, где их 100-300 на 10k горожан (100k округа)
-        # Они летают сотнями, объединённой силой меняя погоду, сопровождая грозовые фронты.
+        # Они летают сотнями, объединённой силой меняя погоду, прокладывая дорогу циклонам.
         # Они никого не лечат, хотя и способны. Всю медицину захватили колдуны.
         # На туманном облачке пегасы отдыхают, когда надоедает летать.
         '_++1 lvl (S) Туманное облако (1 lvl Fog_Cloud)':0.7,
         '_++1 lvl (S) Падение пёрышком (1 lvl Feather_Fall)':0.1,
         '_++1 lvl (S) Поглощение стихий (1 lvl Absorb_Elements)':0.1,
-        #'_++1 lvl Волна грома (1 lvl Thunderwave)':0.1,
-        #'_++1 lvl Найти воду (1 lvl Locate_Water)':0.1,
-        #'_++1 lvl Ледяной кинжал (1 lvl Ice_Knife)':0.1,
+        #'_++1 lvl (S) Волна грома (1 lvl Thunderwave)':0.1,
+        #'_++1 lvl (S) Найти воду (1 lvl Locate_Water)':0.1,
+        #'_++1 lvl (S) Ледяной кинжал (1 lvl Ice_Knife)':0.1,
         #'_++1 lvl (S) Падение пёрышком (1 lvl Feather_Fall)':0.1,
         #'_++1 lvl (S) Поглощение стихий (1 lvl Absorb_Elements)':0.1,
         #'_++1 lvl (S) Мембранный барьер (1 lvl Barrier_Membrane)':0.1,
-        #'_++1 lvl Сотворение или уничтожение воды (1 lvl Create_or_Destroy_Water)':0.1,
-        #'_++1 lvl Призвать молниевое облачко (1 lvl Thunderhead)':0.1,
-        #'_++1 lvl Призвать дождевое облачко (1 lvl Cloudburst)':0.1,
-        #'_++1 lvl Сформировать снег (1 lvl Snowdrift)':0.1,
+        #'_++1 lvl (S) Сотворение или уничтожение воды (1 lvl Create_or_Destroy_Water)':0.1,
+        #'_++1 lvl (S) Призвать молниевое облачко (1 lvl Thunderhead)':0.1,
+        #'_++1 lvl (S) Призвать дождевое облачко (1 lvl Cloudburst)':0.1,
+        #'_++1 lvl (S) Сформировать снег (1 lvl Snowdrift)':0.1,
         #'_++1 lvl (S) Туманное облако (1 lvl Fog_Cloud)':0.1,
         '_++1 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1451,11 +1451,11 @@ metadict_detail['_+1 lvl (заклинания следопыта) (заклин
         '_++1 lvl (S) Очарование зверя (1 lvl Charm_Animal)':0.5,
         '_++1 lvl (S) Добряника (1 lvl Goodberry)':0.3,
         '_++1 lvl (S) Прыжок (1 lvl Jump)':0.3,
-        #'_++1 lvl Град шипов (1 lvl Hail_of_Thorns)':0.1,
+        #'_++1 lvl (S) Град шипов (1 lvl Hail_of_Thorns)':0.1,
         #'_++1 lvl (S) Очарование зверя (1 lvl Charm_Animal)':0.1,
-        #'_++1 lvl Успокоить зверя (1 lvl Calm_Animals)':0.1,
+        #'_++1 lvl (S) Успокоить зверя (1 lvl Calm_Animals)':0.1,
         #'_++1 lvl (S) Поглощение стихий (1 lvl Absorb_Elements)':0.1,
-        #'_++1 lvl Найти воду (1 lvl Locate_Water)':0.1,
+        #'_++1 lvl (S) Найти воду (1 lvl Locate_Water)':0.1,
         '_++1 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1465,10 +1465,11 @@ metadict_detail['_+1 lvl (заклинания следопыта) (заклин
 metadict_detail['_+2 lvl (заклинания барда) (заклинаний/год)'] = {
         # Барды 3-4 lvl -- известные режиссёры и импресарио. Таких всего 170 на страну.
         # Не очень-то хорошие пони. Хорошие в волшебники идут.
-        '_++2 lvl (S) Внушение (2 lvl Suggestion)':0.5,
-        '_++2 lvl (S) Обнаружение мыслей (2 lvl Detect_Thoughts)':0.3,
+        '_++2 lvl (S) Речь златоуста (2 lvl Enthrall)':0.5,
+        '_++2 lvl (S) Обнаружение мыслей (2 lvl Detect_Thoughts)':0.2,
         '_++2 lvl (S) Ложная аура (2 lvl Nystul_magic_aura)':0.1,
-        #'_++2 lvl Воображаемая сила (2 lvl Phantasmal_Force)':0.1,
+        '_++2 lvl (S) Внушение (2 lvl Suggestion)':0.1,
+        #'_++2 lvl (S) Воображаемая сила (2 lvl Phantasmal_Force)':0.1,
         #'_++2 lvl (S) Обнаружение мыслей (2 lvl Detect_Thoughts)':0.1,
         #'_++2 lvl (S) Внушение (2 lvl Suggestion)':0.1,
         '_++2 lvl (S) (заклинаний/год) (доступно)':1,
@@ -1481,22 +1482,22 @@ metadict_detail['_+2 lvl (заклинания волшебника) (закли
         '_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)':0.7,
         '_++2 lvl (S) Волшебный замок (2 lvl Arcane_Lock)':0.1,
         '_++2 lvl (S) Невидимость (2 lvl Invisibility)':0.1,
-        #'_++2 lvl Открывание (2 lvl Knock)':0.1,
-        #'_++2 lvl Дребезги (2 lvl Shatter)':0.1,
-        #'_++2 lvl Левитация (2 lvl Levitate)':0.1,
+        #'_++2 lvl (S) Открывание (2 lvl Knock)':0.1,
+        #'_++2 lvl (S) Дребезги (2 lvl Shatter)':0.1,
+        #'_++2 lvl (S) Левитация (2 lvl Levitate)':0.1,
         #'_++2 lvl (S) Внушение (2 lvl Suggestion)':0.1,
-        #'_++2 lvl Туманный шаг (2 lvl Misty_Step)':0.1,
-        #'_++2 lvl Ходьба по облакам (2 lvl Air Walk)':0.1,
-        #'_++2 lvl Поиск предмета (2 lvl Locate_Object)':0.1,
+        #'_++2 lvl (S) Туманный шаг (2 lvl Misty_Step)':0.1,
+        #'_++2 lvl (S) Ходьба по облакам (2 lvl Air Walk)':0.1,
+        #'_++2 lvl (S) Поиск предмета (2 lvl Locate_Object)':0.1,
         #'_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)':0.1,
         #'_++2 lvl (S) Улучшение характеристики (2 lvl Enhance_Ability)':0.1,
-        #'_++2 lvl Видение невидимого (2 lvl See_Invisibility)':0.1,
+        #'_++2 lvl (S) Видение невидимого (2 lvl See_Invisibility)':0.1,
         #'_++2 lvl (S) Волшебный замок (2 lvl Arcane_Lock)':0.1,
-        #'_++2 lvl Тёмное зрение (2 lvl Darkvision)':0.1,
+        #'_++2 lvl (S) Тёмное зрение (2 lvl Darkvision)':0.1,
         #'_++2 lvl (S) Невидимость (2 lvl Invisibility)':0.1,
-        #'_++2 lvl Отражения (2 lvl Mirror_Image)':0.1,
-        #'_++2 lvl Размытый образ (2 lvl Blur)':0.1,
-        #'_++2 lvl Тьма (2 lvl Darkness)':0.1,
+        #'_++2 lvl (S) Отражения (2 lvl Mirror_Image)':0.1,
+        #'_++2 lvl (S) Размытый образ (2 lvl Blur)':0.1,
+        #'_++2 lvl (S) Тьма (2 lvl Darkness)':0.1,
         '_++2 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1507,13 +1508,13 @@ metadict_detail['_+2 lvl (заклинания чародея) (заклинан
         '_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)':0.5,
         '_++2 lvl (S) Улучшение характеристики (2 lvl Enhance_Ability)':0.3,
         '_++2 lvl (S) Внушение (2 lvl Suggestion)':0.1,
-        #'_++2 lvl Мельфова усыпляющая стрела (2 lvl Melf_Slumber_Arrows)':0.1,
+        #'_++2 lvl (S) Мельфова усыпляющая стрела (2 lvl Melf_Slumber_Arrows)':0.1,
         #'_++2 lvl (S) Обнаружение мыслей (2 lvl Detect_Thoughts)':0.1,
-        #'_++2 lvl Направленный взрыв (2 lvl Blast_of_Force)':0.1,
+        #'_++2 lvl (S) Направленный взрыв (2 lvl Blast_of_Force)':0.1,
         #'_++2 lvl (S) Магическое оружие (2 lvl Magic_Weapon)':0.1,
-        #'_++2 lvl Силовая плеть (2 lvl Scourge_of_Force)':0.1,
-        #'_++2 lvl Пылающий шар (2 lvl Flaming_Sphere)':0.1,
-        #'_++2 lvl Туманный шаг (2 lvl Misty_Step)':0.1,
+        #'_++2 lvl (S) Силовая плеть (2 lvl Scourge_of_Force)':0.1,
+        #'_++2 lvl (S) Пылающий шар (2 lvl Flaming_Sphere)':0.1,
+        #'_++2 lvl (S) Туманный шаг (2 lvl Misty_Step)':0.1,
         '_++2 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1525,7 +1526,7 @@ metadict_detail['_+2 lvl (заклинания колдуна) (заклинан
         '_++2 lvl (S) Подмога (2 lvl Aid)':0.1,
         #'_++2 lvl (S) Малое восстановление (2 lvl Lesser_Restoration)':0.1,
         #'_++2 lvl (S) Защита от яда (2 lvl Protection_from_Poison)':0.1,
-        #'_++2 lvl Область истины (2 lvl Zone_of_Truth)':0.1,
+        #'_++2 lvl (S) Область истины (2 lvl Zone_of_Truth)':0.1,
         #'_++2 lvl (S) Подмога (2 lvl Aid)':0.1,
         '_++2 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1533,12 +1534,14 @@ metadict_detail['_+2 lvl (заклинания колдуна) (заклинан
 metadict_detail['_+2 lvl (заклинания друида) (заклинаний/год)'] = {
         # Друиды 3-4 lvl -- выпускники школ Кантерлота и Филлидельфии. Таких всего 900 на страну.
         # Служат ветеринарами для лесных зверей.
-        '_++2 lvl (S) Малое восстановление (2 lvl Lesser_Restoration)':0.8,
+        '_++2 lvl (S) Малое восстановление (2 lvl Lesser_Restoration)':0.7,
         '_++2 lvl (S) Защита от яда (2 lvl Protection_from_Poison)':0.1,
-        #'_++2 lvl Исцеляющий дух (2 lvl Healing_Spirit)':0.1,
+        '_++2 lvl (S) Исцеляющий дух (2 lvl Healing_Spirit)':0.1,
+        #'_++2 lvl (S) Исцеляющий дух (2 lvl Healing_Spirit)':0.1,
         #'_++2 lvl (S) Малое восстановление (2 lvl Lesser_Restoration)':0.1,
         #'_++2 lvl (S) Защита от яда (2 lvl Protection_from_Poison)':0.1,
-        #'_++2 lvl Шипы (2 lvl Spike_Growth)':0.1,
+        #'_++2 lvl (S) Умиротворение (2 lvl Calm_Emotions)':0.1,
+        #'_++2 lvl (S) Шипы (2 lvl Spike_Growth)':0.1,
         '_++2 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1552,7 +1555,7 @@ metadict_detail['_+2 lvl (заклинания жреца) (заклинаний
         #'_++2 lvl (S) Порыв ветра (2 lvl Gust_of_Wind)':0.1,
         #'_++2 lvl (S) Защитный ветер (2 lvl Warding_Wind)':0.1,
         #'_++2 lvl (S) Охраняющая связь (2 lvl Warding_Bond)':0.1,
-        #'_++2 lvl Умиротворение (2 lvl Calm_Emotions)':0.1,
+        #'_++2 lvl (S) Умиротворение (2 lvl Calm_Emotions)':0.1,
         '_++2 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1584,7 +1587,7 @@ metadict_detail['_+3 lvl (заклинания барда) (заклинаний
         '_++3 lvl (S) Образ (3 lvl Major_Image)':0.5,
         '_++3 lvl (S) Подсматривание (3 lvl Clairvoyance)':0.3,
         '_++3 lvl (S) Необнаружимость (3 lvl Nondetection)':0.1,
-        #'_++3 lvl Гипнотический узор (3 lvl Hypnotic_Pattern)':0.1,
+        #'_++3 lvl (S) Гипнотический узор (3 lvl Hypnotic_Pattern)':0.1,
         #'_++3 lvl (S) Послание (3 lvl Sending)':0.1,
         '_++3 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1601,19 +1604,19 @@ metadict_detail['_+3 lvl (заклинания волшебника) (закли
         '_++3 lvl (S) Рассеивание магии (3 lvl Dispel_Magic)':0.1,
         '_++3 lvl (S) Защита от энергии (3 lvl Protection_from_Energy)':0.1,
         '_++3 lvl (S) Купол перенаправления кинетики (3 lvl Dome_of_Kinectic_Redirection)':0.1,
-        #'_++3 lvl Гипнотический узор (3 lvl Hypnotic_Pattern)':0.1,
-        #'_++3 lvl Передача жизни (3 lvl Life_Transference)':0.1,
+        #'_++3 lvl (S) Гипнотический узор (3 lvl Hypnotic_Pattern)':0.1,
+        #'_++3 lvl (S) Передача жизни (3 lvl Life_Transference)':0.1,
         #'_++3 lvl (S) Охранные руны (3 lvl Glyph_of_Warding)':0.1,
         #'_++3 lvl (S) Снятие проклятия (3 lvl Remove_Curse)':0.1,
-        #'_++3 lvl Магический круг (3 lvl Magic_Circle)':0.1,
+        #'_++3 lvl (S) Магический круг (3 lvl Magic_Circle)':0.1,
         #'_++3 lvl (S) Необнаружимость (3 lvl Nondetection)':0.1,
         #'_++3 lvl (S) Образ (3 lvl Major_Image)':0.1,
-        #'_++3 lvl Дрёма (3 lvl Catnap)':0.1,
-        #'_++3 lvl Полёт (3 lvl Fly)':0.1,
-        #'_++3 lvl Ужас (3 lvl Fear)':0.1,
-        #'_++3 lvl Языки (3 lvl Tongues)':0.1,
-        #'_++3 lvl Мерцание (3 lvl Blink)':0.1,
-        #'_++3 lvl Огненный шар (3 lvl Fireball)':0.1,
+        #'_++3 lvl (S) Дрёма (3 lvl Catnap)':0.1,
+        #'_++3 lvl (S) Полёт (3 lvl Fly)':0.1,
+        #'_++3 lvl (S) Ужас (3 lvl Fear)':0.1,
+        #'_++3 lvl (S) Языки (3 lvl Tongues)':0.1,
+        #'_++3 lvl (S) Мерцание (3 lvl Blink)':0.1,
+        #'_++3 lvl (S) Огненный шар (3 lvl Fireball)':0.1,
         #'_++3 lvl (S) Подсматривание (3 lvl Clairvoyance)':0.1,
         #'_++3 lvl (S) Крошечный слуга (3 lvl Tiny_Servant)':0.1,
         #'_++3 lvl (S) Рассеивание магии (3 lvl Dispel_Magic)':0.1,
@@ -1631,10 +1634,10 @@ metadict_detail['_+3 lvl (заклинания чародея) (заклинан
         '_++3 lvl (S) Рассеивание магии (3 lvl Dispel_Magic)':0.1,
         '_++3 lvl (S) Газообразная форма (3 lvl Gaseous_Form)':0.1,
         #'_++3 lvl (S) Купол перенаправления кинетики (3 lvl Dome_of_Kinectic_Redirection)':0.1,
-        #'_++3 lvl Удар призрачного рога (3 lvl Melf_Unicorn_Arrow)':0.1,
-        #'_++3 lvl Звёзды Арвандора (3 lvl Stars_of_Arvandor)':0.1,
-        #'_++3 lvl Резонансный взрыв (3 lvl Resonating_Bolt)':0.1,
-        #'_++3 lvl Ускорение (3 lvl Haste)':0.1,
+        #'_++3 lvl (S) Удар призрачного рога (3 lvl Melf_Unicorn_Arrow)':0.1,
+        #'_++3 lvl (S) Звёзды Арвандора (3 lvl Stars_of_Arvandor)':0.1,
+        #'_++3 lvl (S) Резонансный взрыв (3 lvl Resonating_Bolt)':0.1,
+        #'_++3 lvl (S) Ускорение (3 lvl Haste)':0.1,
         '_++3 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1647,10 +1650,10 @@ metadict_detail['_+3 lvl (заклинания колдуна) (заклинан
         '_++3 lvl (S) Снятие проклятия (3 lvl Remove_Curse)':0.1,
         '_++3 lvl (S) Рассеивание магии (3 lvl Dispel_Magic)':0.1,
         '_++3 lvl (S) Аура живучести (3 lvl Aura_of_Vitality)':0.1,
-        #'_++3 lvl Мантия крестоносца (3 lvl Crusaders_Mantle)':0.1,
-        #'_++3 lvl Духовные стражи (3 lvl Spirit_Guardians)':0.1,
+        #'_++3 lvl (S) Мантия крестоносца (3 lvl Crusaders_Mantle)':0.1,
+        #'_++3 lvl (S) Духовные стражи (3 lvl Spirit_Guardians)':0.1,
         #'_++3 lvl (S) Маяк надежды (3 lvl Beacon_of_Hope)':0.1,
-        #'_++3 lvl Дневной свет (3 lvl Daylight)':0.1,
+        #'_++3 lvl (S) Дневной свет (3 lvl Daylight)':0.1,
         '_++3 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1658,7 +1661,7 @@ metadict_detail['_+3 lvl (заклинания друида) (заклинани
         # Друиды 5-6 lvl -- земные агрономы изрядных способностей. Таких всего 250 на страну.
         # С Plant_Growth все поля получают x2 урожайности. Грамотная агротехника творит чудеса.
         '_++3 lvl (S) Рост растений (3 lvl Plant_Growth)':0.9,
-        #'_++3 lvl Разговор с растениями (3 lvl Speak_with_Plants)':0.1,
+        #'_++3 lvl (S) Разговор с растениями (3 lvl Speak_with_Plants)':0.1,
         #'_++3 lvl (S) Призыв животных (3 lvl Conjure_Animals)':0.1,
         '_++3 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1667,11 +1670,11 @@ metadict_detail['_+3 lvl (заклинания жреца) (заклинаний
         # Жрецы 5-6 lvl -- члены основных погодных команд. Таких всего 4000 на страну.
         '_++3 lvl (S) Метель (3 lvl Sleet_Storm)':0.7,
         '_++3 lvl (S) Стена ветров (3 lvl Wind_Wall)':0.2,
-        #'_++3 lvl Дневной свет (3 lvl Daylight)':0.1,
-        #'_++3 lvl Молния (3 lvl Lightning_Bolt)':0.1,
-        #'_++3 lvl Громовой шаг (3 lvl Thunder_Step)':0.1,
-        #'_++3 lvl Приливная волна (3 lvl Tidal_Wave)':0.1,
-        #'_++3 lvl Водяная стена (3 lvl Wall_of_Water)':0.1,
+        #'_++3 lvl (S) Дневной свет (3 lvl Daylight)':0.1,
+        #'_++3 lvl (S) Молния (3 lvl Lightning_Bolt)':0.1,
+        #'_++3 lvl (S) Громовой шаг (3 lvl Thunder_Step)':0.1,
+        #'_++3 lvl (S) Приливная волна (3 lvl Tidal_Wave)':0.1,
+        #'_++3 lvl (S) Водяная стена (3 lvl Wall_of_Water)':0.1,
         #'_++3 lvl (S) Метель (3 lvl Sleet_Storm)':0.1,
         '_++3 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1680,8 +1683,8 @@ metadict_detail['_+3 lvl (заклинания паладина) (заклина
         # Паладины 9-12 lvl -- командиры спасательной службы. Таких всего 5 на страну.
         '_++3 lvl (S) Маяк надежды (3 lvl Beacon_of_Hope)':0.6,
         '_++3 lvl (S) Аура живучести (3 lvl Aura_of_Vitality)':0.3,
-        #'_++3 lvl Мантия крестоносца (3 lvl Crusaders_Mantle)':0.1,
-        #'_++3 lvl Передача живучести (3 lvl Transfer_Vitality)':0.1,
+        #'_++3 lvl (S) Мантия крестоносца (3 lvl Crusaders_Mantle)':0.1,
+        #'_++3 lvl (S) Передача живучести (3 lvl Transfer_Vitality)':0.1,
         '_++3 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1712,15 +1715,15 @@ metadict_detail['_+4 lvl (заклинания волшебника) (закли
         '_++4 lvl (S) Изготовление (4 lvl Fabricate)':0.1,
         #'_++4 lvl (S) Изготовление (4 lvl Fabricate)':0.1,
         #'_++4 lvl (S) Магический глаз (4 lvl Arcane_Eye)':0.1,
-        #'_++4 lvl Переносящая дверь (4 lvl Dimension_Door)':0.1,
+        #'_++4 lvl (S) Переносящая дверь (4 lvl Dimension_Door)':0.1,
         #'_++4 lvl (S) Изменение формы камня (4 lvl Stone_Shape)':0.1,
         #'_++4 lvl (S) Отилюков упругий шар (4 lvl Otiluke_Resilent_Sphere)':0.1,
         #'_++4 lvl (S) Леомундов потайной сундук (4 lvl Leomund_Secret_Chest)':0.1,
         #'_++4 lvl (S) Призыв малых элементалей (4 lvl Conjure_Minor_Elementals)':0.1,
-        #'_++4 lvl Высшая невидимость (4 lvl Greater_Invisibility)':0.1,
-        #'_++4 lvl Власть над водами (4 lvl Control_Water)':0.1,
-        #'_++4 lvl Поиск существа (4 lvl Locate_Creature)':0.1,
-        #'_++4 lvl Каменная кожа (4 lvl Stoneskin)':0.1,
+        #'_++4 lvl (S) Высшая невидимость (4 lvl Greater_Invisibility)':0.1,
+        #'_++4 lvl (S) Власть над водами (4 lvl Control_Water)':0.1,
+        #'_++4 lvl (S) Поиск существа (4 lvl Locate_Creature)':0.1,
+        #'_++4 lvl (S) Каменная кожа (4 lvl Stoneskin)':0.1,
         #'_++4 lvl (S) Превращение (4 lvl Polymorph)':0.1,
         #'_++4 lvl (S) Изгнание (4 lvl Banishment)':0.1,
         '_++4 lvl (S) (заклинаний/год) (доступно)':1,
@@ -1731,8 +1734,8 @@ metadict_detail['_+4 lvl (заклинания чародея) (заклинан
         '_++4 lvl (S) Магический глаз (4 lvl Arcane_Eye)':0.5,
         '_++4 lvl (S) Превращение (4 lvl Polymorph)':0.3,
         '_++4 lvl (S) Изгнание (4 lvl Banishment)':0.1,
-        #'_++4 lvl Поиск существа (4 lvl Locate_Creature)':0.1,
-        #'_++4 lvl Рунное поле взрывов (4 lvl Explosive_Rune_Field)':0.1,
+        #'_++4 lvl (S) Поиск существа (4 lvl Locate_Creature)':0.1,
+        #'_++4 lvl (S) Рунное поле взрывов (4 lvl Explosive_Rune_Field)':0.1,
         '_++4 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1740,7 +1743,7 @@ metadict_detail['_+4 lvl (заклинания колдуна) (заклинан
         # Колдуны 7-8 lvl -- врачи-реаниматологи. Таких всего 60 на страну.
         # Из них 30 работают в Кантерлоте, а остальные по 2-3 в дюжине мегаполисов.
         '_++4 lvl (S) Защита от смерти (4 lvl Death_Ward)':0.9,
-        #'_++4 lvl Поиск существа (4 lvl Locate_Creature)':0.1,
+        #'_++4 lvl (S) Поиск существа (4 lvl Locate_Creature)':0.1,
         #'_++4 lvl (S) Защита от смерти (4 lvl Death_Ward)':0.1,
         #'_++4 lvl (S) Изгнание (4 lvl Banishment)':0.1,
         '_++4 lvl (S) (заклинаний/год) (доступно)':1,
@@ -1765,10 +1768,10 @@ metadict_detail['_+4 lvl (заклинания жреца) (заклинаний
         '_++4 lvl (S) Сфера бури (4 lvl Storm_Sphere)':0.1,
         #'_++4 lvl (S) Призыв малых элементалей (4 lvl Conjure_Minor_Elementals)':0.1,
         #'_++4 lvl (S) Свобода перемещения (4 lvl Freedom_of_Movement)':0.1,
-        #'_++4 lvl Власть над водами (4 lvl Control_Water)':0.1,
-        #'_++4 lvl Громовое копьё (4 lvl Thunderlance)':0.1,
+        #'_++4 lvl (S) Власть над водами (4 lvl Control_Water)':0.1,
+        #'_++4 lvl (S) Громовое копьё (4 lvl Thunderlance)':0.1,
         #'_++4 lvl (S) Сфера бури (4 lvl Storm_Sphere)':0.1,
-        #'_++4 lvl Град (4 lvl Ice_Storm)':0.1,
+        #'_++4 lvl (S) Град (4 lvl Ice_Storm)':0.1,
         '_++4 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1794,14 +1797,14 @@ metadict_detail['_+5 lvl (заклинания волшебника) (закли
         #'_++5 lvl (S) Планарные узы (5 lvl Planar_Binding)':0.1,
         #'_++5 lvl (S) Круг телепортации (5 lvl Teleportation_Circle)':0.1,
         #'_++5 lvl (S) Призыв элементалей (5 lvl Conjure_Elemental)':0.1,
-        #'_++5 lvl Оживление вещей (5 lvl Animate_Objects)':0.1,
-        #'_++5 lvl Далёкий шаг (5 lvl Far_Step)':0.1,
+        #'_++5 lvl (S) Оживление вещей (5 lvl Animate_Objects)':0.1,
+        #'_++5 lvl (S) Далёкий шаг (5 lvl Far_Step)':0.1,
         #'_++5 lvl (S) Знание легенд (5 lvl Legend_Lore)':0.1,
-        #'_++5 lvl Создание прохода (5 lvl Passwall)':0.1,
+        #'_++5 lvl (S) Создание прохода (5 lvl Passwall)':0.1,
         #'_++5 lvl (S) Планарные узы (5 lvl Planar_Binding)':0.1,
-        #'_++5 lvl Телекинез (5 lvl Telekinesis)':0.1,
+        #'_++5 lvl (S) Телекинез (5 lvl Telekinesis)':0.1,
         #'_++5 lvl (S) Силовая стена (5 lvl Wall_of_Force)':0.1,
-        #'_++5 lvl Конус холода (5 lvl Cone_of_Cold)':0.1,
+        #'_++5 lvl (S) Конус холода (5 lvl Cone_of_Cold)':0.1,
         '_++5 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1822,7 +1825,7 @@ metadict_detail['_+5 lvl (заклинания колдуна) (заклинан
         #'_++5 lvl (S) Вещий сон (5 lvl Dream)':0.1,
         #'_++5 lvl (S) Святилище (5 lvl Hallow)':0.1,
         #'_++5 lvl (S) Высшее восстановление (5 lvl Greater_Restoration)':0.1,
-        #'_++5 lvl Подчинение личности (5 lvl Dominate_Person)':0.1,
+        #'_++5 lvl (S) Подчинение личности (5 lvl Dominate_Person)':0.1,
         #'_++5 lvl (S) Изменение памяти (5 lvl Modify_Memory)':0.1,
         '_++5 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1831,11 +1834,11 @@ metadict_detail['_+5 lvl (заклинания друида) (заклинани
         # Друиды 9+ lvl -- флаттершайки. Таких всего 19 на страну.
         '_++5 lvl (S) Высшее восстановление (5 lvl Greater_Restoration)':0.7,
         '_++5 lvl (S) Пробуждённый разум (5 lvl Awaken)':0.2,
-        #'_++5 lvl Удержание монстра (5 lvl Hold_Monster)':0.1,
-        #'_++5 lvl Преобразование камня (5 lvl Transmute_Rock)':0.1,
-        #'_++5 lvl Каменная стена (5 lvl Wall_of_Stone)':0.1,
-        #'_++5 lvl Гнев природы (5 lvl Wrath_of_Nature)':0.1,
-        #'_++5 lvl Древесный путь (5 lvl Tree_Stride)':0.1,
+        #'_++5 lvl (S) Удержание монстра (5 lvl Hold_Monster)':0.1,
+        #'_++5 lvl (S) Преобразование камня (5 lvl Transmute_Rock)':0.1,
+        #'_++5 lvl (S) Каменная стена (5 lvl Wall_of_Stone)':0.1,
+        #'_++5 lvl (S) Гнев природы (5 lvl Wrath_of_Nature)':0.1,
+        #'_++5 lvl (S) Древесный путь (5 lvl Tree_Stride)':0.1,
         '_++5 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1845,7 +1848,7 @@ metadict_detail['_+5 lvl (заклинания жреца) (заклинаний
         # Кругом силы они защищают младших погодников в бурю.
         '_++5 lvl (S) Круг силы (5 lvl Circle_of_Power)':0.9,
         #'_++5 lvl (S) Круг силы (5 lvl Circle_of_Power)':0.1,
-        #'_++5 lvl Призыв залпа (5 Conjure_Volley)':0.1,
+        #'_++5 lvl (S) Призыв залпа (5 Conjure_Volley)':0.1,
         #'_++5 lvl (S) Святилище (5 lvl Hallow)':0.1,
         '_++5 lvl (S) (заклинаний/год) (доступно)':1,
         }
@@ -1875,7 +1878,7 @@ metadict_detail['_+7 lvl (заклинания жреца) (заклинаний
 metadict_detail['_+8 lvl (заклинания жреца) (заклинаний/год)'] = {
         # 5 пегасов способны на управление погодой. А один из них аж на эпику 9 круга.
         '_++8 lvl (S) Власть над погодой (8 lvl Control_Weather)':0.9,
-        #'_++8 lvl Поле антимагии (8 lvl Antimagic_Field)':0.1,
+        #'_++8 lvl (S) Поле антимагии (8 lvl Antimagic_Field)':0.1,
         '_++8 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -1887,11 +1890,11 @@ metadict_detail['_+1 lvl (ритуальные заклинания барда) 
         # 24 ритуала/сутки × 0.4 = 9.6 невидимых слуг (1.6 часа кукольного театра из 6 лошадок)
         '_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)':0.5,
         '_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servant)':0.4,
-        #'_++1 lvl Сигнал тревоги (1 lvl Alarm)':0.1,
+        #'_++1 lvl (R) Сигнал тревоги (1 lvl Alarm)':0.1,
         #'_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)':0.1,
         #'_++1 lvl (R) Очищение пищи и питья (1 lvl Purify_Food_and_Drink)':0.1,
         #'_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servant)':0.1,
-        #'_++1 lvl Глубокие карманы (1 lvl Deeppockets)':0.1,
+        #'_++1 lvl (R) Глубокие карманы (1 lvl Deeppockets)':0.1,
         #'_++1 lvl (R) Парящий диск (1 lvl Floating_Disk)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
@@ -1903,10 +1906,10 @@ metadict_detail['_+1 lvl (ритуальные заклинания волшеб
         '_++1 lvl (R) Обнаружение магии (1 lvl Detect_Magic)':0.2,
         '_++1 lvl (R) Невидимое письмо (1 lvl Illusory_Script)':0.1,
         '_++1 lvl (R) Переписчик (1 lvl Amanuensis)':0.1,
-        #'_++1 lvl Опознание (1 lvl Identify)':0.1,
-        #'_++1 lvl Сигнал тревоги (1 lvl Alarm)':0.1,
+        #'_++1 lvl (R) Опознание (1 lvl Identify)':0.1,
+        #'_++1 lvl (R) Сигнал тревоги (1 lvl Alarm)':0.1,
         #'_++1 lvl (R) Переписчик (1 lvl Amanuensis)':0.1,
-        #'_++1 lvl Поиск фамильяра (1 lvl Find_Familiar)':0.1,
+        #'_++1 lvl (R) Поиск фамильяра (1 lvl Find_Familiar)':0.1,
         #'_++1 lvl (R) Обнаружение магии (1 lvl Detect_Magic)':0.1,
         #'_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servant)':0.1,
         #'_++1 lvl (R) Невидимое письмо (1 lvl Illusory_Script)':0.1,
@@ -1917,7 +1920,7 @@ metadict_detail['_+1 lvl (ритуальные заклинания волшеб
 metadict_detail['_+1 lvl (ритуальные заклинания чародея) (заклинаний/год)'] = {
         '_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servant)':0.5,
         '_++1 lvl (R) Магическая ткань (1 lvl Arcane_Fabric)':0.3,
-        '_++1 lvl (R) Мастерство ремесленника (1 lvl Craftsmanship)':0.1,
+        '_++1 lvl (R) Мастерская ремесленника (1 lvl Crafter_Domain)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -1925,10 +1928,10 @@ metadict_detail['_+1 lvl (ритуальные заклинания колдун
         # Врачи в сельских больницах и служба продовольственной безопасности.
         # Обработка зерна, фруктов и овощей от болезней и вредителей.
         # 24 ритуала/сутки × 0.4 = 9.6 обработок,
-        '_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)':0.5,
+        '_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)':0.4,
         '_++1 lvl (R) Очищение пищи и питья (1 lvl Purify_Food_and_Drink)':0.3,
+        '_++1 lvl (R) Задержать яд (1 lvl Delay_Poison)':0.1,
         '_++1 lvl (R) Церемония (1 lvl Ceremony)':0.1,
-        #'_++1 lvl (R) Задержать болезнь (1 lvl Delay_Disease)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -1949,7 +1952,7 @@ metadict_detail['_+1 lvl (ритуальные заклинания жреца) 
         '_++1 lvl (R) Защита от непогоды (1 lvl Endure_Elements)':0.5,
         '_++1 lvl (R) Направляющая нить (1 lvl Guiding_Tether)':0.2,
         '_++1 lvl (R) Парящий диск (1 lvl Floating_Disk)':0.2,
-        #'_++1 lvl Сигнал тревоги (1 lvl Alarm)':0.1,
+        #'_++1 lvl (R) Сигнал тревоги (1 lvl Alarm)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -1957,7 +1960,7 @@ metadict_detail['_+1 lvl (ритуальные заклинания палади
         # Спасатели. Часто летают с инспекциями на вспышки заболеваний.
         '_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)':0.5,
         '_++1 lvl (R) Церемония (1 lvl Ceremony)':0.3,
-        '_++1 lvl (R) Задержать болезнь (1 lvl Delay_Disease)':0.1,
+        '_++1 lvl (R) Задержать яд (1 lvl Delay_Poison)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -1998,12 +2001,13 @@ metadict_detail['_+2 lvl (ритуальные заклинания чароде
         }
 
 metadict_detail['_+2 lvl (ритуальные заклинания колдуна) (заклинаний/год)'] = {
+        # Protection_from_Charm -- защищаем подопечных от Charm_Person
         # Gentle_Repose -- крионика.
-        '_++2 lvl (R) Нетленные останки (2 lvl Gentle_Repose)':0.5,
-        '_++2 lvl (R) Общение с мёртвыми (2 lvl Commune_With_Death)':0.1,
-        '_++2 lvl (R) Определить родословную (2 lvl Determine_Lineage)':0.1,
-        '_++2 lvl (R) Защита от очарования (2 lvl Protection_from_Charm)':0.1,
-        #'_++2 lvl Кристальные воспоминания (2 lvl Crystalline_Memories)':0.1,
+        '_++2 lvl (R) Защита от очарования (2 lvl Protection_from_Charm)':0.3,
+        '_++2 lvl (R) Определить родословную (2 lvl Determine_Lineage)':0.2,
+        '_++2 lvl (R) Общение с мёртвыми (2 lvl Commune_With_Death)':0.2,
+        '_++2 lvl (R) Нетленные останки (2 lvl Gentle_Repose)':0.1,
+        #'_++2 lvl (R) Кристальные воспоминания (2 lvl Crystalline_Memories)':0.1,
         '_++2 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2025,9 +2029,8 @@ metadict_detail['_+2 lvl (ритуальные заклинания жреца) 
         }
 
 metadict_detail['_+2 lvl (ритуальные заклинания паладина) (заклинаний/год)'] = {
-        '_++2 lvl (R) Нетленные останки (2 lvl Gentle_Repose)':0.5,
-        '_++2 lvl (R) Свободное дыхание (2 lvl Respirance)':0.2,
-        '_++2 lvl (R) Задержать яд (2 lvl Delay_Poison)':0.1,
+        '_++2 lvl (R) Свободное дыхание (2 lvl Respirance)':0.5,
+        '_++2 lvl (R) Нетленные останки (2 lvl Gentle_Repose)':0.1,
         '_++2 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2093,7 +2096,7 @@ metadict_detail['_+3 lvl (ритуальные заклинания жреца) 
         }
 
 metadict_detail['_+3 lvl (ритуальные заклинания паладина) (заклинаний/год)'] = {
-        # $ TODO: допилить.
+        # TODO: ритуальные заклинания паладина 3 круга. Допилить.
         # Не владеют ритуальными заклинаниями этого круга.
         '_++3 lvl (R) (ритуалов/год) (доступно)':1,
         }
@@ -2112,7 +2115,7 @@ metadict_detail['_+4 lvl (ритуальные заклинания барда) 
             # Посмотри годные Homebrew. А нет таких, лол, сам придумывай.
             # https://www.dandwiki.com/wiki/Category:Ritual_Tag
         '_++4 lvl (R) Маска идеала (4 lvl Mask_of_the_Ideal)':0.5,
-        '_++4 lvl (R) Зеркальное послание (4 lvl Mirror_Sending)':0.3,
+        '_++4 lvl (R) Послание через зеркало (4 lvl Mirror_Sending)':0.3,
         '_++4 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2133,7 +2136,7 @@ metadict_detail['_+4 lvl (ритуальные заклинания чароде
         }
 
 metadict_detail['_+4 lvl (ритуальные заклинания колдуна) (заклинаний/год)'] = {
-        # TODO: допилить
+        # TODO: ритуальные заклинания колдуна 4 круга. Допилить.
         '_++4 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2152,7 +2155,7 @@ metadict_detail['_+4 lvl (ритуальные заклинания жреца) 
 # Ритуалы 5 круга
 
 metadict_detail['_+5 lvl (ритуальные заклинания барда) (заклинаний/год)'] = {
-        # TODO: допилить
+        # TODO: ритуальные заклинания барда 5 круга. Допилить.
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2162,7 +2165,7 @@ metadict_detail['_+5 lvl (ритуальные заклинания волшеб
         '_++5 lvl (R) Ментальная связь Рэри (5 lvl Rary_Telepathic_Bond)':0.7,
         '_++5 lvl (S) Защищённый кабинет (5 lvl Mordenkainen_Private_Sanctum)':0.1,
         '_++5 lvl (R) Доспехи лорда-мага (5 lvl Mailed_Might_of_the_Magelords)':0.1,
-        #'_++5 lvl (R) Связь с иным миром (5 lvl Contact_Other_Plane)':0.1,
+        #'_++5 lvl (R) Общение с иным миром (5 lvl Contact_Other_Plane)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2170,15 +2173,15 @@ metadict_detail['_+5 lvl (ритуальные заклинания чароде
         '_++5 lvl (R) Ментальная связь Рэри (5 lvl Rary_Telepathic_Bond)':0.5,
         '_++5 lvl (R) Матрица заклинаний (5 lvl Simbul_Spell_Matrix)':0.3,
         '_++5 lvl (R) Корона ясности зрения (5 lvl Crown_of_Clarity)':0.1,
-        #'_++5 lvl Корона защиты (5 lvl Crown_of_Protection)':0.1,
-        #'_++5 lvl Корона иллюзий (5 lvl Crown_of_Veils)':0.1,
-        #'_++5 lvl Корона силы (5 lvl Crown_of_Might)':0.1,
+        #'_++5 lvl (R) Корона защиты (5 lvl Crown_of_Protection)':0.1,
+        #'_++5 lvl (R) Корона иллюзий (5 lvl Crown_of_Veils)':0.1,
+        #'_++5 lvl (R) Корона силы (5 lvl Crown_of_Might)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
 metadict_detail['_+5 lvl (ритуальные заклинания колдуна) (заклинаний/год)'] = {
         '_++5 lvl (R) Разбить очарование (5 lvl Break_Enchantment)':0.5,
-        '_++5 lvl (R) Связь с иным миром (5 lvl Contact_Other_Plane)':0.1,
+        '_++5 lvl (R) Общение с иным миром (5 lvl Contact_Other_Plane)':0.1,
         '_++5 lvl (R) Образумить немёртвого (5 lvl Enlighten_Undead)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
@@ -2192,7 +2195,7 @@ metadict_detail['_+5 lvl (ритуальные заклинания друида
 metadict_detail['_+5 lvl (ритуальные заклинания жреца) (заклинаний/год)'] = {
         # Астрология даёт уйму знаний о кантоне в пределах 6 миль.
         '_++5 lvl (R) Астрология (5 lvl Astromancy)':0.1,
-        '_++5 lvl (R) Общение (5 lvl Commune)':0.1,
+        '_++5 lvl (R) Общение с божеством (5 lvl Commune)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2200,8 +2203,9 @@ metadict_detail['_+5 lvl (ритуальные заклинания жреца) 
 # Ритуалы 6 круга
 
 metadict_detail['_+6 lvl (ритуальные заклинания жреца) (заклинаний/год)'] = {
-        # TODO: допилить. У нас десятки высокоуровневых пегасов-погодников.
-        #'_++6 lvl Запрет (6 lvl Forbiddance)':0.1,
+        # TODO: ритуальные заклинания жреца 6 круга. Допилить.
+            # У нас десятки высокоуровневых пегасов-погодников.
+        #'_++6 lvl (R) Запрет (6 lvl Forbiddance)':0.1,
         '_++6 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -2263,13 +2267,13 @@ metadict_detail['_+8 lvl (ритуальные заклинания жреца) 
         # Прочие:
         # - poison -- яд
     # (R) -- ритуал, 10 минут каста без затраты слотов.
-    # (C) -- заговор, кантрип, заклинание 0 круга без затраты слотов.
+    # (C) -- концентрация на заклинании. Одновременно только одна.
 
 #----
 # Заговоры (книга заклинаний, spellbok)
 
 metadict_detail['_++0 lvl (C) Указание (0 lvl Guidance)'] = {
-        # * "Указание" (Guidance) [Div|-|-] (C) — касание, действием, минута концентрации. Даёт +1d4 к одной из проверок характеристик. На выбор. После выбора заклинание завершается.
+        # * "Указание" (Guidance) [Div|-|-] (C) — касание, действием, минута концентрации. Даёт +1d4 к одной из проверок характеристик. На выбор. После выбора заклинание завершается. Пожалуй, это обязательный кантрип для любого жреца, ведь проверок характеристик море, да и проверки навыков относятся к ним. Скрытность и взлом замков, выслеживание и кулинария, выбивание дверей и состязание борцов. Захваты и сбивание с ног часто используются в бою, поэтому, подчас, "Указание" может быть эффективнее, чем боевой кантрип.
         # _++0 lvl (C) Указание (0 lvl Guidance).............. | 383,821,140
         # _++0 lvl (C) Указание (кантон)...................... | 197,137
         # _++0 lvl (C) Указание (кантон/день)................. | 547
@@ -2277,6 +2281,7 @@ metadict_detail['_++0 lvl (C) Указание (0 lvl Guidance)'] = {
         }
 
 metadict_detail['_++0 lvl (C) Волшебная рука (0 lvl Mage_Hand)'] = {
+        # TODO: (C) в нотации обозначает концентрацию, а у нас так помечены кантрипы.
         # * "Волшебная рука" (Mage_Hand) [Cnj|-|-] (C) — 30 футов, действием, не далее 30 футов, не более 10 фунтов (4.5 кг). Манипуляции предметами, открывание контейнеров и дверей, et cetera.
         # Считаем работу заклинания:
         # Передвижение 4.5 кг на 9.144 метра за 6 секунд = 6.858 килограмм на метр/секунду.
@@ -2284,7 +2289,7 @@ metadict_detail['_++0 lvl (C) Волшебная рука (0 lvl Mage_Hand)'] = 
         }
 
 metadict_detail['_++0 lvl (C) Фокусы (0 lvl Prestidigitation)'] = {
-        # * "Фокусы" (Prestidigitation) [Tra|-|-] (C) — 10 футов, действием, час действия, не больше 3 долговременных эффектов. Различные мелкие заклинания. 1) Безвредный запах, звук, искра, порыв ветра. 2) Разжечь факел/костёр. 3) Чистка предмета до 1 кубического фута. 4) остудить, нагреть, придать запах 1 кубическому футу неживой материи на 1 час. 5) Маленькая цветная метка на 1 час. 6) Маленький немагический предмет на 6 секунд.
+        # * "Фокусы" (Prestidigitation) [Tra|-|-] (C) — 10 футов, действием, час действия, не больше 3 долговременных эффектов. Различные мелкие заклинания. 1) Безвредный запах, звук, искра, порыв ветра. 2) Разжечь факел/костёр. 3) Чистка предмета до 1 кубического фута. 4) остудить, нагреть, придать вкус или запах 1 кубическому футу неживой материи на 1 час. 5) Маленькая цветная метка на 1 час. 6) Маленький немагический предмет на 6 секунд. Очень уютное заклинание. Придать 28 литрам воды вкус отличного вина, а котелку пустой каши вкус жаркого, да ещё и разогреть её притом. Создать из доспехов грелку в морозную погоду, или приятную прохладу под палящим солнцем. Очистить книгу от текста, почему бы и нет? Из зловредных приёмов, можно залить пищу во вражеском котелке трупным ядом, или бочонок с водой заменить на крепкий алкоголь. Кроме того это заклинание можно использовать для скрытной связи. Создайте метки с цифрами 0, 6 и 12 на бумаге, передайте трём отрядам, отмените метки за 3 действия, это будет приказ одновременно атаковать.
         }
 
 metadict_detail['_++0 lvl (C) Искусство друидов (0 lvl Druidcraft)'] = {
@@ -2295,7 +2300,7 @@ metadict_detail['_++0 lvl (C) Искусство друидов (0 lvl Druidcraf
         }
 
 metadict_detail['_++0 lvl (C) Лепка земли (0 lvl Mold_Earth)'] = {
-        # * "Лепка земли" (Mold_Earth) [Tra|-|-] (C) — 30 футов, 5-футовый куб земли. 30 кубометров грунта за минуту, 900 метров траншеи в час. Один маг способен заменить 2000 землекопов. Надо ли говорить, насколько это упрощает строительные работы? Ирригация в сельском хозяйстве, осушение болот, "римские" дороги, водопровод и канализация городов. С магией всё это становится в разы дешевле.
+        # * "Лепка земли" (Mold_Earth) [Tra|-|-] (C) — 30 футов, действием, 5-футовый куб земли. 30 кубометров грунта за минуту, 900 метров траншеи в час. Один маг способен заменить 2000 землекопов. Надо ли говорить, насколько это упрощает строительные работы? Ирригация в сельском хозяйстве, осушение болот, "римские" дороги, водопровод и канализация городов. С магией всё это становится в разы дешевле.
         # Расчётная мощность -- 16 кВт, на ось "земляного" колеса даёт 14.75 кВт (92% КПД)
             # Передвижение 3.375 куб.метра земли на 1.5 метра за 6 секунд.
             # Или 0.25 метра/секунду, или 0.84 кубометра на метр/секунду.
@@ -2311,13 +2316,12 @@ metadict_detail['_++0 lvl (C) Лепка земли (0 lvl Mold_Earth)'] = {
         }
 
 metadict_detail['0 lvl Лепка земли (0 lvl Mold_Earth) (требуется)'] = {
-        # Предполагается 600 кантрипов/час. Хорошая организация работ.
-        '-Работа волшебника (0 lvl Mold_Earth) (нормо-часов)':0.1 / 60,
+        '-Работа волшебника (0 lvl Mold_Earth) (6 секунд)':1,
         '-Механическая энергия, заклинания (киловатт-час)':16 / 600,
         }
 
 metadict_detail['_++0 lvl (C) Формирование воды (0 lvl Shape_Water)'] = {
-        # * "Формирование воды" (Shape_Water) [Tra|-|-] (C) — 30 футов, 5-футовый куб воды. Смена формы, движение. Заморозка, давление расширяющегося льда. Разрушить кладку крепостной стены? Просто сделай трещину и заморозь. Пробить шахту в скале? Просто залей воду в скважину и заморозь. Уничтожить дверной замок? Ты знаешь ответ. Фактически, это замена пороха в инженерных работах, и поэтому магов владеющих Shape_Water ценят все.
+        # * "Формирование воды" (Shape_Water) [Tra|-|-] (C) — 30 футов, действием, 5-футовый куб воды. Смена формы, движение. Заморозка, давление расширяющегося льда. Разрушить кладку крепостной стены? Просто сделай трещину и заморозь. Пробить шахту в скале? Просто залей воду в скважину и заморозь. Уничтожить дверной замок? Ты знаешь ответ. Фактически, это замена пороха в инженерных работах, и поэтому магов владеющих Shape_Water ценят все.
         # Передвижение 0.84 кубометра на метр/секунду
         # Плотность воды -- 1000 кг/кубометр. Стало быть 840 кгс*м/с.
         # Мощность Shape_Water: 844*9.8=8271 Втт (8 кВт)
@@ -2328,12 +2332,12 @@ metadict_detail['_++0 lvl (C) Формирование воды (0 lvl Shape_Wat
         }
 
 metadict_detail['0 lvl Формирование воды (0 lvl Shape_Water) (требуется)'] = {
-        '-Работа волшебника (0 lvl Shape_Water) (нормо-часов)':0.1 / 60,
+        '-Работа волшебника (0 lvl Shape_Water) (6 секунд)':1,
         '-Механическая энергия, заклинания (киловатт-час)':8 / 600,
         }
 
 metadict_detail['_++0 lvl (C) Сотворение костра (0 lvl Create_Bonfire)'] = {
-        # * +++ "Сотворение костра" (Create_Bonfire) [Cnj|Dex|fire] (C) —  60 футов, минута концентрации, 5-футовый куб, 1d8 урона, спасбросок ловкости полный.
+        # * +++ "Сотворение костра" (Create_Bonfire) [Cnj|Dex|fire] (C) —  60 футов, действием, минута концентрации, 5-футовый куб, 1d8 урона, спасбросок ловкости полный.
         # Это зона в 2.25 квадратных метров заклинания, но не больше 0.5 кв.метра открытого пламени.
             # Сила воздействия  | кВт/м2
             # ----------------- | -------
@@ -2414,12 +2418,13 @@ metadict_detail['_++0 lvl (C) Шквал (0 lvl Gust)'] = {
         '-Механическая энергия, заклинания (киловатт-час)':7.3 / 600,
         }
 
-metadict_detail['_++0 lvl (C) Магическая краска (0 lvl Arcane_Painting)'] = {
-        # * @@@ "Магическая краска" (Arcane_Painting) [Tra|-|-] (C) — касание, действием, немного растёртого с маслом угля. Позволяет писать, рисовать, красить предметы стойкими чернилами любого цвета. Не больше 0.1 квадратного фута за раунд (6 кв.метров/час). Эти чернила стойкие и не являются магией, но легко разрушаются кислотой.
+metadict_detail['_++0 lvl (C) Рисование магией (0 lvl Arcane_Painting)'] = {
+        # Старое название: Магическая краска
+        # * @@@ "Рисование магией" (Arcane_Painting) [Tra|-|-] (C) — касание, действием, щепотка растёртого с маслом угля. Позволяет писать, рисовать, красить предметы стойкими чернилами любого цвета. Не больше 0.1 квадратного фута за раунд (6 кв.метров/час). Эти чернила стойкие и не являются магией, но легко разрушаются кислотой.
         # Выбрано: Эквестрийские пони 1
-        # -Текстиль (квадратный метр)....................... | 11
-        # _++0 lvl (C) Магическая краска (0 lvl Arcane_Painting).. | 14
-        # _++0 lvl (C) Магическая краска (квадратных метров/пони). | 0.13
+        # -Текстиль (квадратный метр)............................ | 11
+        # _++0 lvl (C) Рисование магией (0 lvl Arcane_Painting).. | 14
+        # _++0 lvl (C) Рисование магией (квадратных метров/пони). | 0.13
         # Всего лишь 1% тканей красятся волшебными красками. Художников мало.
         #
         # Выбрано: Простая окраска масляными составами (100 квадратных метров) 1
@@ -2446,7 +2451,7 @@ metadict_detail['_++0 lvl (C) Сообщение (0 lvl Message)'] = {
         }
 
 metadict_detail['_++0 lvl (C) Пляшущие огоньки (0 lvl Dancing_Lights)'] = {
-        # * "Пляшущие огоньки" (Dancing_Lights) [Evo|-|-] (C) — 120 футов, действием, минута концентрации. Четыре разноцветных огонька. Резервное средство связи. Если дым и туман от Fog_Cloud не позволяет нацелить "Послание", то можно отправить огоньки на ту же дистанцию. Какой-нибудь адресата да найдёт. А их форма и цвет передаст закодированное сообщение.  
+        # * !!! "Пляшущие огоньки" (Dancing_Lights) [Evo|-|-] (C) — 120 футов, действием, минута концентрации. 60-футов полёта/раунд, до 600 футов полёта/минута. Четыре разноцветных огонька. Резервное средство связи. Если дым и туман от Fog_Cloud не позволяет нацелить "Послание", то можно отправить огоньки на лишь вдвое меньшую дистанцию. Какой-нибудь адресата да найдёт. А их форма и цвет передаст закодированное сообщение.  
         }
 
 metadict_detail['_++0 lvl (C) Трауматургия (0 lvl Thaumaturgy)'] = {
@@ -2454,6 +2459,7 @@ metadict_detail['_++0 lvl (C) Трауматургия (0 lvl Thaumaturgy)'] = {
         }
 
 metadict_detail['_++0 lvl (C) Склеить предмет (0 lvl Mending)'] = {
+        # TODO: Mending продлевает срок службы любых изделий. Минута работы мага = час работы кузнеца.
         # * !!! "Починка" (Mending) [Tra|-|-] (C) — касание, минута каста. Чинит повреждения менее 1 футов (трещины, выбоины, проколы). Можно чинить участки обшивки корабля (а также каменные стены, частоколы), всё на 1 hp/минута. Пока хиты повреждённого предмета не опустились ниже нуля. Последнее значит, что повреждения крайне серьёзные, но полностью разрушается объект только при минусовом максимуме хитов.
         # Этим заклинанием пони заменяют сварку и используют вместо клея.
         '_++0 lvl (C) Склеить предмет (0 lvl Mending) (%)':[
@@ -2463,8 +2469,7 @@ metadict_detail['_++0 lvl (C) Склеить предмет (0 lvl Mending)'] = 
         }
 
 metadict_detail['0 lvl Склеить предмет (0 lvl Mending) (требуется)'] = {
-        # По правилам заклинание требует минуту каста, но у нас 0.1 минуты.
-        '-Работа волшебника (0 lvl Mending) (нормо-часов)':0.1 / 60,
+        '-Работа волшебника (0 lvl Mending) (минута)':1,
         '-Механическая энергия, заклинания (киловатт-час)':4 / 600,
         }
 
@@ -2489,7 +2494,7 @@ metadict_detail['_++1 lvl (S) Поглощение стихий (1 lvl Absorb_El
         }
 
 metadict_detail['_++1 lvl (R) Защита от непогоды (1 lvl Endure_Elements)'] = {
-        # * +++ "Защита от непогоды" (Endure_Elements) [Tra|-|-] (R) — касание, действием, ритуал, 8 часов действия. Даёт защиту от иссушающего жара пустыни или зимнего холода.
+        # * @@@ "Защита от непогоды" (Endure_Elements) [Tra|-|-] (R) — касание, действием, ритуал, 8 часов действия. Даёт защиту от иссушающего жара пустыни или зимнего холода. Это тончайшая оболочка, создающая микроклимат между одеждой и телом.
         # Абсолютно необходимо погодникам. Холод, морось, а им летать.
         # _++1 lvl (R) Защита от непогоды (1 lvl Endure_Elements).................... | 229,741,426
         # _++1 lvl (R) Защита от непогоды (пони/год)................................. | 143,588
@@ -2535,7 +2540,7 @@ metadict_detail['_++1 lvl (S) Добряника (1 lvl Goodberry)'] = {
 
 metadict_detail['1 lvl Добряника (1 lvl Goodberry) (требуется)'] = {
         # 1 час каста. Энергоёмкое заклинание.
-        '-Работа волшебника (1 lvl Goodberry) (нормо-часов)':60 / 60,
+        '-Работа волшебника (1 lvl Goodberry) (60 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':1 * 10,
         }
 
@@ -2549,12 +2554,12 @@ metadict_detail['_++1 lvl (R) Оздоравливающий сон (1 lvl Healt
 
 metadict_detail['1 lvl Оздоравливающий сон (1 lvl Healthful_Rest) (требуется)'] = {
         # 10 минут каста. Колыбельная же.
-        '-Работа волшебника (1 lvl Healthful_Rest) (нормо-часов)':10 / 60,
+        '-Работа волшебника (1 lvl Healthful_Rest) (10 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':10 / 6,
         }
 
 metadict_detail['_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servant)'] = {
-        # * "Невидимый слуга" (Unseen_Servant) [Cnj|-|-] (R) — 60 футов, действием, ритуал, час действия. Управление бонусным действием. Слуга уязвим, имеет 1 hp и 10 AC. Он слаб: 2 силы -- 10-30 фунтов грузоподъёмности. Слуга может исполнять сложные команды: ткать, чистить овощи, прибираться в доме. Главный недостаток в том, что слуга не может отдалиться от мага далее 60 футов (20 метров).
+        # * !!! "Невидимый слуга" (Unseen_Servant) [Cnj|-|-] (R) — 60 футов, действием, ритуал, час действия. Управление бонусным действием. Слуга уязвим, имеет 1 hp и 10 AC. Он слаб: 2 силы -- 10-30 фунтов грузоподъёмности. Слуга может исполнять сложные команды: ткать, чистить овощи, прибираться в доме. Главный недостаток в том, что слуга не может отдалиться от мага далее 60 футов (20 метров). На больших уровнях даёт 2 слуг/уровень и увеличивает дистанцию на 30 футов, например: 2 круг -- 2 слуги/90-футов; 3 круг -- 4 слуги/120-футов; 4 круг -- 6 слуг/150-футов; 5 круг -- 8 слуг/180-футов; 6 круг -- 10 слуг/210-футов; 7 круг -- 12 слуг/240-футов; 8 круг -- 14 слуг/270 футов; 9 круг -- 16 слуг, 300 футов.
         # Используется для чистки городской канализации, химпрома и тому подобных вредных работ.
         # _++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servant)........................ | 44,281,451
         # _++1 lvl (R) Невидимый слуга (нормо-часов)................................. | 44,281,451
@@ -2564,12 +2569,13 @@ metadict_detail['_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servan
         }
 
 metadict_detail['_++1 lvl (R) Магическая ткань (1 lvl Arcane_Fabric)'] = {
-        # * @@@ "Магическая ткань" (Arcane_Fabric) [Tra|-|-] (R) — касание, минута каста, ритуал, 7 суток действия. Компоненты: 12 lb древесины, соломы, или скошенной травы. Создаёт 10×10-футовый кусок холста (11 кв.метров), либо за 10 минут каста готовые неокрашенные изделия. На выбор: 4 набора обычной одежды, 4 одеяла, 50-футовую верёвку, сеть или двухместную палатку. Эти предметы выглядят как обычные, но проверка Интеллекта (Анализ) против СЛ заклинания распознаёт их как волшебную подделку, а "Обнаружение магии" показывает ауру преобразования. Этим же заклинанием в форме ритуала можно изготовить 1-футовый кусок (0.1 кв.метра) совершенно обыкновенной хлопчатобумажной ткани, стало быть самому производить необходимые материалы в ремесле портного. На больших уровнях площадь созданной ткани увеличивается на 10 футов по обеим измерениям, а срок существования продлевается на каждом нечётном уровне: 30×30-футов и 30 дней -- 3 круг; 50×50-футов и 90 дней -- 5 круг; 70×70-футов и 360 дней -- 7 круг; 90×90-футов и бесконечность -- 9 круг. Затраты древесины растут сопоставимо.
+        # * @@@ "Магическая ткань" (Arcane_Fabric) [Tra|-|-] (R) — касание, минута каста, ритуал, 7 суток действия. Компоненты: 12 lb древесины, соломы или скошенной травы. Создаёт 10×10-футовый кусок холста (11 кв.метров), либо за 10 минут каста готовые неокрашенные изделия. На выбор: 4 набора обычной одежды, 4 одеяла, 50-футовую верёвку, сеть или двухместную палатку. Эти предметы выглядят как обычные, но проверка Интеллекта (Анализ) против СЛ заклинания распознаёт их как волшебную подделку, а "Обнаружение магии" показывает ауру преобразования. Этим же заклинанием в форме ритуала можно изготовить 1-футовый кусок (0.1 кв.метра) совершенно обыкновенной хлопчатобумажной ткани, стало быть самому производить необходимые материалы в ремесле портного. На больших уровнях площадь созданной ткани увеличивается на 10 футов по обеим измерениям, а срок существования продлевается на каждом нечётном уровне: 30×30-футов и 30 дней -- 3 круг; 50×50-футов и 90 дней -- 5 круг; 70×70-футов и 360 дней -- 7 круг; 90×90-футов и бесконечность -- 9 круг. Затраты древесины растут сопоставимо.
         # Оцениваем по "Книге игрока":
         # Холстина стоит 0.1 gp; хлопчатобумажная ткань 0.5 gp.
         # - 9 часов = 24 ритуала изготовления одежды = поддельные изделия на 48 gp
         # - 9 часов = 48 ритуалов = 528 кв.метров поддельной ткани = 53 gp (0.9 gp по сроку службы)
         # - 9 часов = 48 ритуалов = 4.8 кв.метра настоящей ткани = 2.4 gp (ремесло позволяет до 5 gp)
+        # Между прочим, 6 дней каста, это уже 300 gp подделок, хорошая такая сокровищница 0-4 CR.
         }
 
 metadict_detail['_++1 lvl (R) Переписчик (1 lvl Amanuensis)'] = {
@@ -2582,7 +2588,7 @@ metadict_detail['_++1 lvl (R) Направляющая нить (1 lvl Guiding_T
         # Старое название: Ancient_Tether, Arcane_Mark
         # * @@@ "Направляющая нить" (Guiding_Tether) [Div|Int|-] (R) — касание, действием, ритуал, 24 часа действия. Цепляет невидимую нить к объекту или согласному существу, к несогласному с проверкой Интеллекта против сложности заклинания. Пройдя проверку существо видит якорь нити и может стереть его действием. Заклинатель всегда видит нить, касаясь которой можно идти по следу существа, или вернуться по собственному следу к якорю на объекте. Длина нити 3 мили, когда длина исчерпана заклинание прерывается. На больших уровнях нить приобретает новые свойства: 2 круг -- длина нити больше не ограничена, по ней можно общаться кантрипом "Сообщение"; 3 круг -- нить увеличивает дальность связи с фамильяром на 100 футов/круг; 5 круг -- по нити с вашей стороны можно передать заклинание с дальностью касание, после чего она разрушается. 7 круг -- нить следует через телепортации и планарные переходы, позволяя их повторить; 9 круг -- нить существует пока не рассеется, её якорь можно стереть только рассеиванием магии.
         # Уже с пятого круга можно поддерживать нить бесконечной, касанием передавая новую раз в сутки.
-        # Так можно передавать Foresight, Symbol, Sequester, создать Simulacrum отмеченного существа.
+        # Так можно передавать Foresight и Sequester, создать Simulacrum отмеченного существа.
         }
 
 metadict_detail['_++1 lvl (S) Падение пёрышком (1 lvl Feather_Fall)'] = {
@@ -2616,8 +2622,8 @@ metadict_detail['_++1 lvl (S) Туманное облако (1 lvl Fog_Cloud)'] 
         # В исполнении пегасок;
         # _++1 lvl (S) Туманное облако (1 lvl Fog_Cloud)............................. | 49,139,138
         # _++1 lvl (S) Туманное облако (гектар/год).................................. | 491,391
-        # |---Огороды (гектар)................................................. | 978,972
-        # |--Усадьбы (гектар).................................................. | 494,353
+        # |---Огороды (гектар)....................................................... | 978,972
+        # |--Усадьбы (гектар)........................................................ | 494,353
         # Для полива, конечно, не годится. Но для пегасьего пикника сойдёт.
         }
 
@@ -2629,8 +2635,8 @@ metadict_detail['_++1 lvl (R) Обнаружение магии (1 lvl Detect_Ma
 
 metadict_detail['_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)'] = {
         # * "Обнаружение болезней и яда" (Detect_Poison_and_Disease) [Div|-|-] (R) — на себя, действием, ритуал, 30-футов радиус, 10 минут концентрации. Распознаёт вид яда, ядовитого существа или болезни. Очевидно, видит болезнетворные бактерии и отравляющие газы. Основа здравоохранения.
-        # _++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)........... | 37,589,066
-        # _++1 lvl Обнаружение болезней и ядов (ритуалов/кантон)........................... | 19,427
+        # _++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease)..... | 37,589,066
+        # _++1 lvl Обнаружение болезней и ядов (ритуалов/кантон)......................... | 19,427
         '_++1 lvl (R) Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease) (%)':[
             '(value / x) * 100',
             '1 lvl Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease) (требуется)',
@@ -2639,7 +2645,7 @@ metadict_detail['_++1 lvl (R) Обнаружение болезней и ядо�
 
 metadict_detail['1 lvl Обнаружение болезней и ядов (1 lvl Detect_Poison_and_Disease) (требуется)'] = {
         # 10 минут каста. Ритуальное заклинание.
-        '-Работа волшебника (1 lvl Detect_Poison_and_Disease) (нормо-часов)':10 / 60,
+        '-Работа волшебника (1 lvl Detect_Poison_and_Disease) (10 минут)':1,
         }
 
 metadict_detail['_++1 lvl (R) Очищение пищи и питья (1 lvl Purify_Food_and_Drink)'] = {
@@ -2647,12 +2653,12 @@ metadict_detail['_++1 lvl (R) Очищение пищи и питья (1 lvl Pur
             # 1 очищение = сфера, R=1.5 метра (15 м³, 7.5 тонн зерна)
             # _++1 lvl (R) Очищение пищи и питья (1 lvl Purify_Food_and_Drink) | 13,615,106
             # _++1 lvl (R) Очищение пищи и питья (тонн/заклинание)............ | 102,113,295
-            # |==Зернобобовые (тонн)...................................... | 3,115,229
-            # |==Зерновые (тонн).......................................... | 20,229,175
-            # |==Овощи (тонн)............................................. | 18,724,319
-            # |==Продовольствие (тонн).................................... | 8,801,590
-            # |==Сырьё пищевое (тонн)..................................... | 59,344,564
-            # |==Фрукты (тонн)............................................ | 10,759,891
+            # |==Зернобобовые (тонн).......................................... | 3,115,229
+            # |==Зерновые (тонн).............................................. | 20,229,175
+            # |==Овощи (тонн)................................................. | 18,724,319
+            # |==Продовольствие (тонн)........................................ | 8,801,590
+            # |==Сырьё пищевое (тонн)......................................... | 59,344,564
+            # |==Фрукты (тонн)................................................ | 10,759,891
             # Это требует 3 млн. рабочих часов, работы 2500 колдунов (по 4 часа 300 дней/год)
             # Должны быть группы по 10-20 специалистов при окружных железнодорожных станциях.
         }
@@ -2662,23 +2668,42 @@ metadict_detail['_++1 lvl (R) Разговор с животными (1 lvl Spea
         }
 
 metadict_detail['_++1 lvl (S) Очарование личности (1 lvl Charm_Person)'] = {
-        # * "Очарование личности" (Charm_Person) [Enc|Wis|-] — 30 футов, действием, час действия. Одна цель, спасбросок мудрости. Спасбросок с преимуществом, если вы сражаетесь с ним. Спасбросок с преимуществом, если вы сражаетесь с ним. Очарованный считает вас другом. Он понимает, что был обманут, когда заклинание заканчивается. На больших уровнях: +1 очарованный/круг в пределах 30 футов от предыдущего.
+        # * "Очарование личности" (Charm_Person) [Enc|Wis|-] — 30 футов, действием, час действия. Одна цель, спасбросок мудрости. Спасбросок с преимуществом, если вы сражаетесь с ним. Очарованный считает вас другом. Он понимает, что был обманут, когда заклинание заканчивается. На больших уровнях: +1 очарованный/круг в пределах 30 футов от предыдущего.
+        # _++1 lvl (S) Очарование личности (1 lvl Charm_Person).............. | 4,255,213
+        # _++1 lvl (S) Очарование личности (очарований/день)................. | 11,820
+        # _++1 lvl (S) Очарование личности (очарований/день-кантон).......... | 6
+        # Господа, каждую пятую пони очаровывают раз в год. Нахуй так жить?
         }
 
 metadict_detail['_++1 lvl (S) Очарование зверя (1 lvl Charm_Animal)'] = {
         # Подобно очарованию личности.
+        # _++1 lvl (S) Очарование зверя (1 lvl Charm_Animal)................. | 1,702,491
+        # _++1 lvl (S) Очарование зверя (очарований/день).................... | 4,729
+        # _++1 lvl (S) Очарование зверя (очарований/день-кантон)............. | 3
         }
 
 metadict_detail['_++1 lvl (S) Благословение (1 lvl Bless)'] = {
         # * +++ "Благословение" (Bless) [Abj|-|-] — 30 футов, действием, 3 существа, минута концентрации. Добавляет 1d4 к броскам атаки и спасброскам.
+        # _++1 lvl (S) Благословение (1 lvl Bless)............... | 925,389
+        # _++1 lvl (S) Благословение (целей)..................... | 2,776,166
+        # _++1 lvl (S) Благословение (целей/день)................ | 7,712
+        # _++1 lvl (S) Благословение (целей/день-кантон)......... | 4
+        # В основном это паладины и колдуны благословляют друг дружку.
         }
 
-metadict_detail['_++1 lvl (R) Задержать болезнь (1 lvl Delay_Disease)'] = {
-        # * @@@ "Задержать болезнь" (Delay_Disease) [Abj|-|-] (R) — касание, действием, ритуал, 24 часа. Болезнь не прогрессирует, пока действует заклинание. Больной при этом должен спать.
+metadict_detail['_++1 lvl (R) Задержать яд (1 lvl Delay_Poison)'] = {
+        # * @@@ "Задержать яд" (Delay_Poison) [Nec|-|-] (R) — касание, действием, ритуал, 1 час действия. Урон от уже введённого в организм яда не прогрессирует, пока действует заклинание. Даёт иммунитет к состоянию отравления на время действия заклинания. На больших уровнях защита усиливается: 3 круг -- сопротивляемость к урону ядом; 5 круг -- иммунитет к урону ядом.
+        # Это заклинание для волшебников и колдунов.
+        # _++1 lvl (R) Задержать яд (1 lvl Delay_Poison)......... | 3,188,602
+        # _++1 lvl (R) Задержать яд (заклинаний/день)............ | 8,857
+        # _++1 lvl (R) Задержать яд (заклинаний/день-кантон)..... | 4
+        # На 100 пони 14 противоядий/год. Так-то маловато, но защит от яда в 7 раз меньше.
         }
 
 metadict_detail['_++1 lvl (R) Каменное укрытие (1 lvl Stone_Tent)'] = {
         # * @@@ "Каменное укрытие" (Stone_Tent) [Tra|-|-] (R) — касание, действием, ритуал, 10-футовый куб, 24 часа. Из доступной земли и песка создаёт куполообразное укрытие от непогоды. Укрытие имеет 15 AC и 10 hp, может вместить до 8 средних существ. Оно защищает от ветра, жара пустыни и зимней стужи. На больших уровнях укрытие получает +10 hp/уровень и +5 порога урона/уровень.
+        # _++1 lvl (R) Каменное укрытие (1 lvl Stone_Tent)....... | 1,198,163
+        # _++1 lvl (R) Каменное укрытие (заклинаний/кантон)...... | 641
         }
 
 metadict_detail['_++1 lvl (S) Маскировка себя (1 lvl Disguise_Self)'] = {
@@ -2689,17 +2714,26 @@ metadict_detail['_++1 lvl (R) Невидимое письмо (1 lvl Illusory_Sc
         # * "Невидимое письмо" (Illusory_Script) [Ilu|Int|-] (R) — 10 бит, касание, действием, ритуал, 10 дней действия. Скрывает истинный текст за иллюзией другого документа. Если заклинание рассеять истинный текст уничтожается. Существа с истинным зрением могут увидеть за иллюзией истинный текст.
         # Обфускация без шифрования. Используйте шифр одноразового блокнота, чтобы все обломались.
         # Используйте "Нистулову ложную ауру", чтобы письмо не светилось магией иллюзий.
+        # _++1 lvl (R) Невидимое письмо (1 lvl Illusory_Script).. | 5,719,007
+        # _++1 lvl (R) Невидимое письмо (заклинаний/день)........ | 15,886
+        # _++1 lvl (R) Невидимое письмо (заклинаний/день-кантон). | 8
         }
 
-metadict_detail['_++1 lvl (R) Мастерство ремесленника (1 lvl Craftsmanship)'] = {
-        # * @@@ "Мастерство ремесленника" (Craftsmanship) [Tra|-|-] (R) — на себя, действием, ритуал, 8 часов концентрации. Это набор заклинаний для имитации необходимых вам инструментов ремесленника. Шитьё и кройка, Сверление и шлифовка, тонкая плавка и литьё, чистка и разделка, готовка пищи без огня в мембранных сферах. Максимальная мощность 1 киловатт. Использование этого заклинания повышает производительность труда в 2 раза, а значит и дневной доход ремесла.
+metadict_detail['_++1 lvl (R) Мастерская ремесленника (1 lvl Crafter_Domain)'] = {
+        # Старое название: Craftsmanship
+        # * @@@ "Мастерская ремесленника" (Crafter_Domain) [Tra|-|-] (R) — на себя, действием, ритуал, 8 часов концентрации. Это набор заклинаний для имитации необходимых вам инструментов ремесленника. Шитьё и кройка, Сверление и шлифовка, тонкая плавка и литьё, чистка и разделка, готовка пищи без огня в мембранных сферах. Максимальная мощность 8 киловатт/уровень. Использование этого заклинания повышает производительность труда в 2 раза, а значит и дневной доход ремесла. На больших уровнях производительность труда ещё больше возрастает: 2 круг -- 4 раза (20 бит/день); 3 круг -- 6 раз (30 бит/день); 4 круг -- 8 раз (40 бит/день); 5 круг -- 10 раз (50 бит/день); 6 круг -- 20 раз (100 бит/день); 7 круг -- 40 раз (200 бит/день); 8 круг -- 80 раз (400 бит/день); 9 круг -- 160 раз (800 бит/день). Инструменты кружатся вихрем, мгновенно исполняя вашу волю, невидимые слуги снуют вокруг.
+        # "Изготовление" (Fabricate) 4 lvl даёт -- 50-100 бит/слот
+        # Стоимость заклинания 9 lvl -- 600 бит.
+        # _++1 lvl (R) Мастерская ремесленника (1 lvl Crafter_Domain) | 7,353,008
+        # _++1 lvl (R) Мастерская ремесленника (заклинаний/день)..... | 20,425
+        # Это +18.4 млн. бит прибыли. Практически бюджет Школы волшебства.
         }
 
 metadict_detail['_++1 lvl (S) Мембранный барьер (1 lvl Barrier_Membrane)'] = {
-        # TODO: Нужна тактическая оценка в dnd-mass-combat-simulation
+        # TODO: Barrier_Membrane. Нужна тактическая оценка в dnd-mass-combat-simulation
+            # Это часто упоминаемое в "Янтаре" заклинание щита в его простейшей форме.
+            # Перламутровая плёнка вокруг единорожки, которая не хочет ранить себя по собственной дурости.
         # * @@@ "Мембранный барьер" (Barrier_Membrane) [Tra|-|-] — 50 бит (1 lb алмазно-угольного порошка), минута каста, на себя, 10 минут концентрации. Бонусным действием вы можете укрыться за преобразованной рукой до начала своего следующего хода. Барьер имеет 15 AC и 1d8 хитов (5 hp на выбор). Он получает все сопротивляемости и иммунитеты персонажа, но автоматически проваливает спасброски ловкости. Если нанесённый к началу вашего следующего хода урон поглощается защитой, барьер втягивается до следующего вызова и полностью восстанавливается. Если урон пробивает защиту, заклинание прерывается и все накопленные повреждения достаются персонажу минуя любые сопротивляемости и иммунитеты. С каждым уровнем ячейки выше первого барьер получает +1d8 хитов (+5 hp).
-        # Это часто упоминаемое в "Янтаре" заклинание щита в его простейшей форме.
-        # Перламутровая плёнка вокруг единорожки, которая не хочет ранить себя по собственной дурости.
         #
         # Состав мембраны:
         # - Нитрид углерода (C3N4) -- 39% углерода, 61% азота
@@ -2718,17 +2752,16 @@ metadict_detail['_++1 lvl (S) Героизм (1 lvl Heroism)'] = {
         }
 
 metadict_detail['_++1 lvl (R) Церемония (1 lvl Ceremony)'] = {
-        # * !!! "Церемония" (Ceremony) [Enc|-|-] (R) — касание, действием, ритуал, 24 часа действия. Один из следующих эффектов: 1) Благословление воды -- освящает воду во фляге, делая её Святой водой. 2) Становление (совершеннолетие) -- даёт 1d4 к проверкам характеристик на 24 часа и один такой бросок после каждого следующего ритуала. 3) Посвящение (в веру) -- даёт 1d4 к спасброскам на следующие 24 часа и один такой бросок после каждого следующего ритуала. 4) Заупокойный обряд -- защищает тело от превращения в нежить. 5) Венчание -- даёт преимущество на спасброски против страха и очарования, пока цели находятся в пределах 30 футов друг от друга. На больших уровнях длительность заклинания увеличивается: 2 круг -- 3 дня; 3 круг -- 6 дней; 4 круг -- 12 дней; 5 круг -- 30 дней; 6 круг -- 90 дней; 7 круг -- 180 дней; 8 круг -- 360 дней; 9 круг -- пока не рассеется.
+        # * !!! "Церемония" (Ceremony) [Enc|-|-] (R) — 25 бит (порошок серебра), касание, действием, ритуал, 24 часа действия. Один из следующих эффектов: 1) Благословление воды -- освящает воду во фляге, делая её Святой водой. 2) Становление (совершеннолетие) -- даёт 1d4 к проверкам характеристик на 24 часа и один такой бросок после каждого следующего ритуала. 3) Посвящение (в веру) -- даёт 1d4 к спасброскам на следующие 24 часа и один такой бросок после каждого следующего ритуала. 4) Заупокойный обряд -- защищает тело от превращения в нежить. 5) Венчание -- даёт преимущество на спасброски против страха и очарования, пока цели находятся в пределах 30 футов друг от друга. На больших уровнях длительность заклинания увеличивается: 2 круг -- 3 дня; 3 круг -- 6 дней; 4 круг -- 12 дней; 5 круг -- 30 дней; 6 круг -- 90 дней; 7 круг -- 180 дней; 8 круг -- 360 дней; 9 круг -- пока не рассеется. Эффекты от Церемонии и других бонусных костей не складываются, берётся наибольшая кость.
         # _++1 lvl (R) Церемония (1 lvl Ceremony).................................... | 4,010,199
         # _++1 lvl (R) Церемония (церемоний/кантон).................................. | 2,893
+        # _++1 lvl (R) Церемония (церемоний/кантон-день)............................. | 8
+        # _++1 lvl (R) Церемония (церемоний/пони-жизнь).............................. | 11
+        # Всего 11 церемоний за 60 лет жизни, одна за 5 лет.
         }
 
 #----
 # Заклинания 2 круга
-
-metadict_detail['_++2 lvl (R) Задержать яд (2 lvl Delay_Poison)'] = {
-        # TODO: допиливай второй круг.
-        }
 
 metadict_detail['_++2 lvl (R) Защита от очарования (2 lvl Protection_from_Charm)'] = {
         }
@@ -2798,7 +2831,7 @@ metadict_detail['_++2 lvl (S) Бесследное передвижение (2 l
         }
 
 metadict_detail['_++2 lvl (R) Говорящие устрицы (2 lvl Speaking_Oysters)'] = {
-        # * @@@ "Говорящие устрицы" (Speaking_Oysters) [Con|-|-] (R) — 5 бит (подношение устрице), касание, действием, 24 часа действия. Превращает двух погружённых в водоём моллюсков в средство связи. Сказанное одним будет произнесено другим и наоборот. Моллюски должны быть живыми и дружественными. Расстояние значения не имеет, но водоёмы должны быть связаны, например: ручей --> река --> океан --> река. На больших уровнях длительность заклинания увеличивается: 2 круг -- 3 дня; 3 круг -- 6 дней; 4 круг -- 12 дней; 5 круг -- 30 дней; 6 круг -- 90 дней; 7 круг -- 180 дней; 8 круг -- 360 дней; 9 круг -- пока не рассеется.
+        # * @@@ "Говорящие устрицы" (Speaking_Oysters) [Con|-|-] (R) — 5 бит (подношение устрице), касание, действием, 24 часа действия. Превращает двух погружённых в водоём моллюсков в средство связи. Сказанное одним будет произнесено другим и наоборот. Моллюски должны быть живыми и дружественными. Расстояние значения не имеет, но водоёмы должны соприкасаться, например: ручей --> река --> океан --> река. На больших уровнях длительность заклинания увеличивается: 3 круг -- 6 дней; 5 круг -- 30 дней; 7 круг -- 360 дней; 9 круг -- пока не рассеется.
         # Используются с Teleportation_Circle, чтобы была беспрерывная связь городов:
         # _++2 lvl (R) Говорящие устрицы (2 lvl Speaking_Oysters)...................... | 660,212
         # _++2 lvl (R) Говорящие устрицы (раций/год)................................... | 1,834
@@ -2809,9 +2842,23 @@ metadict_detail['_++2 lvl (R) Говорящие устрицы (2 lvl Speaking_
 
 metadict_detail['_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)'] = {
         # * "Вечный огонь" (Continual_Flame) [Evo|-|-] — 50 бит (порошок рубина), касание, действием, пока не рассеется. Пламя эквивалентно яркости факела (20 футов яркого света, 20 футов тусклого). Реалистичная оценка светимости такая: сила света факела из ветвей можжевельника и сосновой смолы равна 14 кандел (176 люмен, подобно 20-ваттной лампе накаливания).
+        # Предметы с Continual_Flame, это универсальное средство обмена наравне с золотом. Они вечные, полезные, портативные, сложные в добыче/изготовлении. Пони называют их яркосветами. Лампа в доме, это большое вложение, зато она на поколения становится капиталом семьи.
+        # Капиталы в Continual_Flame:
+            # Сумма капиталов:
+                # Всего 62 млн светокристаллов, 3.7 млрд бит (1.1 ВВП Эквестрии)
+                # 1 Continual_Flame = 1 тонна ржаной муки, патефон, фотоаппарат, два пальто.
+                # -|$ Продукция, стоимость (бит).................. | 3,301,552,194
+                # |Утварь стеклянная (лампа светокристальная 10x10x20-см, 200 Лм).. | 20,171,972
+                # |Утварь стеклянная (люстра светокристальная 30x30x20-см, 600 Лм). | 7,574,379
+                # |Утварь стеклянная (люстра светокристальная 40x40x20-см, 1200 Лм) | 3,108,690
+                # amber Эквестрия -E светокристальная
+            # Доходы эквестрийских семей и светокристальные лампы в домах:
+                # - Семья богатеев (2000 бит/год) -- 207 светокристаллов, 12 420 бит (x6.5 середняков)
+                # - Семья середняков (990 бит/год) -- 32 светокристаллов, 1 920 бит (x4 бедняков)
+                # - Семья бедняков (500 бит/год) -- 8 светокристаллов, 480 бит (x4 селян)
+                # - Семья селян (500 бит/год) -- 2 светокристаллов, 120 бит
         # Сравнение источников света:
-            # 1 люкс = 1 люмен/кв.метр
-                # https://ru.wikipedia.org/wiki/Люкс
+            # Нормы освещённости:
                 # Тип помещения/условий            | Норма освещенности, люкс
                 # -------------------------------- | ------------------------
                 # Полдень, прямой свет Солнца      | 32-130 тысяч
@@ -2830,6 +2877,23 @@ metadict_detail['_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)'] 
                 # Молодой месяц (четверть луны)    | 0.01
                 # Звёзды, безлунная ночь           | 0.001
                 # Тёмная облачная ночь             | 0.0001
+                # 1 люкс = 1 люмен/кв.метр
+                # https://ru.wikipedia.org/wiki/Люкс
+            # Электрические лампы начала 20 века:
+                # Лампы накаливания, 1600-1700°C, 2-2.5 ватт/свечу.
+                # Больше температура, меньше срок службы, лучше свечение:
+                # ватт/люмен | люмен/лампа  | 50% потеря свечения | долговечность
+                # ---------- | ------------ | ------------------- | -------------
+                # 0.14       | 263          | 110 часов           | 270 часов
+                # 0.22       | 209          | 325                 | 390
+                # 0.26       | 202          | 1050                | 1050
+                # 1 candlepower equals 12.57 lumens
+                # https://ru.wikisource.org/wiki/ЭСБЕ/Электрическое_освещение
+                # https://ru.wikisource.org/wiki/ЭСБЕ/Освещение_калильное
+                # https://ru.wikisource.org/wiki/ЭСБЕ/Освещение
+                # https://ru.wikipedia.org/wiki/Свеча_Хефнера
+                # https://en.wikipedia.org/wiki/Candlepower
+                # https://ru.wikipedia.org/wiki/Кандела
             # Факел
                 # 1 факел = 14 кандел = 176 люмен
                 # 1 факел = 20-ваттная лампа накаливания
@@ -2870,12 +2934,12 @@ metadict_detail['_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)'] 
         }
 
 metadict_detail['2 lvl Вечный огонь (2 lvl Continual_Flame) (требуется)'] = {
-        # TODO: внезапно, светокристальных ламп не хватает.
+        # TODO: Continual_Flame. Внезапно, светокристальных ламп не хватает!
             # Заклинаний только на 52% ламп. Может сделать ритуалом?
             # Либо увеличивай число занятых в ремесле магов, либо уменьшай освещение.
             # Уменьшай число лампочек в люстрах обычных домов.
         # 1 action, но мы возьмём 10 минут каста.
-        '-Работа волшебника (2 lvl Continual_Flame) (нормо-часов)':10 / 60,
+        '-Работа волшебника (2 lvl Continual_Flame) (10 минут)':1,
         }        
 
 metadict_detail['_++2 lvl (R) Взгляд глазами животного (2 lvl Beast_Sense)'] = {
@@ -2886,8 +2950,12 @@ metadict_detail['_++2 lvl (S) Внушение (2 lvl Suggestion)'] = {
         # * "Внушение" (Suggestion) [Enc|Wis|-] (R) — 30 футов, действием, 8 часов концентрации. Цель исполняет здраво сформулированную команду. Нельзя дать самоубийственную команду. Нельзя дать команду длиннее двух фраз.
         }
 
+metadict_detail['_++2 lvl (S) Речь златоуста (2 lvl Enthrall)'] = {
+        # * !!! "Речь златоуста" (Enthrall) [Enc|Wis|-] — 60-футовый радиус, выбранные существа, минута действия. Спасбросок мудрости. Цели получают помеху на Мудрость (внимательность) для обнаружения других существ, кроме кастера. Homebrew: это заклинание подавляет связное мышление если цели не готовы к бою. Эффект достаточно силён, чтобы можно было повести толпу простолюдинов за собой, или вытащить придушенного купца из паланкина, пока маг отвлекает весь кортеж.
+        }
+
 metadict_detail['_++2 lvl (S) Улучшение характеристики (2 lvl Enhance_Ability)'] = {
-        # * "Улучшение характеристики" (Enhance_Ability) [Tra|-|-] — касание, действием, час концентрации. Даёт преимущество на проверки одной из характеристик. Силы, ловкости, телосложения, интеллекта, мудрости или харизмы. 
+        # * "Улучшение характеристики" (Enhance_Ability) [Tra|-|-] — касание, действием, час концентрации. Один из следующих эффектов: 1) Бычья сила -- преимущество силы и удвоенная грузоподъёмность; 2) Кошачья ловкость -- преимущество ловкости, нет урона за падение с 20 футов; 3) Медвежья выносливость -- преимущество телосложения, 2d6 бонусных хитов; 4) Лисья хитрость -- преимущество интеллекта; 5) Совиная мудрость -- преимущество мудрости. 6) Орлиное величие -- преимущество харизмы;
         }
 
 metadict_detail['_++2 lvl (R) Волшебные уста (2 lvl Magic_Mouth)'] = {
@@ -2930,7 +2998,7 @@ metadict_detail['_++2 lvl (R) Почтовое животное (2 lvl Animal_Me
         }
 
 metadict_detail['_++2 lvl (S) Малое восстановление (2 lvl Lesser_Restoration)'] = {
-        # * !!! "Малое восстановление" (Lesser_Restoration) [Abj|-|-]  — касание, действием. Лечит болезни. Исцеляет слепоту, глухоту, паралич, отравление, ранения костей, сухожилий, внутренних органов. Не убирает шрамы. Не восстанавливает утраченные органы и члены.
+        # * !!! "Малое восстановление" (Lesser_Restoration) [Abj|-|-] — касание, действием. Лечит болезни. Исцеляет слепоту, глухоту, паралич, отравление, ранения костей, сухожилий, внутренних органов. Не убирает шрамы. Не восстанавливает утраченные органы и члены.
         '_++2 lvl (S) Малое восстановление (2 lvl Lesser_Restoration) (%)':[
             '(value / x) * 100',
             '2 lvl Малое восстановление (2 lvl Lesser_Restoration) (требуется)',
@@ -2939,8 +3007,12 @@ metadict_detail['_++2 lvl (S) Малое восстановление (2 lvl Les
 
 metadict_detail['2 lvl Малое восстановление (2 lvl Lesser_Restoration) (требуется)'] = {
         # 10 минут каста.
-        '-Работа волшебника (2 lvl Lesser_Restoration) (нормо-часов)':10 / 60,
+        '-Работа волшебника (2 lvl Lesser_Restoration) (10 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':100 / 6,
+        }
+
+metadict_detail['_++2 lvl (S) Исцеляющий дух (2 lvl Healing_Spirit)'] = {
+        # * "Исцеляющий дух" (Healing_Spirit) [Cnj|-|-] — 60 футов, бонусным действием, минута концентрации. Восстанавливает 1d6 урона/раунд, а всего на 10d6 (30 хитов). Хорошо бы поставить такого позади сражающегося отряда, чтобы если один из командиров вылетит в ноль хитов, его тут же вытащили и в лапки духу отдали.
         }
 
 metadict_detail['_++2 lvl (R) Небесные письмена (2 lvl Skywrite)'] = {
@@ -2963,7 +3035,7 @@ metadict_detail['_++2 lvl (R) Нетленные останки (2 lvl Gentle_Re
 
 metadict_detail['2 lvl Нетленные останки (2 lvl Gentle_Repose) (требуется)'] = {
         # 10 минут каста.
-        '-Работа волшебника (2 lvl Gentle_Repose) (нормо-часов)':10 / 60,
+        '-Работа волшебника (2 lvl Gentle_Repose) (10 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':100 / 6,
         }
 
@@ -3006,7 +3078,7 @@ metadict_detail['_++2 lvl (S) Порыв ветра (2 lvl Gust_of_Wind)'] = {
 # Заклинания 3 круга
 
 metadict_detail['_++3 lvl (S) Газообразная форма (3 lvl Gaseous_Form)'] = {
-        # TODO: допиливай третий круг
+        # TODO: допиливай третий круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
         }
 
 metadict_detail['_++3 lvl (R) Зачаровать предмет (3 lvl Enchant_Item)'] = {
@@ -3032,7 +3104,7 @@ metadict_detail['_++3 lvl (S) Маяк надежды (3 lvl Beacon_of_Hope)'] =
         }
 
 metadict_detail['3 lvl Маяк надежды (3 lvl Beacon_of_Hope) (требуется)'] = {
-        '-Работа волшебника (3 lvl Beacon_of_Hope) (нормо-часов)':10 / 60,
+        '-Работа волшебника (3 lvl Beacon_of_Hope) (10 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':100 / 6,
         }
 
@@ -3060,7 +3132,16 @@ metadict_detail['_++3 lvl (S) Призыв животных (3 lvl Conjure_Anima
         }
 
 metadict_detail['_++3 lvl (R) Притворная смерть (3 lvl Feign_Death)'] = {
-        # Приостанавливает яды и болезни.
+        # Приостанавливает яды и болезни. Отличное средство стабилизации раненого.
+        '_++3 lvl (R) Притворная смерть (3 lvl Feign_Death) (%)':[
+            '(value / x) * 100',
+            '3 lvl Притворная смерть (3 lvl Feign_Death) (требуется)',
+            ],
+        }
+
+metadict_detail['3 lvl Притворная смерть (3 lvl Feign_Death) (требуется)'] = {
+        '-Работа волшебника (3 lvl Feign_Death) (10 минут)':1,
+        '-Энергия биосинтеза, заклинания (киловатт-час)':100 / 6,
         }
 
 metadict_detail['_++3 lvl (R) Проблеск истины (3 lvl Glimpse_of_Truth)'] = {
@@ -3087,8 +3168,8 @@ metadict_detail['_++3 lvl (S) Аура живучести (3 lvl Aura_of_Vitalit
         }
 
 metadict_detail['3 lvl Аура живучести (3 lvl Aura_of_Vitality) (требуется)'] = {
-        # Минута действия.
-        '-Работа волшебника (3 lvl Aura_of_Vitality) (нормо-часов)':1 / 60,
+        # Минута действия, но у нас 10 минут.
+        '-Работа волшебника (3 lvl Aura_of_Vitality) (10 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':1,
         }
 
@@ -3185,8 +3266,8 @@ metadict_detail['_++3 lvl (S) Хождение по воде (3 lvl Water_Walk)'
 #----
 # Заклинания 4 круга
 
-metadict_detail['_++4 lvl (R) Зеркальное послание (4 lvl Mirror_Sending)'] = {
-        # TODO: допиливай четвёртый круг.
+metadict_detail['_++4 lvl (R) Послание через зеркало (4 lvl Mirror_Sending)'] = {
+        # TODO: допиливай четвёртый круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
         # Ритуальный Sending, но только от зеркала к зеркалу.
         }
 
@@ -3245,7 +3326,7 @@ metadict_detail['_++4 lvl (S) Защита от смерти (4 lvl Death_Ward)'
 
 metadict_detail['4 lvl Защита от смерти (4 lvl Death_Ward) (требуется)'] = {
         # 10 минут каста, 8 часов действия. Довольно мощный эффект.
-        '-Работа волшебника (4 lvl Death_Ward) (нормо-часов)':10 / 60,
+        '-Работа волшебника (4 lvl Death_Ward) (10 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':1 / 6,
         }
 
@@ -3277,15 +3358,17 @@ metadict_detail['_++4 lvl (R) Паровой котёл (4 lvl Steam_Boiler)'] =
         }
 
 metadict_detail['_++4 lvl (S) Изготовление (4 lvl Fabricate)'] = {
-        # * !!! "Изготовление" (Fabricate) — 120 футов, 10 минут каста, 30 кубометров дерева, или 3.4 кубометра камня/стали. Созданный объект должен умещаться в 10-футовый куб или в 8 соединённых 5-футовых кубов. Ставим ограничение по человеко-часам. Это заклинание позволяет изготовить за 10 минут то, с чем опытный ремесленник провозился бы 10 дней (100 нормо-часов).
+        # * !!! "Изготовление" (Fabricate) — 120 футов, 10 минут каста, 30 кубометров дерева, или 3.4 кубометра камня/стали. Созданный объект должен умещаться в 10-футовый куб или в 8 соединённых 5-футовых кубов. Изготовить можно только один объект. Ставим ограничение по человеко-часам. Это заклинание позволяет изготовить за 10 минут то, с чем опытный ремесленник провозился бы 10 дней (100 нормо-часов, или 50 бит). На больших уровнях производительность возрастает: 5 круг -- 20 дней (100 бит); 6 круг -- 40 дней (200 бит); 7 круг -- 80 дней (400 бит); 8 круг -- 160 дней (800 бит); 9 круг -- 320 дней (1600 бит).
+        # Crafter_Domain вдвое хуже, но позволяет работать над разными задачами 8 часов.
+        #
         # Стоимость заклинания 4 круга -- 7 бит. Потенциальный доход -- 50-100 бит.
         # Зарплата мастера-ремесленника (20% семей) -- 1 бит/час.
         # Зарплата опытного ремесленника (30% семей) -- 0.5 бит/час
         #
         # Брусчатый дом (105 кв.метров жилых комнат) -- 30x30x20 футов
         # Работы в нормо-часах. Стройматериалы доставлены. Земляные работы сделаны Mold_Earth.
-        # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm брусчатый дом -E '$'
-        # ~/workspace/amber-in-the-dark/scripts/army-structure-analyser.py -sm брусчатый дом -E '='
+        # amber -sm брусчатый дом -E '$'
+        # amber -sm брусчатый дом -E '='
         # _-$Строительство, каменщик (0.3_бит*нормо-час)......................... | 208
         # _-$Строительство, кровельщик (0.2_бит*нормо-час)....................... | 27
         # _-$Строительство, маляр (0.3_бит*нормо-час)............................ | 97
@@ -3331,7 +3414,7 @@ metadict_detail['_++4 lvl (S) Мираж (4 lvl Hallucinatory_Terrain)'] = {
 # Заклинания 5 круга
 
 metadict_detail['_++5 lvl (R) Астрология (5 lvl Astromancy)'] = {
-        # TODO: допиливай пятый круг.
+        # TODO: допиливай пятый круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
         # Даёт смутные знания о регионе. О личностях, о местах, о идеях.
         }
 
@@ -3384,7 +3467,7 @@ metadict_detail['_++5 lvl (S) Высшее восстановление (5 lvl G
 
 metadict_detail['5 lvl Высшее восстановление (5 lvl Greater_Restoration) (требуется)'] = {
         # 60 минут каста.
-        '-Работа волшебника (5 lvl Greater_Restoration) (нормо-часов)':60 / 60,
+        '-Работа волшебника (5 lvl Greater_Restoration) (60 минут)':1,
         '-Энергия биосинтеза, заклинания (киловатт-час)':1000 / 60,
         }
 
@@ -3395,7 +3478,7 @@ metadict_detail['_++5 lvl (S) Круг телепортации (5 lvl Teleporta
         # С леомундовыми сундуками 850 000 тонн/год, 71 000 тонн/мегаполис, 197 тонн/мегаполис-день
         # Себестоимость перевозки (в сундуках) -- 6 бит/тонна
         #
-        # TODO: круг телепортации гораздо выгоднее воздушных перевозок на планёрах:
+        # TODO: Teleportation_Circle выгоднее воздушных перевозок на планёрах.
         # - Маршрут от Ванхувера к Маэт-Кэру -- 317-528 бит/тонна
         # - Маршрут от Балтимэра к Зевере -- 53-89 бит/тонна
         # Скорее всего цены задирают до 50 бит/тонна, а сверхдоходы идут в бюджет.
@@ -3452,7 +3535,7 @@ metadict_detail['_++5 lvl (S) Пробуждённый разум (5 lvl Awaken)
         # * !!! "Пробуждённый разум" (Awaken) — 2040 эфесов, 8 часов каста. Даёт неразумному интеллект 10 и знание одного языка. Деревья начинают ходить. Звери меняются (в пределах CR 2). Существо очаровано создателем заклинания на 30 дней, далее самостоятельно.
         }
 
-metadict_detail['_++5 lvl (R) Общение (5 lvl Commune)'] = {
+metadict_detail['_++5 lvl (R) Общение с божеством (5 lvl Commune)'] = {
         # * "Общение" (Commune) — ритуал, минута действия. Три вопроса божеству, на которые то отвечает "да", либо "нет". Накопительный 25% шанс ложных ответов, если кастовать повторно.
         }
 
@@ -3460,8 +3543,8 @@ metadict_detail['_++5 lvl (R) Общение с природой (5 lvl Commune_
         # * "Общение с природой" (Commune_with_Nature) — ритуал, 3 мили радиус. Даёт знания об окрестностях. Показывает местонахождение могущественной нежити, элементаля, тому подобного создания.
         }
 
-metadict_detail['_++5 lvl (R) Связь с иным миром (5 lvl Contact_Other_Plane)'] = {
-        # * "Связь с иным миром" (Contact_Other_Plane) — ритуал, минута действия. Можно спросить 5 вопросов с краткими ответами в одно слово. Нужен спасбросок интеллекта СЛ 15, иначе 6d6 урона и слабоумие на сутки.
+metadict_detail['_++5 lvl (R) Общение с иным миром (5 lvl Contact_Other_Plane)'] = {
+        # * "Общение с иным миром" (Contact_Other_Plane) — ритуал, минута действия. Можно спросить 5 вопросов с краткими ответами в одно слово. Нужен спасбросок интеллекта СЛ 15, иначе 6d6 урона и слабоумие на сутки.
         }
 
 metadict_detail['_++5 lvl (S) Святилище (5 lvl Hallow)'] = {
@@ -3477,7 +3560,7 @@ metadict_detail['_++5 lvl (S) Усиление навыка (5 lvl Skill_Empower
 # Заклинания 6 круга
 
 metadict_detail['_++6 lvl (S) Истинное зрение (6 lvl True_Seeing)'] = {
-        # TODO: допиливай шестой круг.
+        # TODO: допиливай шестой круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
         }
 
 metadict_detail['_++6 lvl (S) Поиск пути (6 lvl Find_the_Path)'] = {
@@ -3532,6 +3615,9 @@ metadict_detail['_++3 lvl (S) Аура живучести (3 lvl Aura_of_Vitalit
         }
 
 metadict_detail['_++3 lvl (S) Маяк надежды (3 lvl Beacon_of_Hope) (%)'] = {
+        }
+
+metadict_detail['_++3 lvl (R) Притворная смерть (3 lvl Feign_Death) (%)'] = {
         }
 
 metadict_detail['_++4 lvl (S) Защита от смерти (4 lvl Death_Ward) (%)'] = {
