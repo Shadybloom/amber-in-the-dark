@@ -36,7 +36,14 @@ SQUAD = ''
 # Число однотипных объектов для исследования:
 NUMBER = 1
 # Глубина исследования:
-DEPTH = 99
+DEPTH = 150
+# Не обрабатывать слишком мелкие результаты (это мусор ошибок зацикливания):
+# Ошибка зацикливания, это когда телега перевозит колёсную мазь.
+# Которая используется для осей телеги. Поэтому снова требуется перевозка мази.
+# Это создаёт всё уменьшающуюся долю телеги, для перевозки всё меньшего количества мази.
+# Бесконечный цикл телег-мазей уменьшается с каждым проходом, и в указанной точке отрубается.
+# Если вывод пестрит мусором зацикливания, ставь MIN_VALUE побольше, или DEPTH больше 150.
+MIN_VALUE = 0.00000001
 # Словарь исполняемых в выводе выражений:
 dict_math = {}
 
@@ -56,11 +63,11 @@ def create_parser():
                         )
     parser.add_argument('-d', '--depth',
                         action='store', dest='depth', type=int,
-                        help='Глубина исследования (0-999)'
+                        help='Глубина исследования (0-999, иначе DEPTH)'
                         )
     parser.add_argument('-n', '--number',
-                        action='store', dest='number', type=float,
-                        help='Доля отряда, либо число отрядов (0.001-999)'
+                        action='store', dest='number', type=str,
+                        help='Доля отряда (0.001-999, 1/360, край MIN_VALUE)'
                         )
     parser.add_argument('-e', '--except',
                         action='store', dest='exc', type=str, nargs='*',
@@ -290,7 +297,10 @@ else:
 
 # Проверка, указано ли число расчётных объектов:
 if namespace.number is not None:
-    obj_number = namespace.number
+    # Убираем пробелы и переводим строку в число:
+    namespace.number = namespace.number.replace(" ", "")
+    namespace.number = namespace.number.replace(",", "")
+    obj_number = eval(namespace.number)
 else:
     # Если нет, берём из опций:
     obj_number = NUMBER
@@ -360,6 +370,11 @@ else:
         #print ('cycle:',depth)
         for key,value in sorted(dict_crew.items()):
             if key in metadict_army and squad_except != key:
+                # Отбрасываем слишком мелкие значения:
+                # Это костыль от ошибки зацикливания при уменьшающихся циклах
+                if type(value) == float and value < MIN_VALUE:
+                    dict_crew.pop(key)
+                    continue
                 # Функция извлекает состав объекта:
                 bfd(key, value, dict_crew, metadict_army)
                 # Удаляется обработанный объект из словаря:
