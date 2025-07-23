@@ -11,6 +11,8 @@
         # https://www.gumer.info/bibliotek_Buks/History/milov/01_11.php
     # Русская культура питания в первой половине XVIII века Шипилов А.В.
         # http://annales.info/rus/small/pitanie.htm
+    # Русская кухня Максим Сырников
+        # http://traditio.wiki/Максим_Сырников:Русская_кухня
     # Питание русских крестьян Верхнего Приобья (конец XIX — первая треть XX вв.)
         # https://web.archive.org/web/http://zaimka.ru/mainicheva-russians/
     # Питание переселенцев из Белоруссии в Сибири (конец XIX — первая треть XX вв.)
