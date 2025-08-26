@@ -145,6 +145,7 @@
         # https://disk.yandex.com/i/z0rpImMb3fhLZA
         # "Мировая экономика" Ангус Мэдисон (стр. 613)
         # https://en.m.wikipedia.org/wiki/List_of_regions_by_past_GDP_(PPP)#1–2008_(Maddison)
+        # https://en.m.wikipedia.org/wiki/List_of_countries_by_total_private_wealth
         # https://web.archive.org/web/http://www.stat.berkeley.edu/~aldous/157/Papers/world_economy
         # https://web.archive.org/web/https://www.eriras.ru/files/evolyutsiya-mirovyh-energeticheskih-rynkov-i-ee-posledstviya-dlya-rossii.pdf
         # https://aftershock.news/?q=node/551395
@@ -1485,6 +1486,11 @@ metadict_detail['Магнитный железняк, 85% Fe3O4 (килогра�
 
 #----
 # Промышленные товары (древесина)
+    # Штамповка древесины, каменная древесина:
+    # 1) Деревяшку без сучков нагреть в духовке до 120°C
+    # 2) Вложить в нагретую до 160-180°C форму.
+    # 3) Сжимать втрое 20-тонным гидравлическим прессом.
+    # Негорючий, гибкий, водостойкий материал.
 
 metadict_detail['Доски паркетные (квадратный метр)'] = {
         # 1. Столярное и паркетное производство и плотничьи работы.
@@ -2374,7 +2380,9 @@ metadict_detail['Серная кислота (килограмм)'] = {
         # Купоросное масло, олеум, acidum sulphuricum, серная кислота
         # 1) Окисление сернистого газа в свинцовых камерах.
         # 2) Прокаливание железного купороса FeSO4 (Vitriolstein)
+        # 3) Горение нитрата калия (селитры) и серы
         # Серная кислота + фосфатные породы --> суперфосфат (удобрение)
+        # Серная кислота + нитрат калия (селитра) --> азотная кислота
         # https://ru.wikiquote.org/wiki/Купоросное_масло
         # https://ru.wikisource.org/wiki/ЭСБЕ/Серная_кислота
         # https://ru.wikisource.org/wiki/ЭСБЕ/Сера
