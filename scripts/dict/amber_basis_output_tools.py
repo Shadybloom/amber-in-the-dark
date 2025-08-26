@@ -910,11 +910,35 @@ metadict_detail['|Обувь, туфли (джут)'] = {
 #----
 # Утварь домашняя (комплекты):
 
+metadict_detail['|Утварь кухонная богатая, волшебная (комплект)'] = {
+        # 1% богатеев, обычные и необычные волшебные предметы.
+        '|?Волшебный предмет Uncommon (утварь) (богатеи)':2.7,
+        '|?Волшебный предмет Common (утварь) (середняки)':1.2,
+        }
+
+metadict_detail['|Утварь кухонная качественная, волшебная (комплект)'] = {
+        # TODO: волшебная утварь. Не учитываются сельские середняки.
+            # Поскольку они живут в фахверках, подобно городской бедноте.
+            # А утварь берётся из отделки кухни в amber_model_buildning
+            # Сделай одноэтажные коттеджи для селян середняков. Каменные?
+            # amber -sm 'Среднеземное лесное селение' -E сельский двор
+        # 20% середняков, обычные волшебные предметы.
+        '|?Волшебный предмет Common (утварь) (середняки)':1.5,
+        }
+
 metadict_detail['|Утварь кухонная богатая (комплект)'] = {
-        # Для городских середняков и богатеев.
+        # TODO: утварь кухонная богатая не отличается от качественной.
         # Есть фарфор и серебро, много никелированной посуды.
         # http://www.molohovetc.ru/liv-ii/dinner_table/
         # http://www.molohovetc.ru/liv-ii/accessories/
+        '|Инструменты печные (комплект)':1,
+        '|Инструменты кухонные богатые (комплект)':1,
+        '|Ёмкости кухонные богатые (комплект)':1,
+        '|Приборы столовые богатые (комплект)':1,
+        }
+
+metadict_detail['|Утварь кухонная качественная (комплект)'] = {
+        # Для городских середняков и общественных зданий.
         '|Инструменты печные (комплект)':1,
         '|Инструменты кухонные богатые (комплект)':1,
         '|Ёмкости кухонные богатые (комплект)':1,
@@ -1200,6 +1224,562 @@ metadict_detail['|Приборы столовые сельские (компле
         '|Посуда керамическая (кружка 0.5-литровая)':6,
         '|Посуда керамическая (чашка 0.25-литровая)':6,
         '|Посуда керамическая (миска 0.5-литровая)':6,
+        }
+
+#----
+# Волшебные предметы (комплекты):
+    # TODO: волшебные предметы в стиле DnD. Случайные.
+        # https://www.dandwiki.com/wiki/5e_Trinkets
+        # https://www.dandwiki.com/wiki/5e_Magic_Items_by_Rarity
+        # 301 Common
+        # https://www.dandwiki.com/wiki/Lesser_Ring_of_Crystal_Growth_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Multi-Tool_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Memory_Orb_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Ring_of_Clean_Language_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Ring_of_Photosynthesis_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Ring_of_Mediocrity_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Silver_Skull_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Sinister_Looking_Letter_Opener_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Spy's_Paper_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Wand_of_Quoitwil_(5e_Equipment)
+        # 663 Uncommon
+        # https://www.dandwiki.com/wiki/Advanced_Artifice_Eye_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Adventurer's_Pouch_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Alilat's_Magic_Needle_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Arcane_Lock_Box_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Bottle_of_Boundless_Coffee,_Variant_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Bottle_of_Bees_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Broken_Sword_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Cap_of_Squirrel_Kinship_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Clown_Cube_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Decanter_of_Endless_Espresso_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Decanter_of_Endless_Ale_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Draught_of_Toad_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Dream_Journalist_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Empty_Spoon_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Feywild_Token_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Glove_of_Shocking_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Gem_of_the_Wretched_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Harlok%27s_Skeleton_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Gourmet_Dragon_Scaler_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Hide_of_the_Bear_Spirit_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Helm_of_Pity_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Magnifying_Glass_Polishing_Solution_(5e_Equipment)
+    # TODO: многие Uncommon не учтены, есть 1M, должно быть 1.5M.
+        # - 500k маховиков Fortify_Matter (50 МДж + 3.3 кВт ветряк = 200 бит)
+        # amber -sm Эквестрия -E Uncommon
+        # xclip -o | sed "s@[^0-9]*@@g" | tr '\n' '+' | c
+    # Сложность изготовления:
+        # Редкость/lvl  | 3+     | 5+     | 9+     | 13+    | 17+
+        # ------------- | ------ | ------ | ------ | ------ | ----
+        # Common        | +      | +      | +      | +      | +
+        # Uncommon      | 20     | +      | +      | +      | +
+        # Rare          | 30     | 20     | +      | +      | +
+        # Very Rare     | -      | 30     | 20     | +      | +
+        # Legendary     | -      | -      | 30     | 20     | +
+        # Герои 9+ lvl имеют доходы капитала 125 бит/час (с ремесла 25 бит/час)
+        # Поэтому предметы Rare/Very.R делают мастера 5-8 lvl (с риском провала)
+    # Создание магических предметов:
+        # Редкость  | Бит  | Часов | Бит/ч | lvl | Без риска провала
+        # --------- | ---- | ----- | ----- | --- | -------------------------------
+        # Common    | 125  | 40    | 3.125 | 3+  | Руны 1 круга, зелья, 10 ватт
+        # Uncommon  | 500  | 80    | 6.25  | 5+  | Руны 2 круга, оружие +1, 1 кВт
+        # Rare      | 10k  | 400   | 25 *  | 9+  | Руны 3 круга, оружие +2, 30 кВт
+        # Very Rare | 100k | 1000  | 100   | 13+ | Руны 4 круга, оружие +3, 300 кВт
+        # Legendary | 500k | 2000  | 250   | 17+ | Руны 5 круга, артефакты, 10 МВт
+        # * Common/Uncommon в 2 раза дешевле цен DnD, Rare/Legendary как в DnD 5e
+        # "Magic Item Crafting Time and Cost" (Xanathars Guide to Everything)
+    # Постоянные заклинания как волшебные предметы:
+        # Common (60 бит) -- 62 млн Continual_Flame (по 50 лет).
+        # Uncommon (500 бит) -- 500k маховиков Fortify_Matter
+        # Rare (11k бит) -- 13k почтовых сундуков Leomund_Secret_Chest
+        # Very Rare (50.2k бит) -- 1500 кругов телепортации Teleportation_Circle
+        # Legendary (500k бит) -- 700 кристальных сердец в 50% кантонах Эквестрии
+    # Энергетика волшебных предметов:
+        # 62 млн светокристаллов по 3 Вт = 0.3 ГДж/год на каждую пони
+        # 0.75 млн волшебных предметов по 1 кВт = 1 ГДж/год-пони
+        # 700 кристальных сердец по 10 МВт = 10 ГДж/год-пони
+    # Статистика производства волшебных предметов:
+        # lvl творца    | 1-4    | 5-8    | 9-12    | 13-16   | 17+
+        # Тип предмета  | Common | Uncomm | Rare    | Very R. | Legend
+        # ------------- | ------ | ------ | ------- | ------- | --------
+        # Кастеров *    | 36k    | 3.8k   | 600     | 100     | 10
+        # ..Мастеров %  | 30%    | 40%    | 20%     | 15%     | 20%
+        # ..Мастеров    | 11k    | 1.5k   | 120     | 15      | 2
+        # ..Нормо-часов | 17.6M  | 2.4M   | 200k    | 24k     | 4k
+        # ..Часов предм | 40     | 80     | 400     | 1k      | 2k
+        # ..Цена предм  | 125    | 500    | 10k     | 100k    | 500k
+        # Сделано/год   | 440k   | 30k    | 500     | 24      | 2
+        # ..Оборот/год  | 45M    | 15M    | 5M      | 2.4M    | 1M
+        # ..Срок службы | 20 лет | 50 лет | 100 лет | 200 лет | 500 лет
+        # Предметов     | 8.8M   | 1.5M   | 50k     | 4.8k    | 1k
+        # ..Экспорт     | 50%    | 50%    | 25%     | 20%     | 10%
+        # ..В Эквестрии | 4.4M   | 0.75M  | 37.5k   | 3.84k   | 900
+        # ..Капитал     | 550M   | 375M   | 375M    | 384M    | 450M
+        # * учтены все кастеры, друиды, полукастеры и 10% пегасов 3-4 lvl
+        # Волшебные предметы 68.4/2134 млн бит (1.1% ВВП, 6% капиталов)
+        # Светокристаллы 70.5/3700 млн бит (1.2% ВВП, 10.3% капиталов)
+    # Покупатели волшебных предметов, их доходы и траты (кроме экспорта):
+        # Редкость  | Число | Стоим | lvl | Семей | Доход    | Траты  | Бюджета
+        # --------- | ----- | ----- | --- | ----- | -------- | ------ | -------
+        # Common    | 220k  | 27.5M | 0-1 | 0.9M  | 1.2+0.2k | 31 бит | 2.2%
+        # Uncommon  | 15k   | 7.5M  | 2-4 | 71k   | 2.0+3.2k | 104    | 2.6% *
+        # Rare      | 375   | 3.75M | 5-8 | 11k   | 3.5+10k  | 338    | 3.5%
+        # Very Rare | 19    | 1.9M  | 9+  | 726   | 15+80k   | 2660   | 3.3%
+        # * Траты складываются (покупатели Uncommon покупают и Common)
+    # Аукцион волшебных предметов (шанс покупки ежегодно) и их число в домах:
+        # Редкость  | lvl | Семей | Шанс  | Comm | Unco | Rare | Very.R
+        # --------- | --- | ----- | ----- | ---- | ---- | ---- | ------
+        # Common    | 0-1 | 0.9M  | 24.4% | 4.9  | -    | -    | -
+        # Uncommon  | 2-4 | 71k   | 21.1% | 4.9  | 10.6 | -    | -
+        # Rare      | 5-8 | 11k   | 3.4%  | 4.9  | 10.6 | 3.4  | -
+        # Very Rare | 9+  | 726   | 2.6%  | 4.9  | 10.6 | 3.4  | 5.2
+        # 900k семей, середняки, доход 1.4k бит, траты 31 бит/год:
+        # - Одежда, ювелирка (40%) -- 2 Common (0.4 на пони)
+        # - Товары, зелья (30%) -- 1.4 Common (0.3 на пони)
+        # - Утварь, дом (30%) -- 1.5 Common
+        # 71k семей, богатеи, доход 5.2k бит, траты 135 бит/год:
+        # - Одежда, ювелирка (40%) -- 2 Common, 4.2 Uncommon (0.4 и 0.8 на пони)
+        # - Товары, зелья (35%) -- 1.7 Common, 3.7 Uncommon (0.3 и 0.7 на пони)
+        # - Утварь, дом (25%) -- 1.2 Common, 2.7 Uncommon
+    # Капитал эквестрийских семей в светокристаллах и волшебных предметах:
+        # Норма сбережений -- 15% (40+ лет на накопление ×6 дохода)
+        # Уровень деволюции наследства -- 3-3.5% (наследование в 30 лет)
+        # Доходность капитала: 6% рента - 4% налоги = 2% (720 млн, 12% ВВП)
+        # Страта    | Семей | Доля | Капитал | Капитал/семью | Рента/семью
+        # --------- | ----- | ---- | ------- | ------------- | -----------
+        # Кабаны    | 44k   | 1%   | 20%     | 164 000 бит   | 3275
+        # Богатеи   | 0.4M  | 9    | 30      | 25 000        | 490
+        # Середняки | 1.8M  | 40   | 40      | 8200          | 165
+        # Бедняки   | 2.2M  | 50   | 10      | 1636          | 33
+        # Семья середняков (990 бит/год) -- 32 светокристаллов, 1 920 бит (x4 бедняков)
+        # 4% на светокристаллы, 1% на волшебные предметы (200 бит раз в 20 лет)
+        # В семье 5 пони, 40 бит/пони на волшебные предметы (0.4 Common)
+        # - Одежда и обувь (38%) -- 55-102 бит/год общие расходы (0.15 Common)
+        # - Хозяйственные вещи (30%) -- 39-70 бит/год (0.12 Common)
+        # - Другие товары и услуги (32%) -- 47-84 бит/год (0.13 Common)
+        # Семья богатеев (2000 бит/год) -- 207 светокристаллов, 12 420 бит (x6.5 середняков)
+        # 13% на светокристаллы, 5% на волшебные предметы (2000 бит раз в 20 лет)
+        # В семье 5 пони, 500 бит/пони на волшебные предметы (0.02 Rare, 0.4 Uncommon, 1.6 Common)
+        # - Одежда и обувь (40%) -- 101-253 бит/год общие (0.008 Rare, 0.16 Uncommon, 0.64 Common)
+        # - Хозяйственные вещи (25%) -- 77-160 бит/год (0.005 Rare, 0.1 Uncommon, 0.4 Common)
+        # - Другие товары и услуги (35%) -- 94-243 бит/год (0.007 Rare, 0.14 Uncommon, 0.56 Common)
+
+metadict_detail['|?Волшебный предмет Common (воин)'] = {
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - самовзводный арбалет (лонгбоу выдаёт 150 Дж на 10 метров, 70 грамм, 65 м/с)
+            # - charged weapon (1d4 charges, 1 minute, +1 attack/damage rolls)
+            # - водоочищающая фляга
+            # - монокль-дальномер
+            # https://www.dandwiki.com/wiki/Spring-Loaded_Shield_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Stun_Charm_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Ultisword_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Disposable_Ring_of_Protection_(5e_Equipment)
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+            # - Protection_from_Evil_and_Good
+            # - Blade_Ward
+        # Мастерские: 0.2 = 4.5k = 225 в год = 1.2 в день (48 часов, 6 мастеров)
+        '|Оружие холодное +Common, глефа молний, руна (0 lvl Shocking_Grasp)':0.2,
+        '|Оружие холодное +Common, лассо молний, руна (0 lvl Lightning_Lure)':0.2,
+        '|Оружие огнестрельное +Common, револьвер с целеискателем, руна (0 lvl True_Strike)':0.2,
+        '|Одежда +Common, форма гвардии, руна (1 lvl Armor_of_Agathys)':0.4,
+        }
+
+metadict_detail['|?Волшебный предмет Common (кастер)'] = {
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - charged wand (2d4 charges, 1 minute, +1 spell attack rolls)
+            # - копировальная книга
+            # https://www.dandwiki.com/wiki/Spellcard_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Staff_of_Spellcharge_(5e_Equipment)
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+            # - Armor_of_Agathys
+        '|Одежда +Common, форма кантерлотской школы, руна (1 lvl Ward)':0.4,
+        '|Одежда +Common, форма медицинской школы, руна (1 lvl Protection_from_Evil_and_Good)':0.2,
+        '|Экипировка +Common, детектор элементалей, руна (1 lvl Detect_Evil_and_Good)':0.2,
+        '|Экипировка +Common, детектор магии, руна (1 lvl Detect_Magic)':0.2,
+        }
+
+metadict_detail['|?Волшебный предмет Common (погодник)'] = {
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+            # - Absorb_Elements
+        '|Одежда +Common, форма погодников, руна (1 lvl Absorb_Elements)':0.4,
+        '|Экипировка +Common, радиосвязь, руна (1 lvl Sonic_Thread)':0.2,
+        '|Экипировка +Common, парящий диск, ритуал (1 lvl Floating_Disk)':0.2,
+        '|Экипировка +Common, парашют, руна (1 lvl Feather_Fall)':0.2,
+        }
+
+metadict_detail['|?Волшебный предмет Common (скрытник)'] = {
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - цепкая верёвка
+            # https://www.dandwiki.com/wiki/Theater_Dagger_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Musical_Blowgun_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Star_Wand_(5e_Equipment)
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+        '|Оружие холодное +Common, ловчая сеть, руна (1 lvl Ensnaring_Strike)':0.2,
+        '|Одежда +Common, форма харсвардской школы, руна (1 lvl Expeditious_Retreat)':0.4,
+        '|Одежда +Common, форма торговой гильдии, руна (1 lvl Disguise_Self)':0.2,
+        }
+
+metadict_detail['|?Волшебный предмет Common (сокровище) (северяне)'] = {
+        # 49% предметов экспорт (1.074M вне страны, 54k в год, 6.7 млн бит/год)
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - музыкальная серёжка (Magic_Mouth)
+            # https://www.dandwiki.com/wiki/Temperate_Clothes_(5e_Equipment)
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+            # - Unseen_Servant
+            # - Message
+        # Мануфактуры: 0.05 = 34k = 1700 в год = 8.5 в день (340 часов, 43 мастеров)
+            # - зачарованные патроны пачками по 100 штук, 125 бит/пачка, 1.25 бит/патрон.
+        '|Оружие огнестрельное Common, винтовка с целеискателем, руна (0 lvl True_Strike)':0.01,
+        '|Оружие огнестрельное Common, снаряды, энерго-трассеры, руна (0 lvl Eldritch_Blast)':0.04,
+        '|Оружие огнестрельное Common, снаряды, светошумовые, руна (0 lvl Thunderclap)':0.03,
+        '|Оружие огнестрельное Common, снаряды, анти-призрак, ритуал (1 lvl Ceremony)':0.02,
+        '|Одежда Common, всепогодная, ритуал (1 lvl Endure_Elements)':0.2,
+        '|Одежда Common, сверхпрочная, руна (0 lvl Blade_Ward)':0.1,
+        '|Одежда Common, шляпа фокусов, руна (0 lvl Prestidigitation)':0.1,
+        '|Экипировка Common, шарманка, ритуал (2 lvl Magic_Mouth)':0.2,
+        '|Экипировка Common, огниво, руна (0 lvl Create_Bonfire)':0.1,
+        '|Экипировка Common, щит, руна (1 lvl Shield)':0.1,
+        }
+
+metadict_detail['|?Волшебный предмет Common (сокровище) (среднеземцы)'] = {
+        # 36% предметов экспорт (0.69M вне страны, 35k в год, 4.4 млн бит/год)
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - волшебные игрушки (паровоз, планёр, зверь, etc)
+            # - волшебный фонарь с картинками-иллюзиями
+            # - волшебный фотоаппарат
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+            # - Mage_Armor
+            # - Shield
+        # Фабрики: 0.1 = 220k = 11k в год = 55 в день (2200 часов, 275 мастеров)
+        '|Одежда Common, защитная, руна (0 lvl Minor_Ward)':0.2,
+        '|Одежда Common, защитная, руна (1 lvl Mage_Armor)':0.1,
+        '|Экипировка Common, радиосвязь, руна (0 lvl Message)':0.2,
+        '|Экипировка Common, флейта иллюзий, руна (0 lvl Minor_Illusion)':0.1,
+        '|Экипировка Common, говорящая кукла, ритуал (2 lvl Magic_Mouth)':0.1,
+        '|Экипировка Common, срастающаяся верёвка, руна (0 lvl Mending)':0.1,
+        '|Экипировка Common, косметичка, руна (0 lvl Arcane_Painting)':0.1,
+        }
+
+metadict_detail['|?Волшебный предмет Common (сокровище) (южане)'] = {
+        # 59% предметов экспорт (1.15M вне страны, 58k в год, 7.25 млн бит/год)
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - брошка-маячок 
+            # https://www.dandwiki.com/wiki/Spark_Rod_(5e_Equipment)
+        # Руны 1 круга (100 бит/руна, перезарядка 1 бит)
+            # - Feather_Fall
+            # - Alarm
+        '|Оружие холодное Common, силовой клинок, руна (0 lvl Sword_Burst)':0.03,
+        '|Оружие холодное Common, шокер клинок, руна (0 lvl Booming_Blade)':0.02,
+        '|Оружие холодное Common, огненный клинок, руна (0 lvl Green-Flame_Blade)':0.01,
+        '|Одежда Common, иллюзорная, руна (0 lvl Minor_Illusion)':0.2,
+        '|Одежда Common, изолирующая, руна (0 lvl Mending)':0.1,
+        '|Экипировка Common, парфюм очарования, руна (0 lvl Friends)':0.1,
+        '|Экипировка Common, отпугиватель насекомых, руна (0 lvl Infestation)':0.1,
+        '|Экипировка Common, летучий фонарик, руна (0 lvl Dancing_Lights)':0.1,
+        '|Экипировка Common, гривный цветок, руна (0 lvl Druidcraft)':0.1,
+        '|Экипировка Common, сигнализация, руна (1 lvl Alarm)':0.1,
+        }
+
+metadict_detail['|?Волшебный предмет Common (утварь) (середняки)'] = {
+        # Обычные волшебные предметы (10 ватт, пик 100 ватт):
+            # - цветочные горшки с конденсатором влаги (0 lvl Druidcraft)
+            # - вечноблестящий самовар (0 lvl Mending)
+            # - самочистящийся котёл (0 lcl Mold_Earth)
+            # - декоратор для печенья (0 lvl Mage_Hand)
+        # Руны 0 lvl доступны для перезарядки и простым единорогам.
+        # Только у 20% семей есть холодильник (у остальных ледники)
+        '|Утварь Common, холодильник, руна (0 lvl Prestidigitation)':0.2,
+        '|Утварь Common, стиральная машина, руна (0 lvl Shape_Water)':0.2,
+        '|Утварь Common, ароматизатор, руна (0 lvl Prestidigitation)':0.1,
+        '|Утварь Common, огнетушитель, руна (0 lvl Control_Flames)':0.1,
+        '|Утварь Common, газонокосилка, руна (0 lvl Sword_Burst)':0.05,
+        '|Утварь Common, посудомойка, руна (0 lvl Shape_Water)':0.05,
+        '|Утварь Common, швейная машинка, руна (0 lvl Mending)':0.05,
+        '|Утварь Common, полировщик, руна (0 lvl Mold_Earth)':0.05,
+        '|Утварь Common, химчистка, руна (0 lvl Acid_Splash)':0.05,
+        '|Утварь Common, левитрон, руна (0 lvl Mage_Hand)':0.05,
+        '|Утварь Common, пылесос, руна (0 lvl Mold_Earth)':0.05,
+        }
+
+metadict_detail['|?Волшебный предмет Common (лекарства) (дети)'] = {
+        # Зельеварением занимается медицинский университет Балтимэра
+        # Зелья 1 круга (10 бит/зелье)
+            # - косметика
+            # - седативное (Calm_Emotions)
+            # Common:
+            # https://www.dandwiki.com/wiki/Syringe_of_Regeneration_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Twinkling_Pipeweed_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Unstable_Elixir_(5e_Equipment)
+            # Uncommon:
+            # https://www.dandwiki.com/wiki/Bubbly_Wine_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Cherry_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Elixir_of_Assurance_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Everfrost_Ale_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Magic_Mama%27s_Firebolt_Moonshine_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Futuresight_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Genie_Geuse_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Hawkeye_Kohl_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Ladnar's_Potion_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Living_Moss_(5e_Equipment)
+        # 1/6 всех собранных за год Goodberry перегоняют в зелья.
+        '|Экипировка Common, дыхательный аппарат, руна (0 lvl Gust)':0.1,
+        '|Экипировка Common, аптечка, руна (0 lvl Spare_the_Dying)':0.1,
+        '|Лекарства Common, лечебное зелье (1 lvl Cure_Wounds)':0.2,
+        '|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)':0.3,
+        '|Лекарства Common, обезболивающее зелье (1 lvl False_Life)':0.1,
+        '|Лекарства Common, антидот зелье (0 lvl Delay_Poison)':0.1,
+        '|Лекарства Common, снотворное зелье (1 lvl Sleep)':0.1,
+        }
+
+metadict_detail['|?Волшебный предмет Common (лекарства) (взрослые)'] = {
+        # https://www.dandwiki.com/wiki/Potion_of_the_Sleepless_Mind_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Potion_of_Solace_(5e_Equipment)
+        # https://www.dandwiki.com/wiki/Potion_of_Singing_(5e_Equipment)
+        '|Экипировка Common, дыхательный аппарат, руна (0 lvl Gust)':0.1,
+        '|Экипировка Common, аптечка, руна (0 lvl Spare_the_Dying)':0.1,
+        '|Лекарства Common, лечебное зелье (1 lvl Cure_Wounds)':0.1,
+        '|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)':0.2,
+        '|Лекарства Common, обезболивающее зелье (1 lvl False_Life)':0.1,
+        '|Лекарства Common, стимулирующее зелье (1 lvl Longstrider)':0.1,
+        '|Лекарства Common, антидот зелье (0 lvl Delay_Poison)':0.1,
+        '|Лекарства Common, снотворное зелье (1 lvl Sleep)':0.2,
+        }
+
+metadict_detail['|?Волшебный предмет Common (лекарства) (старики)'] = {
+        '|Экипировка Common, дыхательный аппарат, руна (0 lvl Gust)':0.1,
+        '|Экипировка Common, аптечка, руна (0 lvl Spare_the_Dying)':0.1,
+        '|Лекарства Common, лечебное зелье (1 lvl Cure_Wounds)':0.2,
+        '|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)':0.2,
+        '|Лекарства Common, обезболивающее зелье (1 lvl False_Life)':0.2,
+        '|Лекарства Common, антидот зелье (0 lvl Delay_Poison)':0.1,
+        '|Лекарства Common, снотворное зелье (1 lvl Sleep)':0.1,
+        }
+
+metadict_detail['|?Волшебный предмет Uncommon (воин)'] = {
+        # Необычные волшебные предметы (1 кВт, пик 10 кВт):
+            # - клинок остроты
+            # - метательное копьё молнии
+            # - плащ защиты
+            # - брошь защиты
+            # - верёвка лазания
+            # - адамантиновый доспех
+            # - волшебная палочка снарядов
+            # - волшебная палочка секретов
+            # - волшебная палочка обнаружения магии
+            # - оружие предупреждения
+            # - медальон здоровья
+            # - медальон затягивания ран
+            # - ночные очки
+            # https://www.dandwiki.com/wiki/Abbodon's_Channeling_Weapon_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Bracer_of_Barriers_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Deflecting_Armor_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Enchanted_Hilt_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Hornet_Glaive_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Dawn_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Le_Roc_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Ensilvering_Ammunition_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Hollowflight_Arrows_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Hunter%27s_Bracers_(5e_Equipment)
+        # Руны 2 круга (500 бит/руна, перезарядка 1.5 бит)
+            # - Blur
+            # - Invisibility
+            # - See_Invisibility
+            # - Locate_Object
+            # - Warding_Wind
+            # - Shadow_Blade
+            # - Earthbind
+        # Зелья 2 круга (50 бит/зелье)
+            # - любовное зелье
+            # - Heroism
+            # - Lesser_Restoration
+            # - Dragons_Breath
+            # - Spider_Climb
+            # - Aid
+        # Палочки снарядов vs заклинания Magic_Missile (выгодно совмещать):
+            # Батальон бойцов, 400 стрелков, 0.6 млн/год, 1.8k бит/день
+                # Снаряды Magic_Missile, 4535 пачек (до 1.6M урона)
+                # Стража диколесья: 91 пачка/год, 25 снарядов/день
+                # 25 снарядов/день, 88 урона/день (8 волков/день)
+            # Батальон чародеев, 350 чародеев, 1 млн/год, 2.8k бит/день
+                # Слотов Magic_Missile, до 42k слотов/месяц (до 0.4M урона)
+                # Патруль диколесья: 10/350 бойцов на задании/день
+                # 10 кастов/день, 105 урона/день (10 волков/день)
+        '|Оружие огнестрельное ++Uncommon, снаряды, самонаводящиеся, руна (1 lvl Magic_Missile)':0.4,
+        '|Оружие огнестрельное ++Uncommon, снаряды, анти-летун, руна (2 lvl Earthbind)':0.05,
+        }
+
+metadict_detail['|?Волшебный предмет Uncommon (кастер)'] = {
+        # Необычные волшебные предметы (1 кВт, пик 10 кВт):
+            # - жезл хранителя договора +1
+            # - волшебная палочка боевого мага +1
+            # - обруч сжигания (Scorching_Ray)
+            # - гадальные карты (Augury)
+            # - жемчужина силы (восстанавливает слот до 3 круга)
+            # - вечнодымящаяся бутылка
+            # - кольцо защиты разума
+            # - камень элементаля
+            # https://www.dandwiki.com/wiki/Apprentice's_Eyepiece_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Bracelets_of_Illusion_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Cloak_of_Particles_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Elemental_Scarabs_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Glasses_of_the_Curator_(5e_Equipment)
+        }
+
+metadict_detail['|?Волшебный предмет Uncommon (погодник)'] = {
+        # Необычные волшебные предметы (1 кВт, пик 10 кВт):
+            # - плащ ската
+            # - доспех моряка
+            # - заполярные сапоги
+            # - ожерелье адаптации
+            # - кольцо хождения по воде
+            # - амулет защиты от обнаружения и посика
+            # - веер ветра
+            # https://www.dandwiki.com/wiki/Blessed_Garments_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Health_Stone_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Lightning_in_a_Bottle_(5e_Equipment)
+        # Зелья 2 круга (50 бит/зелье)
+            # - зелье сопротивления
+        }
+
+metadict_detail['|?Волшебный предмет Uncommon (скрытник)'] = {
+        # Необычные волшебные предметы (1 кВт, пик 10 кВт):
+            # - очки орлиного зрения
+            # - фонарь обнаружения
+            # - шапка маскировки
+            # - сумка хранения
+            # - кольцо плавания
+            # - кольцо прыжков
+            # https://www.dandwiki.com/wiki/Dark_Hilt_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Eyenox_Monocle_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Cloak_of_the_Innocuous_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Gloves_of_Visible_Surfaces_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Headband_of_Wrestling_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Hedron_Hook_(5e_Equipment)
+        # Зелья 2 круга (50 бит/зелье)
+            # - порошок исчезновения
+        }
+
+metadict_detail['|?Волшебный предмет Uncommon (сокровище) (богатеи)'] = {
+        # 66% предметов экспорт (114k вне страны, 5.7k в год, 2.84 млн бит/год)
+        # Необычные волшебные предметы (1 кВт, пик 10 кВт):
+            # - камень удачи
+            # - камни послания
+            # - камень сияния
+            # - кольцо тепла
+            # - музыкальный инструмент (Лютня Досс, etc)
+            # - очки детального зрения
+            # https://www.dandwiki.com/wiki/Twin's_Locket_of_One's_Heart_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Dancing_Juice_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Enchanted_Hourglass_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Eyepiece_of_Clear_Sight_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Faerie_Lantern_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Golden_Lute_(5e_Equipment)
+            # https://www.dandwiki.com/wiki/Lock_of_Deception_(5e_Equipment)
+        '|Экипировка ++Uncommon, камни послания, руна (3 lvl Sending)':0.2,
+        }
+
+metadict_detail['|?Волшебный предмет Uncommon (утварь) (богатеи)'] = {
+        # Необычные волшебные предметы (1 кВт, пик 10 кВт):
+            # - парящая сфера
+            # https://www.dandwiki.com/wiki/Eternal_Ember_(5e_Equipment)
+        '|Утварь ++Uncommon, слуга-автоматрон, руна (3 lvl Tiny_Servant)':0.2,
+        '|Утварь ++Uncommon, слуга-элементаль, ритуал (1 lvl Unseen_Servant)':0.2,
+        '|Утварь ++Uncommon, инструменты ремесленные +1, ритуал (1 lvl Crafter_Domain)':0.1,
+        '|Утварь ++Uncommon, алхимический сосуд, ритуал (2 lvl Cantrip_to_Device)':0.05,
+        '|Утварь ++Uncommon, устрицы-передатчики, ритуал (2 lvl Speaking_Oysters)':0.05,
+        '|Утварь ++Uncommon, сумка фокусов, ритуал (2 lvl Animal_Messenger)':0.05,
+        '|Утварь ++Uncommon, садовый увлажнитель, руна (1 lvl Fog_Cloud)':0.05,
+        }
+
+metadict_detail['|?Волшебный предмет Rare (воин)'] = {
+        # Редкие волшебные предметы (30 кВт, пик 300 кВт):
+            # - доспех +1
+            # - доспех сопротивления
+            # - ловящий стрелы щит +2
+            # - железные ленты Биларро
+            # - сапоги/подковы скорости (+30 футов)
+            # - крылья полёта (час действия, 2 раза/день)
+        # Руны 3 круга (5000 бит/руна, перезарядка 2.2 бит)
+            # - ожерелье огненных шаров (1d6+3 зарядов, 40 МДж/огнешар)
+            # - ожерелье молитвенных чёток (1d4+2 бусин)
+            # - мгновенная крепость Даэрна
+            # - бусина силы
+        # Эссенции 1-2 круга (многоразовые зелья) (500 бит/эссенция)
+            # - Borrowed_Knowledge
+            # - Enhance_Ability
+            # - Alter_Self
+        }
+
+metadict_detail['|?Волшебный предмет Rare (кастер)'] = {
+        # Редкие волшебные предметы (30 кВт, пик 300 кВт):
+            # - амулет здоровья
+            # - камень Йоун, защита +1
+            # - камень Йоун, резерв, наложенное заклинание до 3 круга
+            # - мантия сопротивления заклинаниям (преимущество спасбросков)
+            # - камень истинного зрения (1 раз/день)
+        }
+
+metadict_detail['|?Волшебный предмет Rare (погодник)'] = {
+        # Редкие волшебные предметы (30 кВт, пик 300 кВт):
+            # - рог взрыва
+            # - оковы измерений
+            # - верёвка опутывания
+            # - куб силового поля (36 зарядов +1d20 зарядов/день, минута действия)
+            # - жаровня командования огненными элементалями (1 раз/день)
+            # - кадило контроллирования воздушных элементалей (1 раз/день)
+            # - камень контроллирования земляных элементалей (1 раз/день)
+            # - чаша командования водяными элементалями (1 раз/день)
+        }
+
+metadict_detail['|?Волшебный предмет Rare (скрытник)'] = {
+        # Редкие волшебные предметы (30 кВт, пик 300 кВт):
+            # - медальон защиты от яда
+            # - наручи защиты +2
+            # - плащ ускользания
+            # - плащ шарлатана (Dimension_Door 1 раз/день)
+            # - Автомобиль на волшебном движке (2000 бит, 1.5-2 тонны)
+                # Удельная мощность при 30 кВт -- 15 кВт/тонна (как Руссо-Балт С/24/30)
+        # Руны 3 круга (5000 бит/руна, перезарядка 2.2 бит)
+            # - колокольчик открывания (10 раз)
+        }
+
+metadict_detail['|?Волшебный предмет Rare (сокровище) (богатеи)'] = {
+        # 66% предметов экспорт (5500 вне страны, 110 в год, 0.55 млн бит/год)
+        # Редкие волшебные предметы (30 кВт, пик 300 кВт):
+        }
+
+metadict_detail['|?Волшебный предмет Rare (утварь) (богатеи)'] = {
+        }
+
+metadict_detail['|?Волшебный предмет Very Rare (воин)'] = {
+        # Очень редкие волшебные предметы (300 кВт, пик 3 МВт):
+            # - Железный голем (CR 16) -- 250k бит изготовление, 960 нормо-часов.
+                # Большой 10×10 футов, 1-2 кубометра, 8 тонн стали (4.8k бит)
+                # Удельная мощность при 300 кВт -- 30 кВт/тонна (у Т-80 17.5 кВт/тонна)
+                # При службе в 100 лет это 2.5k бит/год (боец 7 lvl 3.2k бит/год)
+                # За 0.1% ВВП (полк гвардии) было бы 14 големов/год, 1400 всего.
+        }
+
+metadict_detail['|?Волшебный предмет Very Rare (кастер)'] = {
+        # Очень редкие волшебные предметы (300 кВт, пик 3 МВт):
+        }
+
+metadict_detail['|?Волшебный предмет Very Rare (погодник)'] = {
+        # Очень редкие волшебные предметы (300 кВт, пик 3 МВт):
+        }
+
+metadict_detail['|?Волшебный предмет Very Rare (скрытник)'] = {
+        # Очень редкие волшебные предметы (300 кВт, пик 3 МВт):
+        }
+
+metadict_detail['|?Волшебный предмет Very Rare (сокровище) (богатеи)'] = {
+        # 66% предметов экспорт (345 вне страны, 3.5 в год, 0.18 млн бит/год)
+        # Очень редкие волшебные предметы (300 кВт, пик 3 МВт):
+        }
+
+metadict_detail['|?Волшебный предмет Very Rare (утварь) (богатеи)'] = {
         }
 
 #----
@@ -3597,4 +4177,222 @@ metadict_detail['||Транспорт речной грузовой (баржа,
 
 metadict_detail['||Транспорт речной пассажирский (баржа, 400 тонн, 108 пассажиров)'] = {
         '|||Транспорт речной пассажирский (баржа, 400 тонн, 108 пассажиров)':1 / 10,
+        }
+
+#----
+# Волшебные предметы:
+
+metadict_detail['|Лекарства Common, антидот зелье (0 lvl Delay_Poison)'] = {
+        # TODO: волшебные предметы. Сделай производство с учётом заклинаний и мастерских.
+            # Но сначала сами комплекты допилить. Особенно Uncommon.
+        }
+
+metadict_detail['|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)'] = {
+        }
+
+metadict_detail['|Лекарства Common, лечебное зелье (1 lvl Cure_Wounds)'] = {
+        }
+
+metadict_detail['|Лекарства Common, обезболивающее зелье (1 lvl False_Life)'] = {
+        }
+
+metadict_detail['|Лекарства Common, снотворное зелье (1 lvl Sleep)'] = {
+        }
+
+metadict_detail['|Лекарства Common, стимулирующее зелье (1 lvl Longstrider)'] = {
+        }
+
+metadict_detail['|Одежда +Common, форма гвардии, руна (1 lvl Armor_of_Agathys)'] = {
+        }
+
+metadict_detail['|Одежда +Common, форма кантерлотской школы, руна (1 lvl Ward)'] = {
+        }
+
+metadict_detail['|Одежда +Common, форма медицинской школы, руна (1 lvl Protection_from_Evil_and_Good)'] = {
+        }
+
+metadict_detail['|Одежда +Common, форма погодников, руна (1 lvl Absorb_Elements)'] = {
+        }
+
+metadict_detail['|Одежда +Common, форма торговой гильдии, руна (1 lvl Disguise_Self)'] = {
+        }
+
+metadict_detail['|Одежда +Common, форма харсвардской школы, руна (1 lvl Expeditious_Retreat)'] = {
+        }
+
+metadict_detail['|Одежда Common, всепогодная, ритуал (1 lvl Endure_Elements)'] = {
+        }
+
+metadict_detail['|Одежда Common, защитная, руна (0 lvl Minor_Ward)'] = {
+        }
+
+metadict_detail['|Одежда Common, защитная, руна (1 lvl Mage_Armor)'] = {
+        }
+
+metadict_detail['|Одежда Common, изолирующая, руна (0 lvl Mending)'] = {
+        }
+
+metadict_detail['|Одежда Common, иллюзорная, руна (0 lvl Minor_Illusion)'] = {
+        }
+
+metadict_detail['|Одежда Common, сверхпрочная, руна (0 lvl Blade_Ward)'] = {
+        }
+
+metadict_detail['|Одежда Common, шляпа фокусов, руна (0 lvl Prestidigitation)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное ++Uncommon, снаряды, анти-летун, руна (2 lvl Earthbind)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное ++Uncommon, снаряды, самонаводящиеся, руна (1 lvl Magic_Missile)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное +Common, револьвер с целеискателем, руна (0 lvl True_Strike)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное Common, винтовка с целеискателем, руна (0 lvl True_Strike)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное Common, снаряды, анти-призрак, ритуал (1 lvl Ceremony)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное Common, снаряды, светошумовые, руна (0 lvl Thunderclap)'] = {
+        }
+
+metadict_detail['|Оружие огнестрельное Common, снаряды, энерго-трассеры, руна (0 lvl Eldritch_Blast)'] = {
+        }
+
+metadict_detail['|Оружие холодное +Common, глефа молний, руна (0 lvl Shocking_Grasp)'] = {
+        }
+
+metadict_detail['|Оружие холодное +Common, лассо молний, руна (0 lvl Lightning_Lure)'] = {
+        }
+
+metadict_detail['|Оружие холодное +Common, ловчая сеть, руна (1 lvl Ensnaring_Strike)'] = {
+        }
+
+metadict_detail['|Оружие холодное Common, огненный клинок, руна (0 lvl Green-Flame_Blade)'] = {
+        }
+
+metadict_detail['|Оружие холодное Common, силовой клинок, руна (0 lvl Sword_Burst)'] = {
+        }
+
+metadict_detail['|Оружие холодное Common, шокер клинок, руна (0 lvl Booming_Blade)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, алхимический сосуд, ритуал (2 lvl Cantrip_to_Device)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, инструменты ремесленные +1, ритуал (1 lvl Crafter_Domain)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, садовый увлажнитель, руна (1 lvl Fog_Cloud)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, слуга-автоматрон, руна (3 lvl Tiny_Servant)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, слуга-элементаль, ритуал (1 lvl Unseen_Servant)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, сумка фокусов, ритуал (2 lvl Animal_Messenger)'] = {
+        }
+
+metadict_detail['|Утварь ++Uncommon, устрицы-передатчики, ритуал (2 lvl Speaking_Oysters)'] = {
+        }
+
+metadict_detail['|Утварь Common, ароматизатор, руна (0 lvl Prestidigitation)'] = {
+        }
+
+metadict_detail['|Утварь Common, газонокосилка, руна (0 lvl Sword_Burst)'] = {
+        }
+
+metadict_detail['|Утварь Common, левитрон, руна (0 lvl Mage_Hand)'] = {
+        }
+
+metadict_detail['|Утварь Common, огнетушитель, руна (0 lvl Control_Flames)'] = {
+        }
+
+metadict_detail['|Утварь Common, полировщик, руна (0 lvl Mold_Earth)'] = {
+        }
+
+metadict_detail['|Утварь Common, посудомойка, руна (0 lvl Shape_Water)'] = {
+        }
+
+metadict_detail['|Утварь Common, пылесос, руна (0 lvl Mold_Earth)'] = {
+        }
+
+metadict_detail['|Утварь Common, стиральная машина, руна (0 lvl Shape_Water)'] = {
+        }
+
+metadict_detail['|Утварь Common, химчистка, руна (0 lvl Acid_Splash)'] = {
+        }
+
+metadict_detail['|Утварь Common, холодильник, руна (0 lvl Prestidigitation)'] = {
+        }
+
+metadict_detail['|Утварь Common, швейная машинка, руна (0 lvl Mending)'] = {
+        }
+
+metadict_detail['|Экипировка ++Uncommon, камни послания, руна (3 lvl Sending)'] = {
+        }
+
+metadict_detail['|Экипировка +Common, детектор магии, руна (1 lvl Detect_Magic)'] = {
+        }
+
+metadict_detail['|Экипировка +Common, детектор элементалей, руна (1 lvl Detect_Evil_and_Good)'] = {
+        }
+
+metadict_detail['|Экипировка +Common, парашют, руна (1 lvl Feather_Fall)'] = {
+        }
+
+metadict_detail['|Экипировка +Common, парящий диск, ритуал (1 lvl Floating_Disk)'] = {
+        }
+
+metadict_detail['|Экипировка +Common, радиосвязь, руна (1 lvl Sonic_Thread)'] = {
+        }
+
+metadict_detail['|Экипировка Common, аптечка, руна (0 lvl Spare_the_Dying)'] = {
+        }
+
+metadict_detail['|Экипировка Common, говорящая кукла, ритуал (2 lvl Magic_Mouth)'] = {
+        }
+
+metadict_detail['|Экипировка Common, гривный цветок, руна (0 lvl Druidcraft)'] = {
+        }
+
+metadict_detail['|Экипировка Common, дыхательный аппарат, руна (0 lvl Gust)'] = {
+        }
+
+metadict_detail['|Экипировка Common, косметичка, руна (0 lvl Arcane_Painting)'] = {
+        }
+
+metadict_detail['|Экипировка Common, летучий фонарик, руна (0 lvl Dancing_Lights)'] = {
+        }
+
+metadict_detail['|Экипировка Common, огниво, руна (0 lvl Create_Bonfire)'] = {
+        }
+
+metadict_detail['|Экипировка Common, отпугиватель насекомых, руна (0 lvl Infestation)'] = {
+        }
+
+metadict_detail['|Экипировка Common, парфюм очарования, руна (0 lvl Friends)'] = {
+        }
+
+metadict_detail['|Экипировка Common, радиосвязь, руна (0 lvl Message)'] = {
+        }
+
+metadict_detail['|Экипировка Common, сигнализация, руна (1 lvl Alarm)'] = {
+        }
+
+metadict_detail['|Экипировка Common, срастающаяся верёвка, руна (0 lvl Mending)'] = {
+        }
+
+metadict_detail['|Экипировка Common, флейта иллюзий, руна (0 lvl Minor_Illusion)'] = {
+        }
+
+metadict_detail['|Экипировка Common, шарманка, ритуал (2 lvl Magic_Mouth)'] = {
+        }
+
+metadict_detail['|Экипировка Common, щит, руна (1 lvl Shield)'] = {
         }
