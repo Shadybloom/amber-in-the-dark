@@ -80,6 +80,7 @@
     # 1938 | 1.795                   | 0.642
     # http://www.stardestroyer.net/Armour/ShepStuff/Website/EconomicStats.htm
     # https://web.archive.org/web/20200226005924/http://astr23.narod.ru/so1.htm
+    # https://en.m.wikipedia.org/wiki/List_of_countries_by_iron_ore_production
 # Железо (Урал, Решетский рудник, 1913 год)
     # Просеянная железная руда (45% железа) -- 1.25-1.56 рубля/кубометр
     # Добыча железной руды кирками -- 0.8 тонны/человеко-день (0.1 тонны/нормо-час)
