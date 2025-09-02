@@ -1296,6 +1296,7 @@ metadict_detail['|Приборы столовые сельские (компле
         # Very Rare | 100k | 1000  | 100   | 13+ | Руны 4 круга, оружие +3, 300 кВт
         # Legendary | 500k | 2000  | 250   | 17+ | Руны 5 круга, артефакты, 10 МВт
         # * Common/Uncommon в 2 раза дешевле цен DnD. Rare/Legendary как в DnD 5e.
+        # Ремесло (DnD 5e) -- до 1.6 бит/час (50% на сырьё, 20% на скромный быт)
         # "Magic Item Crafting Time and Cost" (Xanathars Guide to Everything)
     # Постоянные заклинания как волшебные предметы:
         # Common (60 бит) -- 62 млн Continual_Flame (по 50 лет).
@@ -1783,11 +1784,22 @@ metadict_detail['|?Волшебный предмет Very Rare (скрытник
         }
 
 metadict_detail['|?Волшебный предмет Very Rare (сокровище) (богатеи)'] = {
-        # 66% предметов экспорт (345 вне страны, 3.5 в год, 0.18 млн бит/год)
         # Очень редкие волшебные предметы (300 кВт, пик 3 МВт):
         }
 
 metadict_detail['|?Волшебный предмет Very Rare (утварь) (богатеи)'] = {
+        }
+
+metadict_detail['|?Волшебный предмет Legendary (воин)'] = {
+        }
+
+metadict_detail['|?Волшебный предмет Legendary (кастер)'] = {
+        }
+
+metadict_detail['|?Волшебный предмет Legendary (погодник)'] = {
+        }
+
+metadict_detail['|?Волшебный предмет Legendary (скрытник)'] = {
         }
 
 #----
