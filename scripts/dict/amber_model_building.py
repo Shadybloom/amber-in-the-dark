@@ -86,11 +86,16 @@
 #----
 # Строительство, магазины:
     # Наценка:
-        # наценка мелких торговцев (Grain into Gold) -- 33-50%
+        # Наценка мелких торговцев (Grain into Gold) -- 33-50%
         # Наценка мелких торговцев -- 30-127% стоимости товара
         # Наценка крупных магазинов -- 10-40% стоимости товара
+        # Наценка орговых лавок -- 50-90% (50% посредникам, рынку)
+        # Наценка магазинов (Санкт-Петербург, 2009) -- 20-60% стоимости товара
+        # Спрос ограничен. Снижение цены на 50% даёт лишь ×1.33 продаж
+        # Продавцы повышают цены пока рост выручки не иссякнет (ценовой горизонт)
         # https://ru.wikisource.org/wiki/ЭСБЕ/Магазины_универсальные
         # https://ru.wikisource.org/wiki/ЭСБЕ/Масло_коровье,_в_торговле
+        # https://ss69100.livejournal.com/1652906.html
     # Магазины (продуктовые)
         # 3 вида продуктов на группу товаров, различная цена.
         # 500 товарных позиций (150 видов товаров) -- 80-90 кв.метров (3 продавца, уборщица)
@@ -516,6 +521,53 @@ metadict_model['Отделка трёхэтажного дома'] = {
 
 #----
 # Строительство, городские дома (фахверки):
+    # Римская империя, размеры античных домов:
+    # Median House Sizes in North Africa, Broad Data Set
+    # - Pre-Imperial: 87 m² (Sample 82)
+    # - Roman Imperial: 57 m² (Sample Size 762)
+    # - Post Imperial: 202 m² (Sample Size 133)
+    # 
+    # Median House Sizes in North Africa, Narrow Data Set
+    # - Pre-Imperial: 87 m² (Sample 82)
+    # - Roman Imperial: 133 m² (Sample 327)
+    # - Post-Imperial: 253 m² (Sample 104)
+    # 
+    # Median House Sizes in Italy, Broad Data Set
+    # - Pre-Imperial: 100 m²
+    # - Roman Imperial: 51 m²
+    # - Post-Imperial: 40 m²
+    # 
+    # Median House Sizes in Italy, Narrow Data Set
+    # - Pre-Imperial: 100 m²
+    # - Roman Imperial: 168 m²
+    # - Post-Imperial: 56 m²
+    # 
+    # Roman Italy Imperial era sites:
+    # Broad Data Set:
+    # - Cosa: 51 m²
+    # - Pompeii: 79 m²
+    # - Herculaneum: 113 m²
+    # - Ostia: 44 m²
+    # 
+    # Narrow Data Set:
+    # - Cosa: 136 m²
+    # - Pompeii: 226 m²
+    # - Herculaneum: 175 m²
+    # - Ostia: 75 m²
+    # 
+    # Median House Sizes in Britain, Broad Data Set
+    # - Pre-Imperial: 130 m²
+    # - Roman Imperial: 241 m²
+    # - Post-Imperial: 65 m²
+    # 
+    # Median House Sizes in Britain, Narrow Data Set
+    # - Pre-Imperial: 135 m²
+    # - Roman Imperial: 464 m² ! (122 Samples)
+    # - Post-Imperial: 93 m²
+    # 
+    # Asia Minor:
+    # - Pre-Roman: 103 m²
+    # - Roman: 88 m²
 
 metadict_model['Двухэтажный фахверк (смета)'] = {
         # http://neufert.totalarch.com/building/13
@@ -580,7 +632,7 @@ metadict_model['Отделка двухэтажного фахверка'] = {
         # https://archive.4plebs.org/pol/search/image/In3Sny8UYloXQQKymLO7uQ/
         # https://fraser.stlouisfed.org/files/docs/publications/bls/bls_1755_1972.pdf
         # https://i.4pcdn.org/pol/1658594936518964.gif
-    # сравнения веса дома 7x7 в России
+    # Сравнения веса дома 7x7 в России
         # Каркасный 22870
         # Кирпичный 55870
         # Железобетонный 97320.
@@ -622,6 +674,11 @@ metadict_model['Отделка двухэтажного коттеджа'] = {
 
 #----
 # Строительство, сельские дома (каркасные):
+    # СП 352.325800.2017 Здания жилые одноквартирные с деревянным каркасом
+    # СП 31-105-2002 Проектирование и строительство энергоэффективных одноквартирных жилых домов с деревянным каркасом
+    # СП 64.13330.2011 Деревянные конструкции
+    # СП 17.13330.2017 Кровли
+    # СП 71.13330.2017 Изоляционные и отделочные покрытия
 
 metadict_model['Каркасный дом (смета)'] = {
         # Поселковые дома. Малоэтажная индивидуальная застройка с приусадебными участками
