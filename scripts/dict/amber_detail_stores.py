@@ -140,6 +140,8 @@
     #  71.20 | аршин        |  44.00 | -            |  27.20 | -
     # https://ic.pics.livejournal.com/reader52017/82002356/64650/64650_original.png
     # https://reader52017.livejournal.com/3581.html
+    # https://rodline.livejournal.com/211744.html
+    # https://rodline.livejournal.com/211504.html
     # https://aftershock.news/?q=node/958636
 
 #----
