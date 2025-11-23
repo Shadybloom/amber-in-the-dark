@@ -1305,7 +1305,7 @@ metadict_detail['|Приборы столовые сельские (компле
         # "Magic Item Crafting Time and Cost" (Xanathars Guide to Everything)
         # "Grain into Gold" стр 52
     # Сырьё на волшебные предметы:
-        # Common, 60 бит: 20% 180g Silver, 30% Common Gem, 50% Other
+        # Common, 60 бит: 20% 9g Gold, 30% Common Gem, 50% Other
         # Uncommon, 250 бит: 20% 38g Gold, 30% Uncommon Gem, 50% Other
         # Rare, 5000 бит: 20% 100g Иск.Алмаз, 40% 4 Rare Gems, 40% Other
         # Very Rare, 50k бит: 20% 66g Иск.Алмаз, 30% 4 Very Rare Gems
