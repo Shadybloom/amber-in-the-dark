@@ -598,6 +598,7 @@ metadict_detail['Пищевые отходы, жидкие (килограмм)'
         # "Rome Economic Revolution" Philip Kay, 
         # https://en.wikipedia.org/wiki/Agriculture_in_ancient_Rome
         # https://en.wikipedia.org/wiki/Roman_metallurgy
+        # https://grokipedia.com/page/Mining_in_ancient_Rome
 
 metadict_detail['Топливо для промышленности (МДж)'] = {
         # TODO: жмыхи -- хорошее органическое удобрение. Глупо сжигать.
