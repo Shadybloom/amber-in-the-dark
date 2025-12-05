@@ -55,6 +55,8 @@ metadict_army['Понивильский кантон'] = {
         # amber -sm Понивильский кантон -S -E '|||Ёмкость'
         # amber -sm Понивильский кантон -S -E '|||Продукция'
         # amber -sm Понивильский кантон -S -E '|||Инструмент'
+        # amber -sm Понивильский кантон -S -E '|?Волшебный предмет'
+        # amber -sm Понивильский кантон -S -E 'Common,'
         # Транспорт: 
         # amber -sm понивильский кантон -S -E 'пассажирооборот'
         # amber -sm понивильский кантон -S -E 'пассажиронапряжённость'
@@ -77,18 +79,20 @@ metadict_army['Понивиль'] = {
         }
 
 metadict_army['Экспорт Эквестрии'] = {
-        # Внешняя торговля Эквестрии -- 875 млн бит (15% ВВП), 44 млрд долларов 2025 года.
-        # Население мира 500 миллионов, как в 1850-е годы (70 млн соседи Эквестрии)
-        # Мировой рынок 8 млрд бит (11% доля Эквестрии при 6% доле населения)
+        # Внешняя торговля Эквестрии -- 875 млн бит (15% ВВП)
+            # Это 23% торговли Британии или 77% США в 1899 (per capita)
+            # Это 68% торговли Британии или 148% США в 1850 (per capita)
+            # Мир 500 млн (как в 1850), Эквус 150M, Эквестрия 30M, соседи 70M.
+            # Мировой рынок 8 млрд бит (11% доля Эквестрии при 6% населения)
+            # https://en.m.wikipedia.org/wiki/List_of_countries_by_exports
+            # https://en.m.wikipedia.org/wiki/List_of_countries_by_imports
+            # https://en.wikipedia.org/wiki/List_of_countries_by_merchandise_exports
+            # https://en.wikipedia.org/wiki/List_of_countries_by_service_exports_and_imports
+            # https://en.wikipedia.org/w/index.php?title=List_of_countries_by_exports&oldid=1070008732
+            # https://en.wikipedia.org/w/index.php?title=List_of_countries_by_imports&oldid=1070180830
         # Здесь тесты для оценки стоимости, всё основное в amber_detail_needs
         # amber Эквестрия -E потребность в одежде
         # amber Эквестрия -E потребность в посуде
-        # https://en.m.wikipedia.org/wiki/List_of_countries_by_exports
-        # https://en.m.wikipedia.org/wiki/List_of_countries_by_imports
-        # https://en.wikipedia.org/wiki/List_of_countries_by_merchandise_exports
-        # https://en.wikipedia.org/wiki/List_of_countries_by_service_exports_and_imports
-        # https://en.wikipedia.org/w/index.php?title=List_of_countries_by_exports&oldid=1070008732
-        # https://en.wikipedia.org/w/index.php?title=List_of_countries_by_imports&oldid=1070180830
         '+Городской рацион, избыток (пони/год)':5951100,
         '+Среднеземный рацион, избыток (пони/год)':7023750,
         '+Североморский рацион, избыток (пони/год)':4618312,
@@ -677,6 +681,7 @@ metadict_army['Эквестрия'] = {
             # "Налог на добавленный долг" (НДД суть НДС для кредита)
             # https://kubkaramazoff.livejournal.com/72994.html
             # https://kubkaramazoff.livejournal.com/73489.html
+            # https://kubkaramazoff.livejournal.com/126760.html
             # https://kubkaramazoff.livejournal.com/128414.html
         # Капиталы:
             # Норма сбережений -- 15% (40+ лет на накопление ×6 ВВП в капитал)
@@ -708,6 +713,10 @@ metadict_army['Эквестрия'] = {
             # Рантье     | <44k  | <2 млн бит | 6.2     | 10    | -
             # * Налоги 4.2-7.2% капитала, на личные нужды остаётся 2% капитала.
             # За 1978-2015 годы рост 0.001% богачей ×1.6-3.4 к росту 1% богатых.
+            # Банки (США, 1919, 107 млн) -- 2.8 банков на 10k населения (30k)
+            # Банки (США, 1920, 109 млн) -- 1.3 банков на 10k населения (14k)
+            # Банки (США, 1921, 109 млн) -- TOP 0.1% = 25% фин.активов; TOP 0.7% = 50%
+            # "Капитализм. История и идеология «денежной цивилизации»" Катасонов
             # "Капитал в XXI веке" Томас Пикетти (таблица 12.2)
             # https://ru.wikipedia.org/wiki/Суверенный_фонд
             # ---
