@@ -30,6 +30,15 @@
     # https://en.m.wikipedia.org/wiki/List_of_countries_by_cereal_production
     # https://en.wikipedia.org/wiki/List_of_countries_by_arable_land_density
     # https://en.wikipedia.org/wiki/Land_use_statistics_by_country
+# Экспансия России в степи причерноморья и Европу (18 век):
+    # Год  | Людей  | Пашня  | Луга   | Леса   | Земля  | ч/га | % Пашни
+    # ---- | ------ | ------ | ------ | ------ | ------ | ---- | -------
+    # 1696 | 13.0M  | 32M ha | 67M    | 213M   | 405M   | 0.41 | 7.9%
+    # 1725 | 16.5M  | 42M    | 66M    | 214M   | 418M   | 0.39 | 10.0%
+    # 1763 | 23.2M  | 54M    | 63M    | 206M   | 423M   | 0.43 | 12.7%
+    # 1796 | 37.4M  | 81M    | 77M    | 217M   | 486M   | 0.43 | 16.8%
+    # * 23.8/37.4M Россия (8M Украина, 3M Польша, 2M Прибалтика, 0.3M Грузия)
+    # "Russian Economic Growth, 1690s–1880s" Stephen Broadberry and Elena Korchmina
 # Население по регионам мира (1800-2025):
     # Регион           | 1800 | 1870 | 1913 | 2000 | 2025
     # ---------------- | ---- | ---- | ---- | ---- | ----
@@ -39,8 +48,10 @@
     # Северная Америка |  1   |  4   |  6   |  6   |  8
     # Южная Америка    |  2   |  3   |  1   |  8   |  6
     # Африка           |  7   |  7   |  5   | 13   | 16 
+    # * Население Западной Европы 1900 года -- 303 миллиона
     # https://en.m.wikipedia.org/wiki/List_of_countries_by_population_in_1900
     # https://en.m.wikipedia.org/wiki/List_of_countries_by_population_in_1800
+    # https://upload.wikimedia.org/wikipedia/commons/8/83/The_Harmsworth_atlas_and_Gazetter_1908_Population_density_map.jpg
 # ВВП ППС по регионам мира (1800-2025):
     # Регион           | 1800 | 1870 | 1913 | 2000 | 2025
     # ---------------- | ---- | ---- | ---- | ---- | ----
