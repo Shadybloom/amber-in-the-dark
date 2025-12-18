@@ -220,6 +220,7 @@
     # Total mean income per capita -- 489-604 kg, 0.42-0.44 коэф. Джини
     # Wheat price -- 0.5 sesterces/kg (2-3 HS per modius, 50 бит/тонна)
     # From 50 BC to 80 AD, the salary of a Legionary was 900 sesterces (2 Wealth)
+    # From 98 AD to 117 AD, the salary of a Legionary was 1200 sesterces (3 Wealth)
     # https://web.archive.org/web/20181006130232/http://www.princeton.edu/~pswpc/pdfs/scheidel/010901.pdf
     # https://archive.4plebs.org/pol/search/image/eiRUcJYM7v7k7dk3lRuY4g/
     # "Rome Economic Revolution" Philip Kay
@@ -929,11 +930,12 @@
         # Россия (9-15 класс)  -- 35
         # Россия (в городах)   -- 167
         # Россия (в уездах)    -- 14
-        # Китай (1800 год)     -- 0.9
         # * Чиновники в России -- 3% всех грамотных мужчин
         # * К чиновникам в некоторых странах относят учителей
         # https://istmat.org/node/24427
     # Чиновников на 10 000 человек (другие источники):
+        # - 1800 г. (Китай)    -- 0.9 (27k должностей на 300M населения)
+        # - 1825 г. (Россия)   -- 4.3 (20k на 47M населения)
         # - 1913 г. (Россия)   -- 16 *
         # - 1900 г. (США)      -- 167
         # - 1914 г. (Англия)   -- 205

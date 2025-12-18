@@ -113,7 +113,7 @@
     # Китай (казна)   |  2 263
     # Швейцария       |  1 040
     # Япония          |    846
-    # Индия (частные) | 21 000
+    # Индия (частные) | 21 000 **
     # Индия (казна)   |    823
     # Нидерланды      |    613
     # Турция          |    570
@@ -121,6 +121,7 @@
     # Тайвань         |    422
     # * IMF -- International Monetary Fund
     # * ECB --  European Central Bank
+    # ** Скупают на 3% ВВП Индии 2021 года, 1068t в год, 33% мировой добычи
     # https://en.m.wikipedia.org/wiki/Gold_reserve
     # https://kubkaramazoff.livejournal.com/109736.html
 # Хронология добычи золота:
@@ -213,6 +214,8 @@
     # https://web.archive.org/web/20190511205223/https://www.sciencedirect.com/science/article/pii/S0921344913002747
     # https://ru.wikipedia.org/wiki/Серебро#Нахождение_в_природе
     # https://grokipedia.com/page/Silver_mining#historical-development
+    # "The Monetary Origins of the ‘Price Revolution’" John Munro
+    # https://www.economics.utoronto.ca/public/workingPapers/UT-ECIPA-MUNRO-99-02.pdf
 
 #----
 # Разовые услуги --> почасовая оплата
