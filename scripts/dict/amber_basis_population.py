@@ -1379,6 +1379,7 @@ metadict_army['Понивильские лесные городо-сельски
             # https://mlp.fandom.com/wiki/Ponyville#Infrastructure_and_places
             # https://ru.wikisource.org/wiki/ЭСБЕ/Туапсе
             # https://www.rpglibrary.org/utils/meddemog/
+            # https://ru.wikipedia.org/wiki/Посёлок_городского_типа
         # Понивиль -- 3700 жителей, 533 домов (саманные фахверки, 49% каменных):
             # Понивиль, это один из новых городов западного фронтира Эквестрии.
             # Поселение занимает 50-100 гектаров усадьб, садов, дорог, огородов.
