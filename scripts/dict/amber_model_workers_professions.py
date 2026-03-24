@@ -1,5 +1,37 @@
 #----
 # Профессии (управленцы):
+    # Рыцарь плюс наблюдатели эффективнее коалиции рыцарей:
+        # Персоналия  | Ресурс
+        # ----------- | ------
+        # Рыцарь      | 12
+        # Наблюдатель | 1
+        # Наблюдатель | 1
+        # Наблюдатель | 1
+        # 80% власти. В 75% случаев запрашивают помощь.
+        # Персоналия  | Ресурс
+        # ----------- | ------
+        # Рыцарь      | 10
+        # Преемник    | 3
+        # Наблюдатель | 1
+        # Наблюдатель | 1
+        # 67% власти. В 50% случаев запрашивают помощь.
+        # Персоналия  | Ресурс
+        # ----------- | ------
+        # Рыцарь      | 6
+        # Рыцарь      | 3
+        # Рыцарь      | 3
+        # Рыцарь      | 3
+        # 40% власти. В редких случаев запрашивают помощь.
+    # Разделяй и властвуй в политике:
+        # The reason you have zero political power in this country
+        # The top 1%
+        # The 99%
+        # - You refuse to find any political unity with non-whites. 99% becomes 55%.
+        # - You refuse to find any political unity with women. 55% becomes 27%.
+        # - You refuse to find any political unity with boomers. 27% becomes 18%.
+        # - You refuse to find any political unity with white liberal men. 18% becomes 10%.
+        # - You refuse to find any political unity with white men who work in government or academia. 10% becomes 7%.
+        # - You refuse to find any political unity with homosexuals, anti-trumpers, vegetarians, Bernie supporter types, etc. 7% becomes 3%.
     # Число Данбара и закон Ципфа в управлении:
         # TODO: Метод SADRAT, грустнокрыса -- spot, access, develop, recruit, handle, terminate
         # Сюзерен может контролировать 10-12 человек (в норме 6-7 человек)
@@ -40,6 +72,7 @@
         # Соотношение Брукса -- 33% времени проектирование, 17% разработка, 25% тестирование модулей, 25% тестирование продукта
         # Затраты = (2 × стоимость часа) / (коэф.продуктивности × коэф.риска)
         # Коэффициент продуктивности и коэффициент рисков обычно ниже 0.5
+        # В среднем ранние сроки/расходы нужно умножать на ×3
         # Подстановка:
         # (2 × 1) / (0.5 × 0.5) = ×8 (нормальная команда)
         # (2 × 1) / (0.3 × 0.3) = ×22 (посредственная команда)
