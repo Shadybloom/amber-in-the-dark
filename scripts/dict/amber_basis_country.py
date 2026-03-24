@@ -737,10 +737,6 @@ metadict_army['Эквестрия'] = {
             # Рантье     | <44k  | <2 млн бит | 6.2     | 10    | -
             # * Налоги 4.2-7.2% капитала, на личные нужды остаётся 2% капитала.
             # За 1978-2015 годы рост 0.001% богачей ×1.6-3.4 к росту 1% богатых.
-            # Банки (США, 1919, 107 млн) -- 2.8 банков на 10k населения (30k)
-            # Банки (США, 1920, 109 млн) -- 1.3 банков на 10k населения (14k)
-            # Банки (США, 1921, 109 млн) -- TOP 0.1% = 25% фин.активов; TOP 0.7% = 50%
-            # "Капитализм. История и идеология «денежной цивилизации»" Катасонов
             # "Капитал в XXI веке" Томас Пикетти (таблица 12.2)
             # https://ru.wikipedia.org/wiki/Суверенный_фонд
             # ---
@@ -880,8 +876,71 @@ metadict_army['Эквестрия'] = {
         # - Винниаполис (Whinnyapolis) -- Minneapolis
         # * Доджтаун (Dodge Junction) -- Dodge City
         # * Эпплуза (Appleloosa) -- Appaloosa
+        # - Детрот (Detrot) -- Detroit
+        #----
+        # Скучные названия:
+        # - Дауни (Downey) -- Downey
+        # - Спаркс (Sparks) -- Sparks
+        # - Мидлэнд (Midland) -- Midland
+        # - Лэйквуд (Lakewood) -- Lakewood
+        # - Лэйклэнд (Lakeland) -- Lakeland
+        # - Ошенсайд (Oceanside) -- Oceanside
+        # - Риверсайд (Riverside) -- Riverside
+        # - Ривердэйл (Riverdale) -- Riverdale
+        # - Фэрфильд (Fairfield) -- Fairfield
+        # - Хилсбэро (Hillsboro) -- Hillsboro
+        # - Бивертон (Beaverton) -- Beaverton
+        # - Тимбертон (Timberton) -- Timberlake
+        # - Шугэрлэнд (Sugar Land) -- Sugar Land
+        # - Мидфорд (Meadford) -- Medford
+        # - Гринвиль (Greenville) -- Greenville
+        # - Пайн Хиллс (Pine Hills) -- Pine Hills
+        # - Черри Хилл (Cherry Hill) -- Cherry Hill
+        # - Спринг Хилл (Spring Hill) -- Spring Hill
+        # - Каньон Лэйк (Canyon Lake) -- Canyon Lake
+        # - Спринг Воллей (Spring Valley) -- Spring Valley
+        # - Меридианвиль (Meridianville) -- Meridianville
+        # - Санрайз Мэнор (Sunrise Manor) -- Sunrise Manor
+        # - Великие Прерии (Grand Prairie) -- Grand Prairie
+        # - Кедровые водопады (Cedar Falls) -- Cedar Falls
+        # - Ореховая бухта (Walnut Creek) -- Walnut Creek
+        # - Фруктовая бухточка (Fruit Cove) -- Fruit Cove
+        # - Корэл Спрингс (Coral Springs) -- Coral Springs
+        # - Рэдвут Сити (Redwood City) -- Redwood City
+        # - Саванна Сити (Savannah City) -- Savannah
+        # - Колокольчик (Bellflower) -- Bellflower
+        # - Малый Вяз (Little Elm) -- Little Elm
+        # - Болдэртаун (Boulder Town) -- Boulder
+        # - Литтлрок (Little Rock) -- Little Rock
+        # - Риджвиль (Ridgeville) -- Ridgeville
+        # - Орэндж Сайт (Orange City) -- Orange
+        # - Элсинор (Elsinore) -- Lake Elsinore
+        # - Элк Грув (Elk Grove) -- Elk Grove
+        # - Дирфильд (Deerfield) -- Deerfield
+        # - Хомстид (Homesteed) -- Homestead
+        # - Хэмпшир (Hempshire) -- Hempstead
+        # - Глиндэйл (Glendale) -- Glendale
+        # - Буффало (Buffalo) -- Buffalo
+        # - Блумингтон (Bloomington) -- Bloomington
+        # - Клеверлэнд (Cleverland) -- Cleveland
+        # - Хэйвард (Hayward) -- Hayward/Harvard
+        # - Оксвард (Oxward) -- Oxnard/Oxford
+        # - Рокфорд (Rockford) -- Rockford
+        # - Сорнтэн (Thornton) -- Thornton
+        # - Хорнтэн (Hornton) -- Thornton
+        # - Хартфорд (Hartford) -- Hartford
+        # - Тростник (Reedley) -- Reedley
+        #----
+        # Забавные названия:
+        # - Маффинсборо (Muffinsboro) -- Murfreesboro
+        # - Милк Воке (Milk Waukee) -- Milwaukee
+        # - Киссимэр (Kissimare) -- Kissimmee
+        # - Гудибэр (Goody Bear) -- Goodyear
+        # - Спукиэйн (Spookyane) -- Spokane
+        # - Айслип (I Sleep) -- Islip
         #----
         # - Торота (Torotá) -- Bogotá
+        # - Мирамэ (Miramare) -- Miramar
         # - Мэнила (Marenila) -- Manila
         # - Мэдрид (Maredrid) -- Madrid
         # - Винниена (Whinnyenna) -- Vienna
@@ -897,7 +956,7 @@ metadict_army['Эквестрия'] = {
         # - Солт Лик Сити (Salt-Lick-City) -- Salt Lake City
         # * Нэйгара Фолс (Neighgara Falls) -- Niagara Falls
         # * Хуффингтон (Hoofington) -- Huffington
-        # * Лас-Пегас (Las Pegasus) -- Las Vegas
+        # * Лас Пегас (Las Pegasus) -- Las Vegas
         # * Инхарнэс (In-harness) -- Inverness
         # * Ванхувер (Vanhoover) -- Vancouver
         # * Балтимэр (Baltimare) -- Baltimore
@@ -905,14 +964,17 @@ metadict_army['Эквестрия'] = {
         # * Харсвард (Hearthward) -- Harvard
         # * Онтарино (Ontarino) -- Ontario
         # * Хуфстон (Hooveston) -- Houston
+        # - Бронклин (Bronclyn) -- Brooklyn
         # - Хичита (Hitchita) -- Wichita
         # - Отсипи (Oatsipee) -- Ossipee
         # * Шайен (Shyenne) -- Cheyenne
         # * Камильхиль (Kamille Hill) --
         # * Вайамэйн (Wyomane) --
         # * Мэрэй (Marey) -- 
+        # - Тобэк (Tobuck) -- Tobruk
         # - Cu-ride-abat --
         # - Ont-mare-io --
+        # https://equestriaatwar.wiki.gg/wiki/Guide_to_the_Cities_of_the_World
 
 metadict_army['Мэйнхеттенский регион'] = {
         # Крупнейший в Эквестрии 600-тысячный город Мэйнхеттен. Верфь страны.
@@ -1057,6 +1119,7 @@ metadict_army['Эпплузский регион'] = {
 
 #----
 # Округа (Мэйнхеттенский регион):
+# 124 округа, из них 42 уникальные.
 
 metadict_army['Мэйнхеттенский прибрежный округ'] = {
         'Северо-восточный прибрежный кантон-мегаполис Мэйнхеттен':1,
