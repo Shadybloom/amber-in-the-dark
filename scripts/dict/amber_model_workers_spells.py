@@ -1,34 +1,4 @@
 #----
-# Заметки:
-    # https://www.dandwiki.com/wiki/5e_Spells
-    # https://totally.fandom.com/wiki/List_of_Homebrew_Spells
-    # https://www.d20srd.org/indexes/spells.htm
-    # https://www.dnd-spells.com/spells
-# Годные заклинания:
-    # https://totally.fandom.com/wiki/Temporal_Beat
-    # https://totally.fandom.com/wiki/Spider%27s_Kiss
-    # https://totally.fandom.com/wiki/Fall
-    # https://totally.fandom.com/wiki/Angelic_Feather -- без Dodge_Action
-    # https://totally.fandom.com/wiki/Wyvern_Guard
-    # https://totally.fandom.com/wiki/What%27s_Yours_is_Mine
-    # https://totally.fandom.com/wiki/What%27s_Mine_is_Yours
-    # https://totally.fandom.com/wiki/Weapon%27s_Kairos
-    # https://totally.fandom.com/wiki/Vigil_of_Enlightenment
-    # https://totally.fandom.com/wiki/Sinister_Threat -- для паладинов и колдунов
-    # https://totally.fandom.com/wiki/Leaf_Fall -- листопад
-    # https://totally.fandom.com/wiki/Devilish_Hunt
-    # https://totally.fandom.com/wiki/Bridge_over_Troubled_Water
-    # https://totally.fandom.com/wiki/Steps_of_a_Tower
-    # https://totally.fandom.com/wiki/Spellsteal*
-    # https://totally.fandom.com/wiki/Snakemake
-    # https://totally.fandom.com/wiki/Smart_Arrow
-    # https://totally.fandom.com/wiki/Skewering_Vine
-    # https://totally.fandom.com/wiki/Rose_Gate
-    # https://totally.fandom.com/wiki/Protection_from_Pressure
-    # https://totally.fandom.com/wiki/Material_Transport
-    # https://totally.fandom.com/wiki/Implant_Phobia
-    # https://totally.fandom.com/wiki/Glass_House
-    # https://totally.fandom.com/wiki/Urie%27s_Warped_Space
 # Обозначения:
     # Выборка по уровням:
     # amber -sm Эквестрия -E '1 lvl'
@@ -39,6 +9,302 @@
     # amber -sm Эквестрия -E '(C)'
     # amber -sm Эквестрия -E '(R)'
     # amber -sm Эквестрия -E '(S)'
+# Заметки:
+    # https://www.dandwiki.com/wiki/5e_Spells
+    # https://www.d20srd.org/indexes/spells.htm
+    # https://www.dnd-spells.com/spells
+# Классы DnD 5e:
+    # https://www.dandwiki.com/wiki/5e_Classes
+    # https://www.dandwiki.com/wiki/5e_Commoner_Classes
+    # https://www.dandwiki.com/wiki/Farmer_(5e_Class)
+    # https://www.dandwiki.com/wiki/Lumberjack_(5e_Class)
+    # https://www.dandwiki.com/wiki/Apothecary_(5e_Class)
+    # https://www.dandwiki.com/wiki/Common_Caster_(5e_Class) -- до 5 круга
+    # https://www.dandwiki.com/wiki/Combat_Butler_(5e_Class) -- телохранитель
+    # https://www.dandwiki.com/wiki/Magical_Girl,_Variant_(5e_Class)
+    # https://www.dandwiki.com/wiki/Gentleman,_3rd_Variant_(5e_Class)
+    # https://www.dandwiki.com/wiki/Animated_Blade_(5e_Class) -- левитация оружия.
+    # https://www.dandwiki.com/wiki/Energy_Mage_(5e_Class) -- Mystic попроще.
+    # https://www.dandwiki.com/wiki/Boxer_(5e_Class) -- brawler в стиле ToME
+    # https://www.dandwiki.com/wiki/Cultivator_(5e_Class) -- маго-монах
+# Заклинания DnD 3.5:
+    # https://www.dandwiki.com/wiki/3.5e_Sorcerer/Wizard_Spells#9th-Level_Sorcerer/Wizard_Spells
+    # Cantrips:
+    # https://www.dandwiki.com/wiki/Common_Knowledge_(3.5e_Spell)
+    # 1-й круг:
+    # https://www.dandwiki.com/wiki/Bloodsense_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Free_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Attract_Undead_(3.5e_Spell)
+    # 2-й круг:
+    # https://www.dandwiki.com/wiki/Summon_Guided_Anvil_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Dark_Symmetry_(3.5e_Spell)
+    # 3-№ круг:
+    # https://www.dandwiki.com/wiki/Force_Binding_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Nondimensional_Pocket_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Sixth_Sense_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Microwave_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Bifronse%27s_Pale_Tendrils_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Return_Form_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Transfer_Enchantment_(3.5e_Spell)
+    # 4-й круг:
+    # https://www.dandwiki.com/wiki/Spell_Barrier_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Tempest_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Forbidden_Line_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Peephole_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Channeled_Lightning_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Corrupt_Soul_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Entombed_in_Amber_(3.5e_Spell)
+    # 5-й круг:
+    # https://www.dandwiki.com/wiki/Exorcise_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/DandeLions_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Know_Death_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Misspell_(3.5e_Spell) -- Funny Counterspell
+    # https://www.dandwiki.com/wiki/Vampiric_Transformation_Ritual_(3.5e_Spell)
+    # 6-й круг:
+    # https://www.dandwiki.com/wiki/Wind_Shield_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Elemental_Parasite_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Fatal_Attraction_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Warp_Door_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Memory_Manipulation_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Danzig%27s_Radiant_Stream_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Double_Shift_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Mark_of_the_Lich_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Armor_of_Flesh_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Molecular_Combustion_(3.5e_Spell)
+    # 7-й круг:
+    # https://www.dandwiki.com/wiki/Anti-Teleport_Sphere_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Death_Pact_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Prismatic_Aura_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Tamorak%27s_%27Arrest%27_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Lightning_Vice_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Assuming_The_Role_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Fusion_Dance_(3.5e_Spell)
+    # 8-й круг:
+    # https://www.dandwiki.com/wiki/Jess%27_Twin_Portals_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Ion_Blast_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Scream_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Continual_Wounds_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Thorny_Bones_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Dark_Memoirs_(3.5e_Spell) -- полиморф в книгу
+    # https://www.dandwiki.com/wiki/Energy_Subjugation_(3.5e_Spell)
+    # 9-й круг:
+    # https://www.dandwiki.com/wiki/Iron_Brand_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Ball_Lightning,_Greater_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Engulfing_Doom_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Ki_Clone_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Mirror_Shadow_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Chain_Death_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Create_Synthetic_Soul_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Living_Arrow_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Soul_Nova_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Age_Reversal_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Antifield_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Awaken_Spell_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Bestow_Sentience_(3.5e_Spell) -- умные големы
+    # https://www.dandwiki.com/wiki/Inherency_(3.5e_Spell) -- передача заклинания
+    # https://www.dandwiki.com/wiki/Phenomenon_Rejection_(3.5e_Spell) -- возврат во времени
+# Заклинания DnD 5e:
+    # https://totally.fandom.com/wiki/List_of_Homebrew_Spells
+    # Cantrips:
+    # https://totally.fandom.com/wiki/Action_Image -- видеозапись
+    # https://totally.fandom.com/wiki/Accelerate
+    # https://totally.fandom.com/wiki/Temporal_Beat
+    # https://totally.fandom.com/wiki/Cheerful_Song
+    # https://totally.fandom.com/wiki/Mercy
+    # 1-й круг:
+    # https://totally.fandom.com/wiki/Arcane_Ablation -- вариант False_Life/Ward
+    # https://totally.fandom.com/wiki/Angelic_Feather -- даёт Dash/Disengage троим
+    # https://totally.fandom.com/wiki/Aerosphere -- пегасий вариант Flaming_Sphere
+    # https://totally.fandom.com/wiki/Boomerang_Sigil -- самонаводящийся шарик.
+    # https://totally.fandom.com/wiki/Cloth_of_Honorable_Melee -- отражение стрел +2 AC на минуту.
+    # https://totally.fandom.com/wiki/Doubleblade -- атака на 10ft, игнорит Shield бонусным действием.
+    # https://totally.fandom.com/wiki/Ironbinds -- 3d6 урона и потеря движения на ход.
+    # https://totally.fandom.com/wiki/Know_the_Mark -- метка куклой вуду.
+    # https://totally.fandom.com/wiki/Hunter%27s_Pace -- концентрация на атлетике.
+    # https://totally.fandom.com/wiki/Lantern_Walker -- ходячая камера, радиус миля, 1 час.
+    # https://totally.fandom.com/wiki/Malice_of_Arachia
+    # https://totally.fandom.com/wiki/Spider%27s_Kiss
+    # https://totally.fandom.com/wiki/Fall
+    # https://totally.fandom.com/wiki/Masterful_Focus -- один крит 18-20, час концентрации.
+    # https://totally.fandom.com/wiki/Wyvern_Guard
+    # https://totally.fandom.com/wiki/Thrashing_Tether -- Witch_Bolt через друзей
+    # https://totally.fandom.com/wiki/Repentance -- реакцией отменяет атаку, спас Мудрости
+    # https://totally.fandom.com/wiki/Seeking_Projectiles -- мод.атаки заклинания к снаряду. 10 минут.
+    # https://totally.fandom.com/wiki/Mend_Flesh
+    # https://totally.fandom.com/wiki/Wellspring
+    # https://totally.fandom.com/wiki/Starfire -- 2d12 излучением, слепота на раунд.
+    # https://totally.fandom.com/wiki/Pool_of_Fate -- даёт стек 5d6 к атаке/проверкам/спасам, конц.минута
+    # https://totally.fandom.com/wiki/Putrefy_Food_and_Drink
+    # 2-й круг:
+    # https://totally.fandom.com/wiki/Accursed_Wish -- эффект заклинания 1 круга.
+    # https://totally.fandom.com/wiki/Blindfold -- ослепление через куклу вуду на день.
+    # https://totally.fandom.com/wiki/Burn_the_Sight -- Darkvision через куклу вуду на 8 часов.
+    # https://totally.fandom.com/wiki/Branch_Assault -- 2d10+5 урона атакует ближайшее дерево.
+    # https://totally.fandom.com/wiki/Bridge_over_Troubled_Water -- 5×30ft мост (R)
+    # https://totally.fandom.com/wiki/Demon_Skin -- мод.волшебства к AC без доспехов.
+    # https://totally.fandom.com/wiki/Dissociative_Edge -- атака оружием на 2d8 30ft линия.
+    # https://totally.fandom.com/wiki/Divine_Star -- лечит-и-атакует 1d6 на 30ft линия.
+    # https://totally.fandom.com/wiki/Devilish_Hunt
+    # https://totally.fandom.com/wiki/Ethereal_Strike -- антипризрак.
+    # https://totally.fandom.com/wiki/Frame -- спаянная с врагом удача.
+    # https://totally.fandom.com/wiki/Juxtapose -- 15ft Mirror_Image на раунд
+    # https://totally.fandom.com/wiki/Leaf_Fall -- листопад (R)
+    # https://totally.fandom.com/wiki/Mind_Flay -- 2d6 психике, помеха атакам, конц.минута
+    # https://totally.fandom.com/wiki/Phantom_Accompaniment -- фантомные музыканты (R)
+    # https://totally.fandom.com/wiki/Regenerate_Plant -- лечит растение 10hp/раунд (R)
+    # https://totally.fandom.com/wiki/Shadow_Armor -- реакцией помеха атакам и 15ft телепорт.
+    # https://totally.fandom.com/wiki/Silver_Spear -- 3d10 урона серебром 30ft (R)
+    # https://totally.fandom.com/wiki/Spell_Flux -- half-cover, реакцией отражает 1 снаряд во врага.
+    # https://totally.fandom.com/wiki/Spirit_Cartographer -- картограф-сенсор с +8 Perception.
+    # https://totally.fandom.com/wiki/Sinister_Threat -- для паладинов и колдунов
+    # https://totally.fandom.com/wiki/Vigil_of_Enlightenment
+    # https://totally.fandom.com/wiki/Underside -- слияние с тенью другого 1 час.
+    # https://totally.fandom.com/wiki/Transposition -- обмен местами с целью 30ft
+    # https://totally.fandom.com/wiki/Weapon%27s_Kairos
+    # https://totally.fandom.com/wiki/What%27s_Yours_is_Mine
+    # https://totally.fandom.com/wiki/What%27s_Mine_is_Yours
+    # 3-й круг:
+    # https://totally.fandom.com/wiki/Aetherthread -- на шестерых, потеря скорости, конц.минута
+    # https://totally.fandom.com/wiki/Asphyxiate
+    # https://totally.fandom.com/wiki/Battle_Double -- атаки от двойника до 20ft конц.минута
+    # https://totally.fandom.com/wiki/Beacon_of_the_Deluded
+    # https://totally.fandom.com/wiki/Bind
+    # https://totally.fandom.com/wiki/Blackened_Heart -- 10d6 ядом, если убит 10ft радиус взрыва.
+    # https://totally.fandom.com/wiki/Charged_Touch -- 8d6 молний, ответка на удар вблизи, минута.
+    # https://totally.fandom.com/wiki/Creeping_Dark -- облик тени до атаки на 4d6 force, минута.
+    # https://totally.fandom.com/wiki/Detect_Interference -- распознание заклинаний 300ft.
+    # https://totally.fandom.com/wiki/Eldritch_Barrier -- сопротивление psychic,force, 1d8 ответка реакцией.
+    # https://totally.fandom.com/wiki/Electromagnetic_Storm
+    # https://totally.fandom.com/wiki/Fox%27s_Fangs -- 9 атак на 2d6 psychic, 60ft, лечит 3hp.
+    # https://totally.fandom.com/wiki/Fracture_Spirit
+    # https://totally.fandom.com/wiki/Frost_Shards -- Full_Cover, действием 5 атак по 3d10 урона, 30ft.
+    # https://totally.fandom.com/wiki/Glass_House
+    # https://totally.fandom.com/wiki/Grappleground
+    # https://totally.fandom.com/wiki/Hornet_Wall -- 40×10×5ft на 120ft 6d6 ядом, паралич, Спас.Тел, конц.минута.
+    # https://totally.fandom.com/wiki/Implant_Phobia
+    # https://totally.fandom.com/wiki/Link_Perception -- кукла-вуду как наблюдатель, конц.10минут
+    # https://totally.fandom.com/wiki/Material_Transport -- 5d6+15 force, 60ft, слияние объектов.
+    # https://totally.fandom.com/wiki/Protection_from_Pressure
+    # https://totally.fandom.com/wiki/Ravenous_Solitude
+    # https://totally.fandom.com/wiki/Reshape_Metal -- лепка металла без нагрева, касанием.
+    # https://totally.fandom.com/wiki/Rose_Gate -- сопротивление урону на 6 друзей, 60ft, раунд.
+    # https://totally.fandom.com/wiki/Royal_Death_Decree -- 6d8 psychic, 30ft конус, 1/2 урона если падёт ниц.
+    # https://totally.fandom.com/wiki/Serpent%27s_Bite -- клыки, 3d8 ядом, бонусным действием, конц.минута
+    # https://totally.fandom.com/wiki/Shadow_Toxin -- 3d8 психике, провал магии поддержки, 60ft, Спас.Инт, минута.
+    # https://totally.fandom.com/wiki/Skewering_Vine -- 3d10 piercing действием, 30ft, конц.минута
+    # https://totally.fandom.com/wiki/Smart_Arrow -- атаки вне поля зрения, бонусным действием, конц.раунд.
+    # https://totally.fandom.com/wiki/Snakemake
+    # https://totally.fandom.com/wiki/Spellsteal*
+    # https://totally.fandom.com/wiki/Steps_of_a_Tower -- метки сенсоры, конц.час
+    # https://totally.fandom.com/wiki/Unfasten -- расстёгивание застёжек, 120ft, 10×10ft, -2 AC брони.
+    # https://totally.fandom.com/wiki/Urie%27s_Warped_Space
+    # 4-й круг:
+    # https://totally.fandom.com/wiki/Ashen_Pack -- 3 огневолка, действием 4d10 fire, 30ft, конц.10минут
+    # https://totally.fandom.com/wiki/Bonded_String
+    # https://totally.fandom.com/wiki/Cage_of_Briars -- клетка из шиповника, 10×10ft 10AC 200hp.
+    # https://totally.fandom.com/wiki/Call_Treant_Spirit -- оживляет дерево, 15AC 50hp 2 атаки 3d6+3
+    # https://totally.fandom.com/wiki/Circle_of_Scrying -- 250 бит, камера наблюдения.
+    # https://totally.fandom.com/wiki/Crimson_Cloak -- плащ накапливает 30hp крови и даёт сопротивление.
+    # https://totally.fandom.com/wiki/Dark_Empowerment -- +1d8 урона, ×2 мод.магии Heroism, конц.минута.
+    # https://totally.fandom.com/wiki/Deadly_Doorway -- вариант Glyph_of_Warding, касанием, час действия.
+    # https://totally.fandom.com/wiki/Forest_Home -- убеище 15×15ft на 12 часов.
+    # https://totally.fandom.com/wiki/Greatapple
+    # https://totally.fandom.com/wiki/Haunt -- преследование телепортами, конц.час
+    # https://totally.fandom.com/wiki/Ice_Block
+    # https://totally.fandom.com/wiki/Invitation -- вынуждает цель прибыт к кастеру, миля, конц.час
+    # https://totally.fandom.com/wiki/Profane_Link -- касание на помеченную нежить издали, 24 часа
+    # https://totally.fandom.com/wiki/Purifying_Bath -- 100 бит каст лечения/защиты через куклу вуду.
+    # https://totally.fandom.com/wiki/Shadow_Refuge
+    # https://totally.fandom.com/wiki/Sleepwalking -- контроль спящего, 1 миля, конц.час
+    # https://totally.fandom.com/wiki/Twig_Torture
+    # https://totally.fandom.com/wiki/Unspoken_Agreement -- передача действия союзнику.
+    # https://totally.fandom.com/wiki/Windblade -- 8d8 slashing, 30ft конус.
+    # 5-й круг:
+    # https://totally.fandom.com/wiki/Amelia%27s_Painted_Tie -- урон цели в лечение другого, 1 раунд.
+    # https://totally.fandom.com/wiki/Birds_of_a_Fire -- огромный скоростной Flaming_Sphere
+    # https://totally.fandom.com/wiki/Cloak_of_Serpents -- +2 AC, касанием 6d6 ядом, конц.минута
+    # https://totally.fandom.com/wiki/Create_Chimera -- 1000 бит, сливает два существа за 8 часов.
+    # https://totally.fandom.com/wiki/Death_Chains
+    # https://totally.fandom.com/wiki/Death_Spores -- эпидемия, 6d6 ядом, 30ft конус, заражение касанием.
+    # https://totally.fandom.com/wiki/Earth_Shift -- телепорт через землю, 300ft.
+    # https://totally.fandom.com/wiki/Falling_Star -- 6d6 radiance, 40ft радиус, 600ft.
+    # https://totally.fandom.com/wiki/Fell_Onslaught -- телепорт атак на цель, +2d10 force, минута.
+    # https://totally.fandom.com/wiki/Field_of_Chains
+    # https://totally.fandom.com/wiki/Foggy_Flying_Carpet -- ковёр-самолёт, speed 40ft, <1000lb, конц.час
+    # https://totally.fandom.com/wiki/Forgotten_Pain -- 4d6 бонусным действием, Спас.Харизмы, конц.минута
+    # https://totally.fandom.com/wiki/Hungering_Hate
+    # https://totally.fandom.com/wiki/Nemesis
+    # https://totally.fandom.com/wiki/Overwhelming_Emotion
+    # https://totally.fandom.com/wiki/Palant%C3%ADr%27s_Inverse_Eye -- Counter-Scrying, действием 5d6 force.
+    # https://totally.fandom.com/wiki/Phoenix_Rising -- превращение в феникса, конц.час
+    # https://totally.fandom.com/wiki/Rainbow_Staff
+    # https://totally.fandom.com/wiki/Shadow_World
+    # https://totally.fandom.com/wiki/Shroud_of_Surok -- темнота в радиусе 600ft.
+    # https://totally.fandom.com/wiki/Spirit_Doll
+    # https://totally.fandom.com/wiki/Storm%27s_Eye -- сверхчувства, реакцией помеха ловкости врагу, конц.минута.
+    # https://totally.fandom.com/wiki/True_Shield -- Shield на 10 AC + 0 урона при Спас.Ловкости.
+    # https://totally.fandom.com/wiki/Unstoppable_Ascent -- касанием, телепорт цели на 150ft вверх.
+    # https://totally.fandom.com/wiki/Walk_of_Ungoliant
+    # https://totally.fandom.com/wiki/Whisper_Wind -- подслушивание цели на 8 часов.
+    # https://totally.fandom.com/wiki/White_Ice -- ледяная форма, хэлегдин, конц.10минут
+    # https://totally.fandom.com/wiki/Wings_of_Night -- полёт 60ft, 6d10 psychic на 30ft, конц.час
+    # 6-й круг:
+    # https://totally.fandom.com/wiki/All_the_Lights_are_Souls -- 120ft радиус, 5d6 radiant или 5d6 temp.hp.
+    # https://totally.fandom.com/wiki/Blood_Cartography
+    # https://totally.fandom.com/wiki/Chrysalis -- касанием, long_rest в коконе за 1 час.
+    # https://totally.fandom.com/wiki/Dust_of_Death -- песок в яд на 6d6, час действия.
+    # https://totally.fandom.com/wiki/Extract_Life -- жертвоприношение, защита от старения.
+    # https://totally.fandom.com/wiki/Eyes_of_Six -- отражение первой атаки от 6 разных целей, 10 минут.
+    # https://totally.fandom.com/wiki/Fiery_Constrictor -- действием 6d6 fire, оплетает, конц.минута.
+    # https://totally.fandom.com/wiki/Healing_Draught -- супер-лечение, 10d6, на троих.
+    # https://totally.fandom.com/wiki/Hellish_Halo -- 10ft аура, 5d10 огнём в 5d10 temp.hp мага, минута
+    # https://totally.fandom.com/wiki/Lightning_Wheel
+    # https://totally.fandom.com/wiki/Lost_Wanderer -- лишает способности находить путь на 24 часа.
+    # https://totally.fandom.com/wiki/Merge_into_Art -- слияние с рисунком на холсте, конч.час
+    # https://totally.fandom.com/wiki/Nature%27s_Support -- поглощает 10 урона от каждой атаки, конц.минута.
+    # 7-й круг:
+    # https://totally.fandom.com/wiki/List_of_Homebrew_Spells#7th_Level
+    # https://totally.fandom.com/wiki/Bound_Hearts -- двое знают локацию друг друга, год действия.
+    # https://totally.fandom.com/wiki/Charismatic_Shield -- Мод.Харизмы к AC. Спас.Мудрости для атаки. конц.10мин
+    # https://totally.fandom.com/wiki/Cruel_Wind -- 300ft конус, 6d6 холодом, конц.минута.
+    # https://totally.fandom.com/wiki/Deep_Freeze -- касание, 3d8 холодом, окаменение, конц.минута.
+    # https://totally.fandom.com/wiki/Divine_Disconnection -- запрет жреческих заклинаний, минута.
+    # https://totally.fandom.com/wiki/Electrical_Storm -- 12d8 молнией, 100ft радиус.
+    # https://totally.fandom.com/wiki/Establish_Foundation -- поднимает 60×60 фундамент для здания.
+    # https://totally.fandom.com/wiki/Feebleform -- ослабляет Силу и Выносливость до 1. Спас в 30 дней.
+    # https://totally.fandom.com/wiki/Disable
+    # https://totally.fandom.com/wiki/Maegis -- сопротивление всему, действием 6d12 force, конц.час.
+    # https://totally.fandom.com/wiki/Mark_of_Exile -- запрет приближаться к локации, постоянный.
+    # https://totally.fandom.com/wiki/Otherwordly_Lair
+    # https://totally.fandom.com/wiki/Spreading_Nightmare
+    # https://totally.fandom.com/wiki/Volley_Spell -- реакцией отражает заклинание при успехе спаса, 8 часов.
+    # 8-й круг:
+    # https://totally.fandom.com/wiki/Raise_Shipwreck
+    # https://totally.fandom.com/wiki/Soul_in_the_Mirror
+    # https://totally.fandom.com/wiki/Spirit_Disk -- действием 10d10 force, конц.минута
+    # https://totally.fandom.com/wiki/Undertow -- телепорт цели на глубину океана, конц.минута
+    # 9-й круг:
+    # https://totally.fandom.com/wiki/Annihilate_Soul -- 8d6+50 necrotic, переносит душу в 2d6 существ на 10-миль
+    # https://totally.fandom.com/wiki/Crag_Warrior -- каменный голем, конц.минута. 
+    # https://totally.fandom.com/wiki/Curse_of_the_Ancient_Mariner
+    # https://totally.fandom.com/wiki/Delusion_of_Fear
+    # https://totally.fandom.com/wiki/Divine_Inspiration -- преимущество друзьям в 100ft, конц.минута
+    # https://totally.fandom.com/wiki/Eldritch_Grapple
+    # https://totally.fandom.com/wiki/End_of_Days
+    # https://totally.fandom.com/wiki/Hide_the_Soul -- 500 бит перенос души в животное.
+    # https://totally.fandom.com/wiki/Jaina%27s_Flying_Ship
+    # https://totally.fandom.com/wiki/Phoenix_Cloak -- 500 бит, эффект Raise_Dead на шестерых, час действия.
+    # https://totally.fandom.com/wiki/Pocket_Paradise
+    # https://totally.fandom.com/wiki/Quicken_Assassin -- 50k бит, касанием, 4 часа каста, клон-убийца.
+    # https://totally.fandom.com/wiki/Ravaging_Fire
+    # https://totally.fandom.com/wiki/Rimeshatter
+    # https://totally.fandom.com/wiki/Storm_of_Vitriol
+    # https://totally.fandom.com/wiki/Sun_Rises
+    # https://totally.fandom.com/wiki/Touch_Infinity
+    # https://totally.fandom.com/wiki/Wrack_the_Mind
+    # 10-й круг:
+    # https://totally.fandom.com/wiki/Armageddon -- 30d10 урона, на 5 миль 1-миля радиус, час каста.
+    # https://totally.fandom.com/wiki/Creation%27s_Fury -- землетрясение, 1-миля радиус, 10 минут каста.
 
 #----
 # Распределение стоимости заклинаний
@@ -170,7 +436,6 @@
     # 11-12 | 90 000     | 63 000  |  27 000  | 0.9 --> 1.0  | 50 000 + 27 000  |  77 000  |    3  | 0.23
     # 13-14 | 129 000    | 63 000  |  66 000  | 0.9 --> 1.0  | 50 000 + 66 000  | 116 000  |    2  | 0.23
     # 15-16 | 219 000    | 63 000  | 156 000  | 0.9 --> 1.0  | 50 000 + 156 000 | 206 000  |    1  | 0.21
-    # А вообще, работать можно. Такие таблички умелые пони делают быстрее чем за час.
     # Всего получается 4.89/14.28 млн. (34% доходов);
     # 5+ lvl колдуны платят 2.12/3.71 (57% доходов); 314 героев 5+ lvl (6.3%) владеют 26.0% всех доходов.
     # 7+ lvl колдуны платят 1.72/2.47 (70% доходов); 80 героев 7+ lvl (1.6%) владеют 17.3% всех доходов.
@@ -179,7 +444,7 @@
 # Герои (ячейки заклинаний) (волшебники)
 
 metadict_detail['-Герои-единороги (волшебники) (1 lvl)'] = {
-        # В Эквестрии 10 000 единорогов-чародеев, 5 на 10 000 населения (1/270 взрослых единорогов)
+        # В Эквестрии 10 000 единорогов-волшебников, 5 на 10 000 населения (1/270 взрослых единорогов)
         # Начальные магические предметы:
             # Начальное богатство -- 2d4-5d4 × 10 / 0.4 = 100-500 бит
             # 1-4 lvl (местные герои) -- обычное стартовое снаряжение.
@@ -228,10 +493,11 @@ metadict_detail['-Герои-единороги (волшебники) (2 lvl)']
         # 90% -- выпускники школы волшебства
             # https://www.dandwiki.com/wiki/School_of_Academics_(5e_Subclass)
             # 2 lvl +2 языка +2 навыка +2 инструмента
-            # 2 lvl способности Feat_Ritual_Caster (ритуалы прочих классов)
-            # 6 lvl 2 заклинания любого класса
+            # 2 lvl Feat_Ritual_Caster (ритуалы прочих классов)
+            # 6 lvl 2 заклинания любого класса (+2 на 10 и 14 lvl)
             # 10 lvl 2 навыка с удвоенным бонусом мастерства
-            # 14 lvl d20≥10 для всех проверок Мудрости/Интеллекта с бонусом мастрества.
+            # 14 lvl +1 кантрип любого класса.
+            # 14 lvl d20≥10 для всех проверок Мудрости/Интеллекта с бонусом мастерства.
             # https://www.dandwiki.com/wiki/School_of_the_Hedge-Mage_(5e_Subclass)
             # 2 lvl заклинание до 5 круга в предмет (как свиток) на один день.
             # 2 lvl замена стихии/спасброска для заклинания, один раз до короткого отдыха.
@@ -269,6 +535,11 @@ metadict_detail['-Герои-единороги (волшебники) (2 lvl)']
             # - Slow roasted -- 8 часов готовки ×2 длительность.
             # - Sun soaked -- 8 часов готовки, хранится 2 недели.
             # - Self Grown -- готовка без компонентов.
+        # Всего 4700 выпускников Школы волшебства 2+ lvl (10 кафедр по 15 тваек/год)
+            # Из годового выпуска в 30 студентов только 15 тваек достигают 2+ lvl.
+            # На кафедре 120 студентов 1-2 lvl, 65 выпускников достигают 5+ lvl.
+            # Академик 11-14 lvl, 3 профессора 9+ lvl, 4 преподавателя 7+ lvl.
+        # Всего 520 самостоятельных магов 2+ lvl (3 направления по 6 выпускников/год)
         '0 lvl (заговоры волшебника)':3,
         '1 lvl (заклинания волшебника)':3 + 1,
         '1 lvl (ритуальные заклинания волшебника)':1,
@@ -597,7 +868,7 @@ metadict_detail['-Герои-единороги (чародеи) (1 lvl)'] = {
                 # 3) Linear_Spell -- заклинание-круг в заклинание-линию, дистанция ×2 радиуса.
                 # 4) Transcendent_Spell -- заклинание охватывает эфирный план за 1 sorcery_point
             # 18 lvl Prime Protection -- при спасе 1-5 кастер получает 20 бонусных хитов
-        # 20% -- самоучки
+        # 20% -- самоучки и самородки
             # https://www.dandwiki.com/wiki/Astral_Bloodline_(5e_Subclass)
             # 1 lvl Astral Connection -- повышая уровень можно заменить
                 # 1) Taurus -- +1 hp/уровень, сопротивляемость холоду
@@ -945,11 +1216,11 @@ metadict_detail['-Герои-единороги (колдуны) (1 lvl)'] = {
                     # Reckless_Attack
                     # +1 мод.силы
                 # - Invocation_Bardic_Memories
-                    # удвоенный бонус мастерсва для 2 навыков/инструментов
+                    # удвоенный бонус мастерства для 2 навыков/инструментов
                     # один кантрип барда
                     # +1 мод.харизмы
                 # - Invocation_Clerical_Memories
-                    # иммунитет к долезням, отравлению, урону ядами
+                    # иммунитет к болезням, отравлению, урону ядами
                     # Turn_Undead раз/сутки или за ячейку
                     # +1 мод.мудрости
                 # - Invocation_Druidic_Memories
@@ -2585,7 +2856,8 @@ metadict_detail['-Герои-земнопони (монахи) (3 lvl)'] = {
             # 17 lvl Регенерация 1 hp/раунд до 50% hp.
             # 17 lvl Эффект Stunning_Strike при Dodge_Action за 1 ki.
             # 17 lvl Flurry_of_Blows без затрат ki, если вместо удара Dash_Action
-        # Всего 4200 арбитров 3+ lvl (1/5200 населения) и 1800 самих-по-себе спортиков (10 школ)
+        # Всего 4200 арбитров 3+ lvl (1/5200 населения)
+        # Всего 1800 самих-по-себе спортиков (10 школ по 6 выпускников/год)
             # Главы школ спортиков монахи 11-14 lvl, 8% округов имеют школы.
             # amber -sm Эквестрия -E '(монахи) (' -n '0.3'
         '|?Волшебный предмет Common (скрытник)':0.25+0.25+0.5,
@@ -2732,6 +3004,7 @@ metadict_detail['-Герои-пегасы (бойцы) (1 lvl)'] = {
             # Рыцарский чардж (English war saddle 1440) -- 162-257 Дж (среднее 217 Дж)
             # Античная кавалерия (без доспехов и седла) -- 65-172 Дж (среднее 97 Дж)
             # Удар боксёра с места (4-6 кг, 6.0-8.7 м/с) -- 119-241 кгс (удар правой сильнее в 1.5 раза)
+            # Удар каратиста с места (5 кг, 8.7 м/с) -- 190 Дж (9.8 Дж/см²)
             # Рубящий сабли/катаны* (1.5 кг, 60-70 см, 10 м/с) -- 60-100 Дж (снимает голову)
             # Колющий шпаги (0.75 кг, 115 см, 10 м/с) -- 38 Дж (пробивает 10-мм доску)
             # Бронзовая алебарда (6.5 кг, 5.4 м/с) -- 32.3 Дж (1.4 кН, 34% КПД)
@@ -2744,16 +3017,18 @@ metadict_detail['-Герои-пегасы (бойцы) (1 lvl)'] = {
             # https://www.history.org.uk/files/download/16093/1445441730/Hinsley.pdf
             # https://www.academia.edu/download/53777545/JAAS_2016_complete__Experimental_jousting.pdf
             # https://www.academia.edu/download/17275184/OFlaherty__Gilchrist_and_Cowie.pdf
+            # https://www.howeverythingworks.org/journal/Volume1.pdf
         # Защита доспехов:
             # 5-мм дублёной кожи -- 20 Дж копьё/лэнс, 50 Дж колющий, 90 Дж рубящий
             # 10-мм дублёной кожи -- 30 Дж копьё/лэнс, 90 Дж колющий мечом
             # 0.9-мм munition plate -- 100 Дж копьё/лэнс, 190 Дж колющий мечом
+            # 2-мм plate + padding -- 280 Дж держит лэнс, стрелу арбалета
             # кольчуга 5-мм кольца -- 120 Дж колющий
             # льняная ткань 5 слоёв -- 100 Дж рубящий
             # льняная ткань 10 слоёв -- 120 Дж рубящий
             # льняная ткань 16 слоёв -- 140 Дж рубящий
             # льняная ткань 23 слоёв -- 160 Дж рубящий
-            # льняная ткань 26 слоёв -- 180 Дж рубящий (Linothorax)
+            # льняная ткань 26 слоёв -- 180 Дж рубящий (Linothorax, линоторакс)
             # льняная ткань 32 слоёв (10 кг/м²) -- >180 Дж рубящий
             # https://www.romanarmytalk.com/rat/printthread.php?tid=9564
             # "The Knight and the Blast Furnace" Alan Williams
@@ -2763,15 +3038,21 @@ metadict_detail['-Герои-пегасы (бойцы) (1 lvl)'] = {
             # Полная энергия: (720 * 3 ** 2) / 2 = 3240 Дж
             # Реальная энергия удара на копье 290-580 джоуля (пуля Макарова)
         # Пикирующий пегас в доспехах, 120 кг:
+            # Вертикальная скорость человека в Wingsuit 40-100 км/час (11-28 м/с)
+            # Предельная скорость падения плашмя 190 км/час, рыбкой 240 км/час
+            # При прыжке с 2000 метров предельная скорость за 12 секунд.
             # Скорость атаки (1300 ft) -- 228 км/час (65 м/с)
             # Импульс: 120 * 65 = 7800 кг*м/с
             # Полная энергия: (120 * 65 ** 2) / 2 = 253 500 Дж
             # Энергия удара (лэнс): (2.7 * 65 ** 2) / 2 = 5704 Дж (пуля НСВ)
             # Лэнс в осколки после такого удара, его отпускают перед целью.
         # Пегас, сбросы свинцовых дротиков, плюмбат:
+            # С дротиками дымные трассеры, налёты шеренгами и коррекция сбросов.
+            # Дротики до цели за 6 секунд при высоте 600 ft и скорости 550 ft (28 м/с)
             # Скорость атаки (1300ft) -- 228 км/час (65 м/с)
             # Импульс: 0.2 * 65 = 13 кг*м/с
             # Энергия удара (0.2 кг дротик): (0.2 * 65 ** 2) / 2 = 423 Дж (пуля Макарова)
+            # Энергия удара (0.2 кг дротик): (0.2 * 28 ** 2) / 2 = 78 Дж (стрела Лонгбоу)
         # Пегасы уважают древковое оружие, направляют зубами, держат на перевязи.
         # Но воюют проще, берут ящик со 100 плюмбатами по 0.2 кг и сыплют с неба.
         '|?Волшебный предмет Common (воин)':0.25,
@@ -2816,16 +3097,59 @@ metadict_detail['-Герои-пегасы (бойцы) (3 lvl)'] = {
             # 10 lvl кости превосходства d8, +мод.интеллекта для кантрипов
             # 15 lvl кантрип бонусным действием (считая атаку 2 кантрипа/раунд)
             # 18 lvl если нет костей превосходства бросок d4 на применение приёма.
-            # https://www.dandwiki.com/wiki/Arcane_Pugilist_(5e_Subclass) -- гвардейцы-единороги
-        # 80% -- ополчение
+            # https://www.dandwiki.com/wiki/Arcane_Pugilist_(5e_Subclass) -- гвардейцы-чародеи
+            # 3 lvl 3 кантрипа волшебника, +1 кантрип на 10 lvl, Мод.Харизмы для заклинаний
+            # 3 lvl Arcane_Shield AC 10 + Мод.Харизмы + Мод.Ловкости, на 4 часа, 3 раза/день
+            # 3 lvl бонусным действием соединение кантрипа касанием и атаки. 1+мод.мастерства/день
+            # 7 lvl +1 атаки и урона, рукопашные атаки магические.
+            # 7 lvl Detect_Magic 2 раза/день
+            # 7 lvl +2 навыка (Arcana, Investigation, Insight) или экспертиза.
+            # 7 lvl Arcane_Shield даёт сопротивление дробящему/колющему/рубящему немагическому урону.
+            # 10 lvl Помеха на вражеские атаки заклинанием, преимущесво спасбросков.
+            # 10 lvl +2 атаки и урона, рукопашные атаки магические.
+            # 15 lvl бонусным действием любое число атак с кантрипами/заклинаниями касанием.
+            # 15 lvl на 10 ft реакцией преимущество на спасбросок от заклинания союзнику.
+            # 18 lvl Action_Surge позволяет вложить 2 кантрипа касанием в одну атаку.
+            # 18 lvl +3 атаки и урона, рукопашные атаки магические.
+            # 18 lvl Greater_Restoration 1 раз/день
+        # 20% -- следователи
+            # Наёмники, телохранители, детективы. Уважают огнестрел.
+            # https://www.dandwiki.com/wiki/Inquirer_(5e_Subclass)
+            # 3 lvl Нет помех на проверки Wisdom (Perception)
+            # 3 lvl Поиск бонусным действием + бонус урона 1d4 (1d6 на 7 lvl, 1d8 на 15 lvl)
+            # 7 lvl Преимущество на спасброски от очарования. Иммунитет к Charisma (Deception).
+            # 10 lvl За минуту Intelligence (Investigation) vs DC 15 и ответ на 3 вопроса.
+            # 15 lvl Бонус Wisdom к проверкам Dexterity. Защита от внезапных атак.
+            # 18 lvl Сон 4 часа, 10 минут на Short_Rest вместо часа.
+        # 60% -- ополчение
             # Пегасье ополчение предпочитает дротики и длинные копья.
             # https://www.dandwiki.com/wiki/Thrower_Master_(5e_Subclass)
+            # 3 lvl бросок бонусным действием если главная атака броском
+            # 3 lvl метание любых вещей 10/30, стрел/болтов 20/60 1d4.
+            # 3 lvl Deflect_Missiles 1d10 + мод.ловкости + lvl
+            # 7 lvl Рикошет бонусным действием при промахе на другую цель.
+            # 10 lvl Удвоенная дистанция атак метанием.
+            # 15 lvl Реакцией промах в атаку с 50% урона.
+            # 18 lvl Повторная атака броском при промахе.
             # https://www.dandwiki.com/wiki/Great_Weapon_Dancer_(5e_Subclass)
-            # https://www.dandwiki.com/wiki/Inquirer_(5e_Subclass)
-        # Всего 5600 ополчения 3+ lvl и 13 000 бойцов 1-2 lvl (124 роты в округах)
-            # Главы ополчения бойцы 7-8 lvl, все округа имеют школы.
+            # 3 lvl бонус атаки/урона от Ловкости к тяжёлому оружию.
+            # 3 lvl защита без оружия 10 + бонус мастерства + мод.ловкости.
+            # 3 lvl танец бонусным действием (любой урон прерывает танец)
+            # - Blade_Barrier -- атака реакцией на движение в радиусе оружия.
+            # - Side_Step -- рывок бонусным действием на 15 ft без риска атаки.
+            # - Reaping_Charge -- Dash_Action при Action_Surge + атака бонусным действием.
+            # 7 lvl бонус Dexterity к проверкам Charisma (Performance)
+            # 7 lvl Владение спасбросками ловкости.
+            # 10 lvl Парирование реакцией, прерывает танец, 1 раз до Second_Wind.
+            # 15 lvl Атака реакцией при прерывании танца, число = мод.ловкости.
+            # 18 lvl Атака 15-ft конусом или по всем в 10-ft радиусе.
         # Всего 1400 гвардейцев 3+ lvl (3 региональных батальона)
             # amber -sm Полк гвардии -E '(бойцы) ('
+        # Всего 1400 следователей 3+ lvl (124 агенств по 11 пегасов)
+            # Службы безопасности есть у 1/6 кланов правящей элиты.
+            # 11 бойцов на год службы = 12k бит (1.3 gp vs 2 gp/день в DnD)
+        # Всего 4200 ополчения 3+ lvl и 13 000 бойцов 1-2 lvl (124 роты в округах)
+            # Главы ополчения бойцы 7-8 lvl, все округа имеют школы.
         '|?Волшебный предмет Common (воин)':0.25+0.25+0.5,
         '|?Волшебный предмет Uncommon (воин)':0.25+0.25,
         }
@@ -3999,10 +4323,10 @@ metadict_detail['_+1 lvl (заклинания волшебника) (закли
         # Ward, это стандартная самозащита для работы с химией и огнём.
         '_++1 lvl (S) Доспехи мага (1 lvl Mage_Armor)':0.5,
         '_++1 lvl (S) Безмолвный образ (1 lvl Silent_Image)':0.2,
-        '_++1 lvl (S) Оберег (1 lvl Ward)':0.1,
+        '_++1 lvl (S) Барьер (1 lvl Barrier_Ward)':0.1,
         '_++1 lvl (S) Усыпление (1 lvl Sleep)':0.1,
         '_++1 lvl (S) Волшебная стрела (1 lvl Magic_Missile)':0.01,
-        #'_++1 lvl (S) Оберег (1 lvl Ward)':0.1,
+        #'_++1 lvl (S) Барьер (1 lvl Barrier_Ward)':0.1,
         #'_++1 lvl (S) Доспехи мага (1 lvl Mage_Armor)':0.1,
         #'_++1 lvl (S) Безмолвный образ (1 lvl Silent_Image)':0.1,
         #'_++1 lvl (S) Маскировка себя (1 lvl Disguise_Self)':0.1,
@@ -4020,12 +4344,13 @@ metadict_detail['_+1 lvl (заклинания чародея) (заклинан
         '_++1 lvl (S) Безмолвный образ (1 lvl Silent_Image)':0.5,
         '_++1 lvl (S) Очарование личности (1 lvl Charm_Person)':0.2,
         '_++1 lvl (S) Оздоравливающий сон (1 lvl Healthful_Rest)':0.2,
-        #'_++1 lvl (S) Оберег (1 lvl Ward)':0.1,
+        #'_++1 lvl (S) Барьер (1 lvl Barrier_Ward)':0.1,
         #'_++1 lvl (S) Магическое отражение (1 lvl Magical_Deflect)':0.1,
         #'_++1 lvl (S) Скачущая стрела (1 lvl Leaping_Missile)':0.1,
         #'_++1 lvl (S) Луч наведения (1 lvl Targeting_Ray)':0.1,
         #'_++1 lvl (S) Последнее слово (1 lvl Last_Words)':0.1,
         #'_++1 lvl (S) Ведьмин снаряд (1 lvl Witch_Bolt)':0.1,
+        #'_++1 lvl (S) Звёздный огонь (1 lvl Starfire)':0.1,
         '_++1 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -4073,7 +4398,7 @@ metadict_detail['_+1 lvl (заклинания жреца) (заклинаний
         '_++1 lvl (S) Туманное облако (1 lvl Fog_Cloud)':0.7,
         '_++1 lvl (S) Падение пёрышком (1 lvl Feather_Fall)':0.1,
         '_++1 lvl (S) Поглощение стихий (1 lvl Absorb_Elements)':0.1,
-        #'_++1 lvl (S) Оберег (1 lvl Ward)':0.1,
+        #'_++1 lvl (S) Барьер (1 lvl Barrier_Ward)':0.1,
         #'_++1 lvl (S) Найти воду (1 lvl Locate_Water)':0.1,
         #'_++1 lvl (S) Падение пёрышком (1 lvl Feather_Fall)':0.1,
         #'_++1 lvl (S) Поглощение стихий (1 lvl Absorb_Elements)':0.1,
@@ -4607,6 +4932,7 @@ metadict_detail['_+8 lvl (заклинания волшебника) (закли
         }
 
 metadict_detail['_+8 lvl (заклинания чародея) (заклинаний/год)'] = {
+        #'_++8 lvl (S) Поле антимагии (8 lvl Antimagic_Field)':0.1,
         '_++8 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -4621,7 +4947,6 @@ metadict_detail['_+8 lvl (заклинания друида) (заклинани
 metadict_detail['_+8 lvl (заклинания жреца) (заклинаний/год)'] = {
         # 5 пегасов способны на управление погодой. А один из них аж на эпику 9 круга.
         '_++8 lvl (S) Власть над погодой (8 lvl Control_Weather)':0.5,
-        #'_++8 lvl (S) Поле антимагии (8 lvl Antimagic_Field)':0.1,
         '_++8 lvl (S) (заклинаний/год) (доступно)':1,
         }
 
@@ -4721,6 +5046,7 @@ metadict_detail['_+1 lvl (ритуальные заклинания колдун
         '_++1 lvl (R) Церемония (1 lvl Ceremony)':0.1,
         #'_++1 lvl (R) Опознание рецепта (1 lvl Know_Recipe)':0.1,
         #'_++1 lvl (R) Опознание (1 lvl Identify)':0.1,
+        #'_++1 lvl (R) Сшивание (1 lvl Mend_Flesh)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -4731,6 +5057,7 @@ metadict_detail['_+1 lvl (ритуальные заклинания друида
         '_++1 lvl (R) Очищение пищи и питья (1 lvl Purify_Food_and_Drink)':0.2,
         '_++1 lvl (R) Разговор с животными (1 lvl Speak_with_Animals)':0.2,
         #'_++1 lvl (R) Опознание рецепта (1 lvl Know_Recipe)':0.1,
+        #'_++1 lvl (S) Родник (1 lvl Wellspring)':0.1,
         '_++1 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -4911,35 +5238,32 @@ metadict_detail['_+3 lvl (ритуальные заклинания следоп
 # Ритуалы 4 круга
     # https://www.dandwiki.com/wiki/Category:Ritual_Tag
     # https://www.dandwiki.com/wiki/Fitzmyr%27s_%22Conjurer%27s_Hands%22_(5e_Spell)
-    # https://www.dandwiki.com/wiki/Astral_Shielding_(5e_Spell)
     # https://www.dandwiki.com/wiki/Bind_Creature_Ritual_(5e_Spell)
 
 metadict_detail['_+4 lvl (ритуальные заклинания барда) (заклинаний/год)'] = {
         # TODO: в книге игрока нет ритуалов для 4 круга кроме Divination.
             # Посмотри годные Homebrew. А нет таких, лол, сам придумывай.
-        '_++4 lvl (R) Маска идеала (4 lvl Mask_of_the_Ideal)':0.5,
-        '_++4 lvl (R) Послание через зеркало (4 lvl Mirror_Sending)':0.3,
+        '_++4 lvl (R) Послание через зеркало (4 lvl Mirror_Sending)':0.5,
+        '_++4 lvl (R) Маска идеала (4 lvl Mask_of_the_Ideal)':0.3,
         '_++4 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
 metadict_detail['_+4 lvl (ритуальные заклинания волшебника) (заклинаний/год)'] = {
-        '_++4 lvl (R) Мнемонический усилитель Рэри (4 lvl Rary_Mnemonic_Enhancer)':0.5,
-        '_++4 lvl (R) Отилюково подавляющее поле (4 lvl Otiluke_Supressing_Field)':0.3,
-        '_++4 lvl (R) Межпространственный якорь (4 lvl Dimensional_Anchor)':0.1,
-        '_++4 lvl (R) Паровой котёл (4 lvl Steam_Boiler)':0.1,
+        '_++4 lvl (R) Мнемонический усилитель Рэри (4 lvl Rary_Mnemonic_Enhancer)':0.3,
+        '_++4 lvl (R) Отилюково подавляющее поле (4 lvl Otiluke_Supressing_Field)':0.2,
+        '_++4 lvl (R) Межпространственный якорь (4 lvl Dimensional_Anchor)':0.2,
         '_++4 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
 metadict_detail['_+4 lvl (ритуальные заклинания чародея) (заклинаний/год)'] = {
         # Паровой котёл приносит в мир капельку стимпанка. Паровые машины таки есть.
         '_++4 lvl (R) Леомундова просторная карета (4 lvl Leomund_Spacious_Carriage)':0.5,
-        '_++4 lvl (R) Межпространственный якорь (4 lvl Dimensional_Anchor)':0.1,
-        '_++4 lvl (R) Паровой котёл (4 lvl Steam_Boiler)':0.1,
+        '_++4 lvl (R) Паровой котёл (4 lvl Steam_Boiler)':0.2,
         '_++4 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
 metadict_detail['_+4 lvl (ритуальные заклинания колдуна) (заклинаний/год)'] = {
-        # TODO: ритуальные заклинания колдуна 4 круга. Допилить.
+        '_++4 lvl (R) Защита от прорицания (4 lvl Astral_Shielding)':0.5,
         '_++4 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -4979,17 +5303,16 @@ metadict_detail['_+5 lvl (ритуальные заклинания волшеб
         '_++5 lvl (R) Ментальная связь Рэри (5 lvl Rary_Telepathic_Bond)':0.7,
         '_++5 lvl (R) Защищённый кабинет (5 lvl Mordenkainen_Private_Sanctum)':0.1,
         '_++5 lvl (R) Доспехи лорда-мага (5 lvl Mailed_Might_of_the_Magelords)':0.1,
-        #'_++5 lvl (R) Общение с иным миром (5 lvl Contact_Other_Plane)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
 metadict_detail['_+5 lvl (ритуальные заклинания чародея) (заклинаний/год)'] = {
-        '_++5 lvl (R) Ментальная связь Рэри (5 lvl Rary_Telepathic_Bond)':0.5,
+        # 24 ритуала/сутки × 0.1 × 8 = 19 часов
         '_++5 lvl (R) Матрица заклинаний (5 lvl Simbul_Spell_Matrix)':0.3,
         '_++5 lvl (R) Корона ясности зрения (5 lvl Crown_of_Clarity)':0.1,
-        #'_++5 lvl (R) Корона защиты (5 lvl Crown_of_Protection)':0.1,
-        #'_++5 lvl (R) Корона иллюзий (5 lvl Crown_of_Veils)':0.1,
-        #'_++5 lvl (R) Корона силы (5 lvl Crown_of_Might)':0.1,
+        '_++5 lvl (R) Корона защиты (5 lvl Crown_of_Protection)':0.1,
+        '_++5 lvl (R) Корона иллюзий (5 lvl Crown_of_Veils)':0.1,
+        '_++5 lvl (R) Корона силы (5 lvl Crown_of_Might)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -5008,8 +5331,8 @@ metadict_detail['_+5 lvl (ритуальные заклинания друида
 
 metadict_detail['_+5 lvl (ритуальные заклинания жреца) (заклинаний/год)'] = {
         # Астрология даёт уйму знаний о кантоне в пределах 6 миль.
-        '_++5 lvl (R) Астрология (5 lvl Astromancy)':0.1,
         '_++5 lvl (R) Общение с божеством (5 lvl Commune)':0.1,
+        '_++5 lvl (R) Астрология (5 lvl Astromancy)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -5234,11 +5557,6 @@ metadict_detail['_++0 lvl (C) Говорящая книга (0 lvl Speaking_Tome
         # Удобно использовать для поиска по ключевой фразе. Можно даже с регулярными выражениями.
         }
 
-metadict_detail['_++0 lvl (C) Меньший оберег (0 lvl Minor_Ward)'] = {
-        # @@@ * "Меньший оберег" (Minor_Ward) [Abj|-|-] (C) — на себя, минута каста, час концентрации. Подобие Arcane_Ward, имеющее 1 хит против урона обычного оружия. Срабатывает единожды, реакцией. Защищает как минимум от кальтропсов и колючек в лесу. На 5 lvl -- 5 hp, защищает от стихий. На 11 lvl -- 10 hp, защищает от всего кроме psychic. На 17 lvl -- 15 hp, каст действием.
-        # Это облачко левитации вроде Mage_Hand, которое выставляется против угрозы как амортизирующий слой. На низком уровне можно прикрыть нос или копытце. С ростом уровня защищает большую площадь тела единорожицы.
-        }
-
 metadict_detail['_++0 lvl (C) Фокусы (0 lvl Prestidigitation)'] = {
         # * "Фокусы" (Prestidigitation) [Tra|-|-] (C) — 10 футов, действием, час действия, не больше 3 долговременных эффектов. Различные мелкие заклинания. 1) Безвредный запах, звук, искра, порыв ветра. 2) Разжечь факел/костёр. 3) Чистка предмета до 1 кубического фута. 4) остудить, нагреть, придать вкус или запах 1 кубическому футу неживой материи на 1 час. 5) Маленькая цветная метка на 1 час. 6) Маленький немагический предмет на 6 секунд. Очень уютное заклинание. Придать 28 литрам воды вкус отличного вина, а котелку пустой каши вкус жаркого, да ещё и разогреть её притом. Создать из доспехов грелку в морозную погоду, или приятную прохладу под палящим солнцем. Очистить книгу от текста, почему бы и нет? Из зловредных приёмов, можно залить пищу во вражеском котелке трупным ядом, или бочонок с водой заменить на крепкий алкоголь. Кроме того это заклинание можно использовать для скрытной связи. Создайте метки с цифрами 0, 6 и 12 на бумаге, передайте трём отрядам, отмените метки за 3 действия, это будет приказ одновременно атаковать.
         # Фокусы пони используют для чистки вещей, как духи, для разогрева/охлаждения пищи, передачи сообщений.
@@ -5311,6 +5629,11 @@ metadict_detail['_++0 lvl (C) Защита от оружия (0 lvl Blade_Ward)'
         # * "Защита от оружия" (Blade_Ward) [Abj|-|-] (C) — на себя, действием, до начала следующего хода. Даёт сопротивляемость обычному урону. Эффективно, когда вас обстреливают лучники и есть возможность залечь. Это даст одновременно и помеху на атаки врага и сопротивляемость урону. Можно подготовить и вызвать реакцией с Ready_Action.
         }
 
+metadict_detail['_++0 lvl (C) Меньший оберег (0 lvl Minor_Ward)'] = {
+        # @@@ * "Меньший оберег" (Minor_Ward) [Abj|-|-] (C) — на себя, действием, минута действия. Подобие Arcane_Ward, имеющее 1 хит против урона обычного оружия. Срабатывает единожды, реакцией. Защищает как минимум от кальтропсов и колючек в лесу. На 5 lvl -- 5 hp, защищает от стихий. На 11 lvl -- 10 hp, защищает от всего кроме psychic. На 17 lvl -- 15 hp, каст бонусным действием.
+        # Это облачко левитации вроде Mage_Hand, которое выставляется против угрозы как амортизирующий слой. На низком уровне можно прикрыть нос или копытце. С ростом уровня защищает большую площадь тела единорожицы.
+        }
+
 metadict_detail['_++0 lvl (C) Рисование магией (0 lvl Arcane_Painting)'] = {
         # * @@@ "Рисование магией" (Arcane_Painting) [Tra|-|-] (C) — касание, действием, немного растёртого с маслом угля. Позволяет писать, рисовать, красить предметы стойкими чернилами любого цвета. Не больше 0.1 квадратного фута за раунд (6 кв.метров/час). Эти чернила в течении 24 часов отсвечивают магией преобразования для Detect_Magic.
         # Выбрано: Эквестрийские пони 1
@@ -5343,7 +5666,7 @@ metadict_detail['_++0 lvl (C) Дружба (0 lvl Friends)'] = {
         }
 
 metadict_detail['_++0 lvl (C) Слово силы Мяу (0 lvl Power_Word_Meow)'] = {
-        # * @@@ "Слово силы Мяу" (Power_Word_Meow) [Enc|Wis|-] (C) — 60 футов, бонусным действием. Только вербальный компонент. Когда вы мяукаете, цель должна выбросить спасбросок Мудрости, или мяукнуть в ответ. Никакого вреда это заклинание не наносит, кроме урона чести особенно говорливым злодеям. На 5 lvl +5 к сложности заклинания, на 11 lvl +10 к сложности.
+        # * @@@ "Слово силы Мяу" (Power_Word_Meow) [Enc|Wis|-] (C) — 60 футов, бонусным действием. Только вербальный компонент. Когда вы мяукаете, цель должна выбросить спасбросок Мудрости, или мяукнуть в ответ. Никакого вреда это заклинание не наносит, кроме урона чести особенно говорливым злодеям. На 5 lvl +5 к сложности заклинания. На 11 lvl +10 к сложности. На 17 lvl без бонусов к сложности может прервать вербальный компонент заклинания реакцией, превращаяс в забавное подобие Counterspell.
         }
 
 metadict_detail['_++0 lvl (C) Сообщение (0 lvl Message)'] = {
@@ -5422,12 +5745,10 @@ metadict_detail['_++0 lvl (C) Сотворение костра (0 lvl Create_Bo
             # 1000             | 0.68
             # 1100             | 0.67
             # 1200             | 0.87
-            # Чтобы расплавить килограмм чугуна понадобится -- 713 кДж/килограмм
-                # При 100% КПД выплавки -- 51 секунда (8.5 заклинаний)
-                # При 85% КПД выплавки -- 60 секунд (10 заклинаний)
+            # Минута Create_Bonfire = 840 кДж (713 кДж/кг чугуна, 85% КПД)
             # Create_Bonfire на 14 кВт 6 часов это 300 Мдж/день = 360 кантрипов, 0.6 часа работы, 0.6 бит.
             # Дрова для промышленности на 300 МДж/день, это 0.26 нормо-часа работы, 0.08 бит.
-            # Маги Эквестрии могут расплавить -- 200 000 тонн чугуна (9 кг на каждую пони)
+            # Маги Эквестрии могут расплавить -- 200kt чугуна (9 кг/пони, 76 МДж/пони)
             # _++0 lvl (C) Сотворение костра (0 lvl Create_Bonfire) | 1,995,318,823
         '-Тепловая энергия, заклинания (киловатт-час)':14 / 600,
         }
@@ -5932,8 +6253,8 @@ metadict_detail['_++1 lvl (R) Мастерская ремесленника (1 l
         # Это +18.4 млн. бит прибыли. Практически бюджет Школы волшебства.
         }
 
-metadict_detail['_++1 lvl (S) Оберег (1 lvl Ward)'] = {
-        # * @@@ "Оберег" (Ward) [Abj|-|-] — 50 бит (1 lb алмазно-угольного порошка), на себя, минута каста, час концентрации. Срабатывает реакцией, против вызвавшей реакцию атаки. Барьер имеет 5 hp. Подобен Arcane_Ward, считается полным укрытием, а не бонусными хитами. Пока хиты барьера выше нуля их можно восстановить действием по 1 hp/круг заклинания. С каждым уровнем ячейки выше первого барьер получает +5 hp/круг. Начиная с 3 круга хиты барьера восстанавливаются бонусным действием или действием, на выбор. Начиная с 5 круга защищает от любого числа атак до начала следующего хода и может быть восстановлен и при 0 hp барьера пока есть концентрация. Начиная с 7 круга не требует реакции, защищая в том числе и от внезапных атак. Начиная с 9 круга не требует концентрации, становясь полным подобием Arcane_Ward.
+metadict_detail['_++1 lvl (S) Барьер (1 lvl Barrier_Ward)'] = {
+        # * @@@ "Барьер" (Barrier_Ward) [Abj|-|-] — 50 бит (1 lb алмазно-угольного порошка), на себя, минута каста, час концентрации. Срабатывает реакцией, против вызвавшей реакцию атаки. Барьер имеет 5 hp. Подобен Arcane_Ward, считается полным укрытием, а не бонусными хитами. Барьер не разрушается полностью и может быть восстановлен за минуту пока есть концентрация. С каждым уровнем ячейки выше первого барьер получает +5 hp/круг. Начиная с 3 круга защищает от любого числа атак до начала следующего хода. Начиная с 5 круга не требует реакции, защищая в том числе и от внезапных атак. Начиная с 7 круга обнуляет урон от воздействия, разрушившего барьер. Начиная с 9 круга не требует концентрации, становясь полным подобием Arcane_Ward.
         # Это часто упоминаемое в "Янтаре" заклинание щита. Плёнка цвета магии рога вокруг единорожки, которая не хочет ранить себя по собственной дурости. Псевдожизнь (False_Life) так-то практичнее из-за занятой барьером концентрации и реакции.
         # Состав мембраны:
         # - Нитрид углерода (C3N4) -- 39% углерода, 61% азота
@@ -6137,10 +6458,10 @@ metadict_detail['_++2 lvl (S) Вечный огонь (2 lvl Continual_Flame)'] 
                 # Натривая лампа     | 1000   | 200
                 # 1 кг воска = 176 часов горения (Grain into Gold стр 44)
             # Нормы освещённости:
-                # Тип помещения/условий            | Норма освещенности, люкс
-                # -------------------------------- | ------------------------
-                # Полдень, прямой свет Солнца      | 32-130 тысяч
-                # Полдень в декабре-январе         | 4000
+                # Тип помещения/условий            | Норма освещенности
+                # -------------------------------- | ------------------
+                # Полдень, прямой свет Солнца      | 32-130k люкс
+                # Полдень в декабре-январе         | 4000 люкс
                 # Восход и закат в ясный день      | 400
                 # Обычный офис                     | 300
                 # Рабочий кабинет                  | 300
@@ -6265,7 +6586,7 @@ metadict_detail['_++2 lvl (R) Укрепить вещество (2 lvl Fortify_M
 
 metadict_detail['_++2 lvl (R) Заговор устройства (2 lvl Cantrip_to_Device)'] = {
         # Старое название: Arcane_Battery
-        # * "Заговор устройства" (Cantrip_to_Device) [Tra|Dex|choice] (R) — касание, действием, ритуал, 24 часа действия. Вы передаёте энергию одного из своих заговоров заранее изготовленному устройству с одним из перечисленных свойств. 1) За 15 бит это направленный фонарь с конусом света на 60/120 футов. 2) за 25 бит это магнитный захват, способный держать 25 фунтов металлических предметов. 3) За 50 бит это граната с 2d6 урона избранной стихией и 5-футовым радиусом, спасбросок Ловкости, дистанция броска 60 футов. 4) За 75 бит это 2 телефона с кабелем на 1 бит за 100-футов, либо прямой связью в 120 футов. 5) За 100 бит это изящное изделие, хранящее один из эффектов кантрипа "Фокусы" (Prestidigitation) и воспроизводящее его по команде. 6) За 200 бит это механизированный набор инструментов ремесленника одной из профессий, благодаря которому в 2 раза увеличивается производительность труда. 7) За 500 бит это арканный бластер с 1d10 урона силовым полем и дальностью огня в 150/300 футов. 8) За 3000 бит это механический скакун с характеристиками большого оживлённого предмета и 18 AC за счёт металла конструкции.
+        # * "Заговор устройства" (Cantrip_to_Device) [Tra|Dex|choice] (R) — касание, действием, ритуал, 24 часа действия. Вы передаёте энергию одного из своих заговоров заранее изготовленному устройству с одним из перечисленных свойств. 1) За 15 бит это направленный фонарь с конусом света на 60/120 футов. 2) за 25 бит это магнитный захват, способный держать 25 фунтов металлических предметов. 3) За 50 бит это граната с 2d6 урона избранной стихией и 5-футовым радиусом, спасбросок Ловкости, дистанция броска 60 футов. 4) За 75 бит это 2 телефона с кабелем на 1 бит за 100-футов, либо прямой связью в 120 футов. 5) За 100 бит это изящное изделие, хранящее один из эффектов кантрипа "Фокусы" (Prestidigitation) и воспроизводящее его по команде. 6) За 200 бит это механизированный набор инструментов ремесленника одной из профессий, благодаря которому в 2 раза увеличивается производительность труда. 7) За 500 бит это арканный бластер с 1d10 урона силовым полем и дальностью огня в 150/300 футов. 8) За 3000 бит это механический скакун с 1 кВт мощности, характеристиками большого оживлённого предмета и 18 AC за счёт металла конструкции.
         # В целом это устройства с менее 1 киловатта мощности, чтобы дать энергию которому вы отказываетесь от одного из кантрипов на 24 часа, но можете отменить это действием. На больших уровнях растёт длительность заклинания: 3 круг -- 3 дня; 4 круг -- 6 дней; 5 круг -- 12 дней; 6 круг -- 30 дней; 7 круг -- 90 дней; 8 круг -- 360 дней; 9 круг -- пока не рассеется. Растёт урон арканного бластера; 3 круг -- 2d10; 6 круг -- 3d10; 9 круг -- 4d10. Растёт урон и радиус взрыва гранаты; 3 круг -- 3d6, 10 футов; 5 круг -- 5d6, 15 футов; 7 круг -- 7d6, 20 футов; 9 круг -- 9d6, 30 футов. Растёт скорость скакуна: 3 круг -- 40 футов; 5 круг -- 60 футов, плавает; 7 круг -- 80 футов; 9 круг -- 100 футов, летает.
         # _++2 lvl (R) Заговор устройства (2 lvl Cantrip_to_Device).................. | 5,514,756
         # _++2 lvl (R) Заговор устройства (устройств/год)............................ | 15,318
@@ -6631,6 +6952,9 @@ metadict_detail['_++4 lvl (S) Сфера бури (4 lvl Storm_Sphere)'] = {
 metadict_detail['_++4 lvl (R) Укорениться (4 lvl Enroot)'] = {
         }
 
+metadict_detail['_++4 lvl (R) Защита от прорицания (4 lvl Astral_Shielding)'] = {
+        }
+
 metadict_detail['_++4 lvl (S) Защита от смерти (4 lvl Death_Ward)'] = {
         # * "Защита от смерти" (Death_Ward) — 8 часов, спасает от смертельного удара, или эффекта любой формы, способного мгновенно убить. В сочетании с "Волшебным сосудом" (Magic_Jar) может навсегда перенести душу в новое тело после разрушения контейнера.
         # Используется для защиты от ошибки хирурга при операциях.
@@ -6664,6 +6988,7 @@ metadict_detail['_++4 lvl (R) Паровой котёл (4 lvl Steam_Boiler)'] =
         # _++4 lvl (R) Паровой котёл (МДж)........................................ | 2,073,137,500
         # +-| Энергия затраченная (МДж)........................................... | 911,606,386,118
         # +-| Энергия полезная (МДж).............................................. | 403,429,982,581
+        # Всего получается 0.1 ГДж/пони
         #
         # Работа поездов:
         # Котловая лошадь (9.8 квт) = лошадиная сила (0.736 квт)
@@ -6769,6 +7094,15 @@ metadict_detail['_++5 lvl (S) Изменение памяти (5 lvl Modify_Memo
         }
 
 metadict_detail['_++5 lvl (R) Корона ясности зрения (5 lvl Crown_of_Clarity)'] = {
+        }
+
+metadict_detail['_++5 lvl (R) Корона защиты (5 lvl Crown_of_Protection)'] = {
+        }
+
+metadict_detail['_++5 lvl (R) Корона иллюзий (5 lvl Crown_of_Veils)'] = {
+        }
+
+metadict_detail['_++5 lvl (R) Корона силы (5 lvl Crown_of_Might)'] = {
         }
 
 metadict_detail['_++5 lvl (S) Круг силы (5 lvl Circle_of_Power)'] = {
