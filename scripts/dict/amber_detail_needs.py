@@ -1872,6 +1872,7 @@ metadict_detail['Потребность в путешествиях, селян�
         # -   | Total         | 7207M | 1229.3M | 1719M | 2.2%  | 1398
         # ** Семья из пяти пони: 1398 / 50 × 5 = 140 бит/поездка
         # Мировой туризм в целом 10.6% ВВП (международный ~2.2% ВВП)
+        # Пассажиропоток авиации (Мир, 2019) -- 68 трлн пасс-км, 4.2 млрд пассажиров, 1900 км/пассажир
         # https://en.wikipedia.org/wiki/World_Tourism_rankings
         # https://worldpopulationreview.com/country-rankings/most-visited-countries
         # https://en.wikipedia.org/w/index.php?title=World_Tourism_rankings&oldid=928727623
