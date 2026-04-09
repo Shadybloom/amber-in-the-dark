@@ -113,7 +113,7 @@
         # 0-50%  | 47.3-38.2% | 420-670 бит  | 199-256 бит   | ×1
         # 50-80  | 36.4-32.1  | 670-1200     | 244-385       | ×1.4
         # 80-99  | 28.0-16.2  | 1200-3200    | 336-518       | ×1.9
-        # Бесплатный рацион -- до 96 бит/семью (65 бит/едока в столовой)
+        # Бесплатный рацион -- 96/325 бит/семью (65 бит/едока в столовой)
         # Экспортный рацион -- 161 бит/семью; Обычный -- 257 бит/семью
         # Изысканный рацион (ресторан + доставка) -- 522 бит/семью
         # amber -sm "Городской рацион, избыток" -n 5
@@ -286,6 +286,7 @@
     # https://w3.unece.org/PXWeb/ru/Table?IndicatorCode=9
     # https://w3.unece.org/PXWeb/ru/Table?IndicatorCode=11
     # https://w3.unece.org/PXWeb/ru/Table?IndicatorCode=14
+    # https://en.wikipedia.org/wiki/List_of_countries_by_GDP_sector_composition
 # Занятость по отраслям (Россия 1940-2024):
     # Год  | Земледелие | Промышленность   | Услуги
     # ---- | ---------- | ---------------- | --------
@@ -1128,10 +1129,11 @@
         # Bulletin of the Bureau of Labor. 1903. November, №49
         # https://istmat.org/node/59
     # Минимальная оплата труда:
-        # 1936 год -- minimum wage 25 cent/hour (3 loaves of bread, 8.6 cents/loaf)
-        # 2018 год -- minimum wage 7.25 dollars/hour (3 loaves of bread, 2.37 dollars/loaf)
-        # The standard loaf of bread shall weigh one pound (0.454 кг),
-        # У понях это 0.1 бита/1.5 кг хлеба (хлеб пшеничный фабричный)
+        # Эквестрия -- min wage $10/h (6.6lb, хлеб $1.5/lb, зерно $1/lb)
+        # 1936 год -- min wage $0.25/h (3 loaves of bread, 8.6 cents/loaf)
+        # 2018 год -- min wage $7.25/h (3 loaves of bread, 2.37 dollars/loaf)
+        # 2026 год -- min wage $12.5/h (4.6 loaves of bread, 2.7 dollars/loaf)
+        # The standard loaf of bread shall weigh one pound (0.454 кг)
         # https://www.numbeo.com/cost-of-living/country_price_rankings?itemId=9
         # https://www.numbeo.com/cost-of-living/country_price_rankings?itemId=3
         # https://www.numbeo.com/cost-of-living/country_price_rankings?itemId=2
