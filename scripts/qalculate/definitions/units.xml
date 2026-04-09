@@ -1,0 +1,573 @@
+<?xml version="1.0"?>
+<QALCULATE version="4.8.1">
+  <category>
+    <title>Length</title>
+    <deactivate>nautical_mile</deactivate>
+    <deactivate>mi</deactivate>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Arsheen</title>
+      <names>u:&#x430;&#x440;&#x448;&#x438;&#x43D;,a-cru:&#x430;&#x440;&#x448;,pu:&#x430;&#x440;&#x448;&#x438;&#x43D;&#x43E;&#x432;,u:arsheen</names>
+      <base>
+        <unit>m</unit>
+        <relation>0.7112</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Fathom (7ft)</title>
+      <names>u:&#x441;&#x430;&#x436;&#x435;&#x43D;&#x44C;,a-cru:&#x441;&#x430;&#x436;,ru:&#x441;&#x430;&#x436;&#x435;&#x43D;&#x44C;_&#x442;&#x440;&#x451;&#x445;&#x430;&#x440;&#x448;&#x438;&#x43D;&#x43D;&#x430;&#x44F;,pu:&#x441;&#x430;&#x436;&#x435;&#x43D;&#x435;&#x439;,u:fathom_russia</names>
+      <base>
+        <unit>&#x430;&#x440;&#x448;</unit>
+        <relation>3</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Fathom (city)</title>
+      <names>rsu:&#x441;&#x430;&#x436;&#x435;&#x43D;&#x44C;_&#x433;&#x43E;&#x440;&#x43E;&#x434;&#x43E;&#x432;&#x430;&#x44F;,u:fathom_russia_city</names>
+      <base>
+        <unit>&#x430;&#x440;&#x448;</unit>
+        <relation>4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Fathom (small)</title>
+      <names>rsu:&#x441;&#x430;&#x436;&#x435;&#x43D;&#x44C;_&#x43C;&#x430;&#x43B;&#x430;&#x44F;,u:fathom_small_russia</names>
+      <base>
+        <unit>&#x430;&#x440;&#x448;</unit>
+        <relation>2</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Span (7in)</title>
+      <names>ru:&#x43F;&#x44F;&#x434;&#x44C;,pu:&#x43F;&#x44F;&#x434;&#x435;&#x439;,u:span_russian</names>
+      <base>
+        <unit>&#x430;&#x440;&#x448;</unit>
+        <relation>1/4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Vershok</title>
+      <names>u:&#x432;&#x435;&#x440;&#x448;&#x43E;&#x43A;,a-cru:&#x432;&#x440;&#x448;,pu:&#x432;&#x435;&#x440;&#x448;&#x43A;&#x43E;&#x432;,u:vershok</names>
+      <base>
+        <unit>&#x43F;&#x44F;&#x434;&#x44C;</unit>
+        <relation>1/4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Verst</title>
+      <names>ru:&#x432;&#x435;&#x440;&#x441;&#x442;&#x430;,pu:&#x432;&#x435;&#x440;&#x441;&#x442;,pu:&#x432;&#x451;&#x440;&#x441;&#x442;,pu:&#x432;&#x435;&#x440;&#x441;&#x442;&#x44B;,u:verst</names>
+      <base>
+        <unit>&#x430;&#x440;&#x448;</unit>
+        <relation>1500</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Nautical Mile</title>
+      <names>r:nautical_mile,p:nautical_miles,a-cp:mile,&#x43C;&#x438;&#x43B;&#x44F;,p:&#x43C;&#x438;&#x43B;&#x44C;</names>
+      <base>
+        <unit>m</unit>
+        <relation>1852</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <title>Equestrian Actus</title>
+      <names>r:Equestrian_Actus,a:act,c:&#x430;&#x43A;&#x442;,p:&#x430;&#x43A;&#x442;&#x43E;&#x432;</names>
+      <base>
+        <unit>nautical_mile</unit>
+        <relation>1/60</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Trot</title>
+      <names>r:Equestrian_Trot,a:trot,cp:trots,c:&#x442;&#x440;&#x43E;&#x442;,cp:&#x442;&#x440;&#x43E;&#x442;&#x43E;&#x432;</names>
+      <base>
+        <unit>Equestrian_Actus</unit>
+        <relation>1/60</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Hoof</title>
+      <names>r:Equestrian_Hoof,a:hoof,p:hooves,p:hoofs,&#x445;&#x443;&#x444;,p:&#x445;&#x443;&#x444;&#x43E;&#x432;</names>
+      <base>
+        <unit>Equestrian_Trot</unit>
+        <relation>1/6</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <unit type="base">
+    <title>population</title>
+    <names>r:capita,a:cap,r:population</names>
+  </unit>
+  <category>
+    <title>Area</title>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Sector (60mi hexagon)</title>
+      <names>r:Equestrian_Sector,a:sc,sector,&#x441;&#x435;&#x43A;&#x442;&#x43E;&#x440;</names>
+      <base>
+        <unit>ha</unit>
+        <relation>1069101</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Tithe</title>
+      <names>ru:&#x434;&#x435;&#x441;&#x44F;&#x442;&#x438;&#x43D;&#x430;,a-cru:&#x434;&#x435;&#x441;,pru:&#x434;&#x435;&#x441;&#x44F;&#x442;&#x438;&#x43D;,u:tithe</names>
+      <base>
+        <unit>ha</unit>
+        <relation>1.0925</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    <title>Time</title>
+    <unit type="alias">
+      <title>Equestrian Year</title>
+      <names>r:Equestrian_Year,a:yeareq</names>
+      <base>
+        <unit>d</unit>
+        <relation>360</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    <title>Volume</title>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Bucket</title>
+      <names>ru:&#x432;&#x435;&#x434;&#x440;&#x43E;,pu:&#x432;&#x451;&#x434;&#x435;&#x440;,u:bucket_russian</names>
+      <base>
+        <unit>L</unit>
+        <relation>12.2994</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Karchaga</title>
+      <names>ru:&#x43A;&#x430;&#x440;&#x447;&#x430;&#x433;&#x430;,pu:&#x43A;&#x430;&#x440;&#x447;&#x430;&#x433;,u:karchaga</names>
+      <base>
+        <unit>&#x432;&#x435;&#x434;&#x440;&#x43E;</unit>
+        <relation>2</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Barrel</title>
+      <names>ru:&#x431;&#x43E;&#x447;&#x43A;&#x430;,pu:&#x431;&#x43E;&#x447;&#x435;&#x43A;,u:barrel_russian</names>
+      <base>
+        <unit>&#x432;&#x435;&#x434;&#x440;&#x43E;</unit>
+        <relation>40</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Shtof</title>
+      <names>ru:&#x448;&#x442;&#x43E;&#x444;,ru:&#x43A;&#x440;&#x443;&#x436;&#x43A;&#x430;,u:shtof,u:pint_russian</names>
+      <base>
+        <unit>&#x432;&#x435;&#x434;&#x440;&#x43E;</unit>
+        <relation>1/10</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Bottle Wine</title>
+      <names>ru:&#x431;&#x443;&#x442;&#x44B;&#x43B;&#x43A;&#x430;,ru:&#x431;&#x443;&#x442;&#x44B;&#x43B;&#x43A;&#x430;_&#x432;&#x438;&#x43D;&#x43D;&#x430;&#x44F;,pu:&#x431;&#x443;&#x442;&#x44B;&#x43B;&#x43E;&#x43A;,u:bottle_rusian_wine</names>
+      <base>
+        <unit>&#x432;&#x435;&#x434;&#x440;&#x43E;</unit>
+        <relation>1/16</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Half-Shtof</title>
+      <names>ru:&#x43F;&#x43E;&#x43B;&#x443;&#x448;&#x442;&#x43E;&#x444;,ru:&#x431;&#x443;&#x442;&#x44B;&#x43B;&#x43A;&#x430;_&#x432;&#x43E;&#x434;&#x43E;&#x447;&#x43D;&#x430;&#x44F;,u:shtof_half,u:bottle_russian_vodka</names>
+      <base>
+        <unit>&#x432;&#x435;&#x434;&#x440;&#x43E;</unit>
+        <relation>1/20</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Quarter</title>
+      <names>ru:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;,a-cru:&#x447;&#x435;&#x442;&#x432;,pu:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x435;&#x439;,u:quarter_russian</names>
+      <base>
+        <unit>L</unit>
+        <relation>209.9072</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Vat</title>
+      <names>ru:&#x43A;&#x430;&#x434;&#x43A;&#x430;,pu:&#x43A;&#x430;&#x434;&#x43E;&#x43A;,u:vat_russian</names>
+      <base>
+        <unit>&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;</unit>
+        <relation>4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Quarter (small)</title>
+      <names>ru:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x438;&#x43A;,pu:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x438;&#x43A;&#x43E;&#x432;</names>
+      <base>
+        <unit>&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;</unit>
+        <relation>1/8</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Garnets</title>
+      <names>ru:&#x433;&#x430;&#x440;&#x43D;&#x435;&#x446;,pu:&#x433;&#x430;&#x440;&#x43D;&#x446;&#x435;&#x432;,u:garnets</names>
+      <base>
+        <unit>&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x438;&#x43A;</unit>
+        <relation>1/8</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Japanese Cocu</title>
+      <names>r:cocu,r:&#x43A;&#x43E;&#x43A;&#x443;</names>
+      <base>
+        <unit>L</unit>
+        <relation>180.39</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Barrel</title>
+      <names>rs:Equestrian_Barrel,a:bble,&#x431;&#x43E;&#x447;&#x43A;&#x430;_&#x44D;&#x43A;&#x432;&#x438;&#x43D;&#x441;&#x43A;&#x430;&#x44F;</names>
+      <base>
+        <unit>L</unit>
+        <relation>136.15</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Bushel</title>
+      <names>r:Equestrian_Bushel,a:bue,bushel_Equestria</names>
+      <base>
+        <unit>Equestrian_Barrel</unit>
+        <relation>0.25</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Bottle</title>
+      <names>r:Equestrian_Bottle,&#x431;&#x443;&#x442;&#x44B;&#x43B;&#x43A;&#x430;_&#x44D;&#x43A;&#x432;&#x438;&#x43D;&#x441;&#x43A;&#x430;&#x44F;,&#x43A;&#x443;&#x431;_&#x445;&#x443;&#x444;,bottle_equestrian_hoof</names>
+      <base>
+        <unit>Equestrian_Barrel</unit>
+        <relation>1/216</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Pint</title>
+      <names>rs:Equestrian_Pint,pint_equestrian</names>
+      <base>
+        <unit>Equestrian_Barrel</unit>
+        <relation>1/288</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Bucket</title>
+      <names>rs:Equestrian_Bucket,a:buck,bucket,p:buckets,&#x432;&#x435;&#x434;&#x440;&#x43E;_&#x44D;&#x43A;&#x432;&#x438;&#x43D;&#x441;&#x43A;&#x43E;&#x435;</names>
+      <base>
+        <unit>Equestrian_Barrel</unit>
+        <relation>1/12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    <title>Mass</title>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Pood</title>
+      <names>ru:&#x43F;&#x443;&#x434;,pu:&#x43F;&#x443;&#x434;&#x43E;&#x432;,u:pood</names>
+      <base>
+        <unit>g</unit>
+        <relation>16380.4964</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Berkowets</title>
+      <names>ru:&#x431;&#x435;&#x440;&#x43A;&#x43E;&#x432;&#x435;&#x446;,u:berkowets</names>
+      <base>
+        <unit>&#x43F;&#x443;&#x434;</unit>
+        <relation>10</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Batman</title>
+      <names>ru:&#x431;&#x430;&#x442;&#x43C;&#x430;&#x43D;,u:batman</names>
+      <base>
+        <unit>&#x43F;&#x443;&#x434;</unit>
+        <relation>1/4</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Weighter</title>
+      <names>ru:&#x431;&#x435;&#x437;&#x43C;&#x435;&#x43D;,u:weighter</names>
+      <base>
+        <unit>&#x43F;&#x443;&#x434;</unit>
+        <relation>1/16</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Pound</title>
+      <names>ru:&#x444;&#x443;&#x43D;&#x442;,pu:&#x444;&#x443;&#x43D;&#x442;&#x43E;&#x432;,u:pound_russian</names>
+      <base>
+        <unit>&#x43F;&#x443;&#x434;</unit>
+        <relation>1/40</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Zolotnik</title>
+      <names>ru:&#x437;&#x43E;&#x43B;&#x43E;&#x442;&#x43D;&#x438;&#x43A;,u:zolotnik</names>
+      <base>
+        <unit>&#x444;&#x443;&#x43D;&#x442;</unit>
+        <relation>1/96</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equetrian Barrel of Water</title>
+      <names>r:Equestrian_Barrel_of_Water,a:bblew,&#x431;&#x43E;&#x447;&#x43A;&#x430;_&#x44D;&#x43A;&#x432;&#x438;&#x43D;&#x441;&#x43A;&#x430;&#x44F;_&#x432;&#x43E;&#x434;&#x44B;</names>
+      <base>
+        <unit>g</unit>
+        <relation>136150</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Russian Lot (half oz)</title>
+      <names>ru:&#x43B;&#x43E;&#x442;,u:lot</names>
+      <base>
+        <unit>&#x444;&#x443;&#x43D;&#x442;</unit>
+        <relation>1/32</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <category>
+      <title>Volume</title>
+      <unit type="alias">
+        <system>Imperial</system>
+        <title>Russian Quarter (oats)</title>
+        <names>rsu:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;_&#x43E;&#x432;&#x441;&#x430;,u:quarter_russian_oats</names>
+        <base>
+          <unit>&#x43F;&#x443;&#x434;</unit>
+          <relation>6</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>Imperial</system>
+        <title>Russian Quarter (rye)</title>
+        <names>rsu:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;_&#x440;&#x436;&#x438;,u:quarter_russian_rye</names>
+        <base>
+          <unit>&#x43F;&#x443;&#x434;</unit>
+          <relation>6.25</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>Imperial</system>
+        <title>Russian Quarter (barley)</title>
+        <names>rsu:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;_&#x44F;&#x447;&#x43C;&#x435;&#x43D;&#x44F;,u:quarter_russian_barley</names>
+        <base>
+          <unit>&#x43F;&#x443;&#x434;</unit>
+          <relation>7.25</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>Imperial</system>
+        <title>Russian Quarter (wheat)</title>
+        <names>rsu:&#x447;&#x435;&#x442;&#x432;&#x435;&#x440;&#x442;&#x44C;_&#x43F;&#x448;&#x435;&#x43D;&#x438;&#x446;&#x44B;,u:quarter_russian_wheat</names>
+        <base>
+          <unit>&#x43F;&#x443;&#x434;</unit>
+          <relation>9.5</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+      <unit type="alias">
+        <system>Imperial</system>
+        <title>Japanese Cocu Rice</title>
+        <names>rs:cocu_rice,r:&#x43A;&#x43E;&#x43A;&#x443;_&#x440;&#x438;&#x441;&#x430;</names>
+        <base>
+          <unit>lb</unit>
+          <relation>330</relation>
+          <exponent>1</exponent>
+        </base>
+      </unit>
+    </category>
+  </category>
+  <category>
+    <title>Force</title>
+    <unit type="alias">
+      <system>SI</system>
+      <title>USSR Kilogramm-Force</title>
+      <names>ru:&#x43A;&#x433;&#x441;,ru:&#x43A;&#x438;&#x43B;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;_&#x441;&#x438;&#x43B;&#x430;,pu:&#x43A;&#x438;&#x43B;&#x43E;&#x433;&#x440;&#x430;&#x43C;&#x43C;_&#x441;&#x438;&#x43B;</names>
+      <base>
+        <unit>N</unit>
+        <relation>9.806650</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    <title>Energy</title>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>USSR Horse Feed 1kg oats</title>
+      <names>rsu:&#x43A;&#x43E;&#x440;&#x43C;&#x43E;&#x432;&#x430;&#x44F;_&#x435;&#x434;&#x438;&#x43D;&#x438;&#x446;&#x430;,a-cu:&#x43A;&#x435;</names>
+      <base>
+        <unit>J</unit>
+        <relation>5900000</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+  <category>
+    <title>Currency</title>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Bit</title>
+      <names>rs:Equestrian_Bit,a:eqb,&#x20A1;&#x411;&#x438;&#x442;,ruble_imperial,imperial_ruble,taler,talers,a-c:tal,a-c:&#x431;&#x438;&#x442;</names>
+      <base>
+        <unit>USD</unit>
+        <relation>50</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Penny</title>
+      <names>rs:Equestrian_Penny,a:eqp,$&#x41F;&#x435;&#x43D;&#x43D;&#x438;,&#x43F;&#x435;&#x43D;&#x43D;&#x438;,p:&#x43F;&#x435;&#x43D;&#x441;&#x43E;&#x432;</names>
+      <base>
+        <unit>Equestrian_Bit</unit>
+        <relation>1/48</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Tael</title>
+      <names>rs:Equestrian_Golden_Tael,a:eqt,tail,tael,&#x43B;&#x44F;&#x43D;,p:&#x43B;&#x44F;&#x43D;&#x43E;&#x432;,Equestrian_Tael</names>
+      <base>
+        <unit>Equestrian_Bit</unit>
+        <relation>48</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Gold</title>
+      <names>rs:Equestrian_Gold_Pound,a-c:eqg,&#x444;&#x443;&#x43D;&#x442;_&#x437;&#x43E;&#x43B;&#x43E;&#x442;&#x430;_&#x44D;&#x43A;&#x432;&#x435;&#x441;&#x442;&#x440;&#x438;&#x438;,eqgold</names>
+      <base>
+        <unit>Equestrian_Golden_Tael</unit>
+        <relation>12</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Silver</title>
+      <names>rs:Equestrian_Silver_Pound,a-c:eqs,&#x444;&#x443;&#x43D;&#x442;_&#x441;&#x435;&#x440;&#x435;&#x431;&#x440;&#x430;_&#x44D;&#x43A;&#x432;&#x435;&#x441;&#x442;&#x440;&#x438;&#x438;,eqsilver</names>
+      <base>
+        <unit>Equestrian_Bit</unit>
+        <relation>30</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Brass</title>
+      <names>r:Equestrian_Brass_Pound,&#x444;&#x443;&#x43D;&#x442;_&#x43B;&#x430;&#x442;&#x443;&#x43D;&#x438;_&#x44D;&#x43A;&#x432;&#x435;&#x441;&#x442;&#x440;&#x438;&#x438;</names>
+      <base>
+        <unit>Equestrian_Penny</unit>
+        <relation>288</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Copper</title>
+      <names>r:Equestrian_Copper_Pound,&#x444;&#x443;&#x43D;&#x442;_&#x43C;&#x435;&#x434;&#x438;_&#x44D;&#x43A;&#x432;&#x435;&#x441;&#x442;&#x440;&#x438;&#x438;</names>
+      <base>
+        <unit>Equestrian_Penny</unit>
+        <relation>8</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Ruby</title>
+      <names>r:Equestrian_Ruby_Carat,a:eqr</names>
+      <base>
+        <unit>Equestrian_Bit</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+    <unit type="alias">
+      <system>Imperial</system>
+      <title>Equestrian Wheat</title>
+      <names>r:Equestrian_Wheat_Pound,a:eqw</names>
+      <base>
+        <unit>Equestrian_Penny</unit>
+        <relation>1</relation>
+        <exponent>1</exponent>
+      </base>
+    </unit>
+  </category>
+</QALCULATE>
