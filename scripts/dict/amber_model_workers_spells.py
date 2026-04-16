@@ -305,6 +305,57 @@
     # 10-й круг:
     # https://totally.fandom.com/wiki/Armageddon -- 30d10 урона, на 5 миль 1-миля радиус, час каста.
     # https://totally.fandom.com/wiki/Creation%27s_Fury -- землетрясение, 1-миля радиус, 10 минут каста.
+# Заклинания DnD 5e:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Homebrew_spells
+    # Cantrips:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Daunt -- -1d4 атаки реакцией.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Dark_Lightning -- 1d10 урон, меняет молнии.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Fling_Needles -- 2d4 еловыми, помеха концентрации.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Shell -- концентрация, 5hp щит, 1d6 урон.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Waive -- 5hp щит реакцией от стрел.
+    # 1-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Raptor_Spirit -- атака 2d4 с ослеплением или БПЛА
+    # 2-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Disintegrating_Shield -- разрушает стрелы 3d6
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Quicksand -- зыбучие пески.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Seeker%E2%80%99s_Mark -- подсветка цели.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ward_Sphere -- 15hp щит, сопрот.оружию.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Improvised_Mount -- ездовое из мыши.
+    # 3-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Mimic -- маскировка под предмет.
+    # 4-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Aerokinesis -- халявные Catapult, минута.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Aquakinesis
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Geokinesis
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Pyrokinesis -- халявные Aganazzar, минута.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Concealment -- преимущество связанному заклинанию.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Greater_Ward_Sphere
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Refraction
+    # 5-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Circle_of_Life -- выталкивает нежить с 6d6 урона.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Marked_for_Doom -- 1d6 урона на каждом броске d20
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Peace -- 50ft спас мудрости или мир со всеми.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Perforation_Beam -- 1d4 урона, конц.минута.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Quasar -- 1000ft 10d10 излучением.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Reminiscence -- чтение памяти, минута.
+    # 6-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Blasphemous_Appeal -- Wish с последствиями.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Cloak -- 20ft, 10 мин, защита от Divination.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Power_Word_Sleep
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Investiture_of_Storms
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Puppet_Mastery -- до 10 существ в марионетки.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Unmaking -- предметы в ресурсы
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Waterways -- водный телепорт на 100 миль.
+    # 7-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Leviathan
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ride_the_Lightning
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ring_of_Swords
+    # 8-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ravenous_Shadows
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Skylash
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Terraform
+    # 9-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Suncall
 
 #----
 # Распределение стоимости заклинаний
