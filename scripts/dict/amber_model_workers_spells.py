@@ -6,7 +6,6 @@
     # Вывод заклинаний:
     # amber -sm Эквестрия -E '_++'
     # Кантрипы, ритуалы, заклинания:
-    # TODO: (C) в нотации обозначает концентрацию, а у нас так помечены кантрипы.
     # amber -sm Эквестрия -E '(C)'
     # amber -sm Эквестрия -E '(R)'
     # amber -sm Эквестрия -E '(S)'
@@ -14,348 +13,9 @@
     # https://www.dandwiki.com/wiki/5e_Spells
     # https://www.d20srd.org/indexes/spells.htm
     # https://www.dnd-spells.com/spells
-# Классы DnD 5e:
-    # https://www.dandwiki.com/wiki/5e_Classes
-    # https://www.dandwiki.com/wiki/5e_Commoner_Classes
-    # https://www.dandwiki.com/wiki/Farmer_(5e_Class)
-    # https://www.dandwiki.com/wiki/Lumberjack_(5e_Class)
-    # https://www.dandwiki.com/wiki/Common_Caster_(5e_Class) -- до 5 круга
-    # https://www.dandwiki.com/wiki/Combat_Butler_(5e_Class) -- телохранитель
-    # https://www.dandwiki.com/wiki/Magical_Girl,_Variant_(5e_Class)
-    # https://www.dandwiki.com/wiki/Gentleman,_3rd_Variant_(5e_Class)
-    # https://www.dandwiki.com/wiki/Animated_Blade_(5e_Class) -- левитация оружия.
-    # https://www.dandwiki.com/wiki/Energy_Mage_(5e_Class) -- Mystic попроще.
-    # https://www.dandwiki.com/wiki/Boxer_(5e_Class) -- brawler в стиле ToME
-    # https://www.dandwiki.com/wiki/Cultivator_(5e_Class) -- маго-монах
-# Заклинания DnD 3.5:
-    # https://www.dandwiki.com/wiki/3.5e_Sorcerer/Wizard_Spells#9th-Level_Sorcerer/Wizard_Spells
-    # Cantrips:
-    # https://www.dandwiki.com/wiki/Common_Knowledge_(3.5e_Spell)
-    # 1-й круг:
-    # https://www.dandwiki.com/wiki/Bloodsense_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Free_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Attract_Undead_(3.5e_Spell)
-    # 2-й круг:
-    # https://www.dandwiki.com/wiki/Summon_Guided_Anvil_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Dark_Symmetry_(3.5e_Spell)
-    # 3-№ круг:
-    # https://www.dandwiki.com/wiki/Force_Binding_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Nondimensional_Pocket_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Sixth_Sense_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Microwave_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Bifronse%27s_Pale_Tendrils_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Return_Form_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Transfer_Enchantment_(3.5e_Spell)
-    # 4-й круг:
-    # https://www.dandwiki.com/wiki/Spell_Barrier_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Tempest_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Forbidden_Line_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Peephole_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Channeled_Lightning_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Corrupt_Soul_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Entombed_in_Amber_(3.5e_Spell)
-    # 5-й круг:
-    # https://www.dandwiki.com/wiki/Exorcise_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/DandeLions_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Know_Death_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Misspell_(3.5e_Spell) -- Funny Counterspell
-    # https://www.dandwiki.com/wiki/Vampiric_Transformation_Ritual_(3.5e_Spell)
-    # 6-й круг:
-    # https://www.dandwiki.com/wiki/Wind_Shield_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Elemental_Parasite_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Fatal_Attraction_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Warp_Door_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Memory_Manipulation_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Danzig%27s_Radiant_Stream_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Double_Shift_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Mark_of_the_Lich_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Armor_of_Flesh_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Molecular_Combustion_(3.5e_Spell)
-    # 7-й круг:
-    # https://www.dandwiki.com/wiki/Anti-Teleport_Sphere_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Death_Pact_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Prismatic_Aura_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Tamorak%27s_%27Arrest%27_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Lightning_Vice_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Assuming_The_Role_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Fusion_Dance_(3.5e_Spell)
-    # 8-й круг:
-    # https://www.dandwiki.com/wiki/Jess%27_Twin_Portals_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Ion_Blast_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Scream_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Continual_Wounds_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Thorny_Bones_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Dark_Memoirs_(3.5e_Spell) -- полиморф в книгу
-    # https://www.dandwiki.com/wiki/Energy_Subjugation_(3.5e_Spell)
-    # 9-й круг:
-    # https://www.dandwiki.com/wiki/Iron_Brand_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Ball_Lightning,_Greater_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Engulfing_Doom_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Ki_Clone_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Mirror_Shadow_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Chain_Death_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Create_Synthetic_Soul_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Living_Arrow_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Soul_Nova_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Age_Reversal_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Antifield_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Awaken_Spell_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Bestow_Sentience_(3.5e_Spell) -- умные големы
-    # https://www.dandwiki.com/wiki/Inherency_(3.5e_Spell) -- передача заклинания
-    # https://www.dandwiki.com/wiki/Phenomenon_Rejection_(3.5e_Spell) -- возврат во времени
-# Заклинания DnD 5e:
+    # https://www.dandwiki.com/wiki/3.5e_Sorcerer/Wizard_Spells
     # https://totally.fandom.com/wiki/List_of_Homebrew_Spells
-    # Cantrips:
-    # https://totally.fandom.com/wiki/Action_Image -- видеозапись
-    # https://totally.fandom.com/wiki/Accelerate
-    # https://totally.fandom.com/wiki/Temporal_Beat
-    # https://totally.fandom.com/wiki/Cheerful_Song
-    # https://totally.fandom.com/wiki/Mercy
-    # 1-й круг:
-    # https://totally.fandom.com/wiki/Arcane_Ablation -- вариант False_Life/Ward
-    # https://totally.fandom.com/wiki/Angelic_Feather -- даёт Dash/Disengage троим
-    # https://totally.fandom.com/wiki/Aerosphere -- пегасий вариант Flaming_Sphere
-    # https://totally.fandom.com/wiki/Boomerang_Sigil -- самонаводящийся шарик.
-    # https://totally.fandom.com/wiki/Cloth_of_Honorable_Melee -- отражение стрел +2 AC на минуту.
-    # https://totally.fandom.com/wiki/Doubleblade -- атака на 10ft, игнорит Shield бонусным действием.
-    # https://totally.fandom.com/wiki/Ironbinds -- 3d6 урона и потеря движения на ход.
-    # https://totally.fandom.com/wiki/Know_the_Mark -- метка куклой вуду.
-    # https://totally.fandom.com/wiki/Hunter%27s_Pace -- концентрация на атлетике.
-    # https://totally.fandom.com/wiki/Lantern_Walker -- ходячая камера, радиус миля, 1 час.
-    # https://totally.fandom.com/wiki/Malice_of_Arachia
-    # https://totally.fandom.com/wiki/Spider%27s_Kiss
-    # https://totally.fandom.com/wiki/Fall
-    # https://totally.fandom.com/wiki/Masterful_Focus -- один крит 18-20, час концентрации.
-    # https://totally.fandom.com/wiki/Wyvern_Guard
-    # https://totally.fandom.com/wiki/Thrashing_Tether -- Witch_Bolt через друзей
-    # https://totally.fandom.com/wiki/Repentance -- реакцией отменяет атаку, спас Мудрости
-    # https://totally.fandom.com/wiki/Seeking_Projectiles -- мод.атаки заклинания к снаряду. 10 минут.
-    # https://totally.fandom.com/wiki/Mend_Flesh
-    # https://totally.fandom.com/wiki/Wellspring
-    # https://totally.fandom.com/wiki/Starfire -- 2d12 излучением, слепота на раунд.
-    # https://totally.fandom.com/wiki/Pool_of_Fate -- даёт стек 5d6 к атаке/проверкам/спасам, конц.минута
-    # https://totally.fandom.com/wiki/Putrefy_Food_and_Drink
-    # 2-й круг:
-    # https://totally.fandom.com/wiki/Accursed_Wish -- эффект заклинания 1 круга.
-    # https://totally.fandom.com/wiki/Blindfold -- ослепление через куклу вуду на день.
-    # https://totally.fandom.com/wiki/Burn_the_Sight -- Darkvision через куклу вуду на 8 часов.
-    # https://totally.fandom.com/wiki/Branch_Assault -- 2d10+5 урона атакует ближайшее дерево.
-    # https://totally.fandom.com/wiki/Bridge_over_Troubled_Water -- 5×30ft мост (R)
-    # https://totally.fandom.com/wiki/Demon_Skin -- мод.волшебства к AC без доспехов.
-    # https://totally.fandom.com/wiki/Dissociative_Edge -- атака оружием на 2d8 30ft линия.
-    # https://totally.fandom.com/wiki/Divine_Star -- лечит-и-атакует 1d6 на 30ft линия.
-    # https://totally.fandom.com/wiki/Devilish_Hunt
-    # https://totally.fandom.com/wiki/Ethereal_Strike -- антипризрак.
-    # https://totally.fandom.com/wiki/Frame -- спаянная с врагом удача.
-    # https://totally.fandom.com/wiki/Juxtapose -- 15ft Mirror_Image на раунд
-    # https://totally.fandom.com/wiki/Leaf_Fall -- листопад (R)
-    # https://totally.fandom.com/wiki/Mind_Flay -- 2d6 психике, помеха атакам, конц.минута
-    # https://totally.fandom.com/wiki/Phantom_Accompaniment -- фантомные музыканты (R)
-    # https://totally.fandom.com/wiki/Regenerate_Plant -- лечит растение 10hp/раунд (R)
-    # https://totally.fandom.com/wiki/Shadow_Armor -- реакцией помеха атакам и 15ft телепорт.
-    # https://totally.fandom.com/wiki/Silver_Spear -- 3d10 урона серебром 30ft (R)
-    # https://totally.fandom.com/wiki/Spell_Flux -- half-cover, реакцией отражает 1 снаряд во врага.
-    # https://totally.fandom.com/wiki/Spirit_Cartographer -- картограф-сенсор с +8 Perception.
-    # https://totally.fandom.com/wiki/Sinister_Threat -- для паладинов и колдунов
-    # https://totally.fandom.com/wiki/Vigil_of_Enlightenment
-    # https://totally.fandom.com/wiki/Underside -- слияние с тенью другого 1 час.
-    # https://totally.fandom.com/wiki/Transposition -- обмен местами с целью 30ft
-    # https://totally.fandom.com/wiki/Weapon%27s_Kairos
-    # https://totally.fandom.com/wiki/What%27s_Yours_is_Mine
-    # https://totally.fandom.com/wiki/What%27s_Mine_is_Yours
-    # 3-й круг:
-    # https://totally.fandom.com/wiki/Aetherthread -- на шестерых, потеря скорости, конц.минута
-    # https://totally.fandom.com/wiki/Asphyxiate
-    # https://totally.fandom.com/wiki/Battle_Double -- атаки от двойника до 20ft конц.минута
-    # https://totally.fandom.com/wiki/Beacon_of_the_Deluded
-    # https://totally.fandom.com/wiki/Bind
-    # https://totally.fandom.com/wiki/Blackened_Heart -- 10d6 ядом, если убит 10ft радиус взрыва.
-    # https://totally.fandom.com/wiki/Charged_Touch -- 8d6 молний, ответка на удар вблизи, минута.
-    # https://totally.fandom.com/wiki/Creeping_Dark -- облик тени до атаки на 4d6 force, минута.
-    # https://totally.fandom.com/wiki/Detect_Interference -- распознание заклинаний 300ft.
-    # https://totally.fandom.com/wiki/Eldritch_Barrier -- сопротивление psychic,force, 1d8 ответка реакцией.
-    # https://totally.fandom.com/wiki/Electromagnetic_Storm
-    # https://totally.fandom.com/wiki/Fox%27s_Fangs -- 9 атак на 2d6 psychic, 60ft, лечит 3hp.
-    # https://totally.fandom.com/wiki/Fracture_Spirit
-    # https://totally.fandom.com/wiki/Frost_Shards -- Full_Cover, действием 5 атак по 3d10 урона, 30ft.
-    # https://totally.fandom.com/wiki/Glass_House
-    # https://totally.fandom.com/wiki/Grappleground
-    # https://totally.fandom.com/wiki/Hornet_Wall -- 40×10×5ft на 120ft 6d6 ядом, паралич, Спас.Тел, конц.минута.
-    # https://totally.fandom.com/wiki/Implant_Phobia
-    # https://totally.fandom.com/wiki/Link_Perception -- кукла-вуду как наблюдатель, конц.10минут
-    # https://totally.fandom.com/wiki/Material_Transport -- 5d6+15 force, 60ft, слияние объектов.
-    # https://totally.fandom.com/wiki/Protection_from_Pressure
-    # https://totally.fandom.com/wiki/Ravenous_Solitude
-    # https://totally.fandom.com/wiki/Reshape_Metal -- лепка металла без нагрева, касанием.
-    # https://totally.fandom.com/wiki/Rose_Gate -- сопротивление урону на 6 друзей, 60ft, раунд.
-    # https://totally.fandom.com/wiki/Royal_Death_Decree -- 6d8 psychic, 30ft конус, 1/2 урона если падёт ниц.
-    # https://totally.fandom.com/wiki/Serpent%27s_Bite -- клыки, 3d8 ядом, бонусным действием, конц.минута
-    # https://totally.fandom.com/wiki/Shadow_Toxin -- 3d8 психике, провал магии поддержки, 60ft, Спас.Инт, минута.
-    # https://totally.fandom.com/wiki/Skewering_Vine -- 3d10 piercing действием, 30ft, конц.минута
-    # https://totally.fandom.com/wiki/Smart_Arrow -- атаки вне поля зрения, бонусным действием, конц.раунд.
-    # https://totally.fandom.com/wiki/Snakemake
-    # https://totally.fandom.com/wiki/Spellsteal*
-    # https://totally.fandom.com/wiki/Steps_of_a_Tower -- метки сенсоры, конц.час
-    # https://totally.fandom.com/wiki/Unfasten -- расстёгивание застёжек, 120ft, 10×10ft, -2 AC брони.
-    # https://totally.fandom.com/wiki/Urie%27s_Warped_Space
-    # 4-й круг:
-    # https://totally.fandom.com/wiki/Ashen_Pack -- 3 огневолка, действием 4d10 fire, 30ft, конц.10минут
-    # https://totally.fandom.com/wiki/Bonded_String
-    # https://totally.fandom.com/wiki/Cage_of_Briars -- клетка из шиповника, 10×10ft 10AC 200hp.
-    # https://totally.fandom.com/wiki/Call_Treant_Spirit -- оживляет дерево, 15AC 50hp 2 атаки 3d6+3
-    # https://totally.fandom.com/wiki/Circle_of_Scrying -- 250 бит, камера наблюдения.
-    # https://totally.fandom.com/wiki/Crimson_Cloak -- плащ накапливает 30hp крови и даёт сопротивление.
-    # https://totally.fandom.com/wiki/Dark_Empowerment -- +1d8 урона, ×2 мод.магии Heroism, конц.минута.
-    # https://totally.fandom.com/wiki/Deadly_Doorway -- вариант Glyph_of_Warding, касанием, час действия.
-    # https://totally.fandom.com/wiki/Forest_Home -- убеище 15×15ft на 12 часов.
-    # https://totally.fandom.com/wiki/Greatapple
-    # https://totally.fandom.com/wiki/Haunt -- преследование телепортами, конц.час
-    # https://totally.fandom.com/wiki/Ice_Block
-    # https://totally.fandom.com/wiki/Invitation -- вынуждает цель прибыт к кастеру, миля, конц.час
-    # https://totally.fandom.com/wiki/Profane_Link -- касание на помеченную нежить издали, 24 часа
-    # https://totally.fandom.com/wiki/Purifying_Bath -- 100 бит каст лечения/защиты через куклу вуду.
-    # https://totally.fandom.com/wiki/Shadow_Refuge
-    # https://totally.fandom.com/wiki/Sleepwalking -- контроль спящего, 1 миля, конц.час
-    # https://totally.fandom.com/wiki/Twig_Torture
-    # https://totally.fandom.com/wiki/Unspoken_Agreement -- передача действия союзнику.
-    # https://totally.fandom.com/wiki/Windblade -- 8d8 slashing, 30ft конус.
-    # 5-й круг:
-    # https://totally.fandom.com/wiki/Amelia%27s_Painted_Tie -- урон цели в лечение другого, 1 раунд.
-    # https://totally.fandom.com/wiki/Birds_of_a_Fire -- огромный скоростной Flaming_Sphere
-    # https://totally.fandom.com/wiki/Cloak_of_Serpents -- +2 AC, касанием 6d6 ядом, конц.минута
-    # https://totally.fandom.com/wiki/Create_Chimera -- 1000 бит, сливает два существа за 8 часов.
-    # https://totally.fandom.com/wiki/Death_Chains
-    # https://totally.fandom.com/wiki/Death_Spores -- эпидемия, 6d6 ядом, 30ft конус, заражение касанием.
-    # https://totally.fandom.com/wiki/Earth_Shift -- телепорт через землю, 300ft.
-    # https://totally.fandom.com/wiki/Falling_Star -- 6d6 radiance, 40ft радиус, 600ft.
-    # https://totally.fandom.com/wiki/Fell_Onslaught -- телепорт атак на цель, +2d10 force, минута.
-    # https://totally.fandom.com/wiki/Field_of_Chains
-    # https://totally.fandom.com/wiki/Foggy_Flying_Carpet -- ковёр-самолёт, speed 40ft, <1000lb, конц.час
-    # https://totally.fandom.com/wiki/Forgotten_Pain -- 4d6 бонусным действием, Спас.Харизмы, конц.минута
-    # https://totally.fandom.com/wiki/Hungering_Hate
-    # https://totally.fandom.com/wiki/Nemesis
-    # https://totally.fandom.com/wiki/Overwhelming_Emotion
-    # https://totally.fandom.com/wiki/Palant%C3%ADr%27s_Inverse_Eye -- Counter-Scrying, действием 5d6 force.
-    # https://totally.fandom.com/wiki/Phoenix_Rising -- превращение в феникса, конц.час
-    # https://totally.fandom.com/wiki/Rainbow_Staff
-    # https://totally.fandom.com/wiki/Shadow_World
-    # https://totally.fandom.com/wiki/Shroud_of_Surok -- темнота в радиусе 600ft.
-    # https://totally.fandom.com/wiki/Spirit_Doll
-    # https://totally.fandom.com/wiki/Storm%27s_Eye -- сверхчувства, реакцией помеха ловкости врагу, конц.минута.
-    # https://totally.fandom.com/wiki/True_Shield -- Shield на 10 AC + 0 урона при Спас.Ловкости.
-    # https://totally.fandom.com/wiki/Unstoppable_Ascent -- касанием, телепорт цели на 150ft вверх.
-    # https://totally.fandom.com/wiki/Walk_of_Ungoliant
-    # https://totally.fandom.com/wiki/Whisper_Wind -- подслушивание цели на 8 часов.
-    # https://totally.fandom.com/wiki/White_Ice -- ледяная форма, хэлегдин, конц.10минут
-    # https://totally.fandom.com/wiki/Wings_of_Night -- полёт 60ft, 6d10 psychic на 30ft, конц.час
-    # 6-й круг:
-    # https://totally.fandom.com/wiki/All_the_Lights_are_Souls -- 120ft радиус, 5d6 radiant или 5d6 temp.hp.
-    # https://totally.fandom.com/wiki/Blood_Cartography
-    # https://totally.fandom.com/wiki/Chrysalis -- касанием, long_rest в коконе за 1 час.
-    # https://totally.fandom.com/wiki/Dust_of_Death -- песок в яд на 6d6, час действия.
-    # https://totally.fandom.com/wiki/Extract_Life -- жертвоприношение, защита от старения.
-    # https://totally.fandom.com/wiki/Eyes_of_Six -- отражение первой атаки от 6 разных целей, 10 минут.
-    # https://totally.fandom.com/wiki/Fiery_Constrictor -- действием 6d6 fire, оплетает, конц.минута.
-    # https://totally.fandom.com/wiki/Healing_Draught -- супер-лечение, 10d6, на троих.
-    # https://totally.fandom.com/wiki/Hellish_Halo -- 10ft аура, 5d10 огнём в 5d10 temp.hp мага, минута
-    # https://totally.fandom.com/wiki/Lightning_Wheel
-    # https://totally.fandom.com/wiki/Lost_Wanderer -- лишает способности находить путь на 24 часа.
-    # https://totally.fandom.com/wiki/Merge_into_Art -- слияние с рисунком на холсте, конч.час
-    # https://totally.fandom.com/wiki/Nature%27s_Support -- поглощает 10 урона от каждой атаки, конц.минута.
-    # 7-й круг:
-    # https://totally.fandom.com/wiki/List_of_Homebrew_Spells#7th_Level
-    # https://totally.fandom.com/wiki/Bound_Hearts -- двое знают локацию друг друга, год действия.
-    # https://totally.fandom.com/wiki/Charismatic_Shield -- Мод.Харизмы к AC. Спас.Мудрости для атаки. конц.10мин
-    # https://totally.fandom.com/wiki/Cruel_Wind -- 300ft конус, 6d6 холодом, конц.минута.
-    # https://totally.fandom.com/wiki/Deep_Freeze -- касание, 3d8 холодом, окаменение, конц.минута.
-    # https://totally.fandom.com/wiki/Divine_Disconnection -- запрет жреческих заклинаний, минута.
-    # https://totally.fandom.com/wiki/Electrical_Storm -- 12d8 молнией, 100ft радиус.
-    # https://totally.fandom.com/wiki/Establish_Foundation -- поднимает 60×60 фундамент для здания.
-    # https://totally.fandom.com/wiki/Feebleform -- ослабляет Силу и Выносливость до 1. Спас в 30 дней.
-    # https://totally.fandom.com/wiki/Disable
-    # https://totally.fandom.com/wiki/Maegis -- сопротивление всему, действием 6d12 force, конц.час.
-    # https://totally.fandom.com/wiki/Mark_of_Exile -- запрет приближаться к локации, постоянный.
-    # https://totally.fandom.com/wiki/Otherwordly_Lair
-    # https://totally.fandom.com/wiki/Spreading_Nightmare
-    # https://totally.fandom.com/wiki/Volley_Spell -- реакцией отражает заклинание при успехе спаса, 8 часов.
-    # 8-й круг:
-    # https://totally.fandom.com/wiki/Raise_Shipwreck
-    # https://totally.fandom.com/wiki/Soul_in_the_Mirror
-    # https://totally.fandom.com/wiki/Spirit_Disk -- действием 10d10 force, конц.минута
-    # https://totally.fandom.com/wiki/Undertow -- телепорт цели на глубину океана, конц.минута
-    # 9-й круг:
-    # https://totally.fandom.com/wiki/Annihilate_Soul -- 8d6+50 necrotic, переносит душу в 2d6 существ на 10-миль
-    # https://totally.fandom.com/wiki/Crag_Warrior -- каменный голем, конц.минута. 
-    # https://totally.fandom.com/wiki/Curse_of_the_Ancient_Mariner
-    # https://totally.fandom.com/wiki/Delusion_of_Fear
-    # https://totally.fandom.com/wiki/Divine_Inspiration -- преимущество друзьям в 100ft, конц.минута
-    # https://totally.fandom.com/wiki/Eldritch_Grapple
-    # https://totally.fandom.com/wiki/End_of_Days
-    # https://totally.fandom.com/wiki/Hide_the_Soul -- 500 бит перенос души в животное.
-    # https://totally.fandom.com/wiki/Jaina%27s_Flying_Ship
-    # https://totally.fandom.com/wiki/Phoenix_Cloak -- 500 бит, эффект Raise_Dead на шестерых, час действия.
-    # https://totally.fandom.com/wiki/Pocket_Paradise
-    # https://totally.fandom.com/wiki/Quicken_Assassin -- 50k бит, касанием, 4 часа каста, клон-убийца.
-    # https://totally.fandom.com/wiki/Ravaging_Fire
-    # https://totally.fandom.com/wiki/Rimeshatter
-    # https://totally.fandom.com/wiki/Storm_of_Vitriol
-    # https://totally.fandom.com/wiki/Sun_Rises
-    # https://totally.fandom.com/wiki/Touch_Infinity
-    # https://totally.fandom.com/wiki/Wrack_the_Mind
-    # 10-й круг:
-    # https://totally.fandom.com/wiki/Armageddon -- 30d10 урона, на 5 миль 1-миля радиус, час каста.
-    # https://totally.fandom.com/wiki/Creation%27s_Fury -- землетрясение, 1-миля радиус, 10 минут каста.
-# Заклинания DnD 5e:
     # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Homebrew_spells
-    # Cantrips:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Daunt -- -1d4 атаки реакцией.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Dark_Lightning -- 1d10 урон, меняет молнии.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Fling_Needles -- 2d4 еловыми, помеха концентрации.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Shell -- концентрация, 5hp щит, 1d6 урон.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Waive -- 5hp щит реакцией от стрел.
-    # 1-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Raptor_Spirit -- атака 2d4 с ослеплением или БПЛА
-    # 2-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Disintegrating_Shield -- разрушает стрелы 3d6
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Quicksand -- зыбучие пески.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Seeker%E2%80%99s_Mark -- подсветка цели.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ward_Sphere -- 15hp щит, сопрот.оружию.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Improvised_Mount -- ездовое из мыши.
-    # 3-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Mimic -- маскировка под предмет.
-    # 4-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Aerokinesis -- халявные Catapult, минута.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Aquakinesis
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Geokinesis
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Pyrokinesis -- халявные Aganazzar, минута.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Concealment -- преимущество связанному заклинанию.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Greater_Ward_Sphere
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Refraction
-    # 5-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Circle_of_Life -- выталкивает нежить с 6d6 урона.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Marked_for_Doom -- 1d6 урона на каждом броске d20
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Peace -- 50ft спас мудрости или мир со всеми.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Perforation_Beam -- 1d4 урона, конц.минута.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Quasar -- 1000ft 10d10 излучением.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Reminiscence -- чтение памяти, минута.
-    # 6-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Blasphemous_Appeal -- Wish с последствиями.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Cloak -- 20ft, 10 мин, защита от Divination.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Power_Word_Sleep
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Investiture_of_Storms
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Puppet_Mastery -- до 10 существ в марионетки.
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Unmaking -- предметы в ресурсы
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Waterways -- водный телепорт на 100 миль.
-    # 7-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Leviathan
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ride_the_Lightning
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ring_of_Swords
-    # 8-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ravenous_Shadows
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Skylash
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Terraform
-    # 9-й круг:
-    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Suncall
 
 #----
 # Распределение стоимости заклинаний
@@ -488,6 +148,19 @@
 
 #----
 # Герои (ячейки заклинаний) (волшебники)
+# Классы DnD 5e:
+    # https://www.dandwiki.com/wiki/5e_Classes
+    # https://www.dandwiki.com/wiki/5e_Commoner_Classes
+    # https://www.dandwiki.com/wiki/Farmer_(5e_Class)
+    # https://www.dandwiki.com/wiki/Lumberjack_(5e_Class)
+    # https://www.dandwiki.com/wiki/Common_Caster_(5e_Class) -- до 5 круга
+    # https://www.dandwiki.com/wiki/Combat_Butler_(5e_Class) -- телохранитель
+    # https://www.dandwiki.com/wiki/Magical_Girl,_Variant_(5e_Class)
+    # https://www.dandwiki.com/wiki/Gentleman,_3rd_Variant_(5e_Class)
+    # https://www.dandwiki.com/wiki/Animated_Blade_(5e_Class) -- левитация оружия.
+    # https://www.dandwiki.com/wiki/Energy_Mage_(5e_Class) -- Mystic попроще.
+    # https://www.dandwiki.com/wiki/Boxer_(5e_Class) -- brawler в стиле ToME
+    # https://www.dandwiki.com/wiki/Cultivator_(5e_Class) -- маго-монах
 
 metadict_detail['-Герои-единороги (волшебники) (1 lvl)'] = {
         # В Эквестрии 10 000 единорогов-волшебников, 5 на 10 000 населения (1/270 взрослых единорогов)
@@ -5593,9 +5266,24 @@ metadict_detail['_+9 lvl (ритуальные заклинания жреца) 
         # - poison -- яд
     # (R) -- ритуал, 10 минут каста без затраты слотов.
     # (C) -- концентрация на заклинании. Одновременно только одна.
+    # TODO: (C) в нотации обозначает концентрацию, а у нас так помечены кантрипы.
 
 #----
 # Заговоры (книга заклинаний, spellbok)
+    # Cantrips:
+    # https://www.dandwiki.com/wiki/Common_Knowledge_(3.5e_Spell)
+    # Cantrips:
+    # https://totally.fandom.com/wiki/Action_Image -- видеозапись
+    # https://totally.fandom.com/wiki/Accelerate
+    # https://totally.fandom.com/wiki/Temporal_Beat
+    # https://totally.fandom.com/wiki/Cheerful_Song
+    # https://totally.fandom.com/wiki/Mercy
+    # Cantrips:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Daunt -- -1d4 атаки реакцией.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Dark_Lightning -- 1d10 урон, меняет молнии.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Fling_Needles -- 2d4 еловыми, помеха концентрации.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Shell -- концентрация, 5hp щит, 1d6 урон.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Waive -- 5hp щит реакцией от стрел.
 
 metadict_detail['_++0 lvl (C) Указание (0 lvl Guidance)'] = {
         # * "Указание" (Guidance) [Div|-|-] (C) — касание, действием, минута концентрации. Даёт +1d4 к одной из проверок характеристик. На выбор. После выбора заклинание завершается. Пожалуй, это обязательный кантрип для любого жреца, ведь проверок характеристик море, да и проверки навыков относятся к ним. Скрытность и взлом замков, выслеживание и кулинария, выбивание дверей и состязание борцов. Захваты и сбивание с ног часто используются в бою, поэтому, подчас, "Указание" может быть эффективнее, чем боевой кантрип.
@@ -5961,6 +5649,36 @@ metadict_detail['_++0 lvl (C) Ударная волна (0 lvl Shock_Wave)'] = {
 
 #----
 # Заклинания 1 круга
+    # 1-й круг:
+    # https://www.dandwiki.com/wiki/Bloodsense_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Free_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Attract_Undead_(3.5e_Spell)
+    # 1-й круг:
+    # https://totally.fandom.com/wiki/Arcane_Ablation -- вариант False_Life/Ward
+    # https://totally.fandom.com/wiki/Angelic_Feather -- даёт Dash/Disengage троим
+    # https://totally.fandom.com/wiki/Aerosphere -- пегасий вариант Flaming_Sphere
+    # https://totally.fandom.com/wiki/Boomerang_Sigil -- самонаводящийся шарик.
+    # https://totally.fandom.com/wiki/Cloth_of_Honorable_Melee -- отражение стрел +2 AC на минуту.
+    # https://totally.fandom.com/wiki/Doubleblade -- атака на 10ft, игнорит Shield бонусным действием.
+    # https://totally.fandom.com/wiki/Ironbinds -- 3d6 урона и потеря движения на ход.
+    # https://totally.fandom.com/wiki/Know_the_Mark -- метка куклой вуду.
+    # https://totally.fandom.com/wiki/Hunter%27s_Pace -- концентрация на атлетике.
+    # https://totally.fandom.com/wiki/Lantern_Walker -- ходячая камера, радиус миля, 1 час.
+    # https://totally.fandom.com/wiki/Malice_of_Arachia
+    # https://totally.fandom.com/wiki/Spider%27s_Kiss
+    # https://totally.fandom.com/wiki/Fall
+    # https://totally.fandom.com/wiki/Masterful_Focus -- один крит 18-20, час концентрации.
+    # https://totally.fandom.com/wiki/Wyvern_Guard
+    # https://totally.fandom.com/wiki/Thrashing_Tether -- Witch_Bolt через друзей
+    # https://totally.fandom.com/wiki/Repentance -- реакцией отменяет атаку, спас Мудрости
+    # https://totally.fandom.com/wiki/Seeking_Projectiles -- мод.атаки заклинания к снаряду. 10 минут.
+    # https://totally.fandom.com/wiki/Mend_Flesh
+    # https://totally.fandom.com/wiki/Wellspring
+    # https://totally.fandom.com/wiki/Starfire -- 2d12 излучением, слепота на раунд.
+    # https://totally.fandom.com/wiki/Pool_of_Fate -- даёт стек 5d6 к атаке/проверкам/спасам, конц.минута
+    # https://totally.fandom.com/wiki/Putrefy_Food_and_Drink
+    # 1-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Raptor_Spirit -- атака 2d4 с ослеплением или БПЛА
 
 metadict_detail['_++1 lvl (S) Безмолвный образ (1 lvl Silent_Image)'] = {
         # * "Безмолвный образ" (Silent_Image) [Ilu|Int|-] — 60 футов, действием, 15-футовый куб, 10 минут концентрации. Зрительная иллюзия. Действием можно переместить на 60 футов, создавая видимость движения. Распознаётся действием, через проверку Интеллекта (Анализ).
@@ -6415,6 +6133,43 @@ metadict_detail['_++1 lvl (R) Церемония (1 lvl Ceremony)'] = {
 
 #----
 # Заклинания 2 круга
+    # 2-й круг:
+    # https://www.dandwiki.com/wiki/Summon_Guided_Anvil_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Dark_Symmetry_(3.5e_Spell)
+    # 2-й круг:
+    # https://totally.fandom.com/wiki/Accursed_Wish -- эффект заклинания 1 круга.
+    # https://totally.fandom.com/wiki/Blindfold -- ослепление через куклу вуду на день.
+    # https://totally.fandom.com/wiki/Burn_the_Sight -- Darkvision через куклу вуду на 8 часов.
+    # https://totally.fandom.com/wiki/Branch_Assault -- 2d10+5 урона атакует ближайшее дерево.
+    # https://totally.fandom.com/wiki/Bridge_over_Troubled_Water -- 5×30ft мост (R)
+    # https://totally.fandom.com/wiki/Demon_Skin -- мод.волшебства к AC без доспехов.
+    # https://totally.fandom.com/wiki/Dissociative_Edge -- атака оружием на 2d8 30ft линия.
+    # https://totally.fandom.com/wiki/Divine_Star -- лечит-и-атакует 1d6 на 30ft линия.
+    # https://totally.fandom.com/wiki/Devilish_Hunt
+    # https://totally.fandom.com/wiki/Ethereal_Strike -- антипризрак.
+    # https://totally.fandom.com/wiki/Frame -- спаянная с врагом удача.
+    # https://totally.fandom.com/wiki/Juxtapose -- 15ft Mirror_Image на раунд
+    # https://totally.fandom.com/wiki/Leaf_Fall -- листопад (R)
+    # https://totally.fandom.com/wiki/Mind_Flay -- 2d6 психике, помеха атакам, конц.минута
+    # https://totally.fandom.com/wiki/Phantom_Accompaniment -- фантомные музыканты (R)
+    # https://totally.fandom.com/wiki/Regenerate_Plant -- лечит растение 10hp/раунд (R)
+    # https://totally.fandom.com/wiki/Shadow_Armor -- реакцией помеха атакам и 15ft телепорт.
+    # https://totally.fandom.com/wiki/Silver_Spear -- 3d10 урона серебром 30ft (R)
+    # https://totally.fandom.com/wiki/Spell_Flux -- half-cover, реакцией отражает 1 снаряд во врага.
+    # https://totally.fandom.com/wiki/Spirit_Cartographer -- картограф-сенсор с +8 Perception.
+    # https://totally.fandom.com/wiki/Sinister_Threat -- для паладинов и колдунов
+    # https://totally.fandom.com/wiki/Vigil_of_Enlightenment
+    # https://totally.fandom.com/wiki/Underside -- слияние с тенью другого 1 час.
+    # https://totally.fandom.com/wiki/Transposition -- обмен местами с целью 30ft
+    # https://totally.fandom.com/wiki/Weapon%27s_Kairos
+    # https://totally.fandom.com/wiki/What%27s_Yours_is_Mine
+    # https://totally.fandom.com/wiki/What%27s_Mine_is_Yours
+    # 2-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Disintegrating_Shield -- разрушает стрелы 3d6
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Quicksand -- зыбучие пески.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Seeker%E2%80%99s_Mark -- подсветка цели.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ward_Sphere -- 15hp щит, сопрот.оружию.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Improvised_Mount -- ездовое из мыши.
 
 metadict_detail['_++2 lvl (S) Область истины (2 lvl Zone_of_Truth)'] = {
         # * !!! "Область истины" (Zone_of_Truth) [Enc|Cha|-] — 60 футов, действием, 15-футовая сфера, 10 минут действия. Запрещает умышленно лгать, спасбросок харизмы. Предупреждает жреца, если субъект прошёл спасбросок. Glibness обходит заклинание, показывая всё сказанное правдой, а Mind_Blank не даёт жрецу узнать, успешен спасбросок или провален. Но это заклинания высоких уровней, а обычные люди могут выкручиваться только, смешно сказать, верой. Если ты веришь, что сказанное правда, то и заклинание считает это правдой. Homebrew: жрец не узнаёт, прошёл ли говорящий спасбросок харизмы, он может только надеяться, что не прошёл, либо спросить своего покровителя через "Общение" (Commune).
@@ -6786,6 +6541,51 @@ metadict_detail['_++2 lvl (S) Порыв ветра (2 lvl Gust_of_Wind)'] = {
 
 #----
 # Заклинания 3 круга
+    # 3-№ круг:
+    # https://www.dandwiki.com/wiki/Force_Binding_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Nondimensional_Pocket_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Sixth_Sense_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Microwave_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Bifronse%27s_Pale_Tendrils_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Return_Form_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Transfer_Enchantment_(3.5e_Spell)
+    # 3-й круг:
+    # https://totally.fandom.com/wiki/Aetherthread -- на шестерых, потеря скорости, конц.минута
+    # https://totally.fandom.com/wiki/Asphyxiate
+    # https://totally.fandom.com/wiki/Battle_Double -- атаки от двойника до 20ft конц.минута
+    # https://totally.fandom.com/wiki/Beacon_of_the_Deluded
+    # https://totally.fandom.com/wiki/Bind
+    # https://totally.fandom.com/wiki/Blackened_Heart -- 10d6 ядом, если убит 10ft радиус взрыва.
+    # https://totally.fandom.com/wiki/Charged_Touch -- 8d6 молний, ответка на удар вблизи, минута.
+    # https://totally.fandom.com/wiki/Creeping_Dark -- облик тени до атаки на 4d6 force, минута.
+    # https://totally.fandom.com/wiki/Detect_Interference -- распознание заклинаний 300ft.
+    # https://totally.fandom.com/wiki/Eldritch_Barrier -- сопротивление psychic,force, 1d8 ответка реакцией.
+    # https://totally.fandom.com/wiki/Electromagnetic_Storm
+    # https://totally.fandom.com/wiki/Fox%27s_Fangs -- 9 атак на 2d6 psychic, 60ft, лечит 3hp.
+    # https://totally.fandom.com/wiki/Fracture_Spirit
+    # https://totally.fandom.com/wiki/Frost_Shards -- Full_Cover, действием 5 атак по 3d10 урона, 30ft.
+    # https://totally.fandom.com/wiki/Glass_House
+    # https://totally.fandom.com/wiki/Grappleground
+    # https://totally.fandom.com/wiki/Hornet_Wall -- 40×10×5ft на 120ft 6d6 ядом, паралич, Спас.Тел, конц.минута.
+    # https://totally.fandom.com/wiki/Implant_Phobia
+    # https://totally.fandom.com/wiki/Link_Perception -- кукла-вуду как наблюдатель, конц.10минут
+    # https://totally.fandom.com/wiki/Material_Transport -- 5d6+15 force, 60ft, слияние объектов.
+    # https://totally.fandom.com/wiki/Protection_from_Pressure
+    # https://totally.fandom.com/wiki/Ravenous_Solitude
+    # https://totally.fandom.com/wiki/Reshape_Metal -- лепка металла без нагрева, касанием.
+    # https://totally.fandom.com/wiki/Rose_Gate -- сопротивление урону на 6 друзей, 60ft, раунд.
+    # https://totally.fandom.com/wiki/Royal_Death_Decree -- 6d8 psychic, 30ft конус, 1/2 урона если падёт ниц.
+    # https://totally.fandom.com/wiki/Serpent%27s_Bite -- клыки, 3d8 ядом, бонусным действием, конц.минута
+    # https://totally.fandom.com/wiki/Shadow_Toxin -- 3d8 психике, провал магии поддержки, 60ft, Спас.Инт, минута.
+    # https://totally.fandom.com/wiki/Skewering_Vine -- 3d10 piercing действием, 30ft, конц.минута
+    # https://totally.fandom.com/wiki/Smart_Arrow -- атаки вне поля зрения, бонусным действием, конц.раунд.
+    # https://totally.fandom.com/wiki/Snakemake
+    # https://totally.fandom.com/wiki/Spellsteal*
+    # https://totally.fandom.com/wiki/Steps_of_a_Tower -- метки сенсоры, конц.час
+    # https://totally.fandom.com/wiki/Unfasten -- расстёгивание застёжек, 120ft, 10×10ft, -2 AC брони.
+    # https://totally.fandom.com/wiki/Urie%27s_Warped_Space
+    # 3-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Mimic -- маскировка под предмет.
 
 metadict_detail['_++3 lvl (S) Газообразная форма (3 lvl Gaseous_Form)'] = {
         # TODO: допиливай третий круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
@@ -7004,6 +6804,43 @@ metadict_detail['_++3 lvl (S) Хождение по воде (3 lvl Water_Walk)'
 
 #----
 # Заклинания 4 круга
+    # 4-й круг:
+    # https://www.dandwiki.com/wiki/Spell_Barrier_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Tempest_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Forbidden_Line_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Peephole_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Channeled_Lightning_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Corrupt_Soul_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Entombed_in_Amber_(3.5e_Spell)
+    # 4-й круг:
+    # https://totally.fandom.com/wiki/Ashen_Pack -- 3 огневолка, действием 4d10 fire, 30ft, конц.10минут
+    # https://totally.fandom.com/wiki/Bonded_String
+    # https://totally.fandom.com/wiki/Cage_of_Briars -- клетка из шиповника, 10×10ft 10AC 200hp.
+    # https://totally.fandom.com/wiki/Call_Treant_Spirit -- оживляет дерево, 15AC 50hp 2 атаки 3d6+3
+    # https://totally.fandom.com/wiki/Circle_of_Scrying -- 250 бит, камера наблюдения.
+    # https://totally.fandom.com/wiki/Crimson_Cloak -- плащ накапливает 30hp крови и даёт сопротивление.
+    # https://totally.fandom.com/wiki/Dark_Empowerment -- +1d8 урона, ×2 мод.магии Heroism, конц.минута.
+    # https://totally.fandom.com/wiki/Deadly_Doorway -- вариант Glyph_of_Warding, касанием, час действия.
+    # https://totally.fandom.com/wiki/Forest_Home -- убеище 15×15ft на 12 часов.
+    # https://totally.fandom.com/wiki/Greatapple
+    # https://totally.fandom.com/wiki/Haunt -- преследование телепортами, конц.час
+    # https://totally.fandom.com/wiki/Ice_Block
+    # https://totally.fandom.com/wiki/Invitation -- вынуждает цель прибыт к кастеру, миля, конц.час
+    # https://totally.fandom.com/wiki/Profane_Link -- касание на помеченную нежить издали, 24 часа
+    # https://totally.fandom.com/wiki/Purifying_Bath -- 100 бит каст лечения/защиты через куклу вуду.
+    # https://totally.fandom.com/wiki/Shadow_Refuge
+    # https://totally.fandom.com/wiki/Sleepwalking -- контроль спящего, 1 миля, конц.час
+    # https://totally.fandom.com/wiki/Twig_Torture
+    # https://totally.fandom.com/wiki/Unspoken_Agreement -- передача действия союзнику.
+    # https://totally.fandom.com/wiki/Windblade -- 8d8 slashing, 30ft конус.
+    # 4-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Aerokinesis -- халявные Catapult, минута.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Aquakinesis
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Geokinesis
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Pyrokinesis -- халявные Aganazzar, минута.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Concealment -- преимущество связанному заклинанию.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Greater_Ward_Sphere
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Refraction
 
 metadict_detail['_++4 lvl (R) Послание через зеркало (4 lvl Mirror_Sending)'] = {
         # TODO: допиливай четвёртый круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
@@ -7175,6 +7012,48 @@ metadict_detail['_++4 lvl (S) Каменная кожа (4 lvl Stoneskin)'] = {
 
 #----
 # Заклинания 5 круга
+    # 5-й круг:
+    # https://www.dandwiki.com/wiki/Exorcise_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/DandeLions_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Know_Death_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Misspell_(3.5e_Spell) -- Funny Counterspell
+    # https://www.dandwiki.com/wiki/Vampiric_Transformation_Ritual_(3.5e_Spell)
+    # 5-й круг:
+    # https://totally.fandom.com/wiki/Amelia%27s_Painted_Tie -- урон цели в лечение другого, 1 раунд.
+    # https://totally.fandom.com/wiki/Birds_of_a_Fire -- огромный скоростной Flaming_Sphere
+    # https://totally.fandom.com/wiki/Cloak_of_Serpents -- +2 AC, касанием 6d6 ядом, конц.минута
+    # https://totally.fandom.com/wiki/Create_Chimera -- 1000 бит, сливает два существа за 8 часов.
+    # https://totally.fandom.com/wiki/Death_Chains
+    # https://totally.fandom.com/wiki/Death_Spores -- эпидемия, 6d6 ядом, 30ft конус, заражение касанием.
+    # https://totally.fandom.com/wiki/Earth_Shift -- телепорт через землю, 300ft.
+    # https://totally.fandom.com/wiki/Falling_Star -- 6d6 radiance, 40ft радиус, 600ft.
+    # https://totally.fandom.com/wiki/Fell_Onslaught -- телепорт атак на цель, +2d10 force, минута.
+    # https://totally.fandom.com/wiki/Field_of_Chains
+    # https://totally.fandom.com/wiki/Foggy_Flying_Carpet -- ковёр-самолёт, speed 40ft, <1000lb, конц.час
+    # https://totally.fandom.com/wiki/Forgotten_Pain -- 4d6 бонусным действием, Спас.Харизмы, конц.минута
+    # https://totally.fandom.com/wiki/Hungering_Hate
+    # https://totally.fandom.com/wiki/Nemesis
+    # https://totally.fandom.com/wiki/Overwhelming_Emotion
+    # https://totally.fandom.com/wiki/Palant%C3%ADr%27s_Inverse_Eye -- Counter-Scrying, действием 5d6 force.
+    # https://totally.fandom.com/wiki/Phoenix_Rising -- превращение в феникса, конц.час
+    # https://totally.fandom.com/wiki/Rainbow_Staff
+    # https://totally.fandom.com/wiki/Shadow_World
+    # https://totally.fandom.com/wiki/Shroud_of_Surok -- темнота в радиусе 600ft.
+    # https://totally.fandom.com/wiki/Spirit_Doll
+    # https://totally.fandom.com/wiki/Storm%27s_Eye -- сверхчувства, реакцией помеха ловкости врагу, конц.минута.
+    # https://totally.fandom.com/wiki/True_Shield -- Shield на 10 AC + 0 урона при Спас.Ловкости.
+    # https://totally.fandom.com/wiki/Unstoppable_Ascent -- касанием, телепорт цели на 150ft вверх.
+    # https://totally.fandom.com/wiki/Walk_of_Ungoliant
+    # https://totally.fandom.com/wiki/Whisper_Wind -- подслушивание цели на 8 часов.
+    # https://totally.fandom.com/wiki/White_Ice -- ледяная форма, хэлегдин, конц.10минут
+    # https://totally.fandom.com/wiki/Wings_of_Night -- полёт 60ft, 6d10 psychic на 30ft, конц.час
+    # 5-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Circle_of_Life -- выталкивает нежить с 6d6 урона.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Marked_for_Doom -- 1d6 урона на каждом броске d20
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Peace -- 50ft спас мудрости или мир со всеми.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Perforation_Beam -- 1d4 урона, конц.минута.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Quasar -- 1000ft 10d10 излучением.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Reminiscence -- чтение памяти, минута.
 
 metadict_detail['_++5 lvl (R) Астрология (5 lvl Astromancy)'] = {
         # TODO: допиливай пятый круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
@@ -7329,6 +7208,39 @@ metadict_detail['_++5 lvl (S) Усиление навыка (5 lvl Skill_Empower
 
 #----
 # Заклинания 6 круга
+    # 6-й круг:
+    # https://www.dandwiki.com/wiki/Wind_Shield_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Elemental_Parasite_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Fatal_Attraction_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Warp_Door_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Memory_Manipulation_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Danzig%27s_Radiant_Stream_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Double_Shift_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Mark_of_the_Lich_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Armor_of_Flesh_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Molecular_Combustion_(3.5e_Spell)
+    # 6-й круг:
+    # https://totally.fandom.com/wiki/All_the_Lights_are_Souls -- 120ft радиус, 5d6 radiant или 5d6 temp.hp.
+    # https://totally.fandom.com/wiki/Blood_Cartography
+    # https://totally.fandom.com/wiki/Chrysalis -- касанием, long_rest в коконе за 1 час.
+    # https://totally.fandom.com/wiki/Dust_of_Death -- песок в яд на 6d6, час действия.
+    # https://totally.fandom.com/wiki/Extract_Life -- жертвоприношение, защита от старения.
+    # https://totally.fandom.com/wiki/Eyes_of_Six -- отражение первой атаки от 6 разных целей, 10 минут.
+    # https://totally.fandom.com/wiki/Fiery_Constrictor -- действием 6d6 fire, оплетает, конц.минута.
+    # https://totally.fandom.com/wiki/Healing_Draught -- супер-лечение, 10d6, на троих.
+    # https://totally.fandom.com/wiki/Hellish_Halo -- 10ft аура, 5d10 огнём в 5d10 temp.hp мага, минута
+    # https://totally.fandom.com/wiki/Lightning_Wheel
+    # https://totally.fandom.com/wiki/Lost_Wanderer -- лишает способности находить путь на 24 часа.
+    # https://totally.fandom.com/wiki/Merge_into_Art -- слияние с рисунком на холсте, конч.час
+    # https://totally.fandom.com/wiki/Nature%27s_Support -- поглощает 10 урона от каждой атаки, конц.минута.
+    # 6-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Blasphemous_Appeal -- Wish с последствиями.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Cloak -- 20ft, 10 мин, защита от Divination.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Power_Word_Sleep
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Investiture_of_Storms
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Puppet_Mastery -- до 10 существ в марионетки.
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Unmaking -- предметы в ресурсы
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Waterways -- водный телепорт на 100 миль.
 
 metadict_detail['_++6 lvl (S) Истинное зрение (6 lvl True_Seeing)'] = {
         # TODO: допиливай шестой круг. Возьми из spells.wiki. /sea_tribes/black_flags/docs
@@ -7342,15 +7254,103 @@ metadict_detail['_++6 lvl (S) Слово возврата (6 lvl Word_of_Recall)
 
 #----
 # Заклинания 7 круга
+    # 7-й круг:
+    # https://www.dandwiki.com/wiki/Anti-Teleport_Sphere_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Death_Pact_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Prismatic_Aura_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Tamorak%27s_%27Arrest%27_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Lightning_Vice_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Assuming_The_Role_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Fusion_Dance_(3.5e_Spell)
+    # 7-й круг:
+    # https://totally.fandom.com/wiki/List_of_Homebrew_Spells#7th_Level
+    # https://totally.fandom.com/wiki/Bound_Hearts -- двое знают локацию друг друга, год действия.
+    # https://totally.fandom.com/wiki/Charismatic_Shield -- Мод.Харизмы к AC. Спас.Мудрости для атаки. конц.10мин
+    # https://totally.fandom.com/wiki/Cruel_Wind -- 300ft конус, 6d6 холодом, конц.минута.
+    # https://totally.fandom.com/wiki/Deep_Freeze -- касание, 3d8 холодом, окаменение, конц.минута.
+    # https://totally.fandom.com/wiki/Divine_Disconnection -- запрет жреческих заклинаний, минута.
+    # https://totally.fandom.com/wiki/Electrical_Storm -- 12d8 молнией, 100ft радиус.
+    # https://totally.fandom.com/wiki/Establish_Foundation -- поднимает 60×60 фундамент для здания.
+    # https://totally.fandom.com/wiki/Feebleform -- ослабляет Силу и Выносливость до 1. Спас в 30 дней.
+    # https://totally.fandom.com/wiki/Disable
+    # https://totally.fandom.com/wiki/Maegis -- сопротивление всему, действием 6d12 force, конц.час.
+    # https://totally.fandom.com/wiki/Mark_of_Exile -- запрет приближаться к локации, постоянный.
+    # https://totally.fandom.com/wiki/Otherwordly_Lair
+    # https://totally.fandom.com/wiki/Spreading_Nightmare
+    # https://totally.fandom.com/wiki/Volley_Spell -- реакцией отражает заклинание при успехе спаса, 8 часов.
+    # 7-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Leviathan
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ride_the_Lightning
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ring_of_Swords
 
 metadict_detail['_++7 lvl (S) Эфирность (7 lvl Etherealness)'] = {
         }
 
 #----
 # Заклинания 8 круга
+    # 8-й круг:
+    # https://www.dandwiki.com/wiki/Jess%27_Twin_Portals_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Ion_Blast_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Scream_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Continual_Wounds_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Thorny_Bones_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Dark_Memoirs_(3.5e_Spell) -- полиморф в книгу
+    # https://www.dandwiki.com/wiki/Energy_Subjugation_(3.5e_Spell)
+    # 8-й круг:
+    # https://totally.fandom.com/wiki/Raise_Shipwreck
+    # https://totally.fandom.com/wiki/Soul_in_the_Mirror
+    # https://totally.fandom.com/wiki/Spirit_Disk -- действием 10d10 force, конц.минута
+    # https://totally.fandom.com/wiki/Undertow -- телепорт цели на глубину океана, конц.минута
+    # 8-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Ravenous_Shadows
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Skylash
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Terraform
 
 metadict_detail['_++8 lvl (S) Власть над погодой (8 lvl Control_Weather)'] = {
         }
+
+#----
+# Заклинания 9 круга
+    # 9-й круг:
+    # https://www.dandwiki.com/wiki/Iron_Brand_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Ball_Lightning,_Greater_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Engulfing_Doom_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Ki_Clone_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Mirror_Shadow_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Chain_Death_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Create_Synthetic_Soul_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Living_Arrow_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Soul_Nova_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Age_Reversal_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Antifield_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Awaken_Spell_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Bestow_Sentience_(3.5e_Spell) -- умные големы
+    # https://www.dandwiki.com/wiki/Inherency_(3.5e_Spell) -- передача заклинания
+    # https://www.dandwiki.com/wiki/Phenomenon_Rejection_(3.5e_Spell) -- возврат во времени
+    # 9-й круг:
+    # https://totally.fandom.com/wiki/Annihilate_Soul -- 8d6+50 necrotic, переносит душу в 2d6 существ на 10-миль
+    # https://totally.fandom.com/wiki/Crag_Warrior -- каменный голем, конц.минута.
+    # https://totally.fandom.com/wiki/Curse_of_the_Ancient_Mariner
+    # https://totally.fandom.com/wiki/Delusion_of_Fear
+    # https://totally.fandom.com/wiki/Divine_Inspiration -- преимущество друзьям в 100ft, конц.минута
+    # https://totally.fandom.com/wiki/Eldritch_Grapple
+    # https://totally.fandom.com/wiki/End_of_Days
+    # https://totally.fandom.com/wiki/Hide_the_Soul -- 500 бит перенос души в животное.
+    # https://totally.fandom.com/wiki/Jaina%27s_Flying_Ship
+    # https://totally.fandom.com/wiki/Phoenix_Cloak -- 500 бит, эффект Raise_Dead на шестерых, час действия.
+    # https://totally.fandom.com/wiki/Pocket_Paradise
+    # https://totally.fandom.com/wiki/Quicken_Assassin -- 50k бит, касанием, 4 часа каста, клон-убийца.
+    # https://totally.fandom.com/wiki/Ravaging_Fire
+    # https://totally.fandom.com/wiki/Rimeshatter
+    # https://totally.fandom.com/wiki/Storm_of_Vitriol
+    # https://totally.fandom.com/wiki/Sun_Rises
+    # https://totally.fandom.com/wiki/Touch_Infinity
+    # https://totally.fandom.com/wiki/Wrack_the_Mind
+    # 9-й круг:
+    # https://heroes-of-erissan-dnd5e-homebrew.fandom.com/wiki/Suncall
+    # 10-й круг:
+    # https://totally.fandom.com/wiki/Armageddon -- 30d10 урона, на 5 миль 1-миля радиус, час каста.
+    # https://totally.fandom.com/wiki/Creation%27s_Fury -- землетрясение, 1-миля радиус, 10 минут каста.
 
 #----
 # Заклинания (применение)
