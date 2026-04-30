@@ -1420,7 +1420,7 @@ metadict_detail['|?Волшебный предмет Common (воин)'] = {
             # Кираса 1650-х -- 0.2t пшеницы, 7.5 бит
         '|Оружие холодное +Common, глефа молний, руна (0 lvl Shocking_Grasp)':0.2,
         '|Оружие холодное +Common, лассо молний, руна (0 lvl Lightning_Lure)':0.2,
-        '|Оружие огнестрельное +Common, револьвер с целеискателем, руна (0 lvl True_Strike)':0.2,
+        '|Оружие огнестрельное +Common, револьвер с целеискателем, руна (1 lvl Targeting_Ray)':0.2,
         '|Одежда +Common, форма гвардии, руна (1 lvl Armor_of_Agathys)':0.4,
         }
 
@@ -1481,7 +1481,7 @@ metadict_detail['|?Волшебный предмет Common (сокровище)
             # Китай (1558-1600 годы) -- рис 5-8.4 лян/тонна, бобы 6.3 лян/тонна, мушкет 2.31-3.83 лян
         # Мануфактуры: 0.05 = 34k = 1700 в год = 8.5 в день (340 часов, 43 мастеров, 213k бит/год)
             # - зачарованные патроны пачками по 100 штук, 125 бит/пачка, 1.25 бит/патрон.
-        '|Оружие огнестрельное Common, винтовка с целеискателем, руна (0 lvl True_Strike)':0.01,
+        '|Оружие огнестрельное Common, винтовка с целеискателем, руна (1 lvl Targeting_Ray)':0.01,
         '|Оружие огнестрельное Common, снаряды, энерго-трассеры, руна (0 lvl Eldritch_Blast)':0.04,
         '|Оружие огнестрельное Common, снаряды, светошумовые, руна (0 lvl Thunderclap)':0.03,
         '|Оружие огнестрельное Common, снаряды, анти-призрак, ритуал (1 lvl Ceremony)':0.02,
@@ -1503,7 +1503,7 @@ metadict_detail['|?Волшебный предмет Common (сокровище)
             # - Mage_Armor
             # - Shield
         # Фабрики: 0.1 = 220k = 11k в год = 55 в день (2200 часов, 275 мастеров, 1.4M бит/год)
-        '|Одежда Common, защитная, руна (0 lvl Minor_Ward)':0.2,
+        '|Одежда Common, защитная, руна (0 lvl Resistance)':0.2,
         '|Одежда Common, защитная, руна (1 lvl Mage_Armor)':0.1,
         '|Экипировка Common, радиосвязь, руна (0 lvl Message)':0.2,
         '|Экипировка Common, флейта иллюзий, руна (0 lvl Minor_Illusion)':0.1,
@@ -1580,7 +1580,7 @@ metadict_detail['|?Волшебный предмет Common (лекарства)
         '|Лекарства Common, лечебное зелье (1 lvl Cure_Wounds)':0.2,
         '|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)':0.3,
         '|Лекарства Common, обезболивающее зелье (1 lvl False_Life)':0.1,
-        '|Лекарства Common, антидот зелье (0 lvl Delay_Poison)':0.1,
+        '|Лекарства Common, антидот зелье (1 lvl Delay_Poison)':0.1,
         '|Лекарства Common, снотворное зелье (1 lvl Sleep)':0.1,
         }
 
@@ -1594,7 +1594,7 @@ metadict_detail['|?Волшебный предмет Common (лекарства)
         '|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)':0.2,
         '|Лекарства Common, обезболивающее зелье (1 lvl False_Life)':0.1,
         '|Лекарства Common, стимулирующее зелье (1 lvl Longstrider)':0.1,
-        '|Лекарства Common, антидот зелье (0 lvl Delay_Poison)':0.1,
+        '|Лекарства Common, антидот зелье (1 lvl Delay_Poison)':0.1,
         '|Лекарства Common, снотворное зелье (1 lvl Sleep)':0.2,
         }
 
@@ -1604,7 +1604,7 @@ metadict_detail['|?Волшебный предмет Common (лекарства)
         '|Лекарства Common, лечебное зелье (1 lvl Cure_Wounds)':0.2,
         '|Лекарства Common, восстанавливающее зелье (1 lvl Goodberry)':0.2,
         '|Лекарства Common, обезболивающее зелье (1 lvl False_Life)':0.2,
-        '|Лекарства Common, антидот зелье (0 lvl Delay_Poison)':0.1,
+        '|Лекарства Common, антидот зелье (1 lvl Delay_Poison)':0.1,
         '|Лекарства Common, снотворное зелье (1 lvl Sleep)':0.1,
         }
 
@@ -4311,7 +4311,7 @@ metadict_detail['||Транспорт речной пассажирский (б�
     # Very Rare -- 200 лет
     # Legendary -- 500 лет
 
-metadict_detail['|Лекарства Common, антидот зелье (0 lvl Delay_Poison)'] = {
+metadict_detail['|Лекарства Common, антидот зелье (1 lvl Delay_Poison)'] = {
         # TODO: волшебные предметы. Сделай производство с учётом заклинаний и мастерских.
             # Но сначала сами комплекты допилить. Особенно Uncommon.
             # Учти использование заклинаний для перезарядки. Можно упрощённо.
@@ -4353,7 +4353,7 @@ metadict_detail['|Одежда +Common, форма харсвардской шк
 metadict_detail['|Одежда Common, всепогодная, ритуал (1 lvl Endure_Elements)'] = {
         }
 
-metadict_detail['|Одежда Common, защитная, руна (0 lvl Minor_Ward)'] = {
+metadict_detail['|Одежда Common, защитная, руна (0 lvl Resistance)'] = {
         }
 
 metadict_detail['|Одежда Common, защитная, руна (1 lvl Mage_Armor)'] = {
@@ -4377,10 +4377,10 @@ metadict_detail['|Оружие огнестрельное ++Uncommon, снаря
 metadict_detail['|Оружие огнестрельное ++Uncommon, снаряды, самонаводящиеся, руна (1 lvl Magic_Missile)'] = {
         }
 
-metadict_detail['|Оружие огнестрельное +Common, револьвер с целеискателем, руна (0 lvl True_Strike)'] = {
+metadict_detail['|Оружие огнестрельное +Common, револьвер с целеискателем, руна (1 lvl Targeting_Ray)'] = {
         }
 
-metadict_detail['|Оружие огнестрельное Common, винтовка с целеискателем, руна (0 lvl True_Strike)'] = {
+metadict_detail['|Оружие огнестрельное Common, винтовка с целеискателем, руна (1 lvl Targeting_Ray)'] = {
         }
 
 metadict_detail['|Оружие огнестрельное Common, снаряды, анти-призрак, ритуал (1 lvl Ceremony)'] = {
