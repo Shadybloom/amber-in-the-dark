@@ -27,7 +27,7 @@
     # - School of Illusions --> School of Snowchanges. Be elusive, change battleground. Let your Origami creations distract enemy and your Familiar place Delayed Spells among them. Disguise as one of them ad inject Phantasms in their minds. Be steady in the battle with your Ice Storms and endless phantoms. Use your Ropes to make shelters anywhere. Utilize your Tethers and Dreams to harass enemy from any distance. Stay comfy with your own Mansion in Demiplane, create Simulacrum and crystal minions. Be one of many from the Changeling Lands.
     # - School of Evocation --> School of Bondbreaking. Be courageous. Use your Quicksilver Armor and fiery spells to crush them in style. Use your Echolocation and Targeting Ray to aim your Flaming Sphere and Leaping Thunder. Entwine defense with offense by your Reactive Armor and Kinetic Dome. Use your knowledge about energy and matter to make impenetrable walls and place storms inside walls. Ruin their puny Huts and Shields with Chain of Collapse and open Graves of Fireflies in their lines. Be army in one from the Ministry of Wartime Technology.
     # - School of Conjuration --> School of Recombination. Be adaptive. Construct and reconstruct your creations, develop your own Arcane Robotics: invent scouts and gunners, bodyguards and interceptors, med-bots and infiltrators. Prevent Disintegration with Reintegration. Build walls and forget about walls. Use Flux and Chaos to make anyone vulnerable, finish them with your devastating Elemental attacks and then raise again with your potions. Change tide of battle with your Ultra-Sentinel and Healing Megaspell. Be nice pony from the Ministry of Peace.
-    # - School of Divination --> School of Worldcalling. Be connected.
+    # - School of Divination --> School of Worldcalling. Be connected. ... Rebalance reality with your Supremacy.
     # - School of Enchantment --> School of Animorphy. Be regal.
     # - School of Abjuration --> School of Solward. Be loyal.
     # - School of Necromancy --> School of Stardusk. Be immortal.
@@ -5766,7 +5766,7 @@ metadict_detail['_+5 lvl (ритуальные заклинания волшеб
         # 24 ритуала/сутки × 0.3 × 8 = 58 часов (7 пони в радиосети)
         '_++5 lvl (R) Ментальная связь Рэри (5 lvl Rary_Telepathic_Bond)':0.3,
         '_++5 lvl (R) Защищённый кабинет (5 lvl Mordenkainen_Private_Sanctum)':0.1,
-        '_++5 lvl (R) Доспехи лорда-мага (5 lvl Mailed_Might_of_the_Magelords)':0.1,
+        '_++5 lvl (R) Доспехи лорда-мага (5 lvl Magelord_Armor)':0.1,
         '_++5 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -5850,6 +5850,7 @@ metadict_detail['_+7 lvl (ритуальные заклинания барда) 
         }
 
 metadict_detail['_+7 lvl (ритуальные заклинания волшебника) (заклинаний/год)'] = {
+        '_++7 lvl (R) Арканный фабрикатор (7 lvl Arcane_Fabricator)':0.3,
         '_++7 lvl (R) (ритуалов/год) (доступно)':1,
         }
 
@@ -5978,7 +5979,7 @@ metadict_detail['_+9 lvl (ритуальные заклинания жреца) 
     # 4. Stunned -- провал спасов Str/Dex. Преимущество атакующему. Incapacitated.
     # 5. Incapacitated -- нет действий и реакций.
     # 6. Blinded -- помеха атакам, преимущество атакующим, провал проверкам зрения.
-    # 7. Restrained -- преимущество атаки, помеха врагу, 0 скорость, помеха спасам ловкости.
+    # 7. Restrained -- помеха атакам, преимущество врагу, 0 скорость, помеха спасам ловкости.
     # 8. Exhaustion -- 6 стадий: 1) помеха навыкам; 2) 50% скорости; 3) Помеха атаке и спасам.
     # 9. Frightened -- помеха атакам и навыкам, пока ужас виден.
     # 10. Prone -- помеха атаке, преимущество атакующему вблизи, помеха стрелкам.
@@ -5989,6 +5990,7 @@ metadict_detail['_+9 lvl (ритуальные заклинания жреца) 
     # 15. Disadvantage -- помеха. В среднем 50% DPR от цели.
     # 16. Advantage -- преимущество. В среднем 150% DPR по цели.
     # https://old.reddit.com/r/DnDBehindTheScreen/comments/ckxfnq/condition_ranking_list_for_5e/
+    # https://www.dandwiki.com/wiki/Additional_Status_Conditions_(5e_Variant_Rule)
     # https://www.dndbeyond.com/sources/dnd/br-2024/rules-glossary
 
 #----
@@ -6030,6 +6032,7 @@ metadict_detail['_+9 lvl (ритуальные заклинания жреца) 
 
 metadict_detail['_++0 lvl (C) Гимн единства (0 lvl Hymn_of_Unity)'] = {
         # * @@@ "Гимн единства" (Hymn_of_Unity) [Enc|Cha|psychic] (C) — на себя, действием, минута концентрации, 30-футов радиус. Заклинание действует пока кастер поёт и хорошо слышим. Эффект однократный, выбирается при касте: 1) Chant_of_Mirth: Даёт 6 друзьям общий пул в 1d6 дополнительного урона психике против видимого врага. 2) Chant_of_Truth: Видимый противник осознаёт на 1d6 урона психике, спасбросок Харизмы полный, при провале помеха к проверке выбранной характеристики на время песни. 3) Chant_of_Benevolence: Если любой из 6 друзей получает лечение до максимума хитов, реакцией 1d6 хитов от избытка другому в радиусе 30 футов. 4) Chant_of_Allegiance: Реакцией даёт преимущество на одну проверку характеристики выбранного друга на дистанции заклинания. 5) Chant_of_Selflessness: Реакцией преимущество спасброска Int/Wis/Cha/Жизни для выбранного друга, но при провале страдают оба. 6) Chant_of_Immortality: Даёт одному товарищу 1d6 временных хитов и снимает один уровень истощения на время песни. На больших уровнях усиливается: на 5 lvl -- кость 2d6; на 11 lvl -- кость 3d6; на 17 lvl -- кость 4d6.
+        # TODO: подправь эту таблицу:
         # Song Style            | Fallout: Equestria        | School of Magic
         # --------------------- | ------------------------- | ----------------
         # Chant of Truth        | Ministry of Technology    | Bondbreaking
@@ -6114,6 +6117,7 @@ metadict_detail['_++0 lvl (C) Аптекарь (0 lvl Apothecary)'] = {
         # https://ru.wikisource.org/wiki/ЭСБЕ/Фармация
         # https://ru.wikisource.org/wiki/ЭСБЕ/Тайные_средства
         # https://www.dandwiki.com/wiki/Apothecary_(5e_Class)
+        # https://www.dandwiki.com/wiki/Anesthesia_(5e_Spell)
         # https://www.aidedd.org/feat/inspiring-leader
         # https://www.aidedd.org/feat/healer
         }
@@ -6141,7 +6145,7 @@ metadict_detail['_++0 lvl (C) Буресвет (0 lvl Stormlight)'] = {
         }
 
 metadict_detail['_++0 lvl (C) Оригами (0 lvl Origamist)'] = {
-        # * @@@ "Оригами" (Origamist) [Ilu|Dex|choice] — 60 футов, действием, час действия. Компонент лист бумаги до 5 футов. Число оригами одновременно = бонус_мастерства. Два способа оригами: 1) Лист приобретает форму и свойства крошечной не волшебной вещи вроде кандалов, лопаты, верёвки. 2) Лист становится крошечным существом с CR 0, перенимая характеристики и способности выбранного существа, имеет AC 10 и 1 hp. Это существо способно нести 1 lb груза, оно может двигаться и атаковать действием кастера, но не активировать волшебные вещи. Дистанция контроля равна дистанции заклинания. На больших уровнях увеличивается дистанция контроля: 5 lvl -- 90ft; 11 lvl -- 120ft; 17 lvl -- 150ft.
+        # * @@@ "Оригами" (Origamist) [Ilu|Dex|choice] — 60 футов, действием, час действия. Компонент лист бумаги до 5 футов. Число оригами одновременно = бонус_мастерства. Два способа оригами: 1) Лист приобретает форму и свойства крошечной не волшебной вещи вроде кандалов, лопаты, верёвки. 2) Лист становится крошечным существом с CR 0, перенимая характеристики и способности выбранного существа, имеет AC 10 и 1 hp. Это существо способно нести 1 lb груза, оно может двигаться парением и атаковать действием кастера, но не активировать волшебные вещи. Дистанция контроля равна дистанции заклинания. На больших уровнях увеличивается дистанция контроля: 5 lvl -- 90ft; 11 lvl -- 120ft; 17 lvl -- 150ft.
         # Учитывая, что склянка масла весит всего 1lb и разбивается столкновением, можно сделать бюджетный Melf_Minute_Meteors. Добавить к склянкам фитили, поджечь их, затем героем 5 lvl накинуть усиление до 2d8 урона через Control_Flames. Так за 6 действий перед боем получится рой из 3 совушек-камикадзе на 6d8 (27) суммарного урона, спасбросок Ловкости полный, то есть 5-6 урона/раунд при 60% попаданий. В сочетании с совушкой-фамильяром можно жарить противника вовсе не показываясь ему на глаза, хотя и в невеликом радиусе.
         # Физика заклинания:
         # 1cup масла: 899kcal/100g × 0.93kg/l × cup / (5ft×5ft) / 2rounds / 2 = 149 kW/m²
@@ -6891,7 +6895,7 @@ metadict_detail['_++0 lvl (C) Чародейский взрыв (0 lvl Sorcerous
     # [Ilu] Snowchanges   | 13 | Silent_Image, Faerie_Fire, Sleep, Ice_Knife
     # [Evo] Bondbreaking  | 10 | Quicksilver_Armor, Witch_Bolt, Thunderwave
     # [Cnj] Recombination | 16 | Fog_Cloud, Earthen_Servant, Chromatic_Orb
-    # [Div] Worldcalling  | 15 | Auspex, Stone_Tent, Earth_Tremor
+    # [Div] Worldcalling  | 15 | Auspex, Stone_Tent, Buzzing_Bee, Earth_Tremor
     # [Enc] Animorphy     | 16 | Charm_Person, Hideous_Laughter, Animate_Rope
     # [Abj] Solward       | 14 | Mage_Armor, Absorb_Elements, Sunroad
     # [Nec] Stardusk      | 13 | False_Life, Ray_of_Sickness, Starlight
@@ -7019,6 +7023,8 @@ metadict_detail['_++6 lvl (S) Оживить деревяшку (1 lvl Animate_W
         # _++6 lvl (S) Оживить деревяшку (трентов всего)..... | 358,900
         # _++6 lvl (S) Оживить деревяшку (трентов/кантон).... | 259
         # Единицы из них вырастают в по-настоящему великие деревья:
+        # https://www.dandwiki.com/wiki/Liveoak_(5e_Spell)
+        # https://www.dandwiki.com/wiki/5e_SRD:Awakened_Tree
         # https://www.5esrd.com/database/creature/tree-giant/
         }
 
@@ -7031,10 +7037,12 @@ metadict_detail['_++1 lvl (R) Невидимый слуга (1 lvl Unseen_Servan
         # _++1 lvl (R) Невидимый слуга (рабочих/год)................................. | 46,929
         # Даёт 75M нормо-часов, что сравнимо с работой 47k пони (0.35% рабочих)
         # https://www.aidedd.org/spell/unseen-servant
+        # https://www.dandwiki.com/wiki/Acquire_Attendant_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Поиск фамильяра (1 lvl Find_Familiar)'] = {
-        # * "Поиск фамильяра" (Find_Familiar) [Ilu|-|-] (R) — 10 бит (редкие угощения), 10 футов, час каста, ритуал, крохотное создание с CR 0. Может передавать заклинания мага с дистанцией "касание", дистанция 100 футов от мага. Хозяин может видеть глазами фамильяра, дистанция 100 футов. Сова, кружащая в 30 метрах над полем боя, способная передавать картинку в глаза магу, о чём ещё можно мечтать? В каждой армии должны быть такие звери-разведчики, это многократно упрощает управление боем, позволяя наводить артиллерию из-за дымовых завес. Здраво рассуждая, у армии без воздушной разведки нет ни единого шанса против равного по силе и обладающего таковой врага. Сова, как крохотное создание с 3 силы, может нести 4 lb полезной нагрузки. Это пара гранат. Элитные отряды с Feat_Magic_Initiate могут использовать сотню сов для ковровых бомбардировок, при этом с одного налёта нанося 200-400 урона, что сравнимо с эффектом огнешара по толпе.
+        # * "Поиск фамильяра" (Find_Familiar) [Ilu|-|-] (R) — 10 бит (редкие угощения), 10 футов, час каста, ритуал, крохотное создание с CR 0. Может передавать заклинания мага с дистанцией "касание", дистанция 100 футов от мага. Хозяин может видеть глазами фамильяра, дистанция 100 футов. Сова, кружащая в 30 метрах над полем боя, способная передавать картинку в глаза магу, о чём ещё можно мечтать? В каждой армии должны быть такие звери-разведчики, это многократно упрощает управление боем, позволяя наводить артиллерию из-за дымовых завес. Здраво рассуждая, у армии без воздушной разведки нет ни единого шанса против равного по силе и обладающего таковой врага. Сова, как крохотное создание с 3 силы, может нести 4 lb полезной нагрузки. Это пара гранат. Элитные отряды с Feat_Magic_Initiate могут использовать сотню сов для ковровых бомбардировок, при этом с одного налёта нанося 200-400 урона, что сравнимо с эффектом огнешара по толпе. Стратегические бомбардировщики могут использовать фамильяр-управляемые бомбы, но и ПВО фамильяр-управляемые ракеты.
+        # https://www.dandwiki.com/wiki/Find_Lesser_Dragon_Familiar_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (R) Понимание языков (1 lvl Comprehend_Languages)'] = {
@@ -7051,6 +7059,7 @@ metadict_detail['_++1 lvl (S) Ауспекс (1 lvl Auspex)'] = {
         # В мире FoE это модуль распознавания целей Л.У.М ПипБака. Красного бей, жёлтого пожалей.
         # https://www.dandwiki.com/wiki/Wide_Angle_(5e_Spell)
         # https://www.dandwiki.com/wiki/Gromph's_Eye_of_Examination_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Deep_Identification_(5e_Spell)
         # https://falloutequestria.fandom.com/wiki/Eyes_Forward_Sparkle
         # https://falloutequestria.fandom.com/wiki/PipBuck
         }
@@ -7139,6 +7148,7 @@ metadict_detail['_++1 lvl (R) Сотворение или уничтожение
         # Bondbreaking. Это заклинание доступно волшебникам как средство против Fog_Cloud.
         # https://www.dndbeyond.com/spells/2619074-create-or-destroy-water
         # https://www.dndbeyond.com/spells/2053-create-or-destroy-water
+        # https://www.dandwiki.com/wiki/Camel's_Drink_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Добряника (1 lvl Goodberry)'] = {
@@ -7280,6 +7290,7 @@ metadict_detail['_++1 lvl (R) Переписчик (1 lvl Amanuensis)'] = {
         # https://www.dandwiki.com/wiki/Quill_of_Duplication_(5e_Spell)
         # https://www.dandwiki.com/wiki/Simple_Moment_(5e_Spell)
         # https://www.dandwiki.com/wiki/Dekkard's_Captured_Image_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Scholar's_Passion_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (R) Телепатическое реле (1 lvl Telepathic_Relay)'] = {
@@ -7522,7 +7533,9 @@ metadict_detail['_++1 lvl (R) Каменное укрытие (1 lvl Stone_Tent)
         # _++1 lvl (R) Каменное укрытие (1 lvl Stone_Tent)....... | 1,198,163
         # _++1 lvl (R) Каменное укрытие (заклинаний/кантон)...... | 641
         # https://www.dandwiki.com/wiki/Stone_Tent_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Stone_Shelter_(5e_Spell)
         # https://www.dandwiki.com/wiki/Create_Building_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Five_Sided_Shelter_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (R) Сигнал тревоги (1 lvl Alarm)'] = {
@@ -7538,6 +7551,7 @@ metadict_detail['_++1 lvl (S) Маскировка себя (1 lvl Disguise_Self
         # * "Маскировка себя" (Disguise_Self) [Ilu|Int|-] — на себя, действием, час действия. Иллюзия показывает другую одежду и внешность, можно казаться выше/толще на 1 фут. Иллюзия не обманывает прикосновение. На взгляд её можно распознать с проверкой Интеллекта (Анализ) против СЛ заклинания. Абсолютно необходимое заклинание, если желаете грабить, убивать и использовать кантрип Friends в сочетании Charm_Person направо и налево. Приятно же, когда ненавидят не вас, а вашего врага.
         # https://www.dndbeyond.com/spells/2619102-disguise-self
         # https://www.dndbeyond.com/spells/2069-disguise-self
+        # https://www.dandwiki.com/wiki/Perfect_Illusory_Self_(5e_Spell) -- совершенный Disguise_Self
         }
 
 metadict_detail['_++1 lvl (R) Невидимое письмо (1 lvl Illusory_Script)'] = {
@@ -7557,14 +7571,17 @@ metadict_detail['_++1 lvl (R) Мастерская ремесленника (1 l
         # https://www.dandwiki.com/wiki/Craftsmanship_(5e_Spell)
         # https://www.dandwiki.com/wiki/Miniature_Fabricate_(5e_Spell)
         # https://www.dandwiki.com/wiki/Mold_Metal_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Arcane_Forge_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (R) Реконструкция (1 lvl Reconstruction)'] = {
-        # * !!! "Эфирная реконструкция" (Aetheric_Reconstruction) [Cnj|-|-] (R) — ??? бит (50% стоимости предмета, детали или материалы), касание, минута каста, ритуал. Один средний или меньший не волшебный предмет. Предмет возвращается к своему состоянию в момент изготовления. На больших уровнях увеличивается размер предмета: 3 круг -- большой; 5 круг -- огромный; 7 круг -- гигантский предмет.
+        # * @@@ "Эфирная реконструкция" (Aetheric_Reconstruction) [Cnj|-|-] (R) — ??? бит (50% стоимости предмета, детали или материалы), касание, минута каста, ритуал. Один средний или меньший не волшебный предмет. Предмет возвращается к своему состоянию в момент изготовления. На больших уровнях увеличивается размер предмета: 3 круг -- большой; 5 круг -- огромный; 7 круг -- гигантский предмет.
         # 50% цены предмета, это стоимость составляющих его компонентов.
         # _++1 lvl (R) Реконструкция (1 lvl Reconstruction).............. | 12,068,261
         # _++1 lvl (R) Реконструкция (кастов/кантон)..................... | 8,707
         # _++1 lvl (R) Реконструкция (кастов/кантон-день)................ | 24
+        # https://www.dandwiki.com/wiki/Reversal_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Rebuild_Item_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Убежище (1 lvl Sanctuary)'] = {
@@ -7665,10 +7682,12 @@ metadict_detail['_++1 lvl (S) Поглощение стихий (1 lvl Absorb_El
 metadict_detail['_++1 lvl (S) Щит (1 lvl Shield)'] = {
         # * +++ !!! "Щит" (Shield) [Tra|-|-] — на себя, реакция, раунд действия, +5 AC и защита от Magic_Missile. Без щита не выжить. Вышедший впереди строя маг рискует получить десятки пуль, а с заклинанием Shield и Mage_Armor ранить его смогут разве что случайно. Единственный вариант, что ему собьют реакцию. Но способных на это противников не так уж и много. Homebrew: щит тормозит пули, позволяя защищаться с помощью AC вместо спасброска ловкости.
         # https://www.dandwiki.com/wiki/Shield,_Variant_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Ward_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Щит веры (1 lvl Shield_of_Faith)'] = {
         # * +++ "Щит веры" (Shield_of_Faith) [Abj|-|-] — 60 футов, +2 AC, действием 10 минут концентрации, один союзник. Делает вас практически неуязвимыми. По магу из примера выше стрелки попадают с вероятностью 2.5-15% (с помехой/без помехи). А боец с 24 AC, атакуемый варваром с +8 мод_атаки получает удар с вероятностью 20-35%. Только помните, что одиночка против строя всё равно не выстоит — повалят, разоружат — а если не смогут, то засыплют десятками критов, вероятность которых будет 10% за счёт преимущества от help_action.
+        # https://www.dandwiki.com/wiki/Prayer_of_Protection_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Приказ (1 lvl Command)'] = {
@@ -7713,7 +7732,7 @@ metadict_detail['_++1 lvl (S) Вызов на дуэль (1 lvl Compelled_Duel)'
         }
 
 metadict_detail['_++1 lvl (S) Оживить верёвку (1 lvl Animate_Rope)'] = {
-        # * !!! "Оживить верёвку" (Animate_Rope) [Enc|hp|-] — 30 футов, действием, раунд действия. Верёвка до 50ft и до 10lb исполняет простую команду, вроде подняться на 30ft и закрепиться на уступе или связать цель, в последнем случае спасбросок Силы/Ловкости на выбор цели. У оживлённой верёвки 15AC и 5hp. На больших уровнях время заклинания увеличивается на +1 раунд/круг.
+        # * @@@ "Оживить верёвку" (Animate_Rope) [Enc|hp|-] — 30 футов, действием, раунд действия. Верёвка до 50ft и до 10lb исполняет простую команду, вроде подняться на 30ft и закрепиться на уступе или связать цель, в последнем случае спасбросок Силы/Ловкости на выбор цели. У оживлённой верёвки 15AC и 5hp. На больших уровнях время заклинания увеличивается на +1 раунд/круг.
         # В мире FoE это заклинание Magical_Cuffs.
         # https://www.dandwiki.com/wiki/Animate_rope
         }
@@ -7783,6 +7802,8 @@ metadict_detail['_++1 lvl (S) Гудящая пчела (1 lvl Buzzing_Bee)'] = 
 metadict_detail['_++1 lvl (S) Сглаз (1 lvl Hex)'] = {
         # * +++ "Сглаз" (Hex) [Nec|-|necrotic] (C) — 90 футов, бонусным действием, час концентрации. Добавляет 1d6 некротического урона после каждой успешной атаки. Накладывает помеху на проверку одной характеристики. Если цель выбита, бонусным действием Hex можно переключить на новую цель. Хорошо помогает, если наложить на Силу/Ловкость, смотря какой параметр прокачан, и перейти к тактике захватов и сбивания с ног.
         # https://te4.org/wiki/Age_of_dusk_(category)
+        # https://www.dandwiki.com/wiki/Greater_Hex_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Nightmare_Hex_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Внушение памяти (1 lvl Memory_Graft)'] = {
@@ -7809,6 +7830,7 @@ metadict_detail['_++1 lvl (S) Солнечный путь (1 lvl Sunroad)'] = {
         # https://te4.org/wiki/Path_of_the_sun_(talent)
         # https://te4.org/wiki/Circles_(category)
         # https://te4.org/wiki/Jumpgate_(talent)
+        # https://www.dandwiki.com/wiki/Instant_Dash_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Цветной шарик (1 lvl Chromatic_Orb)'] = {
@@ -7844,6 +7866,7 @@ metadict_detail['_++1 lvl (S) Луч болезни (1 lvl Ray_of_Sickness)'] = 
         # * "Луч болезни" (Ray_of_Sickness_v2024) [Nec|AC|poison] — 60 футов, действием, бросок атаки, 2d8 урона ядом, отравление до конца следующего хода кастера. На больших уровнях +1d8 урона/круг.
         # https://www.aidedd.org/spell/ray-of-sickness
         # https://www.dandwiki.com/wiki/Nauseate_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Viktor's_Withering_Ray_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Сверкающие брызги (1 lvl Color_Spray)'] = {
@@ -7930,6 +7953,7 @@ metadict_detail['_++1 lvl (S) Последнее слово (1 lvl Last_Words)']
         # * @@@ "Последнее слово" (Last_Words) [Abj|Str|force] — на себя, реакцией при ранении, 20-футовый радиус, 3d10 урона, отбрасывает на 10 футов и сбивает с ног. Спасбросок силы, при успехе уменьшает урон, не сбивает с ног и не отбрасывает. Кастер также получает удар заклинания, или один провал спасброска от смерти, если вызвавший реакцию удар уже ранил до нуля хитов. На больших уровнях даёт +1d10 урона/круг и радиус +5 футов/круг (до максимума в 60 футов на 9 lvl).
         # https://www.dandwiki.com/wiki/Last_Words_(5e_Spell)
         # https://www.dandwiki.com/wiki/Pure_Spite_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Astral_Release_(5e_Spell)
         }
 
 metadict_detail['_++1 lvl (S) Диссонирующий шёпот (1 lvl Dissonant_Whispers)'] = {
@@ -7964,7 +7988,7 @@ metadict_detail['_++1 lvl (S) Опутывающий удар (1 lvl Ensnaring_S
     # TODO: На 2 круге нет атакующих заклинаний Abjuration.
     # [DnD] vs Eq.School  | №  | Ключевые заклинания
     # ------------------- | -- | -------------------------------------------------
-    # [Tra] Translocation | 11 | Arcane_Exoskeleton, Grasp, Eldritch_Daggers
+    # [Tra] Translocation | 12 | Arcane_Exoskeleton, Grasp, Eldritch_Daggers
     # [Ilu] Snowchanges   | 13 | Invisibility, Delayed_Spell, Phantasmal_Force
     # [Evo] Bondbreaking  | 11 | Reactive_Armor, Flaming_Sphere, Shatter
     # [Cnj] Recombination | 14 | Arcane_Robotics, Web, Cloud_of_Daggers
@@ -8002,6 +8026,28 @@ metadict_detail['_++1 lvl (S) Опутывающий удар (1 lvl Ensnaring_S
     # https://www.dandwiki.com/wiki/Ice_Shock_(5e_Spell) -- 2d6 холодом/раунд, заковывает в лёд.
     # https://www.dandwiki.com/wiki/Call_of_the_Sussura_(5e_Spell) -- нежить в транс.
     # https://www.dandwiki.com/wiki/Dawnbrand_(5e_Spell) -- атака заклеймит на 2d6 урона/раунд.
+    # https://www.dandwiki.com/wiki/Dancing_Rune_Weapon_(5e_Spell) -- концентрация, +1 атака, force.
+    # https://www.dandwiki.com/wiki/Eldritch_Blade_(5e_Spell) -- атака, 3d6 бонусным действием, конц.10мин
+    # https://www.dandwiki.com/wiki/Cutter_Boomerang_(5e_Spell) -- 30ft line 2d6 рубящий конц.минута.
+    # https://www.dandwiki.com/wiki/Detonate_(5e_Spell) -- 2 мины, 2d6 огнём.
+    # https://www.dandwiki.com/wiki/Ethereal_Limbs_(5e_Spell) -- +пара рук, атака бонусным действием.
+    # https://www.dandwiki.com/wiki/Eyes_of_Fate_(5e_Spell) -- (R) чтение судьбы, конц. 10 минут.
+    # https://www.dandwiki.com/wiki/Farsee_(5e_Spell) -- (R) d20 на замену любого броска 30ft 12 часов.
+    # https://www.dandwiki.com/wiki/Feast_of_Ashes_(5e_Spell) -- проклятие, истощение, голод на 6 дней.
+    # https://www.dandwiki.com/wiki/Gentle_Impact_(5e_Spell) -- реакция, инерция падения в ударную волну.
+    # https://www.dandwiki.com/wiki/Gaslight_(5e_Spell) -- изменение памяти фразой в разговоре.
+    # https://www.dandwiki.com/wiki/Magnokinesis_(5e_Spell) -- (R) <2000lb, 30ft/ход, 4d6, конц. 10 минут.
+    # https://www.dandwiki.com/wiki/Metabolic_Control_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Paranoid_Pact_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Razored_Thoughts_(5e_Spell) -- Wis Sav, 2d4 при атаке, конц.минута.
+    # https://www.dandwiki.com/wiki/Retributive_Shock_(5e_Spell) -- реакция, 2d6 прерывающим концентрацию.
+    # https://www.dandwiki.com/wiki/Scholar's_Passion_(5e_Spell) -- заклинания библиотекарей.
+    # https://www.dandwiki.com/wiki/Shadow_Blink_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Static_Interference_(5e_Spell) -- подавление Sending, 30ft конц.10мин
+    # https://www.dandwiki.com/wiki/Sticky_Spellbook_(5e_Spell) -- (R) ловушка на книге заклинаний.
+    # https://www.dandwiki.com/wiki/Temporal_Link_(5e_Spell) -- перенос заклинания в будущее.
+    # https://www.dandwiki.com/wiki/Weather_Warding_(5e_Spell) -- (R) подавление качки на море.
+    # https://www.dandwiki.com/wiki/Wood_Shape_(5e_Spell) -- изменение формы дерева, 10ft куб.
     # 2-й круг:
     # https://www.dandwiki.com/wiki/Summon_Guided_Anvil_(3.5e_Spell)
     # https://www.dandwiki.com/wiki/Dark_Symmetry_(3.5e_Spell)
@@ -8067,9 +8113,9 @@ metadict_detail['_++2 lvl (S) Арканная робототехника (2 lvl
         # Улучшения | Функция    | CR  | Комментарий
         # --------- | ---------- | --- | --------------------------------
         # Телекинез | Гренадер   | 1   | 17AC, 10lb bomb, R=10ft 2d6 (7)
-        # Доспехи   | Стражник   | 1/2 | 17+5AC, 1atc+5 1d8+3 (7) DPR 4
+        # Доспехи   | Стражник   | 1/2 | 17+5AC, 1Atk+5 1d8+3 (7) DPR 4
         # Изоляция  | Шахид*     | 1   | 15AC, 150lb bomb R=20ft 8d6 (28)
-        # Бластер   | Пехотинец  | 1/2 | 15AC, 1atc+5 150/600ft 1d8+3 (7)
+        # Бластер   | Пехотинец  | 1/2 | 15AC, 1Atk+5 150/600ft 1d8+3 (7)
         # Модуль    | Бульдозер  | 1/2 | Mold_Earth 3000ft траншеи/час.
         # Модуль    | Рой дронов | 1/2 | Origamist, 1lb ОФС на 60ft.
         # Модуль    | Мини-ракет | 1/2 | Ricochet, 2lb ОФС на 60ft.
@@ -8098,9 +8144,9 @@ metadict_detail['_++3 lvl (S) Арканная робототехника (2 lvl
         # Теле+Выч  | Штурмовик  | 2   | Blind_Fighting, Smoke + Grenades
         # Теле+Выч  | Телохранит | 1   | Interception, защита 1d10+3 (8)
         # Теле+Выч  | Фаланга    | 1   | Protection, помеха реакцией.
-        # Теле+Выч  | Рубака     | 2   | Two_Weapon, 2atc+7 1d8+4 (17)
+        # Теле+Выч  | Рубака     | 2   | Two_Weapon, 2Atk+7 1d8+4 (17)
         # Теле+Мод  | Сапёр      | 2   | Sonic_Thread + 100lb 8d6 (28)
-        # Блас+Выч  | Стрелок    | 2   | Archery, 1atc+9 1d8+4 (9)
+        # Блас+Выч  | Стрелок    | 2   | Archery, 1Atk+9 1d8+4 (9)
         # Блас+Выч  | Зенитчик*  | 1   | Weapon_Mastery, Topple 150/600ft
         # Изол+Мод  | Пожарный   | 1   | 50% от огня + Control_Flames
         # Связ+Плт  | Орлёнок    | 1   | 1200ft видео + 120ft/r полёт
@@ -8109,23 +8155,28 @@ metadict_detail['_++3 lvl (S) Арканная робототехника (2 lvl
         # _++3 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 59,646
         # _++3 lvl (S) Арканная робототехника (кастов/неделя)........ | 1,193
         # _++3 lvl (S) Арканная робототехника (бит/год).............. | 2,863,200
+        # 28-мм пушка sPzB 41, 230kg (1940) -- 1.3k бит (4.5k марок, ~720 часов)
+        # 37-мм пушка Pak 36, 0.5t (1940) -- 1.6k бит (5.73k марок, 900 часов)
+        # 50-мм пушка Pak 38, 1t (1940) -- 2.9k бит (10.6k марок, 1800 часов)
+        # 75-мм пушка Pak 40, 1.4t (1943) -- 3.3k бит (12k марок, 2200 часов)
         # 76-мм полковая пушка (1943) -- 1.6-2.4k бит (0.8-1.2k нормо-часов)
         }
 
 metadict_detail['_++4 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics)'] = {
         # 7lvl 4 круг (Rare, 4.8k бит):
+        # TODO: MG 34 с 3d6 урона, лучше роботу-пулемётчику его и дать.
         # Улучшения | Функция    | CR  | Комментарий
         # --------- | ---------- | --- | --------------------------------
         # ТМ+Разум  | Автодок    | 1   | Healer + Apothecary
         # ТМ+Разум  | Ядохимик   | 2   | Poisoner + Homing_Needles (40)
         # ТС+Разум  | Имитатор   | 2   | 1200ft Disguise_Self + Friends
         # ТС+Полёт  | Бомбардир  | 2   | 1200ft 150lb bomb R=20ft 8d6 (28)
-        # БП+Калибр | Перехват   | 3   | Fly+Topple, 2atc+7 1d8+4 (17)
+        # БП+Калибр | Перехват   | 3   | Fly+Topple, 2Atk+7 1d8+4 (17)
         # СП+Разум  | Орлёнок v2 | 1   | Observant 120ft/r + Search_Action
         # ТВ+Разум  | Часовой    | 2   | Alert + Interception 1d10+3 (9)
-        # ТВ+Калибр | Рубака v2  | 3   | Two_Wpn+Sap, 3atc+7 1d8+4 (25)
+        # ТВ+Калибр | Рубака v2  | 3   | Two_Wpn+Sap, 3Atk+7 1d8+4 (25)
         # МВ+Разум  | Туманник   | 3   | Blindsight+Fog_Cloud+Sword_Burst
-        # Б+Клб+Рзм | Пулемёт*   | 3   | Hex+Sap, 2atc+7 1d8+4+1d6 (24)
+        # Б+Клб+Рзм | Пулемёт*   | 3   | Hex+Sap, 2Atk+7 1d8+4+1d6 (24)
         # * Пулемётчик с Sawsall и Mold_Earth окапывается на 3/4 получая 20AC.
         # _++4 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 12,209
         # _++4 lvl (S) Арканная робототехника (кастов/неделя)........ | 246
@@ -8136,20 +8187,23 @@ metadict_detail['_++5 lvl (S) Арканная робототехника (2 lvl
         # 9lvl 5 круг (Rare, 9.6k бит):
         # Улучшения | Функция    | CR  | Комментарий
         # --------- | ---------- | --- | --------------------------------
-        # БК-ОА     | Protectron | 5   | 15AC, 50+33hp, 2atc+7 2d10+4 (30)
+        # БК-ОА     | Protectron | 5   | 15AC, 50+33hp, 2Atk+7 2d10+4 (30)
         # _++5 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 4,172
         # _++5 lvl (S) Арканная робототехника (кастов/месяц)......... | 417
         # _++5 lvl (S) Арканная робототехника (бит/год).............. | 4,003,200
+        # 4.0M бит, это 0.07% ВВП Эквестрии
+        # Танк Type 95 Ha-Go (1939) -- 9.1k бит (71k yen)
         }
 
 metadict_detail['_++6 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics)'] = {
         # 11lvl 6 круг (Rare, 19.2k бит):
         # Улучшения | Функция    | CR  | Комментарий
         # --------- | ---------- | --- | --------------------------------
-        # ДБК-АУ    | Sentinel-1 | 10  | 20AC 120hp 2atc+9 4d10+5 (54)
+        # ДБК-АУ    | Sentinel-1 | 10  | 20AC 120hp 2Atk+9 4d10+5 (54)
         # _++6 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 612
         # _++6 lvl (S) Арканная робототехника (кастов/месяц)......... | 60
         # _++6 lvl (S) Арканная робототехника (бит/год).............. | 1,152,000
+        # 1.2M бит, это 0.02% ВВП Эквестрии
         # 105-мм гаубица l.FH 18 (1943) -- 4.6k бит (16.4k марок, 3.2k часов)
         # 150-мм гаубица s.FH 18 (1943) -- 11k бит (40.4k марок, 5.5k часов)
         }
@@ -8158,15 +8212,16 @@ metadict_detail['_++7 lvl (S) Арканная робототехника (2 lvl
         # 13lvl 7 круга (Rare, 38.4k бит):
         # Улучшения | Функция    | CR  | Комментарий
         # --------- | ---------- | --- | --------------------------------
-        # ДБК-АУЗ   | Sentinel-2 | 10  | 20AC 140hp 2atc+9 4d10+5 (54)
+        # ДБК-АУЗ   | Sentinel-2 | 10  | 20AC 140hp 2Atk+9 4d10+5 (54)
         # ТСП-АУЗ   | Эвакуатор  | 7   | 2mi, полёт, 300lb 8d6 (28)
         # Отсюда начинаются завершённые и вполне автономные махины:
         # _++7 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 297
         # _++7 lvl (S) Арканная робототехника (бит/год).............. | 11,107,800
         # _++7 lvl (S) Арканная робототехника (бит/50лет)............ | 555,390,000
         # _++7 lvl (S) Арканная робототехника (роботов всего)........ | 14,850
-        # Танк Т-34МС (1940) -- 433k руб (62k бит, 8/17.5k нормо-часов)
-        # Танк Т-34МС (1944) -- 133k руб (27k бит, 3.5/15k нормо-часов)
+        # 11.1M бит, это 0.19% ВВП Эквестрии
+        # Танк Т-34МС (1940) -- 62k бит (433k руб, 8/17.5k нормо-часов)
+        # Танк Т-34МС (1944) -- 27k бит (133k руб, 3.5/15k нормо-часов)
         # https://www.tankarchives.com/2018/08/t-34-prices.html
         }
 
@@ -8174,28 +8229,30 @@ metadict_detail['_++8 lvl (S) Арканная робототехника (2 lvl
         # 15lvl 8 круг (Very Rare, 76.8k бит):
         # Улучшения | Функция    | CR  | Комментарий
         # --------- | ---------- | --- | --------------------------------
-        # ДБК-АУЗ!  | Ultra-Sent | 16  | 20AC 160hp 3atc+10 4d10+5 (81)
+        # ДБК-АУЗ!  | Ultra-Sent | 16  | 20AC 160hp 3Atk+10 4d10+5 (81)
         # Служат по 100 лет, как Rare предметы, встроенный Regenerate:
         # _++8 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 268
         # _++8 lvl (S) Арканная робототехника (бит/год).............. | 20,582,400
         # _++8 lvl (S) Арканная робототехника (бит/100лет)........... | 2,058,240,000
         # _++8 lvl (S) Арканная робототехника (роботов всего)........ | 26,800
+        # 20.6M бит, это 0.34% ВВП Эквестрии
         }
 
 metadict_detail['_++9 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics)'] = {
         # 17lvl 9 круг (Very Rare, 153.6k бит):
         # Улучшения  | Функция    | CR  | Комментарий
         # ---------- | ---------- | --- | --------------------------------
-        # ДБК-АУ+З!+ | Танкоёбина | 26+ | 20AC 360hp 3atc+12 8d10+6 (150)
-        # С+ПБ-АУЗ+! | Warthog    | 11  | 4mi, полёт, 2atc+12 4d10+5 (54)
+        # ДБК-АУ+З!+ | Танкоёбина | 26+ | 20AC 360hp 3Atk+12 8d10+6 (150)
+        # С+ПБ-АУЗ+! | Warthog    | 11  | 4mi, полёт, 2Atk+12 4d10+5 (54)
         # Служат по 200 лет, как Very Rare предметы, легион на чёрный день:
         # _++9 lvl (S) Арканная робототехника (2 lvl Arcane_Robotics) | 57
         # _++9 lvl (S) Арканная робототехника (бит/год).............. | 9,755,200
         # _++9 lvl (S) Арканная робототехника (бит/200лет)........... | 1,951,040,000
         # _++9 lvl (S) Арканная робототехника (роботов всего)........ | 11,400
-        # Танк Т-90МС (2025) -- 5.8 млн долларов (116k бит, 20-30k нормо-часов)
-        # Танк "Abrams" (2026) -- 36.7 млн долларов (734k бит, 21k нормо-часов)
-        # БТР "Stryker" (2026) -- 12.9 млн долларов (258k бит, 5.7-9.7k нормо-часов)
+        # 9.8M бит, это 0.16% ВВП Эквестрии
+        # Танк Т-90МС (2025) -- 116k бит (5.8M USD, 20-30k нормо-часов)
+        # Танк "Abrams" (2026) -- 734k бит (36.7M USD, 21k нормо-часов)
+        # БТР "Stryker" (2026) -- 258k бит (12.9M USD, 5.7-9.7k нормо-часов)
         }
 
 metadict_detail['_++2 lvl (S) Поиск скакуна (2 lvl Find_Steed)'] = {
@@ -8222,12 +8279,14 @@ metadict_detail['_++2 lvl (R) Говорящие устрицы (2 lvl Speaking_
         # _++2 lvl (R) Говорящие устрицы (раций/кантон)................................ | 2.2
         # Учитываем только речные и прибрежные кантоны, много таких -- 838/1386 (60%)
         # 1.3 радиостанций на 10 000 пони. Стоимость поддержания сети 3.3 млн.бит
+        # https://www.dandwiki.com/wiki/Message_Connected_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Трюк с верёвкой (2 lvl Rope_Trick)'] = {
         # * "Трюк с верёвкой" (Rope_Trick) [Ilu|-|-] — касание, действием, час действия. 8 существ, исчезновение из реальности. Атаки и заклинания не выходят наружу и не попадают внутрь этого межпространства. Впрочем, можно выглянуть, выстрелить заклинанием и спрятаться обратно. Можно использовать, чтобы создать укреплённую позицию с 3×5 футовой бойницей на высоте до 60 футов над полем боя, затащить туда пороховые бомбы, а когда отряд врага покажется внизу, устроить бомбардировку сволочам.
         # Snowchanges. В Эквестрии это выход на зимние пути.
         # https://www.aidedd.org/spell/rope-trick
+        # https://www.dandwiki.com/wiki/Visk's_Walk-In_Closet_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Область истины (2 lvl Zone_of_Truth)'] = {
@@ -8237,6 +8296,7 @@ metadict_detail['_++2 lvl (S) Область истины (2 lvl Zone_of_Truth)'
         # _++2 lvl (S) Область истины (2 lvl Zone_of_Truth) (кастов/час)......... | 60
         # _++2 lvl (S) Область истины (2 lvl Zone_of_Truth) (кастов/кантон)...... | 248
         # Суды и споры пару раз в неделю. Средним понивильцам параллельно на них.
+        # https://www.dandwiki.com/wiki/Discern_Lies_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Область лжи (2 lvl Zone_of_Lies)'] = {
@@ -8250,6 +8310,8 @@ metadict_detail['_++2 lvl (R) Гадание (2 lvl Augury)'] = {
 
 metadict_detail['_++2 lvl (S) Видение невидимого (2 lvl See_Invisibility)'] = {
         # * "Видение невидимого" (See_Invisibility) [Abj|-|-] — на себя, действием, час действия. Дальность ограничена только зрением. Видение распространяется на эфирный план, то есть показывает леомундовы сундуки Leomunds_Secret_Chest, если они оставлены рядом. Кроме того показывает не только невидимок, но и сенсоры Clairvoyance. Местные князья не начнут переговоров, пока не убедятся, что их не подслушивают, а правителей империй охраняет гвардия, где у каждого 4+ lvl бойца есть руна с этим заклинанием.
+        # https://www.dandwiki.com/wiki/Illumination_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Know_the_True_Form_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Обнаружение мыслей (2 lvl Detect_Thoughts)'] = {
@@ -8296,6 +8358,7 @@ metadict_detail['_++2 lvl (S) Костяной щит (2 lvl Bone_Shield)'] = {
         # * @@@ "Костяной щит" (Bone_Shield) [Nec|Int|-] (C) — 10 бит (костяные амулеты), на себя, действием, минута действия. 4 оживлённые кости кружатся вокруг кастера. Кости имеют по 15 AC и 5hp. Каждый бросок атаки (заклинание, выстрел, удар вблизи) перехватывается ближайшей костью. Реакцией либо бонусным действием можно потратить 2 кости и тут же с их помощью переместить кастера полётом на 30 футов.
         # https://www.dandwiki.com/wiki/Bone_Shield_(5e_Spell) -- костяной щит из ToME.
         # https://te4.org/wiki/Bone_shield_(talent) -- костяной щит из ToME.
+        # https://diablo.fandom.com/wiki/Bone_Armor_(Diablo_II) --
         }
 
 metadict_detail['_++2 lvl (S) Ложная аура (2 lvl Nystul_Magic_Aura)'] = {
@@ -8363,6 +8426,7 @@ metadict_detail['_++2 lvl (S) Увеличение/уменьшение (2 lvl E
         # * "Увеличение/уменьшение" (Enlarge_Reduce) [Ilu|Con|-] (C) — 30 футов, действием, минута концентрации. Спасбросок телосложения для несогласных существ. 1) Увеличение — x2 размер, x8 вес, преимущество на проверки и спасброски Силы, +1d4 урона оружием. 2) Уменьшение — /2 размер, /8 вес, помеха на проверки и спасброски Силы, -1d4 урона оружием.
         # Snowchanges. 7/8 массы превращается в облако метаматерии, что может также и увеличить объём существа.
         # https://www.aidedd.org/spell/enlarge-reduce
+        # https://www.dandwiki.com/wiki/Giant_Size_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Охраняющая связь (2 lvl Warding_Bond)'] = {
@@ -8386,6 +8450,7 @@ metadict_detail['_++2 lvl (S) Спаянная удача (2 lvl Entwined_Luck)'
 metadict_detail['_++2 lvl (R) Нетленные останки (2 lvl Gentle_Repose)'] = {
         # * "Нетленные останки" (Gentle_Repose) [Nec|-|-] (R) — касание, действием, 10 дней действия. Сохраняет тело от тления и превращения в нежить. Ритуальное заклинание, которым должен владеть любой уважающий себя волшебник или жрец. В мире хватает жрецов с Revivify, но оно срабатывает только в первые десять минут после смерти, а Raise_Dead в первые десять дней.
         # Также позволяет консервировать кровь для Hemomancy, что игромеханически нечестно.
+        # https://www.dandwiki.com/wiki/Greater_Gentle_Repose_(5e_Spell)
         '_++2 lvl (R) Нетленные останки (2 lvl Gentle_Repose) (%)':[
             '(value / x) * 100',
             '2 lvl Нетленные останки (2 lvl Gentle_Repose) (требуется)',
@@ -8425,6 +8490,7 @@ metadict_detail['_++2 lvl (S) Отражения (2 lvl Mirror_Image)'] = {
         # https://www.dndbeyond.com/spells/2619060-mirror-image
         # https://www.dndbeyond.com/spells/2193-mirror-image
         # https://www.dandwiki.com/wiki/Mirror_Variant_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Dance_of_Shadows_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Тёмное зрение (2 lvl Darkvision)'] = {
@@ -8616,6 +8682,8 @@ metadict_detail['_++2 lvl (S) Паутина (2 lvl Web)'] = {
 metadict_detail['_++2 lvl (S) Смена обличья (2 lvl Alter_Self)'] = {
         # * !!! "Смена обличья" (Alter_Self) [Tra|-|-] (C) — на себя, действием, час концентрации. Облик можно менять действием: 1) Адаптация к воде, это водное дыхание и скорость плавания. 2) Естественное оружие, это оружие +1 на 1d6 базового дробящего/колющего/рубящего урона. 4) Адаптация к полёту — крылья дают скорость планирования 120 футов со снижением на 30 футов/раунд. 3) Изменение внешности, свободно меняет облик, но сохраняет общую форму тела, нельзя стать рогатым.
         # https://www.aidedd.org/spell/alter-self
+        # https://www.dandwiki.com/wiki/Shape_Flesh_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Lolth's_Bloodline_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (R) Волшебные уста (2 lvl Magic_Mouth)'] = {
@@ -8663,6 +8731,7 @@ metadict_detail['_++2 lvl (R) Кристаллизация памяти (2 lvl C
         # У людей 5% интернета, $60-300 млрд (0.03-0.15% ВВП ППС мира)
         # https://falloutequestria.fandom.com/wiki/Memory_Orb
         # https://falloutequestria.fandom.com/wiki/Recollectors
+        # https://www.dandwiki.com/wiki/Soul_Read_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell)'] = {
@@ -8674,12 +8743,15 @@ metadict_detail['_++2 lvl (S) Кристалл заклинания (2 lvl Cryst
         # _++2 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell) | 255,595
         # _++2 lvl (S) Кристалл заклинания (бит/год)................. | 2,555,950
         # _++2 lvl (S) Кристалл заклинания (кастов-кантон)........... | 184
+        # 2.6M бит, это 0.04% ВВП Эквестрии
         # https://www.dandwiki.com/wiki/Crystallized_Spell_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Remote_Comfort_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell)'] = {
         # _++6 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell) | 1,837
         # _++6 lvl (S) Кристалл заклинания 5 круга (бит/год)......... | 1,148,125
+        # 1.2M бит, это 0.02% ВВП Эквестрии
         }
 
 metadict_detail['_++7 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell)'] = {
@@ -8690,22 +8762,26 @@ metadict_detail['_++7 lvl (S) Кристалл заклинания (2 lvl Cryst
         # Кристалл 6 круга (16k бит) ≤ 4 вылета Су-34 на 1600 РБ
         # _++7 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell) | 297
         # _++7 lvl (S) Кристалл заклинания 6 круга (бит/год)......... | 928,125
+        # 0.9M бит, это 0.02% ВВП Эквестрии
         }
 
 metadict_detail['_++8 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell)'] = {
         # _++8 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell) | 134
         # _++8 lvl (S) Кристалл заклинания 7 круга (бит/год)......... | 2,144,000
+        # 2.2M бит, это 0.04% ВВП Эквестрии
         }
 
 metadict_detail['_++9 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell)'] = {
         # _++9 lvl (S) Кристалл заклинания (2 lvl Crystallized_Spell) | 57
         # _++9 lvl (S) Кристалл заклинания (бит/год)................. | 4,446,000
+        # 4.5M бит, это 0.08% ВВП Эквестрии
         }
 
 metadict_detail['_++2 lvl (S) Замедленное заклинание (2 lvl Delayed_Spell)'] = {
         # * @@@ "Замедленное заклинание" (Delayed_Spell) [Ilu|-|-] — касание, действием, 10 минут действия. За счёт потраченного слота накладывает заклинание 1 круга или кантрип на предмет, участок поверхности, согласное или бессознательное существо. Не более одной руны на существо, нельзя наложить заклинания с концентрацией или дистанцией на себя. Спустя заданное время в пределах 100 раундов заклинание срабатывает на зачарованную цель. На больших уровнях +1 круг_заклинания/круг.
         # В отличии от Crystallized_Spell и Contingency нельзя задать триггер, зато можно задёшево бомбить города, всего лишь за 3 бита/каст накидывая снаряды с эффектом Shatter. Или наслать на часовых Sleep перед штурмом, аккуратно разложив камешки совушкой-фамильяром. В сеттинге Equestria at War такое доступно роте магов обычной пехотной дивизии.
         # https://www.dandwiki.com/wiki/Delay,_Variant_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Arcane_Storage_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Замедленное заклинание (2 lvl Delayed_Spell)'] = {
@@ -8763,6 +8839,8 @@ metadict_detail['_++9 lvl (S) Заговор устройства (2 lvl Cantrip
 metadict_detail['_++2 lvl (S) Магическое оружие (2 lvl Magic_Weapon)'] = {
         # * !!! "Магическое оружие" (Magic_Weapon_v2024) [Enc|-|-] — касание, бонусным действием, час действия. Делает оружие волшебным предметом +1, магическое оружие преодолевает иммунитет/сопротивляемость обычному оружию. Это полезно, но не в нашем мире, где сотни тысяч волшебных ковырялок, легко доступных героям 5+ lvl. На больших уровнях: бонус +2 за 3-5 круг; бонус +3 за ≥6 слот. Homebrew: заклинание не требует концентрации. Можно зачаровать до 100 маленьких боеприпасов или 10 пушечных ядер.
         # https://www.aidedd.org/spell/magic-weapon
+        # https://www.dandwiki.com/wiki/Fire_Enchantment_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Fire_Enchantment,_Variant_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (R) Мост через бурные воды (2 lvl Bridge_over_Troubled_Water)'] = {
@@ -8783,6 +8861,9 @@ metadict_detail['_++2 lvl Туманный шаг (2 lvl Misty_Step)'] = {
         # * "Туманный шаг" (Misty_Step) [Tra|-|-] — на себя, бонусным действием, 30 футов телепорта. Только вербальный компонент, легко вырваться из захвата или оков. Очень полезно, особенно когда противник, это монахи, обожающие затаскивать командиров в глубину строя своих. Если боец окружён или схвачен, он тут же воспользуется Misty_Step чтобы отступить к ближайшей группе своих.
         # https://www.dandwiki.com/wiki/Phase_(5e_Spell)
         # https://te4.org/wiki/Phase_door_(talent)
+        # https://www.dandwiki.com/wiki/Void_Blink_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Poof_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Poof,_Variant_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl Удержание личности (2 lvl Hold_Person)'] = {
@@ -8790,7 +8871,7 @@ metadict_detail['_++2 lvl Удержание личности (2 lvl Hold_Person
         }
 
 metadict_detail['_++2 lvl (S) Узы земли (2 lvl Earthbind)'] = {
-        # * !!! "Узы земли" (Earthbind) [Cnj|Str|-] (C) — 600 футов, действием, 10 минут концентрации. Цель можно переключить действием. Ловит летающее существо, лишая его скорости полёта, Спасбросок силы. Если цель проваливает этот спасбросок, то зависает и начинает снижаться со скоростью 60 футов/раунд, а столкнувшись с землёй получает урон как от падения с 60 футов (6d6 урона) Homebrew: дальность заклинания увеличена до 600 футов (+600 футов/круг), а длительность до 10 минут, чтобы неповадно было сволочам.
+        # * !!! "Узы земли" (Earthbind) [Cnj|Str|-] (C) — 2400 футов, действием, 10 минут концентрации. Цель можно переключить действием. Ловит летающее существо, лишая его скорости полёта, Спасбросок силы. Если цель проваливает этот спасбросок, то зависает и начинает снижаться со скоростью 60 футов/раунд, а столкнувшись с землёй получает урон как от падения с 60 футов (6d6 урона) Homebrew: дальность заклинания увеличена до 2400 футов (+1200 футов/круг), а длительность до 10 минут, чтобы неповадно было сволочам.
         }
 
 metadict_detail['_++2 lvl (S) Луч слабости (2 lvl Ray_of_Enfeeblement)'] = {
@@ -8821,10 +8902,12 @@ metadict_detail['_++2 lvl (S) Корона безумия (2 lvl Crown_of_Madnes
 metadict_detail['_++2 lvl (S) Слепота/глухота (2 lvl Blindness_Deafness)'] = {
         # * "Глухота/Слепота" (Blindness_Deafness) [Nec|Con|-] — 30 футов, действием, минута действия. Ослепляет или оглушает существо, спасбросок Телосложения. Повторный спасбросок в конце каждого хода.
         # https://www.aidedd.org/spell/blindness-deafness
+        # https://www.dandwiki.com/wiki/Obfuscation_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Тьма (2 lvl Darkness)'] = {
         # * +++ "Тьма" (Darkness) [Ilu|-|-] (C) — 60 футов, действием, 15-футовый радиус, 10 минут концентрации. Существа с тёмным зрением не видят через эту тьму, исключение колдун с инвокацией "Дьявольский взгляд". Можно наложить на себя и идти в облаке тьмы, или на дротик, и кинуть в сторону врага, так прикрывшись от его контрзаклинания. Подавляет заклинания света 2 круга и ниже. Даёт хорошую защиту против лучников и магов, но помехи от темноты затягивают бой. Отряды с Fighting_Style_Blind_Fighting сражаются в темноте без помех.
+        # https://www.dandwiki.com/wiki/Greater_Darkness_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (R) Тишина (2 lvl Silence)'] = {
@@ -8843,6 +8926,7 @@ metadict_detail['_++2 lvl (R) Шепчущий ветер (2 lvl Whispering_Wind
 
 metadict_detail['_++2 lvl (S) Защитный ветер (2 lvl Warding_Wind)'] = {
         # * +++ "Защитный ветер" (Warding_Wind) [Evo|-|-] (C) — на себя, действием, 10-футовый радиус, 10 минут концентрации. Ветер перемещается вместе с заклинателем. 1) Все существа в радиусе оглушены. 2) Ветер гасит незащищённое пламя размером с факел. 3) Для всех кроме вас область становится труднопроходимой. 4) Броски атаки дальнобойным оружием с помехой из области и по целям в области ветра. 5) Защита от пара, газа, тумана, например Fog_Cloud и Cloudkill. Последнее свойство, это самое ценное, но защита от стрел хорошо прикрывает магов, пока они кастуют свои Magic_Missile. Скорость ветра 20 миль/час, это 5 по шкале Бофорта, ветер гудит и ощущается рукой.
+        # https://www.dandwiki.com/wiki/Haboob_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Порыв ветра (2 lvl Gust_of_Wind)'] = {
@@ -8914,6 +8998,7 @@ metadict_detail['_++2 lvl (S) Растворяющая хватка (2 lvl Disso
 metadict_detail['_++2 lvl (S) Земляная хватка (2 lvl Earthen_Grasp)'] = {
         # * "Земляная хватка Максимиллиана" (Maximilians_Earthen_Grasp) [Div|Str|bludgeoning] (C) — 30 футов, действием, минута концентрации. Захват одиночной цели, оплетение, 2d6 урона, спасбросок Силы. Повторение спасброска в начале каждого раунда. Заклинание действует только на поверхности земли.
         # Worldcalling. Геомантия.
+        # https://www.dandwiki.com/wiki/Earthen_Prison_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Пылевой вихрь (2 lvl Dust_Devil)'] = {
@@ -8953,15 +9038,18 @@ metadict_detail['_++2 lvl (S) Пиротехника (2 Pyrotechnics)'] = {
 metadict_detail['_++2 lvl (S) Раскалённый металл (2 lvl Heat_Metal)'] = {
         # * "Раскалённый металл" (Heat_Metal) [Tra|Con|fire] (C) — 60 футов, действием, минута концентрации. Продление бонусным действием каждый раунд. Раскаляет металлический предмет: оружие, средние или тяжёлые доспехи, тому подобное. Наносит 2d8 урона огнём, спасбросок Телосложения. Провалив спасбросок цель роняет предмет, а если не может уронить, получает помеху на броски атаки и проверки характеристик до конца хода. Повторный спасбросок каждый раунд, когда заклинание продлевается бонусным действием. Это абсолютное оружие против вражеских чемпионов, но далеко не все носят металлические доспехи. На больших уровнях +1d8 урона/круг.
         # https://www.aidedd.org/spell/heat-metal
+        # https://www.dandwiki.com/wiki/Searing_Choker_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Горящий клинок (2 lvl Flame_Blade)'] = {
         # * "Горящий клинок" (Flame_Blade) [Cnj|AC|fire] (C) — на себя, бонусным действием, 10 минут концентрации, бросок атаки, 3d6 урона. Светильник 10/20 футов. Передать другому, к сожалению, нельзя, а из друидов так себе вояки.
+        # https://www.dandwiki.com/wiki/Blade_Lightning_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Динамическая защита (2 lvl Reactive_Armor)'] = {
         # * @@@ "Динамическая защита" (Reactive_Armor) [Evo|Con|thunder] — на себя, реакция, раунд действия. Дестабилизирует заклинания контрударом, создавая достаточную лишь для кастера безопасную зону. До начала следующего хода от каждого зонального воздействия, требующего спасброска, отражает 2d10 урона. При этом гром на 2d10 урона, спасбросок Телосложения, однократно бьёт в 5-футовом радиусе вокруг кастера. На больших уровнях усиливает отражение и урон на +1d10/круг.
         # Тактика тройного удара напрашивается. Жахаем Shatter и подходим к врагу вплотную. Следом инициатива друида и он докидывает своим Moonbeam, при этом задевая кастера и активируя его реакцию, и вдобавок к Moonbeam по противнику прилетает ещё и от Reactive_Armor. На 4 круге это будет 4d10 (22) урона vs 4d6+4 (18) урона от Backlash.
+        # https://www.dandwiki.com/wiki/Psionic_Ward_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Резонанс защит (2 lvl Husk_Resonator)'] = {
@@ -9002,7 +9090,7 @@ metadict_detail['_++2 lvl (S) Палящий луч (2 lvl Scorching_Ray)'] = {
         }
 
 metadict_detail['_++2 lvl (S) Мистические кинжалы (2 lvl Eldritch_Daggers)'] = {
-        # * @@@ "Мистические кинжалы" (Eldritch_Daggers) [Tra|AC|force] — на себя, действием, минута действия. 4 кинжала, бросок атаки бонусным действием, 1d8 урона силовым полем, 120 футов дальности. Также можно действием нацелить 4 кинжала, атаковав с преимуществом на 4d8 урона, или без преимущества и с меньшим уроном, если кинжалов меньше четырёх. Урон всех кинжалов в броске считается одной атакой с точки зрения модификаций урона, например Hex даст 4d8+1d6 урона. На больших уровнях +4 кинжалов/круг и +1 кинжал в атаке бонусным действием, начиная с 5 круга атака бонусным действием также с преимуществом.
+        # * @@@ "Мистические кинжалы" (Eldritch_Daggers) [Tra|AC|force] — на себя, действием, минута действия. 4 парящих кинжала, бросок атаки бонусным действием, 1d8 урона силовым полем, 120 футов дальности. Также можно действием нацелить 4 кинжала, атаковав с преимуществом на 4d8 урона, или без преимущества и с меньшим уроном, если кинжалов меньше четырёх. Урон всех кинжалов в броске считается одной атакой с точки зрения модификаций урона, например Hex даст 4d8+1d6 урона. На больших уровнях +4 кинжалов/круг и +1 кинжал в атаке бонусным действием, начиная с 5 круга атака бонусным действием также с преимуществом.
         # Eldritch_Daggers несколько лучше Magic_Missile и Eldritch_Blast по DPR:
         # Круг | Кнжл | B.Act | Act | Шанс | DPR | +Hex | Dmg/бой
         # ---- | ---- | ----- | --- | ---- | --- | ---- | -------
@@ -9013,6 +9101,11 @@ metadict_detail['_++2 lvl (S) Мистические кинжалы (2 lvl Eldri
         # Заклинание из FoE, одна единорожка там недурно накидывала:
         # https://falloutequestria.fandom.com/wiki/List_of_Spells
         # https://www.dandwiki.com/wiki/Claws_of_Agathys_(5e_Spell)
+        }
+
+metadict_detail['_++2 lvl (S) Копьё молнии (2 lvl Lightning_Spear)'] = {
+        # * @@@ "Копьё молнии" (Lightning_Spear) [Tra|AC|lightning] (C) — на себя, бонусным действием, минута концентрации. Молния в облике копья, лёгкое, фехтовальное, метательное, урон 3d6, метание 100ft, возврат бонусным действием.
+        # https://www.dandwiki.com/wiki/Virgil's_Lightning_Spear_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Копьё крови (2 lvl Blood_Lance)'] = {
@@ -9039,6 +9132,7 @@ metadict_detail['_++2 lvl (S) Божественное оружие (2 lvl Spiri
 
 metadict_detail['_++2 lvl (S) Теневой клинок (2 lvl Shadow_Blade)'] = {
         # * "Теневой клинок" (Shadow_Blade) [Nec|AC|psychic] (C) — на себя, бонусным действием, минута концентрации. Атака оружием на 2d8 урона психике, преимущество к атаке по целям в тусклом свете и темноте. Бросок на 20/60 футов, возврат в руку бонусным действием.
+        # https://www.dandwiki.com/wiki/Lafayette's_Lavish_Blade_(5e_Spell)
         }
 
 metadict_detail['_++2 lvl (S) Пронзание разума (2 lvl Mind_Spike)'] = {
@@ -9050,14 +9144,14 @@ metadict_detail['_++2 lvl (S) Клеймящая кара (2 lvl Branding_Smite)
         # https://www.aidedd.org/spell/shining-smite
         }
 
+metadict_detail['_++2 lvl (S) Гидра (2 lvl Hydra)'] = {
+        # * @@@ "Гидра" (Hydra) [Nec|Con|poison] — 60 футов радиус, действием. Три головы гидры в любых точках радиуса, каждая выдыхает 15-футовым конусом 1d8 урона ядом, спасбросок Телосложения. Затем головы исчезают. На больших уровнях +1 голова/круг.
+        # https://www.dandwiki.com/wiki/Hydra_(5e_Spell)
+        }
+
 metadict_detail['_++2 lvl (S) Зловонное дыхание (2 lvl Halitosis_Tonic)'] = {
         # * @@@ "Зловонное дыхание" (Halitosis_Tonic) [Nec|Con|poison] — касание, действием, 10 минут действия. Любой заканчивающий ход в 5 футах от цели получает урон ядом 1d4 и отравление на раунд, спасбросок Телосложения полный. Превращает фамильяра в летучего скунса, хотя фамильяр может и передавать заклинания касанием, например на вражеского командира, чтобы заставить телохранителей держаться подальше от него.
         # https://www.dandwiki.com/wiki/Halitosis_Tonic_(5e_Spell)
-        }
-
-metadict_detail['_++2 lvl (S) Гидра (2 lvl Hydra)'] = {
-        # * @@@ "Гидра" (Hydra) [Nec|Con|poison] — 60 футов радиус, действием. Три головы гидры в любых точках радиуса, каждая выдыхает 15-футовым конусом 1d8 урона ядом, спасбросок Телосложения. Затем головы исчезают. На больших уровнях +1 голова/круг.
-        # https://www.dandwiki.com/wiki/Hydra_(5e_Spell) -- три головы гидры пыхают ядом по 1d8 на 15ft cone.
         }
 
 metadict_detail['_++2 lvl (S) Дыхание дракона (2 lvl Dragons_Breath)'] = {
@@ -9078,6 +9172,7 @@ metadict_detail['_++2 lvl (S) Завеса стрел (2 lvl Cordon_of_Arrows)']
 #----
 # Заклинания 3 круга
     # TODO: На 3 круге нет атакующих и защитных заклинаний Abjuration.
+    # TODO: на 3-4 и 6-9 кругах нет заклинаний с уроном ядом.
     # [DnD] vs Eq.School  | №  | Ключевые заклинания
     # ------------------- | -- | -------------------------------------------------
     # [Tra] Translocation | 8  | Fly, Haste, Slow, Lightning
@@ -9091,7 +9186,9 @@ metadict_detail['_++2 lvl (S) Завеса стрел (2 lvl Cordon_of_Arrows)']
     # Волшебник 5lvl знает: 5/9 своей школы (2 этого круга); 3/9 союзной, 1/9 соседней.
     # Например: Dispel_Magic, Counterspell, Husk_Resonator, Healing_Overflow, Sunroad
     # False_Life, Blindness_Deafness, Blood_Lance, Eldritch_Daggers
-    # 4-й круг (ToME)
+    # 3-№ круг:
+    # https://www.dandwiki.com/wiki/Limb_Growth_(5e_Spell) --
+    # 3-№ круг:
     # https://te4.org/wiki/Shield_of_light_(talent) -- временные хиты каждый раз после ранения.
     # https://te4.org/wiki/Attenuate_(talent) -- давит врагов в 10×10ft кубе, лечит кастера.
     # 3-№ круг:
@@ -9190,11 +9287,17 @@ metadict_detail['_++3 lvl (S) Восставший труп (3 lvl Animate_Dead)
         # https://www.aidedd.org/spell/animate-dead
         # https://www.aidedd.org/monster/skeleton
         # https://www.aidedd.org/monster/zombie
+        # https://www.dandwiki.com/wiki/Self-Sufficient_Dead_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Animate_Undead_Worker_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Awaken_Undead_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Necrotic_Reconstruction_(5e_Spell) -- 50gp 4d8 в нежить конц.час.
         }
 
 metadict_detail['_++3 lvl Собственная нежизнь (3 lvl Own_Unlife)'] = {
         # * @@@ "Собственная нежизнь" (Own_Unlife) [Nec|-|-] — 50 бит (Uncommon оникс) на себя, реакцией, минута концентрации. Перед моментом смертельного удара меняет правила игры. У кастера 0hp, но он в сознании, его тело под полным контролем, подобно живому мертвецу за счёт концентрации и его воли. Каждое следующее ранение, это спасбросок Телосложения `СЛ = урон / 2`. При провале потеря одного спасброска от смерти и повторный бросок на концентрацию. При потере концентрации потеря сознания. Если потеряно больше трёх спасбросков от смерти, концентрация более не требуется, хиты восполняются до максимума, кастер превращается в живого мертвеца.
         # https://falloutequestria.fandom.com/wiki/Ghoul
+        # https://www.dandwiki.com/wiki/Viktor's_Brand_of_Undeath_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Last_Stand_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (R) Призрачный скакун (3 lvl Phantom_Steed)'] = {
@@ -9259,6 +9362,8 @@ metadict_detail['_++3 lvl (R) Необнаружимость (3 lvl Nondetection
         # _++3 lvl (R) Необнаружимость (3 lvl Nondetection) | 1,884,468
         # _++3 lvl (R) Необнаружимость (кастов/день)....... | 5,235
         # _++3 lvl (R) Необнаружимость (кастов/кантон-день) | 4
+        # https://www.dandwiki.com/wiki/Astral_Shielding_(5e_Spell) -- R=10ft защита от прорицания.
+        # https://www.dandwiki.com/wiki/False_Vision_(5e_Spell) -- R=30ft ложный образ конц.10мин.
         }
 
 metadict_detail['_++3 lvl (R) Зачаровать предмет (3 lvl Enchant_Item)'] = {
@@ -9268,11 +9373,13 @@ metadict_detail['_++3 lvl (R) Зачаровать предмет (3 lvl Enchant
 metadict_detail['_++3 lvl (S) Мерцание (3 lvl Blink)'] = {
         # * +++ "Мерцание" (Blink) [Ilu|-|-] — на себя, действием, минута действия. Срабатывает с 50% вероятностью каждый раунд. Если срабатывает, то в конце своего хода кастер уходит на эфирный план, а в начале нового раунда возвращается. Спасает от любых атак, но легко контрится подготовленным действием, Ready_Action.
         # https://www.aidedd.org/spell/blink
+        # https://www.dandwiki.com/wiki/Shadow_Blur_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Газообразная форма (3 lvl Gaseous_Form)'] = {
         # * "Газообразная форма" (Gaseous_Form) [Ilu|-|-] (C) — касание, действием, час концентрации. Даёт согласному существу форму облака. Его скорость полёта 10 футов, оно может проникнуть через узкие щели. В этой форме нельзя атаковать и брать предметы, только двигаться. Это всего лишь миля полёта за час. Но для разведки сойдёт, особенно если объединить с невидимостью.
         # Snowchanges. Облик вендиго.
+        # https://www.dandwiki.com/wiki/Poisonous_Form_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (R) Леомундова хижина (3 lvl Leomund_Tiny_Hut)'] = {
@@ -9285,7 +9392,8 @@ metadict_detail['_++3 lvl (S) Сотворение пищи и воды (3 lvl C
         }
 
 metadict_detail['_++3 lvl Реинтеграция (3 lvl Reintegrate)'] = {
-        # * @@@ "Реинтеграция" (Reintegrate) [Cnj|-|healing] — 30 футов, реакцией. Когда сам кастер или союзник в радиусе получает урон, отменяет 2 наибольшие кости урона, мгновенно воссоздавая утраченное. Может быть усилено на +2 кости урона, ценой 1 степени истощения цели (а если таковое невозможно, ценой поражения 2 костей от максимума хитов). Защитное заклинание волшебников школы Recombination, свойство Phoenix_Talisman, предтеча Healing_Megaspell. Создавая жизнь мгновенно можно и лечить мгновенно, но убереги нас Селестия от таких лепил. На больших уровнях +2 кости/круг без истощения.
+        # * @@@ "Реинтеграция" (Reintegrate) [Cnj|-|healing] — 30 футов, реакцией. Когда сам кастер или союзник в радиусе получает урон, отменяет 2 наибольшие кости урона, мгновенно воссоздавая утраченное. Может быть усилено на +2 кости урона, ценой 1 степени истощения цели (а если таковое невозможно, ценой поражения 2 костей от максимума хитов). На больших уровнях +2 кости/круг без истощения.
+        # Защитное заклинание волшебников школы Recombination, свойство Phoenix_Talisman, предтеча Healing_Megaspell. Создавая жизнь мгновенно можно и лечить мгновенно, но убереги нас Селестия от таких лепил.
         # Почувствуй себя Александром Андерсоном из Hellsing:
         # Круг | Reintegrate   | Dices   | Mid | 3  | 3+ | 4+ | 5+
         # ---- | ------------- | ------- | --- | -- | -- | -- | --
@@ -9293,6 +9401,8 @@ metadict_detail['_++3 lvl Реинтеграция (3 lvl Reintegrate)'] = {
         # 6    | Disintegrate  | 10d6+40 | 75  | 64 | 56 | 48 | 43
         # Fireball: 6 5 4 4 3 3 2 1
         # Disintegrate: 6 5 5 4 4 3 3 2 2 1
+        # https://www.dandwiki.com/wiki/Resist_Annihilation_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Repair/Raze_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Магический круг (3 lvl Magic_Circle)'] = {
@@ -9324,6 +9434,7 @@ metadict_detail['_++3 lvl (S) Дрёма (3 lvl Catnap)'] = {
 
 metadict_detail['_++3 lvl (S) Снятие проклятия (3 lvl Remove_Curse)'] = {
         # * "Снятие проклятия" (Remove_Curse) [Nec|-|-] — касание, действием. Снимает проклятия с людей и обычных вещей. С магических не снимает, но разрывает связь с носителем, позволяя снять и выбросить. Это заклинание снимает Bestow_Curse, хотя можно рассеять и с помощью Dispel_Magic.
+        # https://www.dandwiki.com/wiki/Unravel_Dweomer_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Проклятие (3 lvl Bestow_Curse)'] = {
@@ -9334,6 +9445,7 @@ metadict_detail['_++3 lvl (S) Проклятие (3 lvl Bestow_Curse)'] = {
 
 metadict_detail['_++3 lvl (S) Ужас (3 lvl Fear)'] = {
         # * +++ "Ужас" (Fear) [Enc|Wis|-] (C) — 30-футовый конус, действием, минута концентрации. Цели бегут от кастера с Dash_Action. Спасбросок мудрости, повторный когда цели некуда бежать. По простой пехоте эффект сравним с огненным шаром. В построении появляется огромный пролом, все бегут, отряд сыплется. Великолепное средство, чтобы очистить палубу корабля перед абордажем.
+        # https://www.dandwiki.com/wiki/Become_Fear_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Изобилие врагов (3 lvl Enemies_Abound)'] = {
@@ -9349,6 +9461,7 @@ metadict_detail['_++3 lvl (S) Образ (3 lvl Major_Image)'] = {
         # * "Образ" (Major_Image_v2024) [Ilu|Int|-] (C) — 120 футов, действием, 20-футовый куб, 10 минут концентрации. Иллюзия имитирует звук, запах, температуру, всё кроме тактильных ощущений. Иллюзия подвижна. Её можно распознать коснувшись, или действием пройдя проверку Интеллекта (Анализ). Если существо распознало иллюзию, оно через неё видит. На больших уровнях: за ячейку 4 круга иллюзия не требует концентрации и длится, пока не рассеется. Но волшебники такого уровня обычно создают Programmed_Illusion, хотя Major_Image удобнее для украшательства крупных городов (волшебников 11+ lvl очень мало).
         # https://www.dndbeyond.com/spells/2619025-major-image
         # https://www.dndbeyond.com/spells/2180-major-image
+        # https://www.dandwiki.com/wiki/Shadow_Record_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Полёт (3 lvl Fly)'] = {
@@ -9362,6 +9475,7 @@ metadict_detail['_++3 lvl (S) Полёт (3 lvl Fly)'] = {
             # Плотность тока -- 1 MA/cm²
             # Плотность проводника (Graphitic carbon nitride) — 2.336 g/cm³
             # Масса кольца: circumference(1.5m) × 2.4cm² × 2.336g/cm³ = 5.3kg
+        # https://www.dandwiki.com/wiki/Gliding_Light_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (R) Притворная смерть (3 lvl Feign_Death)'] = {
@@ -9434,6 +9548,7 @@ metadict_detail['_++3 lvl (S) Массовое лечащее слово (3 lvl 
 
 metadict_detail['_++3 lvl (S) Возрождение (3 lvl Revivify)'] = {
         # * "Возрождение" (Revivify) [Cnj|-|healing] — 300 бит (Uncommon бриллиант 3 карата), касание, действием. Реанимирует погибшего за последнюю минуту. Чтобы спасти товарища нужно сражаться вместе с отрядом, или быть хотя бы в 100 футах от отряда, когда начнут звать.
+        # https://www.dandwiki.com/wiki/Critical_Blood_Transfusion_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (R) Хождение по воде (3 lvl Water_Walk)'] = {
@@ -9486,11 +9601,13 @@ metadict_detail['_++3 lvl (S) Кинетический купол (3 lvl Kinetic
             # Под 10-футовым куполом может укрыться 25 бойцов, по два на 25ft².
         # https://www.dandwiki.com/wiki/Doozel's_Dome_of_Kinectic_Redirection_(5e_Spell)
         # https://www.dandwiki.com/wiki/Grum's_Popping_Bubble_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Defensive_Dome_(5e_Spell)
         # https://te4.org/wiki/Disruption_shield_(talent)
         }
 
 metadict_detail['_++3 lvl (S) Защита от энергии (3 lvl Protection_from_Energy)'] = {
         # * !!! "Защита от энергии" (Protection_from_Energy) [Abj|-|-] (C) — касание, концентрация, час концентрации. До 8 существ. Даёт 50% сопротивляемость к одному из типов урона на выбор: к звуку, кислоте, огню, холоду, электричеству, силовому полю, излучению, некротике. Homebrew: заклинание действует на 8 целей, чтобы был смысл его использовать в мире рун с Absorb_Elements. Если цель под действием защиты применяет Absorb_Elements, то сопротивление становится иммунитетом на 1 ход. На больших уровнях: +1 тип сопротивления/круг.
+        # https://www.dandwiki.com/wiki/Energy_Immunity_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Рассеивание магии (3 lvl Dispel_Magic)'] = {
@@ -9504,15 +9621,21 @@ metadict_detail['_++3 lvl (S) Контрзаклинание (3 lvl Counterspell
         # * +++ !!! "Контрзаклинание" (Counterspell) [Abj|-|-] — 300 футов, реакция. Прерывает заклинание 3 круга и ниже. Для заклинаний 4 круга и выше проверка базовой характеристики против `10 + круг_заклинания`. Абсолютно необходимо любому магу. Иначе прилетит "Огненный шар" в центр построения, и всё, конец. И у варлоков, к слову, огромное преимущество. Они могут сначала заблокировать огнешары, а через час отдыха вернуться и выжечь противника дотла. Homebrew: радиус контрзаклинаний расширен с 60 до 300 футов (100 метров).
         # https://www.dndbeyond.com/spells/2619072-counterspell
         # https://www.dndbeyond.com/spells/2051-counterspell
+        # https://www.dandwiki.com/wiki/Mind_Freeze_(5e_Spell)
+        # https://www.dandwiki.com/wiki/No_U_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Мантия крестоносца (3 lvl Crusaders_Mantle)'] = {
         # * +++ !!! "Мантия крестоносца" (Crusaders_Mantle) [Enc|-|weapon] (C) — на себя, действием, 30-футовый радиус, минута концентрации. 1d4 дополнительного урона всем союзникам в радиусе. Homebrew: оружие и снаряды при этом считаются магическими и преодолевают сопротивление/иммунитет к обычному оружию. Идеально против волшебных существ. Таким способом отряд из сотни стрелков может прикончить эмпирея, неуязвимого к обычному оружию.
+        # https://www.dandwiki.com/wiki/Aura_of_Victory_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Mantle_of_Command_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Ускорение (3 lvl Haste)'] = {
         # * +++ "Ускорение" (Haste) [Tra|-|-] (C) — 30 футов, действием, минута концентрации. Цель получает +2 AC и преимущество на спасброски Ловкости. Дополнительное действие: одна атака оружием; засада; использование предмета; отход; рывок. Цель пропускает один ход в конце действия заклинания.
         # https://www.aidedd.org/spell/haste
+        # https://www.dandwiki.com/wiki/Quick_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Chronoshift_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Замедление (3 lvl Slow)'] = {
@@ -9565,6 +9688,7 @@ metadict_detail['_++3 lvl (S) Дневной свет (3 lvl Daylight)'] = {
 
 metadict_detail['_++3 lvl (S) Громовой шаг (3 lvl Thunder_Step)'] = {
         # * "Громовой шаг" (Thunder_Step) [Tra|Con|thunder] — 90 футов, действием, 10-футовый радиус, 3d10 урона звуком, спасбросок Телосложения. Гром на 300 футов. Телепортирует вместе с одним согласным существом, бахает в исходной точке. Будет использоваться подобно Misty_Step, когда окружили враги. Но, чёрт возьми, зачем магу лезть в такую самоубийственную авантюру? В абсолютном большинстве случаев кастеры отсиживаются за спинами бойцов. Единственное исключение, что мне видится, это мистический рыцарь, который на 13 lvl уже вполне способен в одиночку истреблять сотни.
+        # https://www.dandwiki.com/wiki/Lightning_Leap_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Огненный шар (3 lvl Fireball)'] = {
@@ -9600,6 +9724,7 @@ metadict_detail['_++3 lvl (S) Молния (3 lvl Lightning)'] = {
 
 metadict_detail['_++3 lvl (S) Призыв молнии (3 lvl Call_Lightning)'] = {
         # * +++ "Призыв молнии" (Call_Lightning) [Tra|Dex|lightning] (C) — 120 футов, действием, 10×10-футов зоны поражения, 10 минут концентрации. Разряды молний на 3d10 урона (4d10 в бурю), спасбросок Ловкости. Разряды молний исходят из точки в 100 футах над головой заклинателя, где формируется облако. Это крайне эффективное заклинание, с которым можно за минуту нанести урон сравнимый с огнешаром, а за 10 минут в щепки разнести всю верхнюю палубу корабля и хорошенько пожарить тех, кто прячется ниже.
+        # https://www.dandwiki.com/wiki/Lightning_Strike_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Приливная волна (3 lvl Tidal_Wave)'] = {
@@ -9619,6 +9744,7 @@ metadict_detail['_++3 lvl (S) Ослепляющая кара (3 lvl Blinding_Sm
 
 metadict_detail['_++3 lvl (S) Стихийное оружие (3 lvl Elemental_Weapon)'] = {
         # * !!! "Стихийное оружие" (Elemental_Weapon) [Enc|-|choice] — касание, действием, час действия. Немагическое оружие становится оружием +1 и получает 1d6 урона на выбор: звук, кислота, огонь, холод, электричество. Homebrew: не требует концентрации, дополнительный урон усилен до 1d6. Это заклинание рейнджеров и паладинов 9+ lvl.
+        # https://www.dandwiki.com/wiki/Mineralize_Weapon_(5e_Spell)
         }
 
 metadict_detail['_++3 lvl (S) Молниевая стрела (3 lvl Lightning_Arrow)'] = {
@@ -9653,6 +9779,74 @@ metadict_detail['_++3 lvl (S) Картечь (3 lvl Conjure_Barrage)'] = {
     # https://te4.org/wiki/Circle_of_sanctity_(talent) -- защищает от Silence и Тишина на всех в радиусе.
     # 4-й круг:
     # https://www.dandwiki.com/wiki/Lunae_(5e_Spell) -- недобрая Луна светит в радиусе мили.
+    # https://www.dandwiki.com/wiki/Amplify_Emotions_(5e_Spell) -- внушение эмоции, конц.минута.
+    # https://www.dandwiki.com/wiki/Amplify_Damage_(5e_Spell) -- уязвимость к типу урона, конц.минута.
+    # https://diablo.fandom.com/wiki/Amplify_Damage --
+    # https://www.dandwiki.com/wiki/All_Consuming_Light_(5e_Spell) -- R=40ft, 4d8 force DEX.save, тьма.
+    # https://www.dandwiki.com/wiki/Alice's_Chaos_Recall_(5e_Spell) -- 5d6 force COS.save, отмена телепорта.
+    # https://www.dandwiki.com/wiki/Accursed_Strike_(5e_Spell) -- 4d4 necrotic + 1d4 каждые 24 часа Curse.
+    # https://www.dandwiki.com/wiki/Aura_of_Embers_(5e_Spell) -- R=30ft сопротивление холоду, конц.8час.
+    # https://www.dandwiki.com/wiki/Atum's_Guidance_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Bind_Creature_Ritual_(5e_Spell) -- (R)
+    # https://www.dandwiki.com/wiki/Barrier_(5e_Spell) -- 30ft 8d8 hp +1 AC час действия.
+    # https://www.dandwiki.com/wiki/Bone_Cleaves_Steel_(5e_Spell) -- контроль мертвяков без Bonus_Action.
+    # https://www.dandwiki.com/wiki/Blood_Orb_(5e_Spell) -- 5d6 necrotic poisoned CON.save запрет атаки.
+    # https://www.dandwiki.com/wiki/Charm_of_Hummingbirds_(5e_Spell) -- R=20ft 7d6 piercing конц.минута.
+    # https://www.dandwiki.com/wiki/Celestial_Storm_(5e_Spell) -- (R) 2d10 + слепота CON.save минута.
+    # https://www.dandwiki.com/wiki/Catoblepas'_Breath_(5e_Spell) -- 10d4 necrotic CON.save.
+    # https://www.dandwiki.com/wiki/Consume_the_Fallen_(5e_Spell) -- R=50ft 10hp.
+    # https://www.dandwiki.com/wiki/Control_Snow/Ice_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Cut_Down_(5e_Spell) -- атака против AC 10+DEX без сопр/иммун.
+    # https://www.dandwiki.com/wiki/Defender_of_Life_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Dowse_Location_(5e_Spell) -- предмет направляет к кастеру 24 часа.
+    # https://www.dandwiki.com/wiki/Expecto_Patronum_(5e_Spell) -- Turn Undead 30ft защита от страха.
+    # https://www.dandwiki.com/wiki/Equivalent_Exchange_(5e_Spell) -- (R) золото в драгоценные камни.
+    # https://www.dandwiki.com/wiki/Gravity_Hammer_(5e_Spell) -- R=10ft CON.Save 90ft вниз 6d6 bludgeoning.
+    # https://www.dandwiki.com/wiki/Grasping_Shadows_(5e_Spell) -- R=20ft 3d6 bludgeoning DEX.Save restrained.
+    # https://www.dandwiki.com/wiki/Glass_Cannon_(5e_Spell) -- (R) орудие из песка конц.час.
+    # https://www.dandwiki.com/wiki/Glacial_Blast_(5e_Spell) -- 6d8 cold DEX.save restrained.
+    # https://www.dandwiki.com/wiki/Genetic_Reshuffle_(5e_Spell) -- 3d6 +2d6/round конц.минута
+    # https://www.dandwiki.com/wiki/Fool's_Gold_(5e_Spell) -- 150cp в 150gp на 8 часов.
+    # https://www.dandwiki.com/wiki/Flurry_of_Magic_(5e_Spell) -- 5 кантрипов действием.
+    # https://www.dandwiki.com/wiki/Fire_Seeds_(5e_Spell) -- 8 ягод 4d8 fire DEX.save час действия.
+    # https://www.dandwiki.com/wiki/Find_Apprentice_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Fayne's_Fiery_Flagellation_(5e_Spell) -- 60ft cone 5d6 fire конц.минута.
+    # https://www.dandwiki.com/wiki/Great_Lightning_Spear_(5e_Spell) -- 5d10+mod lightning ×2 to dragons.
+    # https://www.dandwiki.com/wiki/Greater_Transference_(5e_Spell) -- (R) передача слотов заклинаний.
+    # https://www.dandwiki.com/wiki/Hunger/Thirst_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Impure_Coalescence_(5e_Spell) -- (R) конструкт из немёртвых, час дейсвтия.
+    # https://www.dandwiki.com/wiki/Imbue_with_Spell_Ability_(5e_Spell) -- передача слотов 1 круга.
+    # https://www.dandwiki.com/wiki/Lances_of_Condemnation_(5e_Spell) -- 3×2d6 DEX.save Disadvantage.
+    # https://www.dandwiki.com/wiki/Kinetic_Fusillade_(5e_Spell) -- 8d12 пул piercing DEX.save.
+    # https://www.dandwiki.com/wiki/Leafify_(5e_Spell) -- вещь до 500lb в листок 0.25lb.
+    # https://www.dandwiki.com/wiki/Major_Stasis_(5e_Spell) -- до 2000lb WIS.save Paralyzed конц.мин.
+    # https://www.dandwiki.com/wiki/Magic_Ship_(5e_Spell) -- 500gp полёт корабля 48 часов.
+    # https://www.dandwiki.com/wiki/Magic_Resistance_(5e_Spell) -- (R) Advantage to saves конц.минута.
+    # https://www.dandwiki.com/wiki/Quintessa's_Dweomershield_(5e_Spell) -- защита от магии предмета 24 часа.
+    # https://www.dandwiki.com/wiki/Lunar_Branding_(5e_Spell) -- WIS.save 2d4 radiant на свету, 24 часа.
+    # https://www.dandwiki.com/wiki/Long_Beam_(5e_Spell) -- 600ft 8d6 force DEX.save.
+    # https://www.dandwiki.com/wiki/Line_Breaker_(5e_Spell) -- 60ft 4d8 force beam CHA.save телепорт+prone.
+    # https://www.dandwiki.com/wiki/Lloyd's_Lie_Whisper_(5e_Spell) -- внушение лжи минута 8 часов.
+    # https://www.dandwiki.com/wiki/Limited_Spell_Immunity_(5e_Spell) -- иммунитет к одному заклинанию 10min.
+    # https://www.dandwiki.com/wiki/Light_Beam_(5e_Spell) -- 60ft beam 4d6 radiant DEX.save конц.мин.
+    # https://www.dandwiki.com/wiki/Might_of_Giants_(5e_Spell) -- STR=20 up to 30 конц.час.
+    # https://www.dandwiki.com/wiki/Mummify_(5e_Spell) -- бесконечный Gentle_Repose и анимация по триггеру.
+    # https://www.dandwiki.com/wiki/Mithral_Form_(5e_Spell) -- сталь в мифрил.
+    # https://www.dandwiki.com/wiki/Golem,_Mithral_(5e_Creature) -- 250k gp, 8 тонн мифрила.
+    # https://www.dandwiki.com/wiki/Mirage_of_Despair_(5e_Spell) -- прекрасное в ужасное, curse, 6hours.
+    # https://www.dandwiki.com/wiki/Mirage_(5e_Spell) -- мираж на горизонте + очарование на 6 часов.
+    # https://www.dandwiki.com/wiki/Minor_Mark_(5e_Spell) -- (R)
+    # https://www.dandwiki.com/wiki/Ostrichize_(5e_Spell) -- постепенное превращение в страуса.
+    # https://www.dandwiki.com/wiki/Psychic_Hammer_(5e_Spell) -- 6 целей 4d8 psychic slow INT.save.
+    # https://www.dandwiki.com/wiki/Precognitive_Perception_(5e_Spell) -- (R) ближнее будущее.
+    # https://www.dandwiki.com/wiki/Phantom_Orchestra_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Pebble_Blink_(5e_Spell) -- возврат к горке камней, 1 миля.
+    # https://www.dandwiki.com/wiki/Pearl_of_Subsistence_(5e_Spell) -- (R) 100gp неделя без еды и воды.
+    # https://www.dandwiki.com/wiki/Otto's_Warding_Tones_(5e_Spell) -- (R) R=50ft оглушение конц.минута.
+    # https://www.dandwiki.com/wiki/Otto's_Tin_Soldiers_(5e_Spell) -- оловянные солдаты минута.
+    # https://www.dandwiki.com/wiki/Otto's_Silver_Tongue_(5e_Spell) -- CHA=19 преимущество обмана, минута.
+    # https://www.dandwiki.com/wiki/Rain_of_Needles_(5e_Spell) -- 4rounds 6d6 poison CON.save poisoned blinded.
+    # https://www.dandwiki.com/wiki/Radiant_Aura_(5e_Spell) -- R=20ft 1d6+mod radiant/healing конц.мин.
     # 4-й круг:
     # https://www.dandwiki.com/wiki/Spell_Barrier_(3.5e_Spell)
     # https://www.dandwiki.com/wiki/Tempest_(3.5e_Spell)
@@ -9737,6 +9931,7 @@ metadict_detail['_++4 lvl (S) Призыв малых элементалей (4 
 
 metadict_detail['_++4 lvl (S) Поиск высшего скакуна (4 lvl Find_Greater_Steed)'] = {
         # * !!! "Поиск высшего скакуна" (Find_Greater_Steed) [Cnj|-|-] — 30 футов, 10 минут каста, 600-футовый радиус контроля, пока не рассеется. На выбор: грифон, пегас, перитон, лютый волк, носорог, саблезубый тигр. Скакун получает 6 Интеллекта, если менее, и знает один язык. Скакун получает телепатию с хозяином в радиусе 600 футов. Пока верхом, нацеленные на себя заклинания можно нацеливать также на скакуна. Homebrew: если скакун покидает радиус контроля, он исчезает. В противном случае это получается автономный бомбардировщик неограниченного радиуса, способный нести 540 фунтов (240 кг, 60 кг ТНТ) полезной нагрузки и 24 часа 7 дней в неделю изничтожать врагов. Это заклинание паладина 13+ lvl.
+        # https://www.dandwiki.com/wiki/Find_Extraordinary_Steed_(5e_Spell)
         }
 
 metadict_detail['_++4 lvl (S) Гигантское насекомое (4 lvl Giant_Insect)'] = {
@@ -9785,6 +9980,10 @@ metadict_detail['_++4 lvl (R) Послание через зеркало (4 lvl 
 
 metadict_detail['_++4 lvl (S) Магический глаз (4 lvl Arcane_Eye)'] = {
         # * "Магический глаз" (Arcane_Eye) [Tra|-|-] (C) — 30 футов, действием, час концентрации. Обычное зрение без ограничений и 30-футовый радиус тёмного зрения. Действием можно переместить глаз на 30 футов в любом направлении. Он видит во всех направлениях. Парит в воздухе, может проникнуть в 1-дюймовую дыру (2.5 см). Является невидимым крошечным объектом, его можно уничтожить "Рассеиванием магии". Полёт на 30 футов/раунд, это 6 миль полёта/час.
+        # https://www.dandwiki.com/wiki/Prying_Eyes_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Prying_Eyes,_Greater_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Conjure_Glass_Eye_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Glass_Eye_(5e_Creature)
         }
 
 metadict_detail['_++4 lvl (R) Предсказание (4 lvl Divination)'] = {
@@ -9793,6 +9992,7 @@ metadict_detail['_++4 lvl (R) Предсказание (4 lvl Divination)'] = {
         # _++4 lvl (R) Предсказание (бит/год)............. | 10,707,250
         # _++4 lvl (R) Предсказание (предсказаний/день)... | 119
         # 10.7M бит/год, это 0.18% ВВП Эквестрии.
+        # https://www.dandwiki.com/wiki/Hermit's_Wisdom_(5e_Spell)
         }
 
 metadict_detail['_++4 lvl (S) Поиск существа (4 lvl Locate_Creature)'] = {
@@ -9842,6 +10042,7 @@ metadict_detail['_++4 lvl (S) Свобода перемещения (4 lvl Freed
         }
 
 metadict_detail['_++4 lvl (R) Укорениться (4 lvl Enroot)'] = {
+        # https://www.dandwiki.com/wiki/One_with_Nature_(5e_Spell)
         }
 
 metadict_detail['_++4 lvl (S) Изменение формы камня (4 lvl Stone_Shape)'] = {
@@ -9855,6 +10056,7 @@ metadict_detail['_++4 lvl (S) Защита от смерти (4 lvl Death_Ward)'
         # 4 lvl Защита от смерти (4 lvl Death_Ward) (требуется).. | 110,752
         # _++4 lvl (S) Защита от смерти (4 lvl Death_Ward)....... | 128,486
         # https://www.dandwiki.com/wiki/Denial_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Flounder_(5e_Spell)
         '_++4 lvl (S) Защита от смерти (4 lvl Death_Ward) (%)':[
             '(value / x) * 100',
             '4 lvl Защита от смерти (4 lvl Death_Ward) (требуется)',
@@ -9927,6 +10129,8 @@ metadict_detail['_++4 lvl (S) Изготовление (4 lvl Fabricate)'] = {
         # Всего 1748/4669 (38%) нормо-часов, 509/1233 (41%) суммарной стоимости.
         # Это 175 нормо-дней работы, 17.5 кастов. По объёму 18 заклинаний.
         # https://www.aidedd.org/spell/fabricate
+        # https://www.dandwiki.com/wiki/Grand_Alchemy_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Laborer's_Bane_(5e_Spell)
         }
 
 metadict_detail['_++4 lvl (S) Леомундов потайной сундук (4 lvl Leomund_Secret_Chest)'] = {
@@ -9952,6 +10156,9 @@ metadict_detail['_++4 lvl (S) Леомундов потайной сундук (
 
 metadict_detail['_++4 lvl (S) Превращение (4 lvl Polymorph)'] = {
         # * +++ "Превращение" (Polymorph) [Tra|Wis|-] — 60 футов, действием, час концентрации. Превращает цель, спасбросок Мудрости для несогласного. CR нового облика не может превышать CR/уровень превращённого. Хиты создания считаются бонусными хитами. Когда они сняты, прежняя форма мгновенно возвращается. Цель теряет свой интеллект, мудрость, харизму в новой форме. Цель не может разговаривать, колдовать и действовать руками в новом облике. Подразумевается, что новый облик, это облик животного. Для смены внешности человека у нас есть Alter_Self.
+        # https://www.dandwiki.com/wiki/Shapechange_Redesigned_(5e_Variant_Rule)
+        # https://www.dandwiki.com/wiki/Greater_Polymorph_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Major_Polymorph_(5e_Spell)
         }
 
 metadict_detail['_++4 lvl (S) Контрудар (4 lvl Backlash)'] = {
@@ -9972,6 +10179,8 @@ metadict_detail['_++4 lvl (S) Цепкая лоза (4 lvl Grasping_Vine)'] = {
 metadict_detail['_++4 lvl (S) Каменная кожа (4 lvl Stoneskin)'] = {
         # * +++ !!! "Каменная кожа" (Stoneskin_v2024) [Nec|-|-] (C) — 100 бит (алмазная пыль), касание, действием, час концентрации. Даёт сопротивляемость к дробящему, рубящему и колющему урону, включая урон от падения и заклинаний.
         # https://www.aidedd.org/spell/stoneskin
+        # https://www.dandwiki.com/wiki/Iron_Flesh_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Force_Bulwark_(5e_Spell)
         }
 
 metadict_detail['_++4 lvl (S) Облачение тени (4 lvl Shadow_of_Moil)'] = {
@@ -10003,6 +10212,8 @@ metadict_detail['_++4 lvl (S) Огненный щит (4 lvl Fire_Shield)'] = {
 
 metadict_detail['_++4 lvl (S) Сфера бури (4 lvl Storm_Sphere)'] = {
         # * "Сфера бури" (Storm_Sphere) [Evo|AC|lightning] — 150 футов, действием, минута концентрации, 20-футовый радиус. 2d6 дробящего урона мгновенно, спасбросок Силы. Труднопроходимая местность. Бонусным действием, разряды молнии на 60 футов от сферы, бросок атаки, 4d6 урона молнией. Преимущество на атаки против целей внутри сферы.
+        # https://www.dandwiki.com/wiki/Raigo_(5e_Spell) -- шаровая молния в стиле Flaming_Sphere.
+        # https://www.dandwiki.com/wiki/Al-Taraj's_Fulgursphere_(5e_Spell) -- R=10ft 4d8 оглушение.
         }
 
 metadict_detail['_++4 lvl (S) Воображаемый убийца (4 lvl Phantasmal_Killer)'] = {
@@ -10044,12 +10255,12 @@ metadict_detail['_++4 lvl (S) Водяная сфера (4 lvl Watery_Sphere)'] 
         # Физика заклинания:
             # В сфере содержится: sphere(5ft) × 1000kg/m³ = 15 тонн воды.
             # Мощность: sphere(5ft) × 1000kgf/m³ × 30ft/round = 222kW
+        # https://www.dandwiki.com/wiki/Xenae's_Bubble_Prison_(5e_Spell)
         }
 
 #----
 # Заклинания 5 круга
     # TODO: На 5 круге не хватает не жреческих Abjuration
-    # TODO: На 5 круге Wall_of_Light не подходит чейнджлингам.
     # [DnD] vs Eq.School  | №  | Ключевые заклинания
     # ------------------- | -- | -------------------------------------------------
     # [Tra] Translocation | 7  | Teleportation_Circle, Telekinesis, Bigbys_Hand
@@ -10058,16 +10269,93 @@ metadict_detail['_++4 lvl (S) Водяная сфера (4 lvl Watery_Sphere)'] 
     # [Cnj] Recombination | 9  | Wall_of_Stone, Passwall, Conjure_Elemental
     # [Div] Worldcalling  | 7  | Scrying, Insect_Plague, Maelstrom
     # [Enc] Animorphy     | 9  | Geas, Animate_Objects, Hold_Monster
-    # [Abj] Solward       | 10 | Regal_Presence, Wall_of_Light, Dawn
+    # [Abj] Solward       | 11 | Magelord_Armor, Regal_Presence, Dawn
     # [Nec] Stardusk      | 6  | Danse_Macabre, Contagion, Cloudkill
     # Волшебник 9lvl знает: 7/13 своей школы (2 этого круга); 4/13 союзной, 2/13 соседней.
     # 5-й круг:
-    # https://www.dandwiki.com/wiki/Exorcise_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/DandeLions_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Know_Death_(3.5e_Spell)
+    # https://www.dandwiki.com/wiki/Astral_Entity_(5e_Spell) -- 60ft прохода сквозь стены, конц.минута.
+    # https://www.dandwiki.com/wiki/Arcane_Fusion_(5e_Spell) -- сдвоенное заклинание 1 и 4 кругов.
+    # https://www.dandwiki.com/wiki/Awaken_Self_(5e_Spell) -- отменяет поражение INT/WIS/CHA, неделя.
+    # https://www.dandwiki.com/wiki/Bone_Trap_(5e_Spell) -- (R) ловушка 4d10 50% скорости минута
+    # https://www.dandwiki.com/wiki/Beckoning_Order_(5e_Spell) -- R=50ft все броски к среднему, минута.
+    # https://www.dandwiki.com/wiki/Barrier_of_Chaos_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Ballistakinesis_(5e_Spell) -- помеха и преимущество выстрелам, конц.мин.
+    # https://www.dandwiki.com/wiki/Conjure_Ordinance_(5e_Spell) -- орудие 17 AC 70hp 4d8 конц.час.
+    # https://www.dandwiki.com/wiki/Crystalline_Sanctuary_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Create_Horror_Knight_(5e_Spell) -- (R) 1800gp
+    # https://www.dandwiki.com/wiki/Create_Ghost_(5e_Spell) -- (R) после смерти превращает в призрака, год.
+    # https://www.dandwiki.com/wiki/Diluvian_Wave_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Disintegrating_Smite_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Doppelganger_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Eternal-Force_Blizzard_(5e_Spell) -- 25ft cube 6d8 спас.тел paralyzed.
+    # https://www.dandwiki.com/wiki/Enraged_Enhancement_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Enlighten_Undead_(5e_Spell) -- (R) 1d8+мод к интеллекту немёртвого.
+    # https://www.dandwiki.com/wiki/Dragon%27s_Skin_(5e_Spell) -- 20 AC и один иммунитет, конц.час.
+    # https://www.dandwiki.com/wiki/Find_Omega_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Fiery_Dance_(5e_Spell) -- 3 точки R=10ft 4d10, минута.
+    # https://www.dandwiki.com/wiki/Field_of_Vineyards_(5e_Spell) -- R=40ft 4 лозы по 2d6, минута.
+    # https://www.dandwiki.com/wiki/Fia's_Mist_(5e_Spell) -- R=10ft спас.тела или полиморф в дерево.
+    # https://www.dandwiki.com/wiki/Fallen_Meteor_(5e_Spell) -- (R)
+    # https://www.dandwiki.com/wiki/Flesh_to_Jelly_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Hallowed_Ground_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Grum's_Lesser_Mojo_Transfer_(5e_Spell) -- (R) душу в предмет.
+    # https://www.dandwiki.com/wiki/Greater_Moment_(5e_Spell) -- (R) фотоаппарат с True_Seeing, час.
+    # https://www.dandwiki.com/wiki/Goldweaver's_Ray_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Glyph_of_Oath-binding_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Gloom_Walk_(5e_Spell) -- 8 существ 300ft скорость 8 часов.
+    # https://www.dandwiki.com/wiki/Imbuing_Ritual_(5e_Spell) -- (R)
+    # https://www.dandwiki.com/wiki/Imbue_Harmlessness_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Helotry_(5e_Spell) -- касты заклинаний с точки союзника, конц.минута.
+    # https://www.dandwiki.com/wiki/Healer_of_Multitudes_(5e_Spell) -- 2d8+mod лечения касанием, конц.10мин.
+    # https://www.dandwiki.com/wiki/Heaven's_Door_(5e_Spell) -- превращает в книгу, которую можно править.
+    # https://www.dandwiki.com/wiki/Healing_Fire_(5e_Spell) -- реакция, Fireball лечит вместо урона.
+    # https://www.dandwiki.com/wiki/Imbuing_Ritual_(5e_Spell) -- (R)
+    # https://www.dandwiki.com/wiki/Magic_Mirror_(5e_Spell) -- Counterspell с отражением на 60ft.
+    # https://www.dandwiki.com/wiki/Life_Shift_(5e_Spell) -- Regenerate за счёт другого.
+    # https://www.dandwiki.com/wiki/Mass_Transcription_(5e_Spell) -- (R) копирование свитков.
+    # https://www.dandwiki.com/wiki/Moonblast_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Permanency_(5e_Spell) -- следующее заклинание постоянное.
+    # https://www.dandwiki.com/wiki/Permanency,_Variant_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Perfect_Cube_(5e_Spell) -- (R)
+    # https://www.dandwiki.com/wiki/O'Bannon's_Siege_Missiles_(5e_Spell) -- 500ft 3×2d10+10 force.
+    # https://www.dandwiki.com/wiki/Nexus_Weapon_(5e_Spell) -- weapon 2d6 psychic, конц.час.
+    # https://www.dandwiki.com/wiki/Necromancer's_Mask_(5e_Spell) -- (R) контроль нежити, конц.10минут.
+    # https://www.dandwiki.com/wiki/Nathaniel's_Undead_Army_(5e_Spell) -- (R) поднимает нежить за 1d10 necrotic.
+    # https://www.dandwiki.com/wiki/Phase,_Variant_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Phoenix_Dash_(5e_Spell) -- 60ft Fly, 3d10 fire пролетая врага, конц.мин.
+    # https://www.dandwiki.com/wiki/Positive/Negative_Energy_Zone_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Realistic_Explosion_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Rapture,_Variant_(5e_Spell) -- 10d8 radiant/necrotic.
+    # https://www.dandwiki.com/wiki/Random_Walk_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Rain_of_Fiery_Blades_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Quintessa's_Dweomerdrain_(5e_Spell) -- магический предмет в слоты.
+    # https://www.dandwiki.com/wiki/Quincy_Sovereignty_(5e_Spell) -- R=10ft помеха спасам врага.
+    # https://www.dandwiki.com/wiki/Protection_from_Harm_(5e_Spell) -- сопротивляемость всему конц.10мин.
+    # https://www.dandwiki.com/wiki/Prismatic_Bow_(5e_Spell) -- 3d8 piercing, одна спец-стрела, час.
+    # https://www.dandwiki.com/wiki/Shock_Coil_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Shadow_Walk_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Secret_Hado_(5e_Spell) -- уничтожает магические барьеры.
+    # https://www.dandwiki.com/wiki/Sand's_Body_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Riddle’s_Ridiculous_Routine_(5e_Spell) -- в марионетку, конц.мин.
+    # https://www.dandwiki.com/wiki/Riddle_(5e_Spell) -- 4d10 psychic Stunned спас.Интеллекта.
+    # https://www.dandwiki.com/wiki/Resonant_Shockwave_(5e_Spell) -- 5d10 thunder, prone, deafened, stunned.
+    # https://www.dandwiki.com/wiki/Sorrel's_Warding_Missile_(5e_Spell) -- +6 AC или 6×2d6+2 force.
+    # https://www.dandwiki.com/wiki/Smile_of_the_Stheno_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Witchfire_(5e_Spell) -- 100×10ft, 5d6 fire 5d6 psychic, слабость минута.
+    # https://www.dandwiki.com/wiki/Wild_Fire_Surge_(5e_Spell) -- рандомные заклинания огня, конц.минута.
+    # https://www.dandwiki.com/wiki/Water_Volley_(5e_Spell) -- 6d8 bludgeoning, prone, конц.минута.
+    # https://www.dandwiki.com/wiki/Vampiric_Cloak_(5e_Spell) -- 3d6 necrotic контратака 50% лечит.
+    # https://www.dandwiki.com/wiki/Time_Control_(5e_Spell) -- 15×15ft зона до 24 часа вперёд/назад.
+    # https://www.dandwiki.com/wiki/Temporal_Buffer_(5e_Spell) -- Time_Shield, урон через 1+ раунд.
+    # https://www.dandwiki.com/wiki/Sun-Touched_Weapon,_Variant_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Withering/Burning_(5e_Spell) -- урон от света/тьмы, конц.час.
+    # https://www.dandwiki.com/wiki/Zealousy_(5e_Spell) -- (R) 100gp очарование до рассеивания.
+    # 5-й круг:
+    # https://www.dandwiki.com/wiki/Exorcise_(3.5e_Spell) --
+    # https://www.dandwiki.com/wiki/DandeLions_(3.5e_Spell) --
+    # https://www.dandwiki.com/wiki/Know_Death_(3.5e_Spell) --
     # https://www.dandwiki.com/wiki/Misspell_(3.5e_Spell) -- Funny Counterspell
     # https://www.dandwiki.com/wiki/Vampiric_Transformation_Ritual_(3.5e_Spell)
-    # https://www.dandwiki.com/wiki/Prying_Eyes_(5e_Spell)
     # 5-й круг:
     # https://totally.fandom.com/wiki/Amelia%27s_Painted_Tie -- урон цели в лечение другого, 1 раунд.
     # https://totally.fandom.com/wiki/Birds_of_a_Fire -- огромный скоростной Flaming_Sphere
@@ -10141,10 +10429,12 @@ metadict_detail['_++5 lvl (S) Оживление вещей (5 lvl Animate_Objec
 
 metadict_detail['_++5 lvl (S) Пляска смерти (5 lvl Danse_Macabre)'] = {
         # * +++ !!! "Пляска смерти" (Danse_Macabre) [Nec|-|-] — 60 футов, действием, 60-футовый радиус контроля, час концентрации. Управление бонусным действием. Поднимает до 5 мертвецов, они получают бонус к атаке и урону равный модификатору характеристики заклинания. У волшебника-некроманта 9 lvl им даётся: 9 бонусных хитов, +5 атаки и +9 урона. Это монстры с CR 1/2. Они способны в клочки разорвать одиночного героя 5-6 lvl, или почти добить земляного элементаля, оставив ему 20-30 хитов. Колдун 9 lvl может вызвать это заклинание 6 раз/сутки, используя своих зомби как шахидов (каждый будет нести 200 фунтов, 20 кг ТНТ). В длительных осадах это заклинание великолепно. В чистом поле бесполезно, зомби очень легко складываются даже от простых стрел; но на 20-футовой улице зомби будут держаться около минуты и даже могут убить пару-тройку регуляров с алебардами или десятка два ополченцев вооружённых кое-как. Homebrew: Мертвяки сохраняют свои доспехи (получая помеху к атакам, если носили тяжёлые или средние), но бросают оружие и щиты (утратив умение ими пользоваться). Выходя из радиуса управления зомби нападают на всё живое вокруг.
+        # https://www.dandwiki.com/wiki/Army_of_the_Dead_(5e_Spell) -- R=40ft, тела в гулей, минута.
         }
 
 metadict_detail['_++5 lvl (R) Астрология (5 lvl Astromancy)'] = {
         # Даёт смутные знания о регионе. О личностях, о местах, о идеях.
+        # https://www.dandwiki.com/wiki/Astromancy_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Наблюдение (5 lvl Scrying)'] = {
@@ -10157,6 +10447,7 @@ metadict_detail['_++5 lvl (S) Знание легенд (5 lvl Legend_Lore)'] = 
 
 metadict_detail['_++5 lvl (S) Вещий сон (5 lvl Dream)'] = {
         # * "Вещий сон" (Dream) [Ilu|Wis|psychic] — любая дальность, минута каста, 8 часов действия. Целью является известное кастеру существо. Можно передать послание во сне. Можно атаковать во сне, нанеся 3d6 психического урона, спасбросок Мудрости (с помехой, если есть прядь волос цели). При провале сон в эти 24 часа не приносит отдыха. Нельзя атаковать дважды в эти 8 часов. У варлока 9 lvl 6 заклинаний Dream в сутки, что даёт ему 6 целей для атак. От этого заклинания нельзя укрыться "Необнаружимостью" (Nondetection), поскольку оно не относится к школе Прорицания. Есть несколько способов защититься: 1) Detect_Magic волшебника + жреческое Sanctuary 1 круга. Обнаружение магии показывает появление магии иллюзий на одном из спящих. Его немедленно будят, при этом он не получает урона, поскольку кошмар ещё не начался. Подходит жрец, накладывает Sanctuary, человек засыпает. Атакующий должен пройти спасбросок мудрости. Так можно защитить до 60 лежащих в 30-футовом радиусе обнаружения магии людей. 2) "Леомундова хижина" (Leomunds_Tiny_Hut) 3 круга — даёт полную защиту для кастера и 8 спящих. 3) Зона "Святилища" (Hallow) 5 круга — защищает спящего, если атакующий исчадие, небожитель, нежить, фея или элементаль. Защищает и от заклинания колдуна, поскольку он проводник магии своего покровителя. Такие зоны есть в каждом храме.
+        # https://www.dandwiki.com/wiki/Nightmare_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Притворство (5 lvl Seeming)'] = {
@@ -10171,9 +10462,6 @@ metadict_detail['_++5 lvl (S) Рассеивание добра и зла (5 lvl
         # * "Рассеивание добра и зла" (Dispel_Evil_and_Good) [Abj|Cha|-] (C) — на себя, действием, минута концентрации, помеха на атаки нежити и иномировых существ. Касание другого избавляет от очарование. Касание врага (с броском атаки) и спасброском харизмы, изгоняет его.
         }
 
-metadict_detail['_++5 lvl (R) Доспехи лорда-мага (5 lvl Mailed_Might_of_the_Magelords)'] = {
-        }
-
 metadict_detail['_++5 lvl (R) Защищённый кабинет (5 lvl Mordenkainen_Private_Sanctum)'] = {
         # * "Приватный кабинет Морденкайнена" (Mordenkainens_Private_Sanctum) [Ilu|-|-] — 120 футов, 10 минут каста, 100×100-футовый куб. Любое количество эффектов на выбор: 1) звуконепроницаем; 2) непроницаем для зрения; 3) непроницаем для сенсоров Прорицания; 4) Не может быть целью заклинаний Прорицания; 5) Непроницаем для телепортов; 6) Блокирует планарные переходы. Можно сделать постоянным за год повторения заклинания.
         }
@@ -10181,10 +10469,13 @@ metadict_detail['_++5 lvl (R) Защищённый кабинет (5 lvl Mordenk
 metadict_detail['_++5 lvl (S) Изменение памяти (5 lvl Modify_Memory)'] = {
         # * "Изменение памяти" (Modify_Memory) [Enc|Wis|-] — 30 футов, действием минута концентрации. Спасбросок мудрости. Очаровывает цель. Можно изменить 10 минут воспоминаний за последние 24 часа. "Снятие проклятия" и "Высшее восстановление" возвращают настоящую память.
         # https://www.aidedd.org/spell/modify-memory
+        # https://www.dandwiki.com/wiki/Power_Word_Forget_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Подчинение личности (5 lvl Dominate_Person)'] = {
         # * "Подчинение личности" (Dominate_Person) [Enc|Wis|-] — 60 футов, минута концентрации. Очарование, спасбросок мудрости, с преимуществом во время боя. Гуманоид исполняет приказы. Телепатическая связь. Каждое ранение, это новый спасбросок мудрости. Можно взять полный контроль действием. На высших уровнях растёт длительность заклинания. 6 уровень — 10 минут; 7 уровень — 1 час; 8 уровень — 8 часов.
+        # https://www.dandwiki.com/wiki/Mind_Switch_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Control_Person_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Удержание чудовища (5 lvl Hold_Monster)'] = {
@@ -10193,6 +10484,15 @@ metadict_detail['_++5 lvl (S) Удержание чудовища (5 lvl Hold_Mo
 
 metadict_detail['_++5 lvl (S) Обет (5 lvl Geas)'] = {
         # * "Обет" (Geas) [Enc|Wis|psychic] — 30 футов, минута каста, 30 дней действия. Спасбросок мудрости. Цель должна выполнить обет, или 5d10 урона психикой каждый день. Нельзя давать однозначно самоубийственные команды. В любом случае, это ещё одно заклинание, меняющее мир. Благо, что кастеров, способных его произнести не больше 150 на всю планету. Но всё равно это тысячи обетов каждый год.
+        # https://www.dandwiki.com/wiki/Infernal_Law_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Love_Stealer_(5e_Spell)
+        }
+
+metadict_detail['_++5 lvl (R) Доспехи лорда-мага (5 lvl Magelord_Armor)'] = {
+        # * @@@ "Доспехи лорда-мага" (Magelord_Armor) [Abj|-|-] (R) — 500 бит (Uncommon зачарованная одежда), на себя, действием, ритуал, час действия. Кастер получает 18 AC (без бонусов ловкости). Если за слот заклинания также 5d10 временных хитов, что сравнимо с эффектом False_Life. Если до окончания заклинания эти бонусные хиты потеряны, одежда рассыпается в прах. На больших уровнях +1 AC и +1d10 временных_хитов/круг.
+        # https://dndtools.org/m/spells/lost-empires-of-faerun--30/mailed-might-of-the-magelords--1556/
+        # https://www.dandwiki.com/wiki/Shadowmail_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Halaster's_Blackcloak_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (R) Корона ясности зрения (5 lvl Crown_of_Clarity)'] = {
@@ -10225,6 +10525,8 @@ metadict_detail['_++5 lvl (R) Образумить немёртвого (5 lvl E
         }
 
 metadict_detail['_++5 lvl (R) Проявление глубинного леса (5 lvl Deep_Forest_Emergence)'] = {
+        # https://www.dandwiki.com/wiki/Deep_Forest_Emergence_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Living_Root_(5e_Creature)
         }
 
 metadict_detail['_++5 lvl (R) Разбить очарование (5 lvl Break_Enchantment)'] = {
@@ -10261,11 +10563,14 @@ metadict_detail['_++5 lvl (S) Множественное лечение ран (
 
 metadict_detail['_++5 lvl (S) Реинкарнация (5 lvl Reincarnate)'] = {
         # * "Реинкарнация" (Reincarnate) [Cnj|-|healing] — 250 бит (Rare изумруд 4 карата), касание, час каста. Возвращает к жизни, если цель заклинания была мертва менее 10 дней. В отличии от Raise_Dead не требует целого тела, а только его часть. Создаёт новое тело.
+        # https://www.dandwiki.com/wiki/Reincarnate_Skeleton_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Rebirth_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Оживление (5 lvl Raise_Dead)'] = {
         # * "Оживление" (Raise_Dead) [Enc|-|healing] — 750 бит (Rare бриллиант 4 карата), касание, час каста. Оживляет мёртвого, погибшего менее чем 10 дней назад. Срок хранения тела можно продлевать до бесконечности заклинанием 2 круга "Нетленные останки" (Gentle_Repose).
         # https://www.aidedd.org/spell/raise-dead
+        # https://www.dandwiki.com/wiki/Risen_Life_Service_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Высшее восстановление (5 lvl Greater_Restoration)'] = {
@@ -10356,6 +10661,7 @@ metadict_detail['_++5 lvl (S) Святилище (5 lvl Hallow)'] = {
 
 metadict_detail['_++5 lvl (S) Преграда жизни (5 lvl Antilife_Shell)'] = {
         # * "Преграда жизни" (Antilife_Shell) [Nec|-|-] (C) — на себя, действием, 10-футовый радиус, час концентрации. Не подпускает живых существ внутрь барьера. Нежить и неживые предметы (стрелы, дротики) свободно проходят сквозь барьер. Барьер тает, если друид за ним сам приближается к живому существу.
+        # https://www.dandwiki.com/wiki/Dalamar's_Antilife_Dome_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Усиление навыка (5 lvl Skill_Empowerment)'] = {
@@ -10417,6 +10723,7 @@ metadict_detail['_++5 lvl (S) Призыв залпа (5 lvl Conjure_Volley)'] =
 
 metadict_detail['_++5 lvl (S) Длань Бигби (5 lvl Bigbys_Hand)'] = {
         # * !!! "Длань Бигби" (Bigbys_Hand) [Tra|AC|force] — 120 футов, действием, минута концентрации. Рука с 20 AC и 26 силы, размер большой 10×10 футов поля боя. Рука имунна к урону обычным оружием. Движение на 60 футов бонусным действием. Удары на 4d8 урона силовым полем, либо толкание на 10 футов, либо хватание и сжатие на 2d6 дробящего урона. Через пространство руки нельзя двигаться. Homebrew: Рука может схватить цель и перенести по воздуху. Полезная нагрузка руки `26 силы × 5 lb × 2 размер` 260 фунтов (130 кг, 33 кг ТНТ). Шрапнельная бомба весом в 100 фунтов, это 10d6 колющего в центре; 4d6 колющего урона 15-футовый радиус.
+        # https://www.dandwiki.com/wiki/Chaos_Hand_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Синаптический разряд (5 lvl Synaptic_Static)'] = {
@@ -10433,11 +10740,13 @@ metadict_detail['_++5 lvl (S) Заражение (5 lvl Contagion)'] = {
 metadict_detail['_++5 lvl (S) Обессиливание (5 lvl Enervation)'] = {
         # * "Обессиливание" (Enervation) [Ilu|Dex|necrotic] (C) — 60 футов, действием, минута концентрации. Спасбросок ловкости. 4d8 урона/раунд, восстановление кастеру 50% от нанесённого урона. Заклинание прерывается, если его не повторять действием. Варлок всегда может кого-нибудь съесть.
         # Snowchanges. Заклинание чейнджлингов.
+        # https://www.dandwiki.com/wiki/Enervation,_Variant_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Поток негативной энергии (5 lvl Negative_Energy_Flood)'] = {
         # * "Поток негативной энергии" (Negative_Energy_Flood) [Nec|Con|necrotic] — 60 футов, действием. Одна цель, спасбросок Телосложения, 5d12 урона. Превращает убитую цель в неуправляемого зомби. Нежити даёт 5d12 бонусных хитов.
         # В мире FoE это заклинание Death_Ray из Fallout Equestria: Remains
+        # https://www.dandwiki.com/wiki/Life_Severance_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Водоворот (5 lvl Maelstrom)'] = {
@@ -10460,6 +10769,7 @@ metadict_detail['_++5 lvl (S) Облако смерти (5 lvl Cloudkill)'] = {
 
 metadict_detail['_++5 lvl (S) Власть над ветрами (5 lvl Control_Winds)'] = {
         # * "Власть над ветрами" (Control_Winds) [Evo|Str|-] (C) — 300 футов, действием, 100-футовый куб, час концентрации. Выбор эффектов, переключение действием: 1) Шквал. Сильный ветер, помеха на дальнобойные атаки, 2 фута движения за 1 фут перемещения. Скорость корабля 12 узлов, 40 миль/час ветер. 2) Нисходящий поток. Помеха на дальнобойные атаки, спасбросок Силы или посадка для летающих существ. 3) Восходящий поток. Урон от падения меньше на 50%, высота прыжка увеличивается на 10 футов. Можно перебрасывать отряды через частоколы, рвы и земляные валы, попросту подтащив и перекинув изготовленный из парусины и реек трап.
+        # https://www.dandwiki.com/wiki/Control_Air_(5e_Spell)
         }
 
 metadict_detail['_++5 lvl (S) Гнев природы (5 lvl Wrath_of_Nature)'] = {
@@ -10489,6 +10799,48 @@ metadict_detail['_++5 lvl (S) Испепеление (5 lvl Immolation)'] = {
     # [Enc] Animorphy     | 6  | Tensers_Transformation, Mental_Prison
     # [Abj] Solward       | 6  | True_Seeing, Platinum_Shield, Sunbeam
     # [Nec] Stardusk      | 6  | Crown_of_Stars, Eyebite, Circle_of_Death
+    # 6-й круг:
+    # https://www.dandwiki.com/wiki/Absolute_Predetermination_(5e_Spell) -- автоуспех атаки/раунд, конц.раунд.
+    # https://www.dandwiki.com/wiki/Accelerator_(5e_Spell) -- улучшенное Ускорение.
+    # https://www.dandwiki.com/wiki/Antimagic_Blast,_Variant_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Animal_Mind_Switch_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Armor_of_Flesh_(5e_Spell) -- слияние с мертвяком побольше.
+    # https://www.dandwiki.com/wiki/Blood_Substitution_(5e_Spell) -- (R) замещение крови для регенерации.
+    # https://www.dandwiki.com/wiki/Chain_Pain_(5e_Spell) -- 60ft, 5d6 некротикой, спас.тела, ошеломляет.
+    # https://www.dandwiki.com/wiki/Dark_World_(5e_Spell) -- 500gp 300×300ft некромантское Guards_and_Wards.
+    # https://www.dandwiki.com/wiki/Dancing_Plague_(5e_Spell) -- танец до смерти, спас.мудр. 7 дней
+    # https://www.dandwiki.com/wiki/Eldritch_Portent_(5e_Spell) -- предсказание d20 на 24 часа.
+    # https://www.dandwiki.com/wiki/Drought_(5e_Spell) -- засуха, R=1mi, 1 месяц.
+    # https://www.dandwiki.com/wiki/Dredge_(5e_Spell) -- (R) 500gp, восстанавливает здание из руин.
+    # https://www.dandwiki.com/wiki/Eyes_of_Time_(5e_Spell) -- проверки Интеллекта (История) по любой теме.
+    # https://www.dandwiki.com/wiki/Flesh_to_Bees_(5e_Spell) -- 8d10 превращение в пчёл. Спас.Тела.
+    # https://www.dandwiki.com/wiki/Flood_of_Shadow_(5e_Spell) -- R=60ft спасброски на каст заклинаний.
+    # https://www.dandwiki.com/wiki/Gather_(5e_Spell) -- R=500ft телепортация союзников к кастеру.
+    # https://www.dandwiki.com/wiki/Gravity_Sphere_(5e_Spell) -- 6d6 force, R=60ft притягивает на 30ft.
+    # https://www.dandwiki.com/wiki/Greater_Zone_of_Euphemisms_(5e_Spell) -- R=30ft спас.Хар или безвредность.
+    # https://www.dandwiki.com/wiki/Interference_Field_(5e_Spell) -- подавление заклинаний.
+    # https://www.dandwiki.com/wiki/Ironwood_(5e_Spell) -- дерево в сталь, до рассеивания.
+    # https://www.dandwiki.com/wiki/Invade_Host_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Internal_Incineration_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Lindwurm_Conflagration_(5e_Spell) -- 5×60ft огненный змей, конц.минута.
+    # https://www.dandwiki.com/wiki/Locate_Remains_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Lunisolar_Blast_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Magnetic_Field_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Oblivion_Wave_(5e_Spell) -- 8d8 force спас.мудрости 50% шанс провала закл.
+    # https://www.dandwiki.com/wiki/Navigator_(5e_Spell) -- (R) дистанция заклинаний в ломанную линию.
+    # https://www.dandwiki.com/wiki/Rockform_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Reflection_(5e_Spell) -- отражает заклинания с броском атаки, минута.
+    # https://www.dandwiki.com/wiki/Spell_Vault_(5e_Spell) -- сфера поддерживает концентрацию на заклинании.
+    # https://www.dandwiki.com/wiki/Spell_Twine_(5e_Spell) -- self/touch заклинания также на цель.
+    # https://www.dandwiki.com/wiki/Spell_Capture_(5e_Spell) -- как Counterspell но захват заклинания.
+    # https://www.dandwiki.com/wiki/Soul_Restoration_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Unholy_Flame,_Variant_(5e_Spell) -- R=15ft, 7d10 Sac.DEX запрет лечения.
+    # https://www.dandwiki.com/wiki/Teleportation_Doorway_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Talisman_of_Summoning_(5e_Spell) -- метка телепорта на предмете.
+    # https://www.dandwiki.com/wiki/Sympathetic_Vibrations_(5e_Spell) -- резонанс 8d10 thunder/round, конц.мин
+    # https://www.dandwiki.com/wiki/Water_Sucker_(5e_Spell) -- осушение 10d10 некротикой, спас.тел.
+    # https://www.dandwiki.com/wiki/Vampiric_Circle_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Vampiric_Aura_(5e_Spell) --
     # 6-й круг:
     # https://www.dandwiki.com/wiki/Wind_Shield_(3.5e_Spell)
     # https://www.dandwiki.com/wiki/Elemental_Parasite_(3.5e_Spell)
@@ -10545,6 +10897,7 @@ metadict_detail['_++6 lvl (S) Планарный союзник (6 lvl Planar_Al
 metadict_detail['_++6 lvl (S) Сотворение нежити (6 lvl Create_Undead)'] = {
         # * !!! "Сотворение нежити" (Create_Undead) [Nec|-|-] — 150 бит (3 Uncommon оникса), минута каста, 7 дней действия. Создаёт 3 вурдалаков из трупов гуманоидов. Эти создания служат неделю, затем нужно повторить заклинание, уже без компонентов, чтобы продлить контроль. На больших уровнях: 4 упыря за 7 круг; 5 упырей, или 2 вурдалака/умертвия за 8 круг; 6 упырей, или 3 вурдалака/умертвия, или 2 мумии за 9 круг. Homebrew: срок службы продлён до недели, два десятка упырей всё равно не угроза даже для единственного героя 11 lvl.
         # https://www.aidedd.org/spell/create-undead
+        # https://www.dandwiki.com/wiki/Summon_Wight_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Сотворение гомункула (6 lvl Create_Homunculus)'] = {
@@ -10553,16 +10906,20 @@ metadict_detail['_++6 lvl (S) Сотворение гомункула (6 lvl Cre
 
 metadict_detail['_++6 lvl (S) Заданная иллюзия (6 lvl Programmed_Illusion)'] = {
         # * !!! "Заданная иллюзия" (Programmed_Illusion) [Ilu|Int|-] — 25 бит (алмазная пыль), 120 футов, действием, пока не рассеется. Иллюзия должна умещаться в 30-футовый куб. Заданные действия (звуки и образы) на 5 минут. После исполнения иллюзия исчезает на 10 минут. Иллюзия может срабатывать в ответ на кодовую фразу. Распознать иллюзию можно броском Интеллекта (анализ), но она всё равно будет блокировать линию взгляда.
+        # https://www.dandwiki.com/wiki/Illusoid_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Клетка душ (6 lvl Soul_Cage)'] = {
         # * !!! "Клетка душ" (Soul_Cage) [Enc|-|-] — 100 бит (Uncommon оникс), 60 футов, реакция, 8 часов. Реакцией на смерть гуманоида ловит душу в клетку. В течении 8 часов можно сделать 6 действий. Кража жизни (2d8 хитов), Вопрос душе, Заимствование опыта (преимущество на атаку, проверку способностей, спасбросок), Глаза мертвеца ("Наблюдение" (Scrying) за точкой, которую погибший знал). Через 24 часа душа освобождается. Homebrew: Если повторять это заклинание над клеткой в течении месяца, то душа будет заперта в ней до разрушения клетки. Душу можно найти с помощью "Наблюдения" (Scrying), или задав вопрос божеству.
+        # https://www.dandwiki.com/wiki/Restore/Bind_Soul_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Волшебный сосуд (6 lvl Magic_Jar)'] = {
         # * !!! "Волшебный сосуд" (Magic_Jar) [Nec|Cha|-] — 750 бит (Rare бриллиант 4 карат), минута каста, действует до рассеивания. Переносит душу кастера в сосуд, позволяет захватить бессознательное тело в 100 футах. Спасбросок харизмы. Homebrew: В сочетании с "Защитой от смерти" (Death_Ward) можно пережить уничтожение контейнера и навсегда остаться в новом теле.
         # https://www.aidedd.org/spell/magic-jar
         # https://falloutequestria.fandom.com/wiki/Soul_Jar
+        # https://www.dandwiki.com/wiki/Soul_Replacement_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Sorcerous_Possession_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Истинное зрение (6 lvl True_Seeing)'] = {
@@ -10577,6 +10934,7 @@ metadict_detail['_++6 lvl (S) Разящее око (6 lvl Eyebite)'] = {
 metadict_detail['_++6 lvl (S) Плоть в камень (6 lvl Flesh_to_Stone)'] = {
         # * "Плоть в камень" (Flesh_to_Stone) [Cnj|Con|-] (C) — 60 футов, действием, минута концентрации. Опутывание цели, постепенное окаменение. Спасбросок Телосложения против опутывания каждый раунд. Три удачных спасброска завершают заклинание. Три провала превращают цель в камень. Вернуть к жизни можно с помощью Greater_Restoration.
         # https://www.aidedd.org/spell/flesh-to-stone
+        # https://www.dandwiki.com/wiki/Medusa's_Gaze_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Полное исцеление (6 lvl Heal)'] = {
@@ -10603,6 +10961,8 @@ metadict_detail['_++6 lvl (S) Поиск пути (6 lvl Find_the_Path)'] = {
 metadict_detail['_++6 lvl (S) Магические врата (6 lvl Arcane_Gate)'] = {
         # * "Магические врата" (Arcane_Gate) [Ilu|-|-] (C) — 500 футов, действием, 10 минут концентрации. Диаметр врат 10 футов (9 кв.метров). Бонусным действием можно менять направления порталов. Возможности огромны. Например, потоп: первый портал в реке, второй над входом в подземелье. Можно загнать телегу с порохом и картечью в портал, а уже затем идти на расчищенную точку. Какая жалость, что все города надёжно прикрыты "Запретом" (Forbiddance).
         # Snowchanges. Зимние пути.
+        # https://www.dandwiki.com/wiki/Misty_Gate_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Seamless_Space_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Слово возврата (6 lvl Word_of_Recall)'] = {
@@ -10614,8 +10974,9 @@ metadict_detail['_++6 lvl (S) Предосторожность (6 lvl Contingenc
         # https://te4.org/wiki/Contingency_(talent)
         }
 
-metadict_detail['_++6 lvl (S) Дромиджево появление (6 lvl Drawmijs_Instant_Summons)'] = {
+metadict_detail['_++6 lvl (R) Дромиджево появление (6 lvl Drawmijs_Instant_Summons)'] = {
         # * "Дромиджево Появление" (Drawmijs_Instant_Summons) [Tra|-|-] (R) — 300 бит (Rare сапфир 4 карат), касание, действием, пока не рассеется. Объект весом до 10 lb и размерами до 6 ft привязывается к драгоценному камню. Предмет можно вызвать, уничтожив сапфир действием. Dispel_Magic на предмет не рассеивает это заклинание, но если его кто-то держит, призвать предмет не удастся.
+        # https://www.dandwiki.com/wiki/Merruns_Perfect_Lock_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Стражи (6 lvl Guards_and_Wards)'] = {
@@ -10639,7 +11000,7 @@ metadict_detail['_++6 lvl (S) Платиновый щит (6 lvl Platinum_Shield
         # * "Платиновый щит Физбана" (Fizbans_Platinum_Shield) [Abj|-|-] — 60 футов, бонусным действием, минута концентрации. Окутывает существо серебряным светом, можно перенести на другое существо в радиусе бонусным действием. Этот свет даёт: 1) Укрытие на половину: +2 AC +2 к спасброскам ловкости. 2) Сопротивляемость урону: кислота, холод, огонь, молния и яд. 3) Уклонение: Спасбросок ловкости обнуляет урон, провал спасброска снижает урон вдвое.
         }
 
-metadict_detail['_++6 lvl (S) Запрет (6 lvl Forbiddance)'] = {
+metadict_detail['_++6 lvl (R) Запрет (6 lvl Forbiddance)'] = {
         # * !!! "Запрет" (Forbiddance) [Abj|-|radiance] (R) — 1000 бит (Rare рубин 7 карат), 10 минут каста, ритуал. 40 000 квадратных футов пола и 30 футов над полом. Блокирует телепорты, порталы, планарные переходы. Ранит на 5d10 урона излучением нежить, элементалей, фей, исчадий, всех, или кого-то из них. За 30 дней ритуалов создаётся постоянная зона запрета, материальный компоненты тратятся при этом только один раз. Стоимость постоянного Forbiddance — 1200 бит. Им защищены все крупные города. Homebrew: "Запрет" нельзя нанести на корабль, только на неподвижную землю.
         }
 
@@ -10651,6 +11012,7 @@ metadict_detail['_++6 lvl (S) Пузырящийся котёл (6 lvl Bubbling_
 metadict_detail['_++6 lvl (S) Хождение по ветру (6 lvl Wind_Walk)'] = {
         # * "Хождение по ветру" (Wind_Walk) [Tra|-|-] — минута каста, 8 часов действия. Кастер и 10 согласных существ. Даёт скорость полёта 300 футов (30 миль/час, 240 миль/длительность). Даёт форму облака с сопротивляемостью обычному урону. В форме облака можно только двигаться, либо вернуть свою форму. Возвращение формы — 1 минута. Обратный переход в форму облака — 1 минута. Смена формы — неподвижность. Число превращений не ограничено. Это заклинание прекрасно сочетается с "Кругом телепортации". Смотаться к 11+ lvl друиду на край мира, купить заклинание, вернуться через местный Teleportation_Circle. Летать оставшиеся сколько-то часов.
         # https://www.aidedd.org/spell/wind-walk
+        # https://www.dandwiki.com/wiki/Voyage_into_Shadow_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Путешествие через растения (6 lvl Transport_via_Plants)'] = {
@@ -10672,6 +11034,7 @@ metadict_detail['_++6 lvl (S) Трансформация Тензера (6 lvl T
 
 metadict_detail['_++6 lvl (S) Облачение огня (6 lvl Investiture_of_Flame)'] = {
         # * !!! "Облачение огня" (Investiture_of_Flame) [Evo|Dex|fire] — на себя, действием, 10 минут действия. Иммунитет к огню и сопротивляемость холоду, ранит врагов в 5-футовом радиусе на 1d10 урона. Действием линия огня 15×5 футов, спасбросок ловкости, 4d8 урона. Homebrew: не требует концентрации.
+        # https://www.dandwiki.com/wiki/Quincy's_Investiture_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Облачение ветра (6 lvl Investiture_of_Wind)'] = {
@@ -10746,6 +11109,7 @@ metadict_detail['_++6 lvl (S) Солнечный луч (6 lvl Sunbeam)'] = {
 
 metadict_detail['_++6 lvl (S) Корона Звёзд (6 lvl Crown_of_Stars)'] = {
         # * "Корона звёзд" (Crown_of_Stars) [Nec|AC|radiance] — на себя, действием, час действия. 7 звёзд, бросок атаки бонусным действием. 4d12 урона, бросок атаки, 120 футов дальность. Потенциальный урон 50-70 при 30-40% попаданий. Светильник 30/60 футов.
+        # https://www.dandwiki.com/wiki/Crown_of_Stars,_Variant_(5e_Spell)
         }
 
 metadict_detail['_++6 lvl (S) Круг смерти (6 lvl Circle_of_Death)'] = {
@@ -10760,19 +11124,46 @@ metadict_detail['_++6 lvl (S) Поражение (6 lvl Harm)'] = {
 
 #----
 # Заклинания 7 круга
-    # TODO: На 7 круге не хватает Divination. Вообще ноль!
-    # TODO: На 7 круге не хватает Conjuration для магов
-    # TODO: На 7 круге не хватает защитных Abjuration.
+    # TODO: На 7 круге не хватает Divination.
     # [DnD] vs Eq.School  | №  | Ключевые заклинания
     # ------------------- | -- | -------------------------------------------------
     # [Tra] Translocation | 3  | Teleportation, Mordenkainens_Sword
-    # [Ilu] Snowchanges   | 5  | Plane_Shift, Project_Image, Simulacrum
+    # [Ilu] Snowchanges   | 5  | Simulacrum, Project_Image, Frozen_Tomb
     # [Evo] Bondbreaking  | 4  | Forcecage, Delayed_Blast_Fireball
-    # [Cnj] Recombination | 4  | Create_Magen, Prismatic_Spray
-    # [Div] Worldcalling  | 0  | -
-    # [Enc] Animorphy     | 4  | Synostodweomer, Power_Word_Pain,
-    # [Abj] Solward       | 3  | ???, Heavenly_Lights
-    # [Nec] Stardusk      | 3  | Etherealness, Finger_of_Death
+    # [Cnj] Recombination | 5  | Create_Magen, Arcane_Fabricator, Prismatic_Spray
+    # [Div] Worldcalling  | 3  | Dimensional_Lock, Supremacy, Extrasensory_Strike
+    # [Enc] Animorphy     | 5  | Synostodweomer, Last_Laugh, Power_Word_Pain
+    # [Abj] Solward       | 4  | Plane_Shift, Symbol, Heavenly_Lights
+    # [Nec] Stardusk      | 4  | Soul_Release, Etherealness, Finger_of_Death
+    # 7-й круг:
+    # https://www.dandwiki.com/wiki/Blaze-Storm_(5e_Spell) -- 50ft радиус, 8d10 огнём, конц.минута.
+    # https://www.dandwiki.com/wiki/Changestaff_(5e_Spell) -- посох в трента.
+    # https://www.dandwiki.com/wiki/Call_Guardian_(5e_Spell) -- 5k gp R=300ft CR10 охранник, респавн.
+    # https://www.dandwiki.com/wiki/Conjure_the_Crimson_Claws_of_Night_(5e_Spell) -- 6d8 бонусным конц.мин.
+    # https://www.dandwiki.com/wiki/Construct_Symbiosis_(5e_Spell) -- (R) слияние с конструктом.
+    # https://www.dandwiki.com/wiki/Danmaku_(5e_Spell) -- 8d6 force во все стороны, Тохо, конц.минута.
+    # https://www.dandwiki.com/wiki/Dendromorph_(5e_Spell) -- 500gp превращение в дерево.
+    # https://www.dandwiki.com/wiki/Grove_Enroot_(5e_Spell) -- тот же Dendromorph
+    # https://www.dandwiki.com/wiki/Elfin_Wave_(5e_Spell) -- (R) 10d6 slashing, 50ft от источника воды.
+    # https://www.dandwiki.com/wiki/Exile_of_Chaos_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Flatten_Target_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Foreseeing_Shield_(5e_Spell) -- 3 щита, отменяет урон, 8 часов.
+    # https://www.dandwiki.com/wiki/Golem_(5e_Spell) -- каменный/глиняный голем, конц.10мин
+    # https://www.dandwiki.com/wiki/Hive_Leech_(5e_Spell) -- лютые комары, 3d8 ядом макс.хитов. конц.минута.
+    # https://www.dandwiki.com/wiki/Harrowing_Insanity_(5e_Spell) -- запирает в иллюзии, 10 дней.
+    # https://www.dandwiki.com/wiki/Lucid_Control_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Mandom_(5e_Spell) -- Time_Shield, реакцией отменяет урон.
+    # https://www.dandwiki.com/wiki/Power_Word_Sit_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Prison_of_Night_(5e_Spell) -- 1d6 некротикой, полн.укрытие, спас.тел, минута
+    # https://www.dandwiki.com/wiki/Tendrils_of_the_Scarlet_Mist_(5e_Spell) -- кровь кастера в разумный туман.
+    # https://www.dandwiki.com/wiki/Time_Walk_(5e_Spell) -- перемещение во времени до года назад.
+    # https://www.dandwiki.com/wiki/Tree_of_Life_(5e_Spell) -- 120hp, лечит 2d6+mod за 10hp, калечит 3d6.
+    # https://www.dandwiki.com/wiki/Truth_Revealed_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Vankodek's_Chimeric_Transformation_(5e_Spell) -- слияние.
+    # https://www.dandwiki.com/wiki/Vecna's_Reanimation_(5e_Spell) -- Death_Ward с оживлением, 24 часа.
+    # https://www.dandwiki.com/wiki/Vitrify_(5e_Spell) -- (R) песок в стекло
+    # https://www.dandwiki.com/wiki/Wall_of_Souls_(5e_Spell) -- 60×20ft, 6d8 некротикой, пугает.
+    # https://www.dandwiki.com/wiki/Well_of_Lost_Lore_(5e_Spell) --
     # 7-й круг:
     # https://www.dandwiki.com/wiki/Anti-Teleport_Sphere_(3.5e_Spell)
     # https://www.dandwiki.com/wiki/Death_Pact_(3.5e_Spell)
@@ -10786,7 +11177,6 @@ metadict_detail['_++6 lvl (S) Поражение (6 lvl Harm)'] = {
     # https://totally.fandom.com/wiki/Bound_Hearts -- двое знают локацию друг друга, год действия.
     # https://totally.fandom.com/wiki/Charismatic_Shield -- Мод.Харизмы к AC. Спас.Мудрости для атаки. конц.10мин
     # https://totally.fandom.com/wiki/Cruel_Wind -- 300ft конус, 6d6 холодом, конц.минута.
-    # https://totally.fandom.com/wiki/Deep_Freeze -- касание, 3d8 холодом, окаменение, конц.минута.
     # https://totally.fandom.com/wiki/Divine_Disconnection -- запрет жреческих заклинаний, минута.
     # https://totally.fandom.com/wiki/Electrical_Storm -- 12d8 молнией, 100ft радиус.
     # https://totally.fandom.com/wiki/Establish_Foundation -- поднимает 60×60 фундамент для здания.
@@ -10807,6 +11197,13 @@ metadict_detail['_++7 lvl (S) Призыв небожителя (7 lvl Conjure_C
         # https://www.aidedd.org/spell/conjure-celestial
         }
 
+metadict_detail['_++7 lvl (R) Межпространственный запрет (7 lvl Dimensional_Lock)'] = {
+        # * @@@ "Межпространственный запрет" (Dimensional_Lock) [Div|-|-] (R) — на себя, действием, 10 минут действия, 300 футов радиус. Запрещает все формы телепортации как например Blink, Etherealness, Teleportation, Plane_Shift, Maze, Demiplane, Astral_Projection, Gate, а также магическую связь вроде Sending, Project_Image, etc. Призванные существа и управляемые заклинания вроде Flaming_Sphere, Mordenkainens_Sword теряют связь с создателем, если он вне сферы. На больших уровнях: 8 круг -- час действия 600ft радиус; 9 круг -- 8 часов действия 1 миля радиус.
+        # https://www.dandwiki.com/wiki/Domain_Expansion
+        # https://www.dandwiki.com/wiki/Dimensional_Lock_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Dimensional_Anchor_(5e_Spell)
+        }
+
 metadict_detail['_++7 lvl (S) Подобие (7 lvl Simulacrum)'] = {
         # * !!! "Подобие" (Simulacrum) [Ilu|-|-] — 2500 бит (Rare конструкт), касание, 12 часов каста, пока не рассеется. Ледяная копия. Имеет 50% хитов. Имеет все характеристики существа. Не может учиться. Не может восстанавливать заклинания (но изначально имеет их). Повторное заклинание отменяет прошлое, уничтожая подобие. Homebrew: подобие получает слоты заклинаний кастера. То есть маг 13 lvl, создавая подобие, передаёт ему свои незатраченные ячейки заклинаний, при этом расходуя их. Если он создаст симулякр 20 lvl архимага, то подобие получит только слоты 13 lvl кастера, за вычетом слота 7 круга, что был потрачен на создание симулякра.
         # _++7 lvl (S) Подобие (7 lvl Simulacrum)................... | 975
@@ -10825,10 +11222,14 @@ metadict_detail['_++7 lvl (S) Создание магина (7 lvl Create_Magen)
         # 74M бит, 0.2% капитала Эквестрии. Неслабая ЧВК. Вчетверо больше гвардии.
         }
 
-metadict_detail['_++7 lvl (S) Небесные огни (7 lvl Heavenly_Lights)'] = {
-        # * "Небесные огни" (Heavenly_Lights) [Abj|-|necrotic] — на себя, действием, 10 минут концентрации. Каждый раунд создаёт 6 парящих огней, 1d6 урона каждый, бонусным действием, 300 футов досягаемости, самонаведение подобно Magic_Missile. Небесные огни игнорируют порог урона, поглощение урона, бонусные хиты любого рода. Считайте Иммунитет как сопротивление, а сопротивление как его отсутствие. Урон от Небесных огней поражает максимум хитпоинтов и их невозможно вернуть ничем, кроме Greater_Restoration. Если цель убита небесными огнями, только заклинание Wish может воссоздать стёртую душу.
-        # В мире FoE это заклинание Heavenly_Lights из Fallout Equestria: Remains
-        # https://www.aidedd.org/spell/prismatic-wall
+metadict_detail['_++7 lvl (R) Арканный фабрикатор (7 lvl Arcane_Fabricator)'] = {
+        # * @@@ "Арканный фабрикатор" (Arcane_Fabricator) [Cnj|-|-] (R) — 10k бит (50lb Uncommon деталей), 120 футов, действием, 500-футовый радиус контроля, час действия. Заменяет 100 рабочих без наблюдения или 100 ремесленников под контролем за счёт концентрации. Большой конструкт 15 AC 140hp 22 STR, 1Atk+8, Hit: 19 (2d12+6), удвоенный урон строениям. 60ft движение/плавание, 10ft полёт/копание. Копая создаёт 10×10 футовый туннель. Детали можно использовать повторно.
+        # Час работы арканного фабрикатора, это 1 миля туннель или 17k кубометров породы, сутки работы инженерного батальона с 9 экскаваторами, 8 бульдозерами и 42 самосвалами. За 50 ритуалов (8 часов и 20 минут кастов) фабрикаторы построят и меблируют Брусчатый дом (105 кв.метров жилых комнат) -- 30x30x20 футов себестоимостью работ 1100 бит. Час работы фабрикатора в производстве = 20-40 бит.
+        # Экскаватор (1907) -- 2400 кубометров/день.
+        # _++7 lvl (R) Арканный фабрикатор (7 lvl Arcane_Fabricator) | 11,022
+        # _++7 lvl (R) Арканный фабрикатор (карьер) (кубометров/год) | 187,374,000
+        # _++7 lvl (R) Арканный фабрикатор (жильё) (кв.метров/год).. | 22,044
+        # https://www.dandwiki.com/wiki/Fantastic_Arcane_Contraption_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Меч Морденкайнена (7 lvl Mordenkainens_Sword)'] = {
@@ -10839,6 +11240,7 @@ metadict_detail['_++7 lvl (S) Меч Морденкайнена (7 lvl Mordenkai
 metadict_detail['_++7 lvl (S) Великолепный особняк Морденкайнена (7 lvl Mordenkainens_Magnificent_Mansion)'] = {
         # * "Великолепный особняк Морденкайнена" (Mordenkainens_Magnificent_Mansion) [Ilu|-|-] — 15 бит (0.5lb столового серебра), 300 футов, минута каста, 24 часа действия. Портал 5×10 футов, открыть/закрыть портал можно с 30 футов. Закрытый портал невидим. Запасы еды на 100 человек, 100 невидимых слуг Unseen_Servant. Это заклинание можно развеять "Рассеиванием магии" (Dispel_Magic), направленным на портал. Тогда всех гостей особняка выкинет наружу.
         # Snowchanges. Убежище на зимних путях.
+        # https://www.dandwiki.com/wiki/Tasha’s_Tantalizing_Terrarium_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Таинственный мираж (7 lvl Mirage_Arcane)'] = {
@@ -10852,29 +11254,39 @@ metadict_detail['_++7 lvl (S) Эфирность (7 lvl Etherealness)'] = {
 
 metadict_detail['_++7 lvl (S) Телепортация (7 lvl Teleport)'] = {
         # * !!! "Телепортация" (Teleport) [Tra|-|-] — 10 футов, действием. Переносит заклинателя и 8 существ в известное заклинателю место, или в том место, какое он может представить. Также может перебросить один предмет. К "кругу телепортации" — полный успех. К знакомому месту 75% шанс. К изредка видимому 50% шанс. К увиденному однажды 25% шанс. Часто выбрасывает в зоне 1d10 × 1d10 процентов от дальности до цели. Иногда ранит на 3d10 урона. Homebrew: не позволяет переброску предметов более 1000 lb. Ограничение только для века пороха, иначе это просто царь-бомба. Удобно использовать для снабжения геройских команд в сочетании с Teleportation_Circle. Можно перебросить Otilukes_Freezing_Sphere или Delayed_Blast_Fireball.
+        # https://www.dandwiki.com/wiki/Teleport,_Variant_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Traumatic_Teleport_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Telefrag_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Уход в иной мир (7 lvl Plane_Shift)'] = {
-        # * "Уход в иной мир" (Plane_Shift) [Ilu|Cha|-] — 250 бит, касание, действием. 8 существ, переносит в избранное место другого плана. Приблизительно. Или точно, к известному "Кругу телепортации" там. Можно изгнать другое существо, сделав по нему бросок атаки заклинанием, спасбросок Харизмы.
-        # Snowchanges. Выход на зимние пути.
+        # * "Уход в иной мир" (Plane_Shift) [Abj|Cha|-] — 250 бит, касание, действием. 8 существ, переносит в избранное место другого плана. Приблизительно. Или точно, к известному "Кругу телепортации" там. Можно изгнать другое существо, сделав по нему бросок атаки заклинанием, спасбросок Харизмы.
+        # https://www.dandwiki.com/wiki/Pass_into_Shadow_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Проекция (7 lvl Project_Image)'] = {
         # * "Проекция" (Project_Image) [Ilu|-|-] (C) — 500 миль, на себя, действием, день концентрации. Создаёт иллюзорную копию в любом известном месте. Можно переключать чувства. Копия может говорить вашим голосом. Скорость копии удвоенная. Копия исчезает при любом повреждении. Копия неосязаема.
         }
 
+metadict_detail['_++7 lvl (S) Отделение души (7 lvl Soul_Release)'] = {
+        # * @@@ "Отделение души" (Soul_Release) [Nec|-|-] — на себя, действием, 8 часов действия. Отделяет душу кастера от тела. Тело сохраняет параметры STR, DEX, CON; душа WIS, INT, CHA. Душа может колдовать, но взаимодействие с предметами осложнено бестелесной природой. У тела и души равные хитпоинты. Душа летает 30ft, проходит через стены, обладает сопротивляемостями привидения. Объединение действием, когда тело и душа в одной точке, по исходу времени или при нуле хитпоинтов души.
+        # https://www.dandwiki.com/wiki/Soul_Release_(5e_Spell)
+        }
+
 metadict_detail['_++7 lvl (S) Синостодвеомер (7 lvl Synostodweomer)'] = {
-        # * +++ "Синостодвеомер Симбул" (Simbuls_Synostodweomer) [Enc|-|-] — касание, действием, час действия. Если цель тратит слот заклинания, цель может потратить равное кругу заклинания число костей хитов на лечение и добавить модификатор_характеристики заклинателя. Это лучше лечения на коротком отдыхе, ведь на 13 lvl вне боя и так найдётся кому мага подлатать.
+        # * "Синостодвеомер Симбул" (Simbuls_Synostodweomer) [Enc|-|-] — касание, действием, час действия. Если цель тратит слот заклинания, цель может потратить равное кругу заклинания число костей хитов на лечение и добавить модификатор_характеристики заклинателя. Это лучше лечения на коротком отдыхе, ведь на 13 lvl вне боя и так найдётся кому мага подлатать.
         }
 
 metadict_detail['_++7 lvl (S) Регенерация (7 lvl Regenerate)'] = {
         # * +++ "Регенерация" (Regenerate) [Cnj|-|healing] — касание, минута каста, час действия. Мгновенно лечит 4d8+15 хитов, Постепенно лечит 1 hp/раунд, 10 hp/минуту. Потерянные части тела отрастают через 2 минуты. Бесконечные компоненты заклинаний из захваченных существ.
         # https://www.aidedd.org/spell/regenerate
+        # https://www.dandwiki.com/wiki/Mending_Sinews_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Воскрешение (7 lvl Resurrection)'] = {
         # * "Воскрешение" (Resurrection) [Enc|-|healing] — 1000 бит (Rare бриллиант 5 карат), час каста. Оживляет погибшего менее столетия, если он не умер от старости и не был превращён в нежить. Заклинание исцеляет яды и немагические болезни, восстанавливает потерянные части тела. Цель получает штраф -4 к броскам атаки, спасброскам, проверкам характеристик, после продолжительного отдыха этот штраф уменьшается на единицу, пока не исчезнет. Если оживить существо, мёртвое больше года, заклинание изматывает, давая запрет на каст заклинаний, помеха на броски атаки, спасброски и проверки характеристик до продолжительного отдыха.
         # https://www.aidedd.org/spell/resurrection
+        # https://www.dandwiki.com/wiki/Time_Restoration_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Изоляция (7 lvl Sequester)'] = {
@@ -10917,20 +11329,41 @@ metadict_detail['_++7 lvl (S) Радужные брызги (7 lvl Prismatic_Spr
         # * "Радужные брызги" (Prismatic_Spray) [Cnj|Dex|random] — 60 футов-конус, действием. Спасбросок ловкости, 1d8 выбор луча. Красный — огонь 10d6 урона, Оранжевый — кислота 10d6 урона, Жёлтый — молния 10d6, Зелёный — яд 10d6, Синий — холод 10d6. Индиго — опутывание и окаменение по правилам Flesh_to_Stone, спасброски Телосложения. Вельветовый — ослепление и изгнание на другой план, спасбросок Мудрости. d8 — удар двумя случайными лучами.
         }
 
+metadict_detail['_++7 lvl (S) Превосходство (7 lvl Supremacy)'] = {
+        # * @@@ "Превосходство" (Supremacy) [Div|choice|-] — 60 футов, действием, минута действия. Отбирает 3d6 от характеристики цели и передаёт кастеру (max 30), спасбросок характеристики полный. По окончании действия характеристика возвращается.
+        }
+
 metadict_detail['_++7 lvl (S) Слово силы: боль (7 lvl Power_Word_Pain)'] = {
         # * !!! "Слово силы: боль" (Power_Word_Pain) [Enc|Con|-] — 60 футов, действием, пока не рассеется. Замедляет скорость цели до 10 футов, даёт помеху на броски атаки и спасброски. Требует от цели броска Концентрации на каждое заклинание. Не срабатывает, если у цели больше 100 hp. Homebrew: спасбросок Телосложения действием, с помехой.
+        }
+
+metadict_detail['_++7 lvl (S) Предсмертный хохот (7 lvl Last_Laugh)'] = {
+        # * @@@ "Предсмертный хохот" (Last_Laugh) [Enc|Wis|-] (C) — 60 футов, действием, минута концентрации. Цель смеётся на 6d10 урона психике, спасбросок Мудрости полный. Три провала спасброска подрят убивает цель.
+        # https://www.dandwiki.com/wiki/Last_Laugh_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Божественное слово (7 lvl Divine_Word)'] = {
         # * "Божественное слово" (Divine_Word) [Enc|Cha|-] — бонусным действием. 30-футовый радиус. Спасбросок Харизмы. Меньше 50 hp — оглушены на минуту. Меньше 40 hp — оглушены и ослеплены на 10 минут. Меньше 30 hp — оглушены, ослеплены и ошеломлены на 1 час. Меньше 20 hp — убиты. Небожителей, элементалей, фей и исчадий, проваливших спасбросок, вне зависимости от их хитов, возвращает на родные планы. Они не могут вернуться 24 часа.
         }
 
+metadict_detail['_++7 lvl (S) Небесные огни (7 lvl Heavenly_Lights)'] = {
+        # * @@@ "Небесные огни" (Heavenly_Lights) [Abj|-|necrotic] — на себя, действием, 10 минут концентрации. Каждый раунд создаёт 6 парящих огней, 1d6 урона каждый, бонусным действием, 300 футов досягаемости, самонаведение подобно Magic_Missile. Небесные огни игнорируют порог урона, поглощение урона, бонусные хиты любого рода. Считайте иммунитет к некротике как сопротивление, а сопротивление как его отсутствие. Урон от Небесных огней поражает максимум хитпоинтов и их невозможно вернуть ничем, кроме Greater_Restoration. Если цель убита небесными огнями, только заклинание Wish может воссоздать стёртую душу.
+        # В мире FoE это заклинание Heavenly_Lights из Fallout Equestria: Remains
+        # https://www.aidedd.org/spell/prismatic-wall
+        }
+
 metadict_detail['_++7 lvl (S) Палец смерти (7 lvl Finger_of_Death)'] = {
         # * "Палец смерти" (Finger_of_Death) [Nec|Con|necrotic] — 60 футов, действием. Спасбросок телосложения, 7d8+30 урона. Превращает убитого в зомби, навечно подчинённого колдуну.
         }
 
+metadict_detail['_++7 lvl (S) Бесконечный яд (7 lvl Everlasting_Poison)'] = {
+        # * @@@ "Бесконечный яд" (Everlasting_Poison) [Nec|Con|poison] — касание, действием, пока не рассеется. 3d6 урона, цель отравлена, спасбросок Телосложения полный. Отравление можно снять только заклинанием лечения равного уровня или тремя успешными спасбросками подряд.
+        # https://www.dandwiki.com/wiki/Everlasting_Poison_(5e_Spell)
+        }
+
 metadict_detail['_++7 lvl (S) Замедленный огненный шар (7 lvl Delayed_Blast_Fireball)'] = {
         # * "Замедленный огненный шар" (Delayed_Blast_Fireball) [Evo|Dex|fire] (C) — 150 футов, минута концентрации, 20-футовая сфера. Спасбросок ловкости. От 12d6 до 22d6 урона, каждый раунд задержки +1d6 урона. Взрывается по воле кастера, или при прерывании концентрации. Имеет форму светящегося шарика. Шарик можно отбросить на 40 футов или взять в руки при успешном спасброске Ловкости.
+        # https://www.dandwiki.com/wiki/Spirit_Bomb_(5e_Spell)
         }
 
 metadict_detail['_++7 lvl (S) Огненный шторм (7 lvl Fire_Storm)'] = {
@@ -10939,6 +11372,19 @@ metadict_detail['_++7 lvl (S) Огненный шторм (7 lvl Fire_Storm)'] =
 
 metadict_detail['_++7 lvl (S) Смерч (7 lvl Whirlwind)'] = {
         # * "Смерч" (Whirlwind) [Evo|Dex|bludgeoning] (C) — 300 футов, действием, 10-футовый радиус, 10d6 урона, спасбросок Ловкости, минута концентрации. Можно действием переместить смерч на 30 футов/раунд. Смерч затягивает все средние и меньшие предметы. Спасбросок ловкости, или затягивает средних и меньших существ. Спасбросок силы, или существо опутано смерчом и подтягивается к его вершине.
+        # https://www.dandwiki.com/wiki/Sand_Tornado_(5e_Spell)
+        }
+
+metadict_detail['_++7 lvl (S) Сверхестественный удар (7 lvl Extrasensory_Strike)'] = {
+        # * "Сверхестественный удар" (Extrasensory_Strike) [Div|Int|psychic] — на себя, действием, 30-футовый радиус. Даёт True_Seeing на 30 футов, 10d8 урона целям на выбор в радиусе, спасбросок Интеллекта, слепота на минуту при провале.
+        }
+
+metadict_detail['_++7 lvl (S) Ледяная гробница (7 lvl Frozen Tomb)'] = {
+        # * @@@ "Ледяная гробница" (Frozen_Tomb) [Ilu|Con|cold] (C) -- 90 футов, действием, минута каста. 6d10 урона холодом, без спасброска, опутывание и сопротивление всему урону. Спасбросок Телосложения в конце каждого хода на освобождение.
+        # https://totally.fandom.com/wiki/Deep_Freeze -- касание, 3d8 холодом, окаменение, конц.минута.
+        # https://www.dandwiki.com/wiki/Power_Word_Freeze_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Frozen_Tomb_(5e_Spell)
+        # https://te4.org/wiki/Freeze_(talent)
         }
 
 #----
@@ -10949,12 +11395,12 @@ metadict_detail['_++7 lvl (S) Смерч (7 lvl Whirlwind)'] = {
         # - Graves_of_the_Fireflies -- от Quantum Slider.
     # [DnD] vs Eq.School  | №  | Ключевые заклинания
     # ------------------- | -- | -------------------------------------------------
-    # [Tra] Translocation | 1  | ???, ???
-    # [Ilu] Snowchanges   | 4  | Maze, Frozen_Tomb, Illusory_Dragon
+    # [Tra] Translocation | 3  | Transition, Massacre, ???
+    # [Ilu] Snowchanges   | 4  | Maze, Stasis, Illusory_Dragon
     # [Evo] Bondbreaking  | 2  | Chain_of_Collapse, Great_Yobas
-    # [Cnj] Recombination | 4  | Clone, Incendiary_Cloud
+    # [Cnj] Recombination | 4  | Clone, Animal_Shapes, Incendiary_Cloud
     # [Div] Worldcalling  | 4  | Control_Weather, Earthquake, Tsunami
-    # [Enc] Animorphy     | 3  | Dominate_Monster, Power_Word_Stun
+    # [Enc] Animorphy     | 4  | HAVOC, Dominate_Monster, Power_Word_Stun
     # [Abj] Solward       | 4  | Antimagic_Field, Mind_Blank, Sunburst
     # [Nec] Stardusk      | 4  | Befuddlement, Maddening_Darkness
     # 8-й круг:
@@ -10965,6 +11411,18 @@ metadict_detail['_++7 lvl (S) Смерч (7 lvl Whirlwind)'] = {
     # https://www.dandwiki.com/wiki/Reforestation_(5e_Spell) --
     # https://www.dandwiki.com/wiki/Retribution_of_the_Bears_(5e_Spell) -- воспитание позлее Geas.
     # https://www.dandwiki.com/wiki/Substitution_(5e_Spell) -- портрет Дориана Грея
+    # https://www.dandwiki.com/wiki/Dalamars_Unerring_Strikes_(5e_Spell) -- преимущество стрельбе, минута
+    # https://www.dandwiki.com/wiki/Heartstop_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Greed_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Lazarus_Pit_(5e_Spell) -- 1000gp 30x30ft лечение 10 hp/min, 24 часа.
+    # https://www.dandwiki.com/wiki/Mute_(5e_Spell) -- лишает голоса, час концентрации.
+    # https://www.dandwiki.com/wiki/Moody_Blues_(5e_Spell) -- пантомима по воспоминаниям места.
+    # https://www.dandwiki.com/wiki/Permanence_of_Being_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Impermanence_of_Being_(5e_Spell) -- лишает бессмертия.
+    # https://www.dandwiki.com/wiki/Power_Word:_Restore/Unravel_(5e_Spell) --
+    # https://www.dandwiki.com/wiki/Punishment_of_a_Fraud_(5e_Spell) -- 1d12 при каждом провале, 1 день.
+    # https://www.dandwiki.com/wiki/Circle_of_Lightning_(5e_Spell) -- защита молниями R=10ft 24 часа
+    # https://www.dandwiki.com/wiki/The_Fog_of_the_Dead_(5e_Spell) -- 50ft сфера, 8d8 холодом, в нежить.
     # 8-й круг:
     # https://www.dandwiki.com/wiki/Jess%27_Twin_Portals_(3.5e_Spell)
     # https://www.dandwiki.com/wiki/Ion_Blast_(3.5e_Spell)
@@ -10992,6 +11450,13 @@ metadict_detail['_++8 lvl (S) Власть над погодой (8 lvl Control_
         # * "Власть над погодой" (Control_Weather) [Div|-|-] (C) — на себя, 10 минут каста, 5-миль радиус 8 часов концентрации. Каст только под открытым небом. Можно изменить осадки, температуру и ветер. Изменение на позицию по таблице погоды 1d4 × 10 минут (20 минут). Homebrew: Ветер по шкале Бофорта (12 позиций): штиль, тихий, лёгкий, слабый, умеренный, свежий, сильный, крепкий, очень крепкий, шторм, сильный шторм, жестокий шторм, ураган. От умеренного ветра (12 миль/час) до сильного шторма 6 позиций, 1-4 часа. Когда кастер двигается, шторм следует за ним.
         # Worldcalling. Геомантия.
         # https://www.aidedd.org/spell/control-weather
+        # https://www.dandwiki.com/wiki/Lesser_Control_Weather_(5e_Spell)
+        }
+
+metadict_detail['_++8 lvl (S) Переход (8 lvl Transition)'] = {
+        # * @@@ "Переход" (Transition) [Tra|-|-] — касание, действием, 8 часов действия. Полёт 600ft. Минута ускорения под Dash_Action разгоняет до 1 миля/секунда в атмосфере, или 1 световой год в час в вакууме. Торможение до 600ft действием.
+        # https://www.dandwiki.com/wiki/Megascale_Flight_(5e_Spell)
+        # https://ru.wikipedia.org/wiki/Список_ближайших_звёзд
         }
 
 metadict_detail['_++8 lvl (S) Телепатия (8 lvl Telepathy)'] = {
@@ -11011,6 +11476,8 @@ metadict_detail['_++8 lvl (S) Демиплан (8 lvl Demiplane)'] = {
         # * !!! "Демиплан" (Demiplane) [Ilu|-|-] — 60 футов, действием, час действия. Создаёт дверь в личный демиплан. Выглядит как комната 30×30 футов. Когда заклинание заканчивается, все существа прошедшие в дверь оказываются заперты на демиплане, если не способны на Plane_Shift, Demiplane, Gate или подобное заклинание. Игромеханически, два высокоуровневых волшебника могут использовать Демиплан как постоянный портал между двумя городами. Homebrew: пока заклинание действует, демиплан можно расширять действием на 30-футовый куб (до 6 гектаров/заклинание) и менять его свойства. Построить собственный планетоид на астральном плане, почему бы и нет.
         # Snowchanges. Зимние пути.
         # https://te4.org/wiki/Temporal_reprieve_(talent)
+        # https://www.dandwiki.com/wiki/Alpha_Demiplane_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Demiplane_Portal_(5e_Spell)
         }
 
 metadict_detail['_++8 lvl (S) Преграда магии (8 lvl Antimagic_Field)'] = {
@@ -11027,6 +11494,11 @@ metadict_detail['_++8 lvl (S) Находчивость (8 lvl Glibness)'] = {
         # * "Находчивость" (Glibness) [Enc|-|-] — на себя, действием, час действия. Даёт 15 на проверках Харизмы, если получается меньшее число. Обманывает Zone_of_Truth.
         }
 
+metadict_detail['_++8 lvl (S) Опустошитель (8 lvl HAVOC)'] = {
+        # * @@@ "Опустошитель" (HAVOC) [Enc|-|-] (C) — касание, действием, минута концентрации. Одна из пяти сил на выбор: Handiness -- +5 к атакам и спасброскам; Agility -- скорость 60 футов, невозможно схватить, опутать; Vigor -- сопротивление всем видам урона и 20hp регенерация; Omnipotence -- каст заклинаний любых классов до 3 круга включительно без траты слотов; Consciousness -- преимущество на проверки интеллекта и мудрости.
+        # https://www.dandwiki.com/wiki/Progression:_H.A.V.O.C._(5e_Spell)
+        }
+
 metadict_detail['_++8 lvl (S) Подчинение чудовища (8 lvl Dominate_Monster)'] = {
         # * "Подчинение чудовища" (Dominate_Monster) [Enc|Wis|-] (C) — 60 футов, действием, час концентрации. Очаровывает существо, оно исполняет команды. Спасбросок мудрости, с преимуществом если во время боя с вами. Телепатическая связь на любой дальности. Можно взять полный контроль действием. Повторный спасбросок каждый раз при получении урона.
         }
@@ -11038,6 +11510,7 @@ metadict_detail['_++8 lvl (S) Превращение в животных (8 lvl 
 
 metadict_detail['_++8 lvl (S) Контроль через кровь (8 lvl Blood_Manipulation)'] = {
         # * @@@ "Контроль через кровь" (Blood_Manipulation) [Nec|Con|fire] (C) — касание, минута каста, 24 часа концентрации. Согласное или бессознательное создание. Слежка за целью. Эффект Dominate_Person через бросок Телосложения. Если цель пытается самовольничать, прерывание действия реакцией через спасбросок Телосложения. Когда игрушка надоела, 10d10 урона некротикой с отменой заклинания.
+        # https://www.dandwiki.com/wiki/Traitorous_Blood_(5e_Spell)
         # https://www.dandwiki.com/wiki/Blood_Manipulation_(5e_Spell)
         # https://www.dandwiki.com/wiki/Soul_Puppet_(5e_Spell)
         }
@@ -11062,6 +11535,7 @@ metadict_detail['_++8 lvl (S) Цепь разрушения (8 lvl Chain_of_Coll
         # Chain_of_Collapse, это заклинание Quantum Slider из ToME
         # https://www.dndbeyond.com/spells/2619103-dispel-magic
         # https://www.dndbeyond.com/spells/2072-dispel-magic
+        # https://www.dandwiki.com/wiki/Sphere_of_Simulated_Antimagic_(5e_Spell)
         }
 
 metadict_detail['_++8 lvl (S) Иллюзорный дракон (8 lvl Illusory_Dragon)'] = {
@@ -11115,11 +11589,18 @@ metadict_detail['_++8 lvl (S) Чёрное пламя (8 lvl Blackfire)'] = {
         # https://www.dandwiki.com/wiki/Blackfire_(5e_Spell)
         }
 
-metadict_detail['_++8 lvl (S) Ледяная гробница (8 lvl Frozen Tomb)'] = {
-        # * @@@ "Ледяная гробница" (Frozen_Tomb) [Ilu|Con|cold] (C) -- 90 футов, действием, минута каста. 6d10 урона холодом, без спасброска, опутывание и сопротивление всему урону. Спасбросок Телосложения в конце каждого хода на освобождение. Заодно 4d10 урона/раунд холодом всем в 15-футовом радиусе, спасбросок Телосложения полный.
-        # https://www.dandwiki.com/wiki/Power_Word_Freeze_(5e_Spell)
-        # https://www.dandwiki.com/wiki/Frozen_Tomb_(5e_Spell)
-        # https://te4.org/wiki/Freeze_(talent)
+metadict_detail['_++8 lvl (S) Стазис (8 lvl Stasis)'] = {
+        # * @@@ "Стазис" (Stasis) [Ilu|AC|cold] — 60 футов, действием, раунд действия. Бросок атаки, 12d6 урона холодом. Цель каменеет до начала следующего хода. Иммунитет к окаменению не защищает от стазиса. Считайте иммунитет к холоду как сопротивление, а сопротивление как его отсутствие. На 9 круге стазис на минуту концентрации.
+        # https://www.dandwiki.com/wiki/Shattering_Threads_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Polar_Ray_(5e_Spell)
+        # https://te4.org/wiki/Time_skip_(talent)
+        }
+
+metadict_detail['_++8 lvl (S) Бойня (8 lvl Massacre)'] = {
+        # * @@@ "Бойня" (Massacre) [Tra|Dex|force] — 300 футов, действием, 10 минут концентрации. Телекинетический луч по всем целям в линии. 5d10 урона, Спасбросок ловкости, при провале сбивание с ног. Удвоенный урон предметам. Пробивает безопасный проход в газе/жидкости/земле/камне. Луч отключается при движении, снова включается действием, пока есть концентрация.
+        # https://www.dandwiki.com/wiki/Comet_Azur_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Massacre_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Soul_Stream_(5e_Spell)
         }
 
 #----
@@ -11189,6 +11670,7 @@ metadict_detail['_++9 lvl (S) Врата (9 lvl Gate)'] = {
 
 metadict_detail['_++9 lvl (S) Исполнение желаний (9 lvl Wish)'] = {
         # * "Исполнение желаний" (Wish) [Abj|-|-] — на себя, действием. Различные эффекты: 1) Дублирует любое заклинание 8 круга и ниже без затраты компонентов (есть 33% шанс навсегда потерять Wish). 2) Создаёт предмет стоимостью до 25 000 бит (44lb чистого золота), в пределах 300-футового куба. Можно создать корабль. 3) Восстанавливает хиты 12 существам и даёт эффект Greater_Restoration 4) Даёт 9 существам сопротивление к урону. 5) Даёт 9 существам иммунитет к одному заклинанию или магическому эффекту на 8 часов. 6) Меняет одно событие последнего раунда: спасбросок, бросок атаки, даёт помеху или преимущество к повторному броску.
+        # https://www.dandwiki.com/wiki/Petty_Wish_(5e_Spell)
         }
 
 metadict_detail['_++9 lvl (S) Истинное превращение (9 lvl True_Polymorph)'] = {
@@ -11249,6 +11731,10 @@ metadict_detail['_++9 lvl (S) Остановка времени (9 lvl Time_Stop
 metadict_detail['_++9 lvl (S) Темпоральная Фуга (9 lvl Temporal_fugue)'] = {
         # * "Темпоральная Фуга" (Temporal_fugue) [Ilu|-|-] — на себя, бонусным действием, минута действия. Время раздваивается и объединяется снова, создавая двойника. Теперь кастеров двое, их координация абсолютна: 1) Общий ход: Скорость движения удваивается, и кастер и двойник имеют общий пул хода. 2) Общие хиты: Кастер получает только 50% урона, при нуле хитов двойник также падает. 3) Общее пространство: Любое заклинание, нацеленное на себя, также распространяется на двойника. 4) Аномалии пространства: Доступно 2 действия, они могут исходить из позиции кастера или двойника. 5) Удвоенная реакция: Доступно 2 реакции, каждый может использовать по одной, либо один дважды. 6) Общие заклинания: Доступно 2 концентрации, можно использовать 2 слота заклинания за ход. 7) Общее снаряжение: Если двойник использовал предмет, считается что кастер использовал его. 8) Перенаправление: Если кастер проваливает спасбросок, вредное состояние получает двойник. В любой момент свободным действием можно прервать темпоральную фугу, выбрав местонахождение кастера или двойника.
         # https://te4.org/wiki/Temporal_fugue_(talent)
+        # https://www.dandwiki.com/wiki/Delta_Divide_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Duplicate_Self_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Fiery_Twin_(5e_Spell)
+        # https://www.dandwiki.com/wiki/Watery_Twin_(5e_Spell)
         }
 
 metadict_detail['_++9 lvl (S) Радужна стена (9 lvl Prismatic_Wall)'] = {
